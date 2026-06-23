@@ -8,8 +8,9 @@ Open **`index.html`** in your browser to browse the cookbook.
 
 ### What's included
 
-- **Breakfast chapter cover** — matches the Elegant Woodland design (forest green sidebar, gold accents, category sections)
-- **Sample recipe** — Cheese & Herb Omelette with full recipe layout
+- **Breakfast chapter** — 10 recipes from the breakfast chapter import
+- **Dinner & Desserts chapters** — recipes from `data/recipes.json`
+- **Recipe data** — structured JSON at `data/recipes.json` (source for dinner, desserts, and cross-reference)
 - **Print-ready** — press `Ctrl+P` on any page to save as PDF
 
 ### Folder structure
@@ -17,10 +18,19 @@ Open **`index.html`** in your browser to browse the cookbook.
 ```
 huntress-cookbook/
 ├── index.html              ← Start here
+├── data/
+│   └── recipes.json        ← Structured recipe data (JSON source)
 ├── chapters/
-│   └── breakfast.html      ← Chapter cover page
+│   ├── breakfast.html
+│   ├── dinner.html
+│   └── desserts.html
 ├── recipes/
-│   └── cheese-herb-omelette.html
+│   ├── cheese-herb-omelette.html
+│   ├── garlic-butter-chicken.html
+│   ├── bobotie-gf.html
+│   ├── malva-pudding-gf.html
+│   ├── peppermint-crisp-tart-gf.html
+│   └── … (breakfast recipes)
 ├── css/
 │   └── cookbook.css        ← Design system
 ├── js/
@@ -47,6 +57,16 @@ Copy `recipes/cheese-herb-omelette.html` as a template. Update:
 - Ingredients, method, Huntress Notes, Fox Notes, rating
 
 Link the new recipe from the relevant chapter page.
+
+Recipe HTML pages include a `data-recipe-id` attribute matching the `id` field in `data/recipes.json` where applicable.
+
+## Recipe data (JSON)
+
+`data/recipes.json` holds structured recipe records (ingredients, instructions, tags, huntress notes). When adding recipes:
+
+1. Add an entry to `data/recipes.json`
+2. Create a matching HTML page under `recipes/` (use `data-recipe-id` on `<body>`)
+3. Link from the appropriate chapter page
 
 ## Approval Status
 

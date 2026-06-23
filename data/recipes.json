@@ -1,0 +1,171 @@
+[
+  {
+    "id": "breakfast-cheese-herb-omelette",
+    "category": "Breakfast",
+    "subcategory": "Quick Weekday Breakfasts",
+    "name": "Cheese & Herb Omelette",
+    "description": "Simple, high-protein breakfast that is gluten-free and onion-free.",
+    "difficulty": "Easy",
+    "prepTime": 5,
+    "cookTime": 10,
+    "servings": 1,
+    "tags": [
+      "Gluten Free",
+      "Onion Free",
+      "High Protein"
+    ],
+    "ingredients": [
+      "3 eggs",
+      "30g cheddar cheese",
+      "1 tsp parsley",
+      "1 tsp butter",
+      "Salt and pepper"
+    ],
+    "instructions": [
+      "Beat eggs with seasoning.",
+      "Melt butter in pan.",
+      "Cook eggs until almost set.",
+      "Add cheese and parsley.",
+      "Fold and serve."
+    ],
+    "huntressNotes": [
+      "GF",
+      "Onion-Free",
+      "IBS Friendly"
+    ]
+  },
+  {
+    "id": "dinner-garlic-butter-chicken",
+    "category": "Dinner",
+    "subcategory": "Chicken",
+    "name": "Garlic Butter Chicken",
+    "description": "Juicy chicken cooked in garlic butter and herbs.",
+    "difficulty": "Easy",
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "tags": [
+      "Gluten Free",
+      "Onion Free",
+      "Dinner"
+    ],
+    "ingredients": [
+      "4 chicken breasts",
+      "3 tbsp butter",
+      "4 garlic cloves",
+      "Rosemary",
+      "Salt",
+      "Pepper"
+    ],
+    "instructions": [
+      "Season chicken.",
+      "Sear chicken in butter.",
+      "Add garlic and herbs.",
+      "Cook until done.",
+      "Serve with potatoes or vegetables."
+    ],
+    "huntressNotes": [
+      "GF",
+      "Onion-Free"
+    ]
+  },
+  {
+    "id": "sa-bobotie",
+    "category": "South African",
+    "subcategory": "Traditional",
+    "name": "Bobotie (GF Version)",
+    "description": "Traditional South African bobotie adapted to be gluten-free and onion-free.",
+    "difficulty": "Medium",
+    "prepTime": 20,
+    "cookTime": 45,
+    "servings": 6,
+    "tags": [
+      "South African",
+      "Gluten Free",
+      "Comfort Food"
+    ],
+    "ingredients": [
+      "500g beef mince",
+      "2 slices GF bread",
+      "1 egg",
+      "Milk",
+      "Curry powder",
+      "Turmeric"
+    ],
+    "instructions": [
+      "Prepare mince mixture.",
+      "Add soaked GF bread.",
+      "Transfer to baking dish.",
+      "Top with egg custard.",
+      "Bake until golden."
+    ],
+    "huntressNotes": [
+      "GF",
+      "Traditional Favourite"
+    ]
+  },
+  {
+    "id": "dessert-malva-pudding",
+    "category": "Dessert",
+    "subcategory": "South African",
+    "name": "Malva Pudding (GF)",
+    "description": "Classic South African dessert adapted for gluten-free cooking.",
+    "difficulty": "Medium",
+    "prepTime": 20,
+    "cookTime": 35,
+    "servings": 8,
+    "tags": [
+      "Dessert",
+      "South African",
+      "Gluten Free"
+    ],
+    "ingredients": [
+      "GF flour",
+      "Eggs",
+      "Milk",
+      "Butter",
+      "Sugar",
+      "Apricot jam"
+    ],
+    "instructions": [
+      "Prepare batter.",
+      "Bake until cooked.",
+      "Pour warm sauce over pudding.",
+      "Serve warm."
+    ],
+    "huntressNotes": [
+      "GF Treat"
+    ]
+  },
+  {
+    "id": "dessert-peppermint-crisp-tart",
+    "category": "Dessert",
+    "subcategory": "South African",
+    "name": "Peppermint Crisp Tart (GF)",
+    "description": "South African favourite using gluten-free biscuits.",
+    "difficulty": "Easy",
+    "prepTime": 20,
+    "cookTime": 0,
+    "servings": 8,
+    "tags": [
+      "Dessert",
+      "No Bake",
+      "South African"
+    ],
+    "ingredients": [
+      "GF biscuits",
+      "Peppermint Crisp chocolate",
+      "Cream",
+      "Caramel Treat"
+    ],
+    "instructions": [
+      "Layer biscuits.",
+      "Add caramel mixture.",
+      "Add peppermint crisp.",
+      "Chill before serving."
+    ],
+    "huntressNotes": [
+      "GF Adaptation"
+    ]
+  }
+]

@@ -269,6 +269,12 @@ body {
   text-decoration: underline;
 }
 
+.recipe-list .coming-soon {
+  color: var(--muted-text);
+  font-style: italic;
+  list-style: none;
+}
+
 .photo-row {
   display: flex;
   gap: 0.5rem;
