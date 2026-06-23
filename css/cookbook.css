@@ -1,0 +1,588 @@
+/* The Huntress Cookbook — Elegant Woodland Theme */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Dancing+Script:wght@400;500;600&display=swap');
+
+:root {
+  --forest-green: #1a3d2e;
+  --deep-evergreen: #0f2a1f;
+  --warm-gold: #c9a227;
+  --gold-light: #e8d5a3;
+  --cream: #f5f0e8;
+  --ivory: #faf7f2;
+  --soft-brown: #5c4a3a;
+  --muted-text: #8a9a8e;
+  --sidebar-muted: #a8b8a8;
+  --tip-green: #e8f0e8;
+  --heart-red: #c45c5c;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  background: #e8e4dc;
+  color: var(--soft-brown);
+  line-height: 1.5;
+}
+
+/* ── Page Shell ── */
+
+.page {
+  width: 297mm;
+  min-height: 210mm;
+  margin: 2rem auto;
+  background: var(--cream);
+  display: flex;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  overflow: hidden;
+}
+
+@media print {
+  body { background: white; }
+  .page {
+    margin: 0;
+    box-shadow: none;
+    width: 100%;
+    min-height: auto;
+    page-break-after: always;
+  }
+  .no-print { display: none !important; }
+}
+
+/* ── Sidebar ── */
+
+.sidebar {
+  width: 25%;
+  min-width: 200px;
+  background: var(--forest-green);
+  color: var(--sidebar-muted);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.25rem;
+}
+
+.sidebar-logo {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-logo img,
+.sidebar-logo svg {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-brand {
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  color: var(--warm-gold);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.sidebar-nav {
+  list-style: none;
+  flex: 1;
+  font-size: 0.78rem;
+  line-height: 1.9;
+}
+
+.sidebar-nav li {
+  padding-left: 0.25rem;
+}
+
+.sidebar-nav li.active {
+  color: var(--warm-gold);
+  font-weight: 600;
+}
+
+.sidebar-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.sidebar-nav a:hover {
+  color: var(--warm-gold);
+}
+
+.sidebar-tagline {
+  font-family: 'Dancing Script', cursive;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.85);
+  text-align: center;
+  margin: 1.5rem 0;
+  line-height: 1.4;
+}
+
+.sidebar-tagline .heart {
+  color: var(--warm-gold);
+}
+
+.sidebar-notes {
+  border: 1px solid var(--warm-gold);
+  border-radius: 4px;
+  padding: 0.75rem;
+  margin-top: auto;
+}
+
+.sidebar-notes-title {
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  color: var(--warm-gold);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.sidebar-notes p {
+  font-size: 0.72rem;
+  line-height: 1.55;
+  color: var(--sidebar-muted);
+}
+
+/* ── Main Content ── */
+
+.main {
+  flex: 1;
+  padding: 2rem 2.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.chapter-header {
+  text-align: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.chapter-header h1 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  letter-spacing: 0.35em;
+  color: var(--forest-green);
+  text-indent: 0.35em;
+}
+
+.chapter-divider {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0;
+  color: var(--warm-gold);
+}
+
+.branch-illustration {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  opacity: 0.7;
+}
+
+.chapter-intro {
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--soft-brown);
+  max-width: 90%;
+  margin: 0 auto 1.5rem;
+  line-height: 1.6;
+}
+
+/* ── Category Sections ── */
+
+.categories {
+  flex: 1;
+}
+
+.category {
+  margin-bottom: 1.25rem;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.category-icon {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--forest-green);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  color: var(--forest-green);
+  flex-shrink: 0;
+}
+
+.category-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--forest-green);
+  letter-spacing: 0.02em;
+}
+
+.category-desc {
+  font-size: 0.78rem;
+  color: var(--muted-text);
+  margin-bottom: 0.4rem;
+  padding-left: 2.25rem;
+}
+
+.category-content {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 1rem;
+  padding-left: 0.5rem;
+}
+
+.recipe-list {
+  list-style: none;
+  font-size: 0.82rem;
+  line-height: 1.85;
+}
+
+.recipe-list li::before {
+  content: '♥';
+  color: var(--heart-red);
+  font-size: 0.65rem;
+  margin-right: 0.4rem;
+}
+
+.recipe-list a {
+  color: var(--soft-brown);
+  text-decoration: none;
+}
+
+.recipe-list a:hover {
+  color: var(--forest-green);
+  text-decoration: underline;
+}
+
+.photo-row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-end;
+}
+
+.photo-item {
+  flex: 1;
+  text-align: center;
+}
+
+.photo-item img,
+.photo-placeholder {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+
+.photo-placeholder {
+  background: linear-gradient(135deg, #d4c4a8 0%, #b8a88c 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.8);
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.photo-caption {
+  font-family: 'Dancing Script', cursive;
+  font-size: 0.75rem;
+  color: var(--soft-brown);
+  margin-top: 0.25rem;
+}
+
+/* ── Footer ── */
+
+.chapter-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: end;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.huntress-tip {
+  background: var(--tip-green);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+.huntress-tip strong {
+  color: var(--forest-green);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.huntress-tip .heart {
+  color: var(--forest-green);
+}
+
+.chapter-quote {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.1rem;
+  text-align: right;
+  color: var(--soft-brown);
+  line-height: 1.4;
+}
+
+.page-number {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--warm-gold);
+  letter-spacing: 0.5em;
+  margin-top: 0.5rem;
+}
+
+/* ── Recipe Page ── */
+
+.recipe-page .main {
+  padding: 2.5rem 3rem;
+}
+
+.recipe-page .sidebar {
+  padding: 2rem 1rem;
+}
+
+.recipe-header {
+  border-bottom: 1px solid var(--gold-light);
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.recipe-header h1 {
+  font-size: 2rem;
+  color: var(--forest-green);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.recipe-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  font-size: 0.85rem;
+  color: var(--muted-text);
+}
+
+.recipe-meta span strong {
+  color: var(--forest-green);
+  font-weight: 600;
+}
+
+.recipe-status {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.status-approved {
+  background: #d4edda;
+  color: #1a5c2e;
+}
+
+.status-testing {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status-untested {
+  background: #e9ecef;
+  color: #6c757d;
+}
+
+.recipe-body {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2rem;
+}
+
+.recipe-body h2 {
+  font-size: 1rem;
+  color: var(--forest-green);
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.recipe-ingredients ul {
+  list-style: none;
+  font-size: 0.9rem;
+  line-height: 1.9;
+}
+
+.recipe-ingredients li::before {
+  content: '•';
+  color: var(--warm-gold);
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+.recipe-method ol {
+  padding-left: 1.25rem;
+  font-size: 0.9rem;
+  line-height: 1.85;
+}
+
+.recipe-method li {
+  margin-bottom: 0.5rem;
+}
+
+.recipe-notes {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--gold-light);
+}
+
+.note-box {
+  background: var(--ivory);
+  border-left: 3px solid var(--warm-gold);
+  padding: 0.75rem 1rem;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.note-box.huntress {
+  border-left-color: var(--forest-green);
+}
+
+.note-box h3 {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: var(--forest-green);
+  margin-bottom: 0.35rem;
+  text-transform: uppercase;
+}
+
+.recipe-rating {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--warm-gold);
+  letter-spacing: 0.2em;
+}
+
+.recipe-photo {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.recipe-photo img,
+.recipe-photo .photo-placeholder {
+  max-width: 320px;
+  margin: 0 auto;
+  aspect-ratio: 4/3;
+}
+
+/* ── Index / Landing ── */
+
+.landing {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 3rem;
+  background: var(--cream);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  text-align: center;
+}
+
+.landing-logo {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.landing h1 {
+  font-size: 1.8rem;
+  color: var(--forest-green);
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.landing .subtitle {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.3rem;
+  color: var(--warm-gold);
+  margin-bottom: 2rem;
+}
+
+.landing-nav {
+  list-style: none;
+  text-align: left;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.landing-nav li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--gold-light);
+  font-size: 1rem;
+}
+
+.landing-nav a {
+  color: var(--soft-brown);
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.landing-nav a:hover {
+  color: var(--forest-green);
+}
+
+.landing-nav .available {
+  color: var(--forest-green);
+  font-weight: 600;
+}
+
+.landing-nav .coming-soon {
+  color: var(--muted-text);
+  font-style: italic;
+}
+
+.landing-tagline {
+  margin-top: 2rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.1rem;
+  color: var(--soft-brown);
+}
+
+.print-hint {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: var(--muted-text);
+}
+
+.print-hint a {
+  color: var(--forest-green);
+}
