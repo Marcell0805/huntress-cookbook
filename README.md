@@ -23,6 +23,8 @@ huntress-cookbook/
 │   └── cheese-herb-omelette.html
 ├── css/
 │   └── cookbook.css        ← Design system
+├── js/
+│   └── auth.js             ← Password gate
 └── assets/
     ├── fox-logo.svg
     └── images/             ← Add your food photos here
@@ -62,6 +64,24 @@ Link the new recipe from the relevant chapter page.
 | Warm Gold | `#c9a227` |
 | Cream | `#f5f0e8` |
 | Soft Brown | `#5c4a3a` |
+
+## View in VS Code / Cursor
+
+1. **File → Open Folder** → select the `huntress-cookbook` folder
+2. Install **Live Server** when prompted (or Extensions → search "Live Server")
+3. Right-click **`index.html`** → **Open with Live Server**
+
+Your browser opens at **`http://127.0.0.1:5500`** (not 8080). Save any file and the page refreshes automatically.
+
+> Live Server is a VS Code extension — you do **not** need Python or Node installed.
+
+## Password Gate
+
+The cookbook has a simple password screen (`1234`) to keep casual visitors out. Once entered, the browser remembers for the session (until the tab is closed).
+
+> This is not high-security — it stops random link-clickers, not someone determined to view the source.
+
+To change the password, edit `PASSWORD` in `js/auth.js`.
 
 ## Fonts
 

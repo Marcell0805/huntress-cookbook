@@ -586,3 +586,95 @@ body {
 .print-hint a {
   color: var(--forest-green);
 }
+
+/* ── Password Gate ── */
+
+html:not(.auth-ok) body > :not(#auth-gate) {
+  display: none;
+}
+
+.auth-gate {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--forest-green);
+  padding: 2rem;
+}
+
+.auth-gate-card {
+  background: var(--cream);
+  border-radius: 8px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  max-width: 360px;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--gold-light);
+}
+
+.auth-gate-logo {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
+}
+
+.auth-gate-title {
+  font-size: 1.4rem;
+  color: var(--forest-green);
+  letter-spacing: 0.15em;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.auth-gate-subtitle {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.1rem;
+  color: var(--warm-gold);
+  margin-bottom: 1.5rem;
+}
+
+.auth-gate-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.auth-gate-input {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1rem;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--gold-light);
+  border-radius: 4px;
+  background: var(--ivory);
+  color: var(--soft-brown);
+  text-align: center;
+}
+
+.auth-gate-input:focus {
+  outline: none;
+  border-color: var(--warm-gold);
+}
+
+.auth-gate-error {
+  font-size: 0.85rem;
+  color: var(--heart-red);
+  margin: 0;
+}
+
+.auth-gate-button {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  padding: 0.6rem 1.5rem;
+  background: var(--forest-green);
+  color: var(--cream);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.auth-gate-button:hover {
+  background: var(--deep-evergreen);
+}
