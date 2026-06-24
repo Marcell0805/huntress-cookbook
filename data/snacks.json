@@ -195,14 +195,14 @@
           "ingredients": [
             "6 eggs",
             "50g cheddar cheese",
-            "1 bell pepper",
+            "Handful spinach",
             "Salt",
             "Black pepper"
           ],
           "instructions": [
             "Preheat oven to 180°C.",
             "Whisk eggs in a bowl.",
-            "Add diced pepper and cheese.",
+            "Add spinach and cheese.",
             "Season lightly.",
             "Pour into muffin tray.",
             "Bake until set and golden.",
@@ -221,7 +221,7 @@
             "Protein",
             "Meal Prep"
           ],
-          "imagePrompt": "Golden egg muffins with cheese and peppers on wooden serving board, healthy snack photography"
+          "imagePrompt": "Golden egg muffins with cheese and spinach on wooden serving board, healthy snack photography"
         },
         {
           "id": "chicken-snack-cups",

@@ -419,7 +419,7 @@
           "status": "Untested",
           "ingredients": [
             "Carrots",
-            "Bell peppers",
+            "Butternut",
             "Baby potatoes",
             "Olive oil",
             "Salt",
@@ -528,86 +528,6 @@
             "Cheese"
           ],
           "imagePrompt": "Stuffed mushrooms cooking on braai grill, rustic South African outdoor food photography"
-        }
-      ]
-    },
-    {
-      "name": "Braai Desserts",
-      "recipes": [
-        {
-          "id": "braaied-peaches",
-          "name": "Braaied Peaches",
-          "category": "Braai",
-          "subcategory": "Braai Desserts",
-          "description": "Sweet peaches lightly caramelised over the coals.",
-          "prepTime": "5 min",
-          "cookTime": "10 min",
-          "difficulty": "Easy",
-          "servings": "4",
-          "status": "Untested",
-          "ingredients": [
-            "4 peaches",
-            "1 tbsp honey",
-            "Cinnamon"
-          ],
-          "instructions": [
-            "Cut peaches in half.",
-            "Remove pits.",
-            "Brush with honey.",
-            "Sprinkle cinnamon.",
-            "Place on braai grid.",
-            "Cook until caramelised."
-          ],
-          "huntressNotes": [
-            "Gluten Free",
-            "Naturally Sweet"
-          ],
-          "foxNotes": [
-            "Excellent with vanilla ice cream."
-          ],
-          "tags": [
-            "Dessert",
-            "Fruit",
-            "Braai"
-          ],
-          "imagePrompt": "Caramelised peaches cooking on braai grill, golden sunset outdoor photography"
-        },
-        {
-          "id": "cinnamon-braai-apples",
-          "name": "Cinnamon Braai Apples",
-          "category": "Braai",
-          "subcategory": "Braai Desserts",
-          "description": "Warm apples cooked with cinnamon until soft and fragrant.",
-          "prepTime": "10 min",
-          "cookTime": "20 min",
-          "difficulty": "Easy",
-          "servings": "4",
-          "status": "Untested",
-          "ingredients": [
-            "4 apples",
-            "1 tsp cinnamon",
-            "1 tbsp honey"
-          ],
-          "instructions": [
-            "Core apples.",
-            "Fill centres with cinnamon and honey.",
-            "Wrap in foil.",
-            "Cook on coals until soft.",
-            "Serve warm."
-          ],
-          "huntressNotes": [
-            "Gluten Free",
-            "Winter Favourite"
-          ],
-          "foxNotes": [
-            "Smells incredible while cooking."
-          ],
-          "tags": [
-            "Dessert",
-            "Apple",
-            "Braai"
-          ],
-          "imagePrompt": "Foil wrapped cinnamon apples beside braai coals, cozy outdoor dessert photography"
         }
       ]
     },

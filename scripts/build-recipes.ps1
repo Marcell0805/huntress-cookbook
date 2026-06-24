@@ -1,4 +1,4 @@
-$root = "C:\Users\msvn\OneDrive - Hulamin Limited\Documents\MSVN\Personal\huntress-cookbook"
+$root = Split-Path $PSScriptRoot -Parent
 $utf8 = [System.Text.UTF8Encoding]::new($false)
 
 function Read-JsonFile([string]$path) {
@@ -25,7 +25,6 @@ $slugOverrides = @{
     "Peppermint Crisp Tart (GF)" = "peppermint-crisp-tart-gf"
     "Greek Salad (Onion-Free)" = "greek-salad-onion-free"
     "Greek Salad (Onion Free)" = "greek-salad-onion-free"
-    "Shakshuka (Onion-Free)" = "shakshuka-onion-free"
     "French Toast (GF Bread)" = "french-toast-gf-bread"
     "Potato Salad (Onion-Free)" = "potato-salad-onion-free"
     "Potato Salad (Onion Free)" = "potato-salad-onion-free"
@@ -63,6 +62,7 @@ $categoryMeta = @{
     SoupsComfortFoods = @{ id = "soups"; label = "Soups & Comfort Foods" }
     Desserts = @{ id = "desserts"; label = "Desserts" }
     SnacksPicnicFoods = @{ id = "snacks"; label = "Snacks & Picnic Foods" }
+    ApprovedHuntressMeals = @{ id = "approved-meals"; label = "Approved Huntress Meals" }
 }
 
 function Ensure-Array($value, $default) {
@@ -91,6 +91,7 @@ function Normalize-Status($value) {
     if (-not $value) { return "untested" }
     $s = $value.ToString().ToLower().Trim()
     if ($s -match 'approv') { return "approved" }
+    if ($s -match 'tweak') { return "tweaking" }
     if ($s -eq 'testing' -or $s -eq 'in testing') { return "testing" }
     return "untested"
 }
@@ -197,6 +198,7 @@ $chapterDataFiles = [ordered]@{
     desserts  = "desserts.json"
     snacks    = "snacks.json"
     drinks    = "drinks.json"
+    'approved-meals' = "approved-meals.json"
 }
 
 function Import-ChapterFile([string]$chapterId, [string]$fileName, [string]$catLabel) {
@@ -333,6 +335,7 @@ $chapterLinks = @{
     desserts = "desserts.html"
     snacks = "snacks.html"
     drinks = "drinks.html"
+    'approved-meals' = "approved-meals.html"
 }
 
 function Convert-CookbookPageShell([string]$content, [string]$scope, [string]$activeNav) {
@@ -488,6 +491,7 @@ $chapterNavIds = @{
     'desserts.html' = 'desserts'
     'snacks.html' = 'snacks'
     'drinks.html' = 'drinks'
+    'approved-meals.html' = 'approved-meals'
     'future-recipes.html' = 'future-recipes'
 }
 

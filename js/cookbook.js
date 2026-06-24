@@ -35,6 +35,18 @@
     return [String(val)];
   }
 
+  var GLUTEN_WATCH_FOODS = ['Biltong', 'Droëwors'];
+
+  function renderFoodList(items, glutenNote) {
+    var html = '<ul class="recipe-list">';
+    items.forEach(function (item) { html += '<li>' + esc(item) + '</li>'; });
+    html += '</ul>';
+    if (glutenNote && items.some(function (item) { return GLUTEN_WATCH_FOODS.indexOf(item) !== -1; })) {
+      html += '<p class="dietary-food-note">' + esc(glutenNote) + '</p>';
+    }
+    return html;
+  }
+
   function getRecipe(slug) {
     return window.HUNTRESS_COOKBOOK && HUNTRESS_COOKBOOK.recipes[slug];
   }
@@ -64,6 +76,7 @@
 
   function statusLabel(status) {
     if (status === 'approved') return { cls: 'status-approved', text: 'Huntress Approved' };
+    if (status === 'tweaking') return { cls: 'status-tweaking', text: 'Needs Tweaking' };
     if (status === 'testing') return { cls: 'status-testing', text: 'In Testing' };
     return { cls: 'status-untested', text: 'Untested' };
   }
@@ -80,7 +93,8 @@
     soups: { href: '../chapters/soups.html', label: 'Soups & Comfort Foods' },
     desserts: { href: '../chapters/desserts.html', label: 'Desserts' },
     snacks: { href: '../chapters/snacks.html', label: 'Snacks & Picnic Foods' },
-    drinks: { href: '../chapters/drinks.html', label: 'Drinks' }
+    drinks: { href: '../chapters/drinks.html', label: 'Drinks' },
+    'approved-meals': { href: '../chapters/approved-meals.html', label: 'Approved Huntress Meals' }
   };
 
   var COOKBOOK_NAV = [
@@ -96,7 +110,7 @@
     { id: 'snacks', num: 10, file: 'snacks.html', label: 'Snacks & Picnic Foods', available: true },
     { id: 'drinks', num: 11, file: 'drinks.html', label: 'Drinks', available: true },
     { id: 'special-occasions', num: 12, file: null, label: 'Special Occasion Meals', available: false },
-    { id: 'approved-meals', num: 13, file: null, label: 'Approved Huntress Meals', available: false },
+    { id: 'approved-meals', num: 13, file: 'approved-meals.html', label: 'Approved Huntress Meals', available: true },
     { id: 'improvement-notes', num: 14, file: null, label: 'Recipe Improvement Notes', available: false },
     { id: 'future-recipes', num: 15, file: 'future-recipes.html', label: 'Future Recipes To Try', available: true }
   ];
@@ -114,6 +128,7 @@
     desserts: { title: '\uD83C\uDF70 DESSERT NOTES', text: 'Gluten-free treats and no-bake favourites \u2014 because every Huntress deserves something sweet.' },
     snacks: { title: '\uD83E\uDDF3 SNACK NOTES', text: 'Light bites for trails, picnics, and those in-between moments \u2014 all Huntress-safe.' },
     drinks: { title: '\u2615 DRINK NOTES', text: 'Comfort drinks, smoothies, coolers and everyday beverages for the Huntress.' },
+    'approved-meals': { title: '\u2665 APPROVED MEALS', text: 'Tested favourites and recipes currently being refined to Huntress perfection.' },
     'future-recipes': { title: '\u2728 FUTURE IDEAS', text: 'Recipes to explore when you are ready for the next kitchen adventure.' }
   };
   var SVG_BACK = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>';
@@ -206,7 +221,7 @@
 
     aside.innerHTML =
       '<div class="sidebar-logo">' +
-        '<img src="../assets/fox-logo.svg" alt="Sly Fox">' +
+        '<img src="../assets/fox-huntress-logo.png" alt="Fox &amp; Huntress">' +
         '<div class="sidebar-brand">THE HUNTRESS<br>COOKBOOK</div>' +
       '</div>' +
       navHtml +
@@ -759,17 +774,15 @@
     if (data.favouriteSafeFoods && data.favouriteSafeFoods.length) {
       html += '<section class="category" id="section-favourite-safe-foods">';
       html += '<div class="category-header"><h2 class="category-title">Favourite Safe Foods</h2></div>';
-      html += '<ul class="recipe-list">';
-      data.favouriteSafeFoods.forEach(function (item) { html += '<li>' + esc(item) + '</li>'; });
-      html += '</ul></section>';
+      html += renderFoodList(data.favouriteSafeFoods, data.biltongDroeworsGlutenNote);
+      html += '</section>';
     }
 
     if (data.emergencyFoods && data.emergencyFoods.length) {
       html += '<section class="category" id="section-emergency-foods">';
       html += '<div class="category-header"><h2 class="category-title">Emergency Foods</h2></div>';
-      html += '<ul class="recipe-list">';
-      data.emergencyFoods.forEach(function (item) { html += '<li>' + esc(item) + '</li>'; });
-      html += '</ul></section>';
+      html += renderFoodList(data.emergencyFoods, data.biltongDroeworsGlutenNote);
+      html += '</section>';
     }
 
     html += '</div>';
@@ -797,6 +810,18 @@
           html += '<ul class="recipe-list">';
           sec.items.forEach(function (item) { html += '<li>' + esc(item) + '</li>'; });
           html += '</ul>';
+        }
+        if (sec.conditionalItems && sec.conditionalItems.length) {
+          sec.conditionalItems.forEach(function (item) {
+            html += '<div class="conditional-ingredient">';
+            html += '<h3 class="conditional-ingredient-title">' + esc(item.ingredient) + ' <span class="conditional-status">(' + esc(item.status) + ')</span></h3>';
+            if (item.notes && item.notes.length) {
+              html += '<ul class="recipe-list dietary-notes">';
+              item.notes.forEach(function (note) { html += '<li>' + esc(note) + '</li>'; });
+              html += '</ul>';
+            }
+            html += '</div>';
+          });
         }
         if (sec.notes && sec.notes.length) {
           html += '<ul class="recipe-list dietary-notes">';

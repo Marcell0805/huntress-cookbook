@@ -197,54 +197,6 @@
           "foxRating": 0
         },
         {
-          "id": "breakfast-shakshuka",
-          "name": "Shakshuka (Onion-Free)",
-          "category": "Breakfast",
-          "subcategory": "Egg Based Breakfasts",
-          "description": "Eggs poached in a rich tomato and pepper sauce adapted to be onion-free.",
-          "prepTime": "10 min",
-          "cookTime": "20 min",
-          "difficulty": "Medium",
-          "servings": "2",
-          "status": "Untested",
-          "ingredients": [
-            "1 tin chopped tomatoes",
-            "1 red pepper",
-            "2 garlic cloves",
-            "1 tsp paprika",
-            "3 eggs",
-            "1 tbsp olive oil"
-          ],
-          "instructions": [
-            "Heat olive oil.",
-            "Cook peppers until softened.",
-            "Add garlic.",
-            "Add tomatoes and paprika.",
-            "Simmer for 15 minutes.",
-            "Create wells in sauce.",
-            "Crack eggs into wells.",
-            "Cover and cook until eggs are set."
-          ],
-          "huntressNotes": [
-            "Onion Free",
-            "Weekend Breakfast",
-            "Gluten Free"
-          ],
-          "foxNotes": [
-            "Looks impressive for very little effort."
-          ],
-          "tags": [
-            "Gluten Free",
-            "Weekend Breakfast",
-            "Egg Based"
-          ],
-          "image": "images/breakfast/shakshuka.jpg",
-          "imagePrompt": "Onion-free shakshuka in cast iron pan with eggs and tomato sauce, rustic breakfast photography",
-          "approved": false,
-          "huntressRating": 0,
-          "foxRating": 0
-        },
-        {
           "id": "breakfast-feta-spinach-frittata",
           "name": "Feta & Spinach Frittata",
           "category": "Breakfast",
@@ -684,51 +636,6 @@
           ],
           "image": "images/breakfast/gf-pancakes.jpg",
           "imagePrompt": "Stack of gluten free pancakes with berries and honey, premium breakfast cookbook photography",
-          "approved": false,
-          "huntressRating": 0,
-          "foxRating": 0
-        },
-        {
-          "id": "breakfast-apple-cinnamon-oats",
-          "name": "Apple & Cinnamon Oats",
-          "category": "Breakfast",
-          "subcategory": "Warm & Comforting",
-          "description": "A comforting oat breakfast featuring soft apples and warming cinnamon.",
-          "prepTime": "5 min",
-          "cookTime": "10 min",
-          "difficulty": "Easy",
-          "servings": "1",
-          "status": "Untested",
-          "ingredients": [
-            "1/2 cup GF oats",
-            "250ml milk",
-            "1 apple",
-            "1 tsp cinnamon",
-            "1 tsp honey"
-          ],
-          "instructions": [
-            "Dice apple into small cubes.",
-            "Cook oats in milk.",
-            "Add apple and cinnamon.",
-            "Cook until apples soften slightly.",
-            "Top with honey.",
-            "Serve warm."
-          ],
-          "huntressNotes": [
-            "Gluten Free",
-            "Winter Breakfast",
-            "Naturally Sweet"
-          ],
-          "foxNotes": [
-            "Smells amazing while cooking."
-          ],
-          "tags": [
-            "Gluten Free",
-            "Comfort Food",
-            "Winter"
-          ],
-          "image": "images/breakfast/apple-cinnamon-oats.jpg",
-          "imagePrompt": "Warm bowl of oats with apple slices and cinnamon, cozy breakfast photography",
           "approved": false,
           "huntressRating": 0,
           "foxRating": 0

@@ -217,29 +217,30 @@
                     "imagePrompt": "Homemade chicken soup with carrots in rustic bowl, warm comforting food photography"
                 },
                 {
-                    "id": "roasted-red-pepper-soup",
-                    "name": "Roasted Red Pepper Soup",
+                    "id": "creamy-mushroom-soup",
+                    "name": "Creamy Mushroom Soup",
                     "category": "Soups & Comfort Foods",
-                    "description": "A smooth roasted pepper soup with a rich and slightly sweet flavour.",
+                    "description": "A smooth and comforting mushroom soup with a rich, creamy finish.",
                     "prepTime": "15 min",
-                    "cookTime": "35 min",
+                    "cookTime": "30 min",
                     "difficulty": "Easy",
                     "servings": "4",
                     "status": "Untested",
                     "ingredients": [
-                        "4 red peppers",
+                        "500g mushrooms",
                         "750ml stock",
                         "1 tbsp olive oil",
                         "250ml cream",
+                        "2 garlic cloves",
                         "Salt",
                         "Black pepper"
                     ],
                     "instructions": [
-                        "Roast peppers until skins darken.",
-                        "Remove skins.",
-                        "Blend peppers with stock.",
-                        "Transfer to pot.",
-                        "Add cream.",
+                        "Slice mushrooms.",
+                        "Sauté mushrooms and garlic in olive oil until golden.",
+                        "Add stock and simmer for 15 minutes.",
+                        "Blend until smooth.",
+                        "Stir in cream.",
                         "Heat gently.",
                         "Season and serve."
                     ],
@@ -248,15 +249,14 @@
                         "Onion Free"
                     ],
                     "foxNotes": [
-                        "One of the most flavourful soups in the collection."
+                        "Replaces red pepper soup per Huntress preference."
                     ],
                     "tags": [
-                        "Red Pepper",
+                        "Mushroom",
                         "Soup",
                         "Comfort Food"
                     ],
-                    "image": "roasted-red-pepper-soup.jpg",
-                    "imagePrompt": "Roasted red pepper soup served in elegant bowl with cream swirl"
+                    "imagePrompt": "Creamy mushroom soup served in elegant bowl with fresh herbs"
                 }
             ]
         },
@@ -393,7 +393,7 @@
                     "ingredients": [
                         "Sweet potato",
                         "Carrots",
-                        "Peppers",
+                        "Butternut",
                         "Olive oil",
                         "Salt",
                         "Black pepper"

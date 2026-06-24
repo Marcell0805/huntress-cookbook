@@ -35,7 +35,6 @@
         "Excessive Soda",
         "Soya",
         "Plant Based Meat Alternatives",
-        "Overripe Bananas",
         "Wine",
         "Very Oily Foods"
       ]
@@ -65,6 +64,7 @@
   "foxAndHuntressNotes": {
     "message": "This cookbook is more than a recipe collection. It is a record of meals, adventures, road trips, braais, movie nights and future memories. Recipes may evolve over time as new favourites are discovered and old ones are refined."
   },
+  "biltongDroeworsGlutenNote": "Just note these need to be watched for Gluten as well since some places use gluten spices to make them",
   "favouriteSafeFoods": [
     "Grapes",
     "Yogurt",

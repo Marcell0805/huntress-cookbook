@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Approved Huntress Meals — The Huntress Cookbook</title>
+  <link rel="stylesheet" href="../css/cookbook.css">
+  <style>html:not(.auth-ok) body > :not(#auth-gate) { display: none; }</style>
+  <script src="../js/auth.js"></script>
+</head>
+<body data-nav-scope="chapter" data-nav-active="approved-meals">
+  <div id="cookbook-toolbar"></div>
+
+  <div class="page">
+    <aside class="sidebar" data-cookbook-sidebar></aside>
+
+    <main class="main">
+      <svg class="branch-illustration" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M90 10 Q70 20 60 35 Q50 50 40 55 Q30 60 15 65" stroke="#7a9e7a" stroke-width="1.5" fill="none" opacity="0.6"/>
+        <ellipse cx="75" cy="22" rx="8" ry="5" fill="#a8c4a0" opacity="0.5" transform="rotate(-30 75 22)"/>
+        <ellipse cx="62" cy="38" rx="9" ry="5" fill="#8fb88a" opacity="0.45" transform="rotate(20 62 38)"/>
+        <ellipse cx="48" cy="50" rx="7" ry="4" fill="#a8c4a0" opacity="0.5" transform="rotate(-15 48 50)"/>
+        <ellipse cx="30" cy="58" rx="8" ry="5" fill="#7a9e7a" opacity="0.4" transform="rotate(25 30 58)"/>
+      </svg>
+
+      <header class="chapter-header">
+        <h1>APPROVED HUNTRESS MEALS</h1>
+        <div class="chapter-divider">✿ ✿ ✿</div>
+      </header>
+
+      <p class="chapter-intro">
+        Recipes that have been tested, enjoyed and approved by the Huntress — plus favourites still being refined.
+      </p>
+
+      <div class="categories" id="chapter-recipes" data-chapter="approved-meals"></div>
+
+      <footer class="chapter-footer">
+        <div class="huntress-tip">
+          <strong>HUNTRESS TIP <span class="heart">♥</span></strong>
+          These are the meals worth making again — the ones that passed the taste test.
+        </div>
+        <blockquote class="chapter-quote">
+          "When it works, we keep it." <span class="heart">♥</span>
+        </blockquote>
+        <div class="page-number">◂ 13 ▸</div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="../js/recipes.js"></script>
+  <script src="../js/cookbook.js"></script>
+</body>
+</html>

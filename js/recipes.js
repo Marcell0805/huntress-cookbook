@@ -64,7 +64,6 @@ var HUNTRESS_COOKBOOK = {
                                                                                               "Excessive Soda",
                                                                                               "Soya",
                                                                                               "Plant Based Meat Alternatives",
-                                                                                              "Overripe Bananas",
                                                                                               "Wine",
                                                                                               "Very Oily Foods"
                                                                                           ]
@@ -94,6 +93,7 @@ var HUNTRESS_COOKBOOK = {
                          "foxAndHuntressNotes":  {
                                                      "message":  "This cookbook is more than a recipe collection. It is a record of meals, adventures, road trips, braais, movie nights and future memories. Recipes may evolve over time as new favourites are discovered and old ones are refined."
                                                  },
+                         "biltongDroeworsGlutenNote":  "Just note these need to be watched for Gluten as well since some places use gluten spices to make them",
                          "favouriteSafeFoods":  [
                                                     "Grapes",
                                                     "Yogurt",
@@ -142,6 +142,41 @@ var HUNTRESS_COOKBOOK = {
                                                         ]
                                           },
                                           {
+                                              "title":  "Strong Preferences",
+                                              "items":  [
+                                                            "No Pronutro",
+                                                            "No cooked oats",
+                                                            "No stuffed peppers",
+                                                            "No braaied fruit",
+                                                            "No cooked apples",
+                                                            "No mini frittatas",
+                                                            "Bell peppers strongly disliked"
+                                                        ]
+                                          },
+                                          {
+                                              "title":  "Conditional Ingredients",
+                                              "conditionalItems":  [
+                                                                       {
+                                                                           "ingredient":  "Bananas",
+                                                                           "status":  "Conditional",
+                                                                           "notes":  [
+                                                                                         "Semi-green bananas acceptable.",
+                                                                                         "Yellow bananas acceptable.",
+                                                                                         "Overripe bananas mainly reserved for banana bread."
+                                                                                     ]
+                                                                       },
+                                                                       {
+                                                                           "ingredient":  "Oats",
+                                                                           "status":  "Conditional",
+                                                                           "notes":  [
+                                                                                         "Raw oats accepted.",
+                                                                                         "Cooked oats cause nausea.",
+                                                                                         "Overnight oats acceptable."
+                                                                                     ]
+                                                                       }
+                                                                   ]
+                                          },
+                                          {
                                               "title":  "Foods To Avoid",
                                               "items":  [
                                                             "Onions",
@@ -149,7 +184,6 @@ var HUNTRESS_COOKBOOK = {
                                                             "Artificial Sweeteners",
                                                             "Soy Products",
                                                             "Plant Based Meats",
-                                                            "Overripe Bananas",
                                                             "Wine",
                                                             "Very Oily Foods"
                                                         ]
@@ -260,10 +294,6 @@ var HUNTRESS_COOKBOOK = {
                                                 "items":  [
                                                               {
                                                                   "name":  "Carrots",
-                                                                  "priority":  "Essential"
-                                                              },
-                                                              {
-                                                                  "name":  "Bell Peppers",
                                                                   "priority":  "Essential"
                                                               },
                                                               {
@@ -517,11 +547,6 @@ var HUNTRESS_COOKBOOK = {
                                              "name":  "High Priority",
                                              "recipes":  [
                                                              {
-                                                                 "name":  "Gluten-Free Lasagne",
-                                                                 "status":  "Researching",
-                                                                 "priority":  "High"
-                                                             },
-                                                             {
                                                                  "name":  "Gluten-Free Pizza",
                                                                  "status":  "Researching",
                                                                  "priority":  "High"
@@ -588,7 +613,8 @@ var HUNTRESS_COOKBOOK = {
                           "soups":  "Warm, comforting meals designed for colder days, recovery periods and wholesome family dinners.",
                           "desserts":  "Sweet treats and comforting desserts adapted to be Huntress-friendly, gluten-conscious and made with simple ingredients.",
                           "snacks":  "Quick snacks, lunchbox fillers and road-trip foods that fit the Huntress lifestyle and dietary needs.",
-                          "drinks":  "Comfort drinks, smoothies, coolers and everyday beverages designed to be Huntress-friendly and easy to make in a South African kitchen."
+                          "drinks":  "Comfort drinks, smoothies, coolers and everyday beverages designed to be Huntress-friendly and easy to make in a South African kitchen.",
+                          "approved-meals":  "Recipes that have been tested, enjoyed and approved by the Huntress."
                       },
     "categories":  [
                        {
@@ -599,7 +625,6 @@ var HUNTRESS_COOKBOOK = {
                                                "mushroom-spinach-omelette",
                                                "bacon-avocado-eggs",
                                                "breakfast-soft-scrambled-eggs",
-                                               "shakshuka-onion-free",
                                                "feta-spinach-frittata",
                                                "berry-smoothie-bowl",
                                                "chia-pudding",
@@ -610,7 +635,6 @@ var HUNTRESS_COOKBOOK = {
                                                "creamy-cinnamon-oats",
                                                "sweet-potato-breakfast-hash",
                                                "gluten-free-pancakes",
-                                               "apple-cinnamon-oats",
                                                "french-toast-gf-bread",
                                                "overnight-oats",
                                                "boiled-eggs-fruit",
@@ -625,11 +649,9 @@ var HUNTRESS_COOKBOOK = {
                            "recipeSlugs":  [
                                                "chicken-avocado-salad",
                                                "greek-salad-onion-free",
-                                               "tuna-stuffed-peppers",
                                                "egg-salad-bowl",
                                                "chicken-rice-bowl",
                                                "chicken-skewers",
-                                               "mini-frittatas",
                                                "savoury-gf-muffins",
                                                "cheese-board-lunch",
                                                "rice-paper-rolls",
@@ -680,8 +702,6 @@ var HUNTRESS_COOKBOOK = {
                                                "foil-packet-veggies",
                                                "foil-potatoes",
                                                "stuffed-mushrooms",
-                                               "braaied-peaches",
-                                               "cinnamon-braai-apples",
                                                "the-fox-huntress-braai",
                                                "summer-braai-platter",
                                                "winter-braai-platter",
@@ -704,7 +724,7 @@ var HUNTRESS_COOKBOOK = {
                                                "carrot-ginger-soup",
                                                "chicken-vegetable-soup",
                                                "chicken-soup",
-                                               "roasted-red-pepper-soup",
+                                               "creamy-mushroom-soup",
                                                "chicken-rice-bowl",
                                                "beef-comfort-bowl",
                                                "creamy-mashed-potato-bowl",
@@ -724,7 +744,7 @@ var HUNTRESS_COOKBOOK = {
                                                "hot-chocolate-mug",
                                                "gf-brownie-bites",
                                                "honey-roasted-peaches",
-                                               "cinnamon-apples",
+                                               "fresh-apple-honey-slices",
                                                "berry-cream-cups",
                                                "honey-yogurt-grapes",
                                                "strawberry-cheesecake-cups",
@@ -736,7 +756,7 @@ var HUNTRESS_COOKBOOK = {
                                                "chocolate-strawberry-board",
                                                "peaches-cream",
                                                "mini-cheesecake-board",
-                                               "gf-carrot-cake",
+                                               "gf-vanilla-cake",
                                                "gf-red-velvet-cake",
                                                "gf-chocolate-cake",
                                                "gf-lemon-meringue",
@@ -801,7 +821,6 @@ var HUNTRESS_COOKBOOK = {
                                                "peach-honey-smoothie",
                                                "grape-smoothie",
                                                "strawberries-cream-smoothie",
-                                               "apple-cinnamon-smoothie",
                                                "tropical-mango-smoothie",
                                                "honey-lemon-cooler",
                                                "peach-iced-tea",
@@ -812,7 +831,6 @@ var HUNTRESS_COOKBOOK = {
                                                "classic-hot-chocolate",
                                                "honey-cinnamon-milk",
                                                "vanilla-steamed-milk",
-                                               "warm-apple-cinnamon-drink",
                                                "golden-honey-milk",
                                                "cold-water-infusion",
                                                "honey-lemon-travel-bottle",
@@ -832,6 +850,13 @@ var HUNTRESS_COOKBOOK = {
                                                "fox-huntress-signature-caf-menu",
                                                "caffeine-reference-guide"
                                            ]
+                       },
+                       {
+                           "id":  "approved-meals",
+                           "name":  "Approved Huntress Meals",
+                           "recipeSlugs":  [
+                                               "huntress-gf-lasagna"
+                                           ]
                        }
                    ],
     "chapters":  {
@@ -845,7 +870,6 @@ var HUNTRESS_COOKBOOK = {
                                                          "Mushroom \u0026 Spinach Omelette",
                                                          "Bacon \u0026 Avocado Eggs",
                                                          "Soft Scrambled Eggs with Chives",
-                                                         "Shakshuka (Onion-Free)",
                                                          "Feta \u0026 Spinach Frittata"
                                                      ]
                                        },
@@ -870,7 +894,6 @@ var HUNTRESS_COOKBOOK = {
                                                          "Creamy Cinnamon Oats",
                                                          "Sweet Potato Breakfast Hash",
                                                          "Gluten-Free Pancakes",
-                                                         "Apple \u0026 Cinnamon Oats",
                                                          "French Toast (GF Bread)"
                                                      ]
                                        },
@@ -895,7 +918,6 @@ var HUNTRESS_COOKBOOK = {
                                        "names":  [
                                                      "Chicken \u0026 Avocado Salad",
                                                      "Greek Salad (Onion-Free)",
-                                                     "Tuna Stuffed Peppers",
                                                      "Egg Salad Bowl",
                                                      "Chicken \u0026 Rice Bowl"
                                                  ]
@@ -906,7 +928,6 @@ var HUNTRESS_COOKBOOK = {
                                        "desc":  "Portable lunches designed for adventures, road trips, picnics, hiking days, and outdoor escapes with the Huntress.",
                                        "names":  [
                                                      "Chicken Skewers",
-                                                     "Mini Frittatas",
                                                      "Savoury GF Muffins",
                                                      "Cheese Board Lunch",
                                                      "Rice Paper Rolls"
@@ -1008,15 +1029,6 @@ var HUNTRESS_COOKBOOK = {
                                                  ]
                                    },
                                    {
-                                       "title":  "Braai Desserts",
-                                       "icon":  "peach",
-                                       "desc":  "",
-                                       "names":  [
-                                                     "Braaied Peaches",
-                                                     "Cinnamon Braai Apples"
-                                                 ]
-                                   },
-                                   {
                                        "title":  "Fox \u0026 Huntress Braai Platters",
                                        "icon":  "box",
                                        "desc":  "",
@@ -1060,7 +1072,7 @@ var HUNTRESS_COOKBOOK = {
                                                      "Carrot \u0026 Ginger Soup",
                                                      "Chicken \u0026 Vegetable Soup",
                                                      "Chicken Soup",
-                                                     "Roasted Red Pepper Soup"
+                                                     "Creamy Mushroom Soup"
                                                  ]
                                    },
                                    {
@@ -1104,7 +1116,7 @@ var HUNTRESS_COOKBOOK = {
                                           "desc":  "",
                                           "names":  [
                                                         "Honey Roasted Peaches",
-                                                        "Cinnamon Apples",
+                                                        "Fresh Apple \u0026 Honey Slices",
                                                         "Berry \u0026 Cream Cups",
                                                         "Honey Yogurt \u0026 Grapes"
                                                     ]
@@ -1144,7 +1156,7 @@ var HUNTRESS_COOKBOOK = {
                                           "icon":  "clock",
                                           "desc":  "",
                                           "names":  [
-                                                        "GF Carrot Cake",
+                                                        "GF Vanilla Cake",
                                                         "GF Red Velvet Cake",
                                                         "GF Chocolate Cake",
                                                         "GF Lemon Meringue",
@@ -1264,7 +1276,6 @@ var HUNTRESS_COOKBOOK = {
                                                       "Peach \u0026 Honey Smoothie",
                                                       "Grape Smoothie",
                                                       "Strawberries \u0026 Cream Smoothie",
-                                                      "Apple Cinnamon Smoothie",
                                                       "Tropical Mango Smoothie"
                                                   ]
                                     },
@@ -1289,7 +1300,6 @@ var HUNTRESS_COOKBOOK = {
                                                       "Classic Hot Chocolate",
                                                       "Honey Cinnamon Milk",
                                                       "Vanilla Steamed Milk",
-                                                      "Warm Apple Cinnamon Drink",
                                                       "Golden Honey Milk"
                                                   ]
                                     },
@@ -1331,7 +1341,17 @@ var HUNTRESS_COOKBOOK = {
                                                       "Caffeine Reference Guide"
                                                   ]
                                     }
-                                ]
+                                ],
+                     "approved-meals":  [
+                                            {
+                                                "title":  "In Development",
+                                                "icon":  "egg",
+                                                "desc":  "",
+                                                "names":  [
+                                                              "Huntress GF Lasagna"
+                                                          ]
+                                            }
+                                        ]
                  },
     "recipes":  {
                     "cheese-herb-omelette":  {
@@ -1487,45 +1507,6 @@ var HUNTRESS_COOKBOOK = {
                                                           "foxNotes":  "Great option when digestion is sensitive.",
                                                           "image":  "soft-scrambled-eggs.jpg"
                                                       },
-                    "shakshuka-onion-free":  {
-                                                 "id":  "breakfast-shakshuka",
-                                                 "slug":  "shakshuka-onion-free",
-                                                 "name":  "Shakshuka (Onion-Free)",
-                                                 "categoryId":  "breakfast",
-                                                 "category":  "Breakfast",
-                                                 "status":  "untested",
-                                                 "description":  "Eggs poached in a rich tomato and pepper sauce adapted to be onion-free.",
-                                                 "difficulty":  "Medium",
-                                                 "prepTime":  10,
-                                                 "cookTime":  20,
-                                                 "servings":  2,
-                                                 "tags":  [
-                                                              "Gluten Free",
-                                                              "Weekend Breakfast",
-                                                              "Egg Based"
-                                                          ],
-                                                 "ingredients":  [
-                                                                     "1 tin chopped tomatoes",
-                                                                     "1 red pepper",
-                                                                     "2 garlic cloves",
-                                                                     "1 tsp paprika",
-                                                                     "3 eggs",
-                                                                     "1 tbsp olive oil"
-                                                                 ],
-                                                 "instructions":  [
-                                                                      "Heat olive oil.",
-                                                                      "Cook peppers until softened.",
-                                                                      "Add garlic.",
-                                                                      "Add tomatoes and paprika.",
-                                                                      "Simmer for 15 minutes.",
-                                                                      "Create wells in sauce.",
-                                                                      "Crack eggs into wells.",
-                                                                      "Cover and cook until eggs are set."
-                                                                  ],
-                                                 "huntressNotes":  "Onion Free. Weekend Breakfast. Gluten Free",
-                                                 "foxNotes":  "Looks impressive for very little effort.",
-                                                 "image":  "shakshuka-onion-free.jpg"
-                                             },
                     "feta-spinach-frittata":  {
                                                   "id":  "breakfast-feta-spinach-frittata",
                                                   "slug":  "feta-spinach-frittata",
@@ -1872,42 +1853,6 @@ var HUNTRESS_COOKBOOK = {
                                                  "foxNotes":  "One of the recipes most likely to earn bonus points.",
                                                  "image":  "gluten-free-pancakes.jpg"
                                              },
-                    "apple-cinnamon-oats":  {
-                                                "id":  "breakfast-apple-cinnamon-oats",
-                                                "slug":  "apple-cinnamon-oats",
-                                                "name":  "Apple \u0026 Cinnamon Oats",
-                                                "categoryId":  "breakfast",
-                                                "category":  "Breakfast",
-                                                "status":  "untested",
-                                                "description":  "A comforting oat breakfast featuring soft apples and warming cinnamon.",
-                                                "difficulty":  "Easy",
-                                                "prepTime":  5,
-                                                "cookTime":  10,
-                                                "servings":  1,
-                                                "tags":  [
-                                                             "Gluten Free",
-                                                             "Comfort Food",
-                                                             "Winter"
-                                                         ],
-                                                "ingredients":  [
-                                                                    "1/2 cup GF oats",
-                                                                    "250ml milk",
-                                                                    "1 apple",
-                                                                    "1 tsp cinnamon",
-                                                                    "1 tsp honey"
-                                                                ],
-                                                "instructions":  [
-                                                                     "Dice apple into small cubes.",
-                                                                     "Cook oats in milk.",
-                                                                     "Add apple and cinnamon.",
-                                                                     "Cook until apples soften slightly.",
-                                                                     "Top with honey.",
-                                                                     "Serve warm."
-                                                                 ],
-                                                "huntressNotes":  "Gluten Free. Winter Breakfast. Naturally Sweet",
-                                                "foxNotes":  "Smells amazing while cooking.",
-                                                "image":  "apple-cinnamon-oats.jpg"
-                                            },
                     "french-toast-gf-bread":  {
                                                   "id":  "breakfast-gf-french-toast",
                                                   "slug":  "french-toast-gf-bread",
@@ -2186,42 +2131,6 @@ var HUNTRESS_COOKBOOK = {
                                                    "foxNotes":  "Excellent side dish for braais too.",
                                                    "image":  "greek-salad-onion-free.jpg"
                                                },
-                    "tuna-stuffed-peppers":  {
-                                                 "id":  "lunch-tuna-stuffed-peppers",
-                                                 "slug":  "tuna-stuffed-peppers",
-                                                 "name":  "Tuna Stuffed Peppers",
-                                                 "categoryId":  "lunch",
-                                                 "category":  "Lunch",
-                                                 "status":  "untested",
-                                                 "description":  "Crunchy peppers filled with a simple tuna mixture.",
-                                                 "difficulty":  "Easy",
-                                                 "prepTime":  15,
-                                                 "cookTime":  0,
-                                                 "servings":  2,
-                                                 "tags":  [
-                                                              "Gluten Free",
-                                                              "High Protein",
-                                                              "Quick Lunch"
-                                                          ],
-                                                 "ingredients":  [
-                                                                     "1 tin tuna",
-                                                                     "2 bell peppers",
-                                                                     "2 tbsp mayonnaise",
-                                                                     "Salt",
-                                                                     "Pepper"
-                                                                 ],
-                                                 "instructions":  [
-                                                                      "Drain tuna.",
-                                                                      "Mix tuna with mayonnaise.",
-                                                                      "Cut peppers in half.",
-                                                                      "Remove seeds.",
-                                                                      "Fill peppers with tuna mixture.",
-                                                                      "Serve chilled."
-                                                                  ],
-                                                 "huntressNotes":  "Gluten Free. Travel Friendly",
-                                                 "foxNotes":  "Good picnic lunch.",
-                                                 "image":  "tuna-stuffed-peppers.jpg"
-                                             },
                     "egg-salad-bowl":  {
                                            "id":  "lunch-egg-salad-bowl",
                                            "slug":  "egg-salad-bowl",
@@ -2331,42 +2240,6 @@ var HUNTRESS_COOKBOOK = {
                                             "foxNotes":  "Perfect for road trips and nature reserves.",
                                             "image":  "chicken-skewers.jpg"
                                         },
-                    "mini-frittatas":  {
-                                           "id":  "lunch-mini-frittatas",
-                                           "slug":  "mini-frittatas",
-                                           "name":  "Mini Frittatas",
-                                           "categoryId":  "lunch",
-                                           "category":  "Lunch",
-                                           "status":  "untested",
-                                           "description":  "Small baked egg cups packed with flavour and protein.",
-                                           "difficulty":  "Easy",
-                                           "prepTime":  10,
-                                           "cookTime":  20,
-                                           "servings":  6,
-                                           "tags":  [
-                                                        "Gluten Free",
-                                                        "Meal Prep",
-                                                        "Portable"
-                                                    ],
-                                           "ingredients":  [
-                                                               "6 eggs",
-                                                               "50g feta cheese",
-                                                               "Handful spinach",
-                                                               "Salt",
-                                                               "Pepper"
-                                                           ],
-                                           "instructions":  [
-                                                                "Preheat oven to 180°C.",
-                                                                "Whisk eggs.",
-                                                                "Add feta and spinach.",
-                                                                "Pour into muffin tray.",
-                                                                "Bake until set.",
-                                                                "Cool before serving."
-                                                            ],
-                                           "huntressNotes":  "Gluten Free. Meal Prep Friendly. Portable",
-                                           "foxNotes":  "Excellent make-ahead picnic food.",
-                                           "image":  "mini-frittatas.jpg"
-                                       },
                     "savoury-gf-muffins":  {
                                                "id":  "lunch-savoury-gf-muffins",
                                                "slug":  "savoury-gf-muffins",
@@ -3643,7 +3516,7 @@ var HUNTRESS_COOKBOOK = {
                                                          ],
                                                 "ingredients":  [
                                                                     "Carrots",
-                                                                    "Bell peppers",
+                                                                    "Butternut",
                                                                     "Baby potatoes",
                                                                     "Olive oil",
                                                                     "Salt",
@@ -3731,73 +3604,6 @@ var HUNTRESS_COOKBOOK = {
                                               "foxNotes":  "Looks much fancier than the effort required.",
                                               "image":  "stuffed-mushrooms.jpg"
                                           },
-                    "braaied-peaches":  {
-                                            "id":  "braaied-peaches",
-                                            "slug":  "braaied-peaches",
-                                            "name":  "Braaied Peaches",
-                                            "categoryId":  "braai",
-                                            "category":  "Braai",
-                                            "status":  "untested",
-                                            "description":  "Sweet peaches lightly caramelised over the coals.",
-                                            "difficulty":  "Easy",
-                                            "prepTime":  5,
-                                            "cookTime":  10,
-                                            "servings":  4,
-                                            "tags":  [
-                                                         "Dessert",
-                                                         "Fruit",
-                                                         "Braai"
-                                                     ],
-                                            "ingredients":  [
-                                                                "4 peaches",
-                                                                "1 tbsp honey",
-                                                                "Cinnamon"
-                                                            ],
-                                            "instructions":  [
-                                                                 "Cut peaches in half.",
-                                                                 "Remove pits.",
-                                                                 "Brush with honey.",
-                                                                 "Sprinkle cinnamon.",
-                                                                 "Place on braai grid.",
-                                                                 "Cook until caramelised."
-                                                             ],
-                                            "huntressNotes":  "Gluten Free. Naturally Sweet",
-                                            "foxNotes":  "Excellent with vanilla ice cream.",
-                                            "image":  "braaied-peaches.jpg"
-                                        },
-                    "cinnamon-braai-apples":  {
-                                                  "id":  "cinnamon-braai-apples",
-                                                  "slug":  "cinnamon-braai-apples",
-                                                  "name":  "Cinnamon Braai Apples",
-                                                  "categoryId":  "braai",
-                                                  "category":  "Braai",
-                                                  "status":  "untested",
-                                                  "description":  "Warm apples cooked with cinnamon until soft and fragrant.",
-                                                  "difficulty":  "Easy",
-                                                  "prepTime":  10,
-                                                  "cookTime":  20,
-                                                  "servings":  4,
-                                                  "tags":  [
-                                                               "Dessert",
-                                                               "Apple",
-                                                               "Braai"
-                                                           ],
-                                                  "ingredients":  [
-                                                                      "4 apples",
-                                                                      "1 tsp cinnamon",
-                                                                      "1 tbsp honey"
-                                                                  ],
-                                                  "instructions":  [
-                                                                       "Core apples.",
-                                                                       "Fill centres with cinnamon and honey.",
-                                                                       "Wrap in foil.",
-                                                                       "Cook on coals until soft.",
-                                                                       "Serve warm."
-                                                                   ],
-                                                  "huntressNotes":  "Gluten Free. Winter Favourite",
-                                                  "foxNotes":  "Smells incredible while cooking.",
-                                                  "image":  "cinnamon-braai-apples.jpg"
-                                              },
                     "the-fox-huntress-braai":  {
                                                    "id":  "fox-huntress-braai",
                                                    "slug":  "the-fox-huntress-braai",
@@ -4353,44 +4159,45 @@ var HUNTRESS_COOKBOOK = {
                                          "foxNotes":  "Ideal when energy is low or digestion is sensitive.",
                                          "image":  "chicken-soup.jpg"
                                      },
-                    "roasted-red-pepper-soup":  {
-                                                    "id":  "roasted-red-pepper-soup",
-                                                    "slug":  "roasted-red-pepper-soup",
-                                                    "name":  "Roasted Red Pepper Soup",
-                                                    "categoryId":  "soups",
-                                                    "category":  "Soups \u0026 Comfort Foods",
-                                                    "status":  "untested",
-                                                    "description":  "A smooth roasted pepper soup with a rich and slightly sweet flavour.",
-                                                    "difficulty":  "Easy",
-                                                    "prepTime":  15,
-                                                    "cookTime":  35,
-                                                    "servings":  4,
-                                                    "tags":  [
-                                                                 "Red Pepper",
-                                                                 "Soup",
-                                                                 "Comfort Food"
-                                                             ],
-                                                    "ingredients":  [
-                                                                        "4 red peppers",
-                                                                        "750ml stock",
-                                                                        "1 tbsp olive oil",
-                                                                        "250ml cream",
-                                                                        "Salt",
-                                                                        "Black pepper"
-                                                                    ],
-                                                    "instructions":  [
-                                                                         "Roast peppers until skins darken.",
-                                                                         "Remove skins.",
-                                                                         "Blend peppers with stock.",
-                                                                         "Transfer to pot.",
-                                                                         "Add cream.",
-                                                                         "Heat gently.",
-                                                                         "Season and serve."
-                                                                     ],
-                                                    "huntressNotes":  "Gluten Free. Onion Free",
-                                                    "foxNotes":  "One of the most flavourful soups in the collection.",
-                                                    "image":  "roasted-red-pepper-soup.jpg"
-                                                },
+                    "creamy-mushroom-soup":  {
+                                                 "id":  "creamy-mushroom-soup",
+                                                 "slug":  "creamy-mushroom-soup",
+                                                 "name":  "Creamy Mushroom Soup",
+                                                 "categoryId":  "soups",
+                                                 "category":  "Soups \u0026 Comfort Foods",
+                                                 "status":  "untested",
+                                                 "description":  "A smooth and comforting mushroom soup with a rich, creamy finish.",
+                                                 "difficulty":  "Easy",
+                                                 "prepTime":  15,
+                                                 "cookTime":  30,
+                                                 "servings":  4,
+                                                 "tags":  [
+                                                              "Mushroom",
+                                                              "Soup",
+                                                              "Comfort Food"
+                                                          ],
+                                                 "ingredients":  [
+                                                                     "500g mushrooms",
+                                                                     "750ml stock",
+                                                                     "1 tbsp olive oil",
+                                                                     "250ml cream",
+                                                                     "2 garlic cloves",
+                                                                     "Salt",
+                                                                     "Black pepper"
+                                                                 ],
+                                                 "instructions":  [
+                                                                      "Slice mushrooms.",
+                                                                      "Sauté mushrooms and garlic in olive oil until golden.",
+                                                                      "Add stock and simmer for 15 minutes.",
+                                                                      "Blend until smooth.",
+                                                                      "Stir in cream.",
+                                                                      "Heat gently.",
+                                                                      "Season and serve."
+                                                                  ],
+                                                 "huntressNotes":  "Gluten Free. Onion Free",
+                                                 "foxNotes":  "Replaces red pepper soup per Huntress preference.",
+                                                 "image":  "creamy-mushroom-soup.jpg"
+                                             },
                     "beef-comfort-bowl":  {
                                               "id":  "beef-comfort-bowl",
                                               "slug":  "beef-comfort-bowl",
@@ -4483,7 +4290,7 @@ var HUNTRESS_COOKBOOK = {
                                                  "ingredients":  [
                                                                      "Sweet potato",
                                                                      "Carrots",
-                                                                     "Peppers",
+                                                                     "Butternut",
                                                                      "Olive oil",
                                                                      "Salt",
                                                                      "Black pepper"
@@ -4826,39 +4633,38 @@ var HUNTRESS_COOKBOOK = {
                                                   "foxNotes":  "Excellent served with cream or vanilla ice cream.",
                                                   "image":  "honey-roasted-peaches.jpg"
                                               },
-                    "cinnamon-apples":  {
-                                            "id":  "cinnamon-apples",
-                                            "slug":  "cinnamon-apples",
-                                            "name":  "Cinnamon Apples",
-                                            "categoryId":  "desserts",
-                                            "category":  "Desserts",
-                                            "status":  "untested",
-                                            "description":  "Soft baked apples flavoured with cinnamon and honey.",
-                                            "difficulty":  "Easy",
-                                            "prepTime":  10,
-                                            "cookTime":  25,
-                                            "servings":  4,
-                                            "tags":  [
-                                                         "Apple",
-                                                         "Cinnamon",
-                                                         "Comfort Food"
-                                                     ],
-                                            "ingredients":  [
-                                                                "4 apples",
-                                                                "1 tbsp honey",
-                                                                "1 tsp cinnamon"
-                                                            ],
-                                            "instructions":  [
-                                                                 "Core apples.",
-                                                                 "Place in baking dish.",
-                                                                 "Fill centres with honey and cinnamon.",
-                                                                 "Bake until apples are soft.",
-                                                                 "Serve warm."
-                                                             ],
-                                            "huntressNotes":  "Gluten Free. Comfort Dessert",
-                                            "foxNotes":  "Perfect winter dessert.",
-                                            "image":  "cinnamon-apples.jpg"
-                                        },
+                    "fresh-apple-honey-slices":  {
+                                                     "id":  "fresh-apple-honey-slices",
+                                                     "slug":  "fresh-apple-honey-slices",
+                                                     "name":  "Fresh Apple \u0026 Honey Slices",
+                                                     "categoryId":  "desserts",
+                                                     "category":  "Desserts",
+                                                     "status":  "untested",
+                                                     "description":  "Simple raw apple slices drizzled with honey — light, fresh and gentle.",
+                                                     "difficulty":  "Easy",
+                                                     "prepTime":  5,
+                                                     "cookTime":  0,
+                                                     "servings":  2,
+                                                     "tags":  [
+                                                                  "Apple",
+                                                                  "Fruit",
+                                                                  "Raw"
+                                                              ],
+                                                     "ingredients":  [
+                                                                         "2 apples",
+                                                                         "1 tbsp honey"
+                                                                     ],
+                                                     "instructions":  [
+                                                                          "Wash and core apples.",
+                                                                          "Slice thinly.",
+                                                                          "Arrange on a plate.",
+                                                                          "Drizzle with honey.",
+                                                                          "Serve immediately."
+                                                                      ],
+                                                     "huntressNotes":  "Gluten Free. Raw Fruit. No Cooking Required",
+                                                     "foxNotes":  "Replaces baked apple desserts per Huntress preference.",
+                                                     "image":  "fresh-apple-honey-slices.jpg"
+                                                 },
                     "berry-cream-cups":  {
                                              "id":  "berry-cream-cups",
                                              "slug":  "berry-cream-cups",
@@ -5243,34 +5049,47 @@ var HUNTRESS_COOKBOOK = {
                                                   "foxNotes":  "Feels like something from a boutique café.",
                                                   "image":  "mini-cheesecake-board.jpg"
                                               },
-                    "gf-carrot-cake":  {
-                                           "id":  "gf-carrot-cake",
-                                           "slug":  "gf-carrot-cake",
-                                           "name":  "GF Carrot Cake",
-                                           "categoryId":  "desserts",
-                                           "category":  "Desserts",
-                                           "status":  "untested",
-                                           "description":  "A future project to develop a moist and flavourful gluten-free carrot cake.",
-                                           "difficulty":  "TBD",
-                                           "prepTime":  0,
-                                           "cookTime":  0,
-                                           "servings":  0,
-                                           "tags":  [
-                                                        "Cake",
-                                                        "Research Project",
-                                                        "Gluten Free"
-                                                    ],
-                                           "ingredients":  "Ingredients to be confirmed after testing.",
-                                           "instructions":  [
-                                                                "Research gluten-free flour options.",
-                                                                "Test moisture levels.",
-                                                                "Develop cream cheese frosting.",
-                                                                "Finalize recipe."
+                    "gf-vanilla-cake":  {
+                                            "id":  "gf-vanilla-cake",
+                                            "slug":  "gf-vanilla-cake",
+                                            "name":  "GF Vanilla Cake",
+                                            "categoryId":  "desserts",
+                                            "category":  "Desserts",
+                                            "status":  "untested",
+                                            "description":  "A soft and fluffy gluten-free vanilla cake perfect for birthdays, celebrations and afternoon tea.",
+                                            "difficulty":  "Medium",
+                                            "prepTime":  20,
+                                            "cookTime":  35,
+                                            "servings":  8,
+                                            "tags":  [
+                                                         "Vanilla",
+                                                         "Cake",
+                                                         "Dessert"
+                                                     ],
+                                            "ingredients":  [
+                                                                "250g gluten free flour",
+                                                                "2 tsp baking powder",
+                                                                "150g sugar",
+                                                                "3 eggs",
+                                                                "125g butter",
+                                                                "180ml milk",
+                                                                "2 tsp vanilla extract"
                                                             ],
-                                           "huntressNotes":  "Potential Future Favourite. Recipe Under Development",
-                                           "foxNotes":  "Worth developing properly rather than rushing.",
-                                           "image":  "gf-carrot-cake.jpg"
-                                       },
+                                            "instructions":  [
+                                                                 "Preheat oven to 180°C.",
+                                                                 "Cream butter and sugar together.",
+                                                                 "Add eggs one at a time.",
+                                                                 "Mix in vanilla extract.",
+                                                                 "Fold in flour and baking powder.",
+                                                                 "Add milk gradually.",
+                                                                 "Pour into greased cake tin.",
+                                                                 "Bake for 30-35 minutes.",
+                                                                 "Allow to cool before decorating."
+                                                             ],
+                                            "huntressNotes":  "Gluten Free. Future Testing Required",
+                                            "foxNotes":  "Requested replacement for carrot cake.",
+                                            "image":  "gf-vanilla-cake.jpg"
+                                        },
                     "gf-red-velvet-cake":  {
                                                "id":  "gf-red-velvet-cake",
                                                "slug":  "gf-red-velvet-cake",
@@ -5552,14 +5371,14 @@ var HUNTRESS_COOKBOOK = {
                                         "ingredients":  [
                                                             "6 eggs",
                                                             "50g cheddar cheese",
-                                                            "1 bell pepper",
+                                                            "Handful spinach",
                                                             "Salt",
                                                             "Black pepper"
                                                         ],
                                         "instructions":  [
                                                              "Preheat oven to 180°C.",
                                                              "Whisk eggs in a bowl.",
-                                                             "Add diced pepper and cheese.",
+                                                             "Add spinach and cheese.",
                                                              "Season lightly.",
                                                              "Pour into muffin tray.",
                                                              "Bake until set and golden.",
@@ -6831,37 +6650,6 @@ var HUNTRESS_COOKBOOK = {
                                                         "foxNotes":  "Almost a milkshake.",
                                                         "image":  "strawberries-cream-smoothie.jpg"
                                                     },
-                    "apple-cinnamon-smoothie":  {
-                                                    "id":  "apple-cinnamon-smoothie",
-                                                    "slug":  "apple-cinnamon-smoothie",
-                                                    "name":  "Apple Cinnamon Smoothie",
-                                                    "categoryId":  "drinks",
-                                                    "category":  "Drinks",
-                                                    "status":  "untested",
-                                                    "description":  "A smoothie with warm apple pie flavours.",
-                                                    "difficulty":  "Easy",
-                                                    "prepTime":  5,
-                                                    "cookTime":  0,
-                                                    "servings":  1,
-                                                    "tags":  [
-                                                                 "Apple",
-                                                                 "Cinnamon",
-                                                                 "Smoothie"
-                                                             ],
-                                                    "ingredients":  [
-                                                                        "1 apple",
-                                                                        "1 cup milk",
-                                                                        "1 tsp cinnamon",
-                                                                        "1 tbsp honey"
-                                                                    ],
-                                                    "instructions":  [
-                                                                         "Blend until smooth.",
-                                                                         "Serve cold."
-                                                                     ],
-                                                    "huntressNotes":  "Gluten Free",
-                                                    "foxNotes":  "Great during autumn.",
-                                                    "image":  "apple-cinnamon-smoothie.jpg"
-                                                },
                     "tropical-mango-smoothie":  {
                                                     "id":  "tropical-mango-smoothie",
                                                     "slug":  "tropical-mango-smoothie",
@@ -7183,39 +6971,6 @@ var HUNTRESS_COOKBOOK = {
                                                  "foxNotes":  "Feels like a coffee shop treat.",
                                                  "image":  "vanilla-steamed-milk.jpg"
                                              },
-                    "warm-apple-cinnamon-drink":  {
-                                                      "id":  "warm-apple-cinnamon-drink",
-                                                      "slug":  "warm-apple-cinnamon-drink",
-                                                      "name":  "Warm Apple Cinnamon Drink",
-                                                      "categoryId":  "drinks",
-                                                      "category":  "Drinks",
-                                                      "status":  "untested",
-                                                      "description":  "A warm drink inspired by baked apples.",
-                                                      "difficulty":  "Easy",
-                                                      "prepTime":  10,
-                                                      "cookTime":  10,
-                                                      "servings":  2,
-                                                      "tags":  [
-                                                                   "Apple",
-                                                                   "Cinnamon",
-                                                                   "Comfort"
-                                                               ],
-                                                      "ingredients":  [
-                                                                          "2 apples",
-                                                                          "500ml water",
-                                                                          "1 tsp cinnamon",
-                                                                          "1 tbsp honey"
-                                                                      ],
-                                                      "instructions":  [
-                                                                           "Simmer apples in water.",
-                                                                           "Add cinnamon and honey.",
-                                                                           "Blend lightly.",
-                                                                           "Serve warm."
-                                                                       ],
-                                                      "huntressNotes":  "Caffeine Free",
-                                                      "foxNotes":  "Perfect for rainy days.",
-                                                      "image":  "warm-apple-cinnamon-drink.jpg"
-                                                  },
                     "golden-honey-milk":  {
                                               "id":  "golden-honey-milk",
                                               "slug":  "golden-honey-milk",
@@ -7760,6 +7515,28 @@ var HUNTRESS_COOKBOOK = {
                                                      "huntressNotes":  "Useful For Caffeine Sensitivity",
                                                      "foxNotes":  "One of the most practical pages in the drinks chapter.",
                                                      "image":  "caffeine-reference-guide.jpg"
-                                                 }
+                                                 },
+                    "huntress-gf-lasagna":  {
+                                                "id":  "huntress-gf-lasagna",
+                                                "slug":  "huntress-gf-lasagna",
+                                                "name":  "Huntress GF Lasagna",
+                                                "categoryId":  "approved-meals",
+                                                "category":  "Dinner",
+                                                "status":  "tweaking",
+                                                "description":  "The Huntress\u0027s gluten free lasagna recipe currently undergoing refinement.",
+                                                "difficulty":  "Medium",
+                                                "prepTime":  0,
+                                                "cookTime":  0,
+                                                "servings":  6,
+                                                "tags":  [
+                                                             "Gluten Free",
+                                                             "Onion Free"
+                                                         ],
+                                                "ingredients":  "Ingredients to be confirmed after testing.",
+                                                "instructions":  "Method to be added once this recipe has been tested.",
+                                                "huntressNotes":  "GF. Onion-Free. IBS-conscious.",
+                                                "foxNotes":  "Add Fox Notes after the first cook.",
+                                                "image":  "huntress-gf-lasagna.jpg"
+                                            }
                 }
 };

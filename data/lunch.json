@@ -100,50 +100,6 @@
           "foxRating": 0
         },
         {
-          "id": "lunch-tuna-stuffed-peppers",
-          "name": "Tuna Stuffed Peppers",
-          "category": "Lunch",
-          "subcategory": "Light Lunches",
-          "description": "Crunchy peppers filled with a simple tuna mixture.",
-          "prepTime": "15 min",
-          "cookTime": "0 min",
-          "difficulty": "Easy",
-          "servings": "2",
-          "status": "Untested",
-          "ingredients": [
-            "1 tin tuna",
-            "2 bell peppers",
-            "2 tbsp mayonnaise",
-            "Salt",
-            "Pepper"
-          ],
-          "instructions": [
-            "Drain tuna.",
-            "Mix tuna with mayonnaise.",
-            "Cut peppers in half.",
-            "Remove seeds.",
-            "Fill peppers with tuna mixture.",
-            "Serve chilled."
-          ],
-          "huntressNotes": [
-            "Gluten Free",
-            "Travel Friendly"
-          ],
-          "foxNotes": [
-            "Good picnic lunch."
-          ],
-          "tags": [
-            "Gluten Free",
-            "High Protein",
-            "Quick Lunch"
-          ],
-          "image": "images/lunch/tuna-stuffed-peppers.jpg",
-          "imagePrompt": "Bell peppers stuffed with tuna filling, colourful healthy lunch photography",
-          "approved": false,
-          "huntressRating": 0,
-          "foxRating": 0
-        },
-        {
           "id": "lunch-egg-salad-bowl",
           "name": "Egg Salad Bowl",
           "category": "Lunch",
@@ -279,51 +235,6 @@
           ],
           "image": "images/lunch/chicken-skewers.jpg",
           "imagePrompt": "Grilled chicken skewers on wooden serving board, outdoor picnic setting, cookbook photography",
-          "approved": false,
-          "huntressRating": 0,
-          "foxRating": 0
-        },
-        {
-          "id": "lunch-mini-frittatas",
-          "name": "Mini Frittatas",
-          "category": "Lunch",
-          "subcategory": "Picnic Friendly",
-          "description": "Small baked egg cups packed with flavour and protein.",
-          "prepTime": "10 min",
-          "cookTime": "20 min",
-          "difficulty": "Easy",
-          "servings": "6",
-          "status": "Untested",
-          "ingredients": [
-            "6 eggs",
-            "50g feta cheese",
-            "Handful spinach",
-            "Salt",
-            "Pepper"
-          ],
-          "instructions": [
-            "Preheat oven to 180°C.",
-            "Whisk eggs.",
-            "Add feta and spinach.",
-            "Pour into muffin tray.",
-            "Bake until set.",
-            "Cool before serving."
-          ],
-          "huntressNotes": [
-            "Gluten Free",
-            "Meal Prep Friendly",
-            "Portable"
-          ],
-          "foxNotes": [
-            "Excellent make-ahead picnic food."
-          ],
-          "tags": [
-            "Gluten Free",
-            "Meal Prep",
-            "Portable"
-          ],
-          "image": "images/lunch/mini-frittatas.jpg",
-          "imagePrompt": "Mini baked frittatas in muffin tray, rustic lunch photography, healthy picnic food",
           "approved": false,
           "huntressRating": 0,
           "foxRating": 0

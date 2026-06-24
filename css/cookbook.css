@@ -138,9 +138,11 @@ body {
 
 .sidebar-logo img,
 .sidebar-logo svg {
-  width: 56px;
-  height: 56px;
-  margin-bottom: 0.5rem;
+  width: 120px;
+  height: auto;
+  max-height: 120px;
+  object-fit: contain;
+  margin-bottom: 0.65rem;
 }
 
 .sidebar-brand {
@@ -442,8 +444,36 @@ body {
 }
 
 .dietary-notes li {
-  list-style: disc;
-  margin-left: 1.25rem;
+  list-style: none;
+  margin-left: 0;
+}
+
+.conditional-ingredient {
+  margin: 1rem 0 1.25rem;
+}
+
+.conditional-ingredient-title {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  color: var(--deep-brown);
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+}
+
+.conditional-status {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--soft-brown);
+}
+
+.dietary-food-note {
+  margin: 0.75rem 0 0;
+  padding: 0.65rem 0.9rem;
+  background: var(--tip-green);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: var(--soft-brown);
+  line-height: 1.55;
 }
 
 .photo-row {
@@ -661,6 +691,11 @@ body {
   color: #856404;
 }
 
+.status-tweaking {
+  background: #fde8d8;
+  color: #8a4b12;
+}
+
 .status-untested {
   background: #e9ecef;
   color: #6c757d;
@@ -874,8 +909,9 @@ a.recipe-nav-section:hover {
 }
 
 .landing-logo {
-  width: 80px;
-  margin-bottom: 1rem;
+  width: 190px;
+  height: auto;
+  margin-bottom: 1.25rem;
 }
 
 .landing h1 {
@@ -971,9 +1007,11 @@ html:not(.auth-ok) body > :not(#auth-gate) {
 }
 
 .auth-gate-logo {
-  width: 64px;
-  height: 64px;
-  margin-bottom: 1rem;
+  width: 150px;
+  height: auto;
+  max-height: 150px;
+  object-fit: contain;
+  margin-bottom: 1.15rem;
 }
 
 .auth-gate-title {

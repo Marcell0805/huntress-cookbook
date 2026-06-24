@@ -23,6 +23,41 @@
       ]
     },
     {
+      "title": "Strong Preferences",
+      "items": [
+        "No Pronutro",
+        "No cooked oats",
+        "No stuffed peppers",
+        "No braaied fruit",
+        "No cooked apples",
+        "No mini frittatas",
+        "Bell peppers strongly disliked"
+      ]
+    },
+    {
+      "title": "Conditional Ingredients",
+      "conditionalItems": [
+        {
+          "ingredient": "Bananas",
+          "status": "Conditional",
+          "notes": [
+            "Semi-green bananas acceptable.",
+            "Yellow bananas acceptable.",
+            "Overripe bananas mainly reserved for banana bread."
+          ]
+        },
+        {
+          "ingredient": "Oats",
+          "status": "Conditional",
+          "notes": [
+            "Raw oats accepted.",
+            "Cooked oats cause nausea.",
+            "Overnight oats acceptable."
+          ]
+        }
+      ]
+    },
+    {
       "title": "Foods To Avoid",
       "items": [
         "Onions",
@@ -30,7 +65,6 @@
         "Artificial Sweeteners",
         "Soy Products",
         "Plant Based Meats",
-        "Overripe Bananas",
         "Wine",
         "Very Oily Foods"
       ]

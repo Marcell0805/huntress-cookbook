@@ -372,40 +372,40 @@
           "imagePrompt": "Honey roasted peaches in rustic baking dish, warm summer dessert photography"
         },
         {
-          "id": "cinnamon-apples",
-          "name": "Cinnamon Apples",
+          "id": "fresh-apple-honey-slices",
+          "name": "Fresh Apple & Honey Slices",
           "category": "Desserts",
-          "description": "Soft baked apples flavoured with cinnamon and honey.",
-          "prepTime": "10 min",
-          "cookTime": "25 min",
+          "description": "Simple raw apple slices drizzled with honey — light, fresh and gentle.",
+          "prepTime": "5 min",
+          "cookTime": "0 min",
           "difficulty": "Easy",
-          "servings": "4",
+          "servings": "2",
           "status": "Untested",
           "ingredients": [
-            "4 apples",
-            "1 tbsp honey",
-            "1 tsp cinnamon"
+            "2 apples",
+            "1 tbsp honey"
           ],
           "instructions": [
-            "Core apples.",
-            "Place in baking dish.",
-            "Fill centres with honey and cinnamon.",
-            "Bake until apples are soft.",
-            "Serve warm."
+            "Wash and core apples.",
+            "Slice thinly.",
+            "Arrange on a plate.",
+            "Drizzle with honey.",
+            "Serve immediately."
           ],
           "huntressNotes": [
             "Gluten Free",
-            "Comfort Dessert"
+            "Raw Fruit",
+            "No Cooking Required"
           ],
           "foxNotes": [
-            "Perfect winter dessert."
+            "Replaces baked apple desserts per Huntress preference."
           ],
           "tags": [
             "Apple",
-            "Cinnamon",
-            "Comfort Food"
+            "Fruit",
+            "Raw"
           ],
-          "imagePrompt": "Warm baked cinnamon apples served in rustic bowls, cozy dessert photography"
+          "imagePrompt": "Fresh apple slices drizzled with honey on white plate, natural light food photography"
         },
         {
           "id": "berry-cream-cups",
@@ -845,35 +845,48 @@
       "name": "Future Dessert Projects",
       "recipes": [
         {
-          "id": "gf-carrot-cake",
-          "name": "GF Carrot Cake",
+          "id": "gf-vanilla-cake",
+          "name": "GF Vanilla Cake",
           "category": "Desserts",
-          "description": "A future project to develop a moist and flavourful gluten-free carrot cake.",
-          "prepTime": "TBD",
-          "cookTime": "TBD",
-          "difficulty": "TBD",
-          "servings": "TBD",
+          "description": "A soft and fluffy gluten-free vanilla cake perfect for birthdays, celebrations and afternoon tea.",
+          "prepTime": "20 min",
+          "cookTime": "35 min",
+          "difficulty": "Medium",
+          "servings": "8",
           "status": "Researching",
-          "ingredients": [],
+          "ingredients": [
+            "250g gluten free flour",
+            "2 tsp baking powder",
+            "150g sugar",
+            "3 eggs",
+            "125g butter",
+            "180ml milk",
+            "2 tsp vanilla extract"
+          ],
           "instructions": [
-            "Research gluten-free flour options.",
-            "Test moisture levels.",
-            "Develop cream cheese frosting.",
-            "Finalize recipe."
+            "Preheat oven to 180°C.",
+            "Cream butter and sugar together.",
+            "Add eggs one at a time.",
+            "Mix in vanilla extract.",
+            "Fold in flour and baking powder.",
+            "Add milk gradually.",
+            "Pour into greased cake tin.",
+            "Bake for 30-35 minutes.",
+            "Allow to cool before decorating."
           ],
           "huntressNotes": [
-            "Potential Future Favourite",
-            "Recipe Under Development"
+            "Gluten Free",
+            "Future Testing Required"
           ],
           "foxNotes": [
-            "Worth developing properly rather than rushing."
+            "Requested replacement for carrot cake."
           ],
           "tags": [
+            "Vanilla",
             "Cake",
-            "Research Project",
-            "Gluten Free"
+            "Dessert"
           ],
-          "imagePrompt": "Moist gluten free carrot cake with cream cheese frosting, premium bakery photography"
+          "imagePrompt": "Elegant gluten free vanilla cake with vanilla frosting on cake stand"
         },
         {
           "id": "gf-red-velvet-cake",

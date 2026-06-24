@@ -6,11 +6,6 @@
       "name": "High Priority",
       "recipes": [
         {
-          "name": "Gluten-Free Lasagne",
-          "status": "Researching",
-          "priority": "High"
-        },
-        {
           "name": "Gluten-Free Pizza",
           "status": "Researching",
           "priority": "High"

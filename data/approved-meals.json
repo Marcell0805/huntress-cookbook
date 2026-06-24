@@ -8,7 +8,24 @@
     "4": "Very Good",
     "5": "Huntress Favourite"
   },
-  "recipes": [],
+  "groups": [
+    {
+      "name": "In Development",
+      "recipes": [
+        {
+          "id": "huntress-gf-lasagna",
+          "name": "Huntress GF Lasagna",
+          "category": "Dinner",
+          "description": "The Huntress's gluten free lasagna recipe currently undergoing refinement.",
+          "prepTime": "TBD",
+          "cookTime": "TBD",
+          "difficulty": "Medium",
+          "servings": "6",
+          "status": "Needs Tweaking"
+        }
+      ]
+    }
+  ],
   "statistics": {
     "totalApprovedRecipes": 0,
     "fiveStarRecipes": 0,

@@ -280,39 +280,6 @@
           "imagePrompt": "Strawberry cream smoothie in elegant glass"
         },
         {
-          "id": "apple-cinnamon-smoothie",
-          "name": "Apple Cinnamon Smoothie",
-          "category": "Drinks",
-          "description": "A smoothie with warm apple pie flavours.",
-          "prepTime": "5 min",
-          "cookTime": "0 min",
-          "difficulty": "Easy",
-          "servings": "1",
-          "status": "Untested",
-          "ingredients": [
-            "1 apple",
-            "1 cup milk",
-            "1 tsp cinnamon",
-            "1 tbsp honey"
-          ],
-          "instructions": [
-            "Blend until smooth.",
-            "Serve cold."
-          ],
-          "huntressNotes": [
-            "Gluten Free"
-          ],
-          "foxNotes": [
-            "Great during autumn."
-          ],
-          "tags": [
-            "Apple",
-            "Cinnamon",
-            "Smoothie"
-          ],
-          "imagePrompt": "Apple cinnamon smoothie beside fresh apples"
-        },
-        {
           "id": "tropical-mango-smoothie",
           "name": "Tropical Mango Smoothie",
           "category": "Drinks",
@@ -665,41 +632,6 @@
             "Warm Drink"
           ],
           "imagePrompt": "Vanilla steamed milk in café mug with foam"
-        },
-        {
-          "id": "warm-apple-cinnamon-drink",
-          "name": "Warm Apple Cinnamon Drink",
-          "category": "Drinks",
-          "description": "A warm drink inspired by baked apples.",
-          "prepTime": "10 min",
-          "cookTime": "10 min",
-          "difficulty": "Easy",
-          "servings": "2",
-          "status": "Untested",
-          "ingredients": [
-            "2 apples",
-            "500ml water",
-            "1 tsp cinnamon",
-            "1 tbsp honey"
-          ],
-          "instructions": [
-            "Simmer apples in water.",
-            "Add cinnamon and honey.",
-            "Blend lightly.",
-            "Serve warm."
-          ],
-          "huntressNotes": [
-            "Caffeine Free"
-          ],
-          "foxNotes": [
-            "Perfect for rainy days."
-          ],
-          "tags": [
-            "Apple",
-            "Cinnamon",
-            "Comfort"
-          ],
-          "imagePrompt": "Warm apple cinnamon drink beside rainy window"
         },
         {
           "id": "golden-honey-milk",
