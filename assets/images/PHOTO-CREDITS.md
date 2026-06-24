@@ -1,35 +1,27 @@
 # Photo credits
 
-Recipe photos are illustrative placeholders. **Replace with your own Huntress-tested photos** when you cook each dish — those are always best.
+Recipe photos are from **Pexels** and **Unsplash** (free to use). Replace any image with your own Huntress-tested photo when you cook the dish — those are always best.
 
-## Wikimedia Commons
+## Sources
 
-| File | Subject | Credit |
-|------|---------|--------|
-| bobotie-gf.jpg | Bobotie | [Bougnat87](https://commons.wikimedia.org/wiki/File:Bobotie.jpg), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+| Source | License |
+|--------|---------|
+| [Pexels](https://www.pexels.com/license/) | Free for personal and commercial use |
+| [Unsplash](https://unsplash.com/license) | Free under Unsplash License |
+| [Wikimedia Commons](https://commons.wikimedia.org/) | See individual file (bobotie replaced with higher-quality stock) |
 
-## Unsplash
+## Your own photos
 
-| File | Subject |
-|------|---------|
-| gluten-free-pancakes.jpg | Pancakes with syrup |
+Save photos as `assets/images/{recipe-slug}.jpg` (e.g. `bobotie-gf.jpg`). The filename must match the `image` field in `js/recipes.js`.
 
-## AI-generated (illustrative)
+## Re-download stock images
 
-All other recipe images were generated to match each dish name and ingredients. They are not photographs of actual Huntress-tested meals.
+```powershell
+# Only downloads images that are missing (won't overwrite good photos):
+powershell -ExecutionPolicy Bypass -File scripts/download-images-from-map.ps1
 
-| File | Dish |
-|------|------|
-| cheese-herb-omelette.jpg | Cheese & Herb Omelette |
-| mushroom-spinach-omelette.jpg | Mushroom & Spinach Omelette |
-| bacon-avocado-eggs.jpg | Bacon & Avocado Eggs |
-| sweet-potato-breakfast-hash.jpg | Sweet Potato Breakfast Hash |
-| berry-smoothie-bowl.jpg | Berry Smoothie Bowl |
-| chia-pudding.jpg | Chia Pudding |
-| creamy-cinnamon-oats.jpg | Creamy Cinnamon Oats |
-| overnight-oats.jpg | Overnight Oats |
-| yogurt-honey-breakfast-bowl.jpg | Yogurt & Honey Breakfast Bowl |
-| garlic-butter-chicken.jpg | Garlic Butter Chicken |
-| malva-pudding-gf.jpg | Malva Pudding (GF) |
-| peppermint-crisp-tart-gf.jpg | Peppermint Crisp Tart (GF) |
-| shakshuka.jpg | Shakshuka (chapter preview) |
+# To replace an image deliberately, delete the jpg first or use -Force:
+powershell -ExecutionPolicy Bypass -File scripts/download-images-from-map.ps1 -Force
+```
+
+Breakfast omelette photos and other verified images are kept in git — do not bulk-replace without checking each photo.

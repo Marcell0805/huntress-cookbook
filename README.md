@@ -60,15 +60,19 @@ Link the new recipe from the relevant chapter page.
 
 Recipe HTML pages include a `data-recipe-id` attribute matching the `id` field in `data/recipes.json` where applicable.
 
-## Recipe data (JSON)
+## Recipe data (JS)
 
-`data/recipes.json` holds structured recipe records (ingredients, instructions, tags, huntress notes). When adding recipes:
+All recipe data lives in **`js/recipes.js`** (generated from `data/Huntress_Cookbook_Recipes_v1.json` + `data/recipes.json`).
 
-1. Add an entry to `data/recipes.json`
-2. Create a matching HTML page under `recipes/` (use `data-recipe-id` on `<body>`)
-3. Link from the appropriate chapter page
+To rebuild after editing the JSON source files:
 
-## Approval Status
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/build-recipes.ps1
+```
+
+`js/cookbook.js` renders chapter recipe lists and hydrates recipe pages from `recipes.js`.
+
+## Recipe data (JSON source)
 
 | Status | CSS class | Label |
 |--------|-----------|-------|
