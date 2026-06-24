@@ -347,6 +347,9 @@ foreach ($prop in $v1.categories.PSObject.Properties) {
     $categories += [ordered]@{ id = $catId; name = $catLabel; recipeSlugs = $recipeSlugs }
 }
 
+$introduction = Load-DataJson "introduction.json"
+if ($introduction) { Write-Host "Loaded introduction from data/introduction.json" }
+
 $pantryEssentials = Load-DataJson "pantry-essentials.json"
 if ($pantryEssentials) { Write-Host "Loaded pantry essentials from data/pantry-essentials.json" }
 
@@ -365,6 +368,7 @@ $output = [ordered]@{
     version = if ($settings -and $settings.version) { $settings.version } elseif ($v1.version) { $v1.version } else { "1.0" }
     project = if ($settings -and $settings.cookbookName) { $settings.cookbookName } elseif ($v1.project) { $v1.project } else { "The Huntress Cookbook" }
     settings = $settings
+    introduction = $introduction
     dietaryGuide = $dietaryGuide
     pantryEssentials = $pantryEssentials
     futureRecipes = $futureRecipes
@@ -390,32 +394,36 @@ $chapterLinks = @{
     drinks = "drinks.html"
 }
 
-function Get-ToolbarHtml([string]$chapterFile, [string]$chapterLabel, [switch]$ChapterOnly) {
-    $backHref = if ($ChapterOnly) { '../index.html' } else { "../chapters/$chapterFile" }
-    $backTitle = if ($ChapterOnly) { 'Back to cookbook' } else { "Back to $chapterLabel" }
-    $homeBtn = if ($ChapterOnly) { '' } else {
-@'
-      <a href="../index.html" class="toolbar-btn" title="Cookbook home">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-        <span class="sr-only">Cookbook home</span>
-      </a>
-'@
+function Convert-CookbookPageShell([string]$content, [string]$scope, [string]$activeNav) {
+    if ($content -notmatch 'data-cookbook-sidebar') {
+        $notes = ''
+        if ($content -match '(?s)<div class="sidebar-notes">\s*<div class="sidebar-notes-title">.*?</div>\s*<p>.*?</p>\s*</div>') {
+            $notes = '      ' + ($Matches[0] -replace '<div class="sidebar-notes">', '<div class="sidebar-notes" data-sidebar-preserve>')
+            $content = [regex]::Replace($content, '(?s)\s*<div class="sidebar-notes">\s*<div class="sidebar-notes-title">.*?</div>\s*<p>.*?</p>\s*</div>\s*', "`n")
+        }
+        $sidebarReplacement = "    <aside class=`"sidebar`" data-cookbook-sidebar>`n$notes    </aside>"
+        $content = [regex]::Replace($content, '(?s)\s*<aside class="sidebar"[^>]*>.*?</aside>', "`n$sidebarReplacement")
     }
-    return @"
-  <header class="cookbook-toolbar no-print" aria-label="Page tools">
-    <div class="toolbar-inner">
-      <a href="$backHref" class="toolbar-btn toolbar-back" title="$backTitle">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
-        <span class="sr-only">$backTitle</span>
-      </a>
-$homeBtn
-      <button type="button" class="toolbar-btn toolbar-print" title="Print or save as PDF (Ctrl+P)">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
-        <span class="sr-only">Print</span>
-      </button>
-    </div>
-  </header>
-"@
+
+    if ($content -notmatch 'id="cookbook-toolbar"') {
+        $content = [regex]::Replace($content, '(?s)\s*<header class="cookbook-toolbar\b[^>]*>.*?</header>', "`n  <div id=`"cookbook-toolbar`"></div>")
+    }
+
+    if ($content -notmatch 'data-nav-scope=') {
+        $content = [regex]::Replace($content, '<body([^>]*)>', "<body`$1 data-nav-scope=`"$scope`">")
+    } elseif ($scope) {
+        $content = [regex]::Replace($content, 'data-nav-scope="[^"]*"', "data-nav-scope=`"$scope`"")
+    }
+
+    if ($activeNav) {
+        if ($content -notmatch 'data-nav-active=') {
+            $content = [regex]::Replace($content, '<body([^>]*)>', "<body`$1 data-nav-active=`"$activeNav`">")
+        } else {
+            $content = [regex]::Replace($content, 'data-nav-active="[^"]*"', "data-nav-active=`"$activeNav`"")
+        }
+    }
+
+    return $content
 }
 
 $recipeTemplate = @'
@@ -429,35 +437,12 @@ $recipeTemplate = @'
   <style>html:not(.auth-ok) body > :not(#auth-gate) { display: none; }</style>
   <script src="../js/auth.js"></script>
 </head>
-<body class="recipe-page" data-recipe-slug="{{SLUG}}" data-recipe-id="{{ID}}">
+<body class="recipe-page" data-nav-scope="recipe" data-recipe-slug="{{SLUG}}" data-recipe-id="{{ID}}">
 
-{{TOOLBAR}}
+  <div id="cookbook-toolbar"></div>
 
   <div class="page">
-    <aside class="sidebar">
-      <div class="sidebar-logo">
-        <img src="../assets/fox-logo.svg" alt="Sly Fox">
-        <div class="sidebar-brand">THE HUNTRESS<br>COOKBOOK</div>
-      </div>
-      <ol class="sidebar-nav">
-        <li><a href="#">1. Introduction</a></li>
-        <li><a href="../chapters/dietary-guide.html">2. Huntress Dietary Guide</a></li>
-        <li><a href="../chapters/pantry-essentials.html">3. Pantry Essentials</a></li>
-        <li><a href="../chapters/breakfast.html">4. Breakfast Recipes</a></li>
-        <li><a href="../chapters/lunch.html">5. Lunch Recipes</a></li>
-        <li><a href="../chapters/dinner.html">6. Dinner Recipes</a></li>
-        <li><a href="../chapters/braai.html">7. Braai Recipes</a></li>
-        <li><a href="../chapters/soups.html">8. Soups &amp; Comfort Foods</a></li>
-        <li><a href="../chapters/desserts.html">9. Desserts</a></li>
-        <li><a href="../chapters/snacks.html">10. Snacks &amp; Picnic Foods</a></li>
-        <li><a href="../chapters/drinks.html">11. Drinks</a></li>
-        <li><a href="#">12. Special Occasion Meals</a></li>
-        <li><a href="#">13. Approved Huntress Meals</a></li>
-        <li><a href="#">14. Recipe Improvement Notes</a></li>
-        <li><a href="../chapters/future-recipes.html">15. Future Recipes To Try</a></li>
-      </ol>
-      <p class="sidebar-tagline">Made with care,<br>for the Huntress <span class="heart">♥</span></p>
-    </aside>
+    <aside class="sidebar" data-cookbook-sidebar></aside>
 
     <main class="main">
       <header class="recipe-header">
@@ -483,7 +468,7 @@ $recipeTemplate = @'
             <p></p>
           </div>
         </div>
-        <div class="recipe-rating">☆ ☆ ☆ ☆ ☆</div>
+        <div class="recipe-rating" aria-label="Rating not yet set"></div>
         <div class="recipe-photo">
           <img src="../assets/images/{{IMAGE}}" alt="{{NAME}}">
         </div>
@@ -518,9 +503,6 @@ foreach ($slug in $allRecipes.Keys) {
         $html = $html.Replace('{{ID}}', $recipe.id)
         $html = $html.Replace('{{NAME}}', ($recipe.name -replace '&', '&amp;'))
         $html = $html.Replace('{{IMAGE}}', $recipe.image)
-        $html = $html.Replace('{{CHAPTER_FILE}}', $chapterLinks[$recipe.categoryId])
-        $html = $html.Replace('{{CHAPTER_LABEL}}', $chapterLabels[$recipe.categoryId])
-        $html = $html.Replace('{{TOOLBAR}}', (Get-ToolbarHtml $chapterLinks[$recipe.categoryId] $chapterLabels[$recipe.categoryId]))
         Write-Utf8File $path $html
         $created++
     }
@@ -532,19 +514,18 @@ Get-ChildItem "$root\recipes\*.html" | ForEach-Object {
     $content = [System.IO.File]::ReadAllText($_.FullName, $utf8)
     $slug = $_.BaseName
     $recipe = $allRecipes[$slug]
-    if (-not $recipe) { return }
     $changed = $false
-    if ($content -notmatch 'data-recipe-slug=') {
-        $content = $content -replace '<body class="recipe-page"[^>]*>', "<body class=`"recipe-page`" data-recipe-slug=`"$slug`" data-recipe-id=`"$($recipe.id)`">"
+    $newContent = Convert-CookbookPageShell $content 'recipe' ''
+    if ($newContent -ne $content) { $content = $newContent; $changed = $true }
+    if ($recipe -and $content -notmatch 'data-recipe-slug=') {
+        $content = $content -replace '<body class="recipe-page"[^>]*>', "<body class=`"recipe-page`" data-nav-scope=`"recipe`" data-recipe-slug=`"$slug`" data-recipe-id=`"$($recipe.id)`">"
+        $changed = $true
+    } elseif ($content -notmatch 'data-nav-scope=') {
+        $content = [regex]::Replace($content, '<body([^>]*)>', '<body$1 data-nav-scope="recipe">')
         $changed = $true
     }
     if ($content -notmatch 'recipes\.js') {
         $content = $content -replace '</body>', "  <script src=`"../js/recipes.js`"></script>`n  <script src=`"../js/cookbook.js`"></script>`n</body>"
-        $changed = $true
-    }
-    if ($content -notmatch 'cookbook-toolbar') {
-        $toolbar = Get-ToolbarHtml $chapterLinks[$recipe.categoryId] $chapterLabels[$recipe.categoryId]
-        $content = [regex]::Replace($content, '(?s)\s*<p class="no-print"[^>]*>.*?</p>', "`n$toolbar")
         $changed = $true
     }
     if ($changed) {
@@ -554,39 +535,57 @@ Get-ChildItem "$root\recipes\*.html" | ForEach-Object {
 }
 Write-Host "Updated $updated existing recipe HTML pages"
 
-$chapterToolbar = Get-ToolbarHtml '' '' -ChapterOnly
+$chapterNavIds = @{
+    'introduction.html' = 'introduction'
+    'dietary-guide.html' = 'dietary-guide'
+    'pantry-essentials.html' = 'pantry-essentials'
+    'breakfast.html' = 'breakfast'
+    'lunch.html' = 'lunch'
+    'dinner.html' = 'dinner'
+    'braai.html' = 'braai'
+    'soups.html' = 'soups'
+    'desserts.html' = 'desserts'
+    'snacks.html' = 'snacks'
+    'drinks.html' = 'drinks'
+    'future-recipes.html' = 'future-recipes'
+}
+
 $chaptersUpdated = 0
 Get-ChildItem "$root\chapters\*.html" | ForEach-Object {
     $content = [System.IO.File]::ReadAllText($_.FullName, $utf8)
-    if ($content -match 'cookbook-toolbar') { return }
-    $newContent = [regex]::Replace($content, '(?s)\s*<p class="no-print"[^>]*>.*?</p>', "`n$chapterToolbar")
+    $activeNav = $chapterNavIds[$_.Name]
+    if (-not $activeNav) { return }
+    $newContent = Convert-CookbookPageShell $content 'chapter' $activeNav
+    if ($newContent -notmatch 'cookbook\.js') {
+        $newContent = $newContent -replace '</body>', "  <script src=`"../js/recipes.js`"></script>`n  <script src=`"../js/cookbook.js`"></script>`n</body>"
+    }
     if ($newContent -ne $content) {
-        if ($newContent -notmatch 'cookbook\.js') {
-            $newContent = $newContent -replace '</body>', "  <script src=`"../js/recipes.js`"></script>`n  <script src=`"../js/cookbook.js`"></script>`n</body>"
-        }
         Write-Utf8File $_.FullName $newContent
         $chaptersUpdated++
     }
 }
-Write-Host "Updated $chaptersUpdated chapter HTML pages with icon toolbar"
+Write-Host "Updated $chaptersUpdated chapter HTML pages with shared shell"
 
-$sidebarOld = '(?s)<li><a href="(\.\./chapters/|)snacks\.html">10\. Snacks &amp; Picnic Foods</a></li>\s*<li><a href="#">11\. Special Occasion Meals</a></li>\s*<li><a href="#">12\. Approved Huntress Meals</a></li>\s*<li><a href="#">13\. Recipe Improvement Notes</a></li>\s*<li><a href="\1future-recipes\.html">14\. Future Recipes To Try</a></li>'
-$sidebarNewChapter = '<li><a href="${1}snacks.html">10. Snacks &amp; Picnic Foods</a></li>
-        <li><a href="${1}drinks.html">11. Drinks</a></li>
-        <li><a href="#">12. Special Occasion Meals</a></li>
-        <li><a href="#">13. Approved Huntress Meals</a></li>
-        <li><a href="#">14. Recipe Improvement Notes</a></li>
-        <li><a href="${1}future-recipes.html">15. Future Recipes To Try</a></li>'
-
-$navUpdated = 0
-Get-ChildItem "$root\chapters\*.html", "$root\recipes\*.html" | ForEach-Object {
+$fixedAside = 0
+Get-ChildItem "$root\chapters\*.html" | ForEach-Object {
     $content = [System.IO.File]::ReadAllText($_.FullName, $utf8)
-    if ($content -notmatch '11\. Drinks') {
-        $newContent = [regex]::Replace($content, $sidebarOld, $sidebarNewChapter)
+    if ($content -match 'data-sidebar-preserve') {
+        $newContent = [regex]::Replace($content, '(?s)\s*<aside class="sidebar" data-cookbook-sidebar>.*?</aside>', "`n    <aside class=`"sidebar`" data-cookbook-sidebar></aside>")
         if ($newContent -ne $content) {
             Write-Utf8File $_.FullName $newContent
-            $navUpdated++
+            $fixedAside++
         }
     }
 }
-Write-Host "Updated $navUpdated HTML pages with drinks nav (section 11)"
+Write-Host "Fixed $fixedAside chapter sidebars with broken markup"
+
+$ratingFixed = 0
+Get-ChildItem "$root\recipes\*.html" | ForEach-Object {
+    $content = [System.IO.File]::ReadAllText($_.FullName, $utf8)
+    $newContent = [regex]::Replace($content, '<div class="recipe-rating"[^>]*>.*?</div>', '<div class="recipe-rating" aria-label="Rating not yet set"></div>')
+    if ($newContent -ne $content) {
+        Write-Utf8File $_.FullName $newContent
+        $ratingFixed++
+    }
+}
+Write-Host "Normalized recipe rating stars on $ratingFixed HTML pages"

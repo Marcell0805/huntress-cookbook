@@ -83,19 +83,168 @@
     drinks: { href: '../chapters/drinks.html', label: 'Drinks' }
   };
 
-  var CHAPTER_PAGES = [
-    { num: 2, file: 'dietary-guide.html', label: 'Dietary Guide' },
-    { num: 3, file: 'pantry-essentials.html', label: 'Pantry Essentials' },
-    { num: 4, file: 'breakfast.html', label: 'Breakfast' },
-    { num: 5, file: 'lunch.html', label: 'Lunch' },
-    { num: 6, file: 'dinner.html', label: 'Dinner' },
-    { num: 7, file: 'braai.html', label: 'Braai' },
-    { num: 8, file: 'soups.html', label: 'Soups & Comfort Foods' },
-    { num: 9, file: 'desserts.html', label: 'Desserts' },
-    { num: 10, file: 'snacks.html', label: 'Snacks & Picnic Foods' },
-    { num: 11, file: 'drinks.html', label: 'Drinks' },
-    { num: 15, file: 'future-recipes.html', label: 'Future Recipes' }
+  var COOKBOOK_NAV = [
+    { id: 'introduction', num: 1, file: 'introduction.html', label: 'Introduction', available: true },
+    { id: 'dietary-guide', num: 2, file: 'dietary-guide.html', label: 'Huntress Dietary Guide', available: true },
+    { id: 'pantry-essentials', num: 3, file: 'pantry-essentials.html', label: 'Pantry Essentials', available: true },
+    { id: 'breakfast', num: 4, file: 'breakfast.html', label: 'Breakfast Recipes', available: true },
+    { id: 'lunch', num: 5, file: 'lunch.html', label: 'Lunch Recipes', available: true },
+    { id: 'dinner', num: 6, file: 'dinner.html', label: 'Dinner Recipes', available: true },
+    { id: 'braai', num: 7, file: 'braai.html', label: 'Braai Recipes', available: true },
+    { id: 'soups', num: 8, file: 'soups.html', label: 'Soups & Comfort Foods', available: true },
+    { id: 'desserts', num: 9, file: 'desserts.html', label: 'Desserts', available: true },
+    { id: 'snacks', num: 10, file: 'snacks.html', label: 'Snacks & Picnic Foods', available: true },
+    { id: 'drinks', num: 11, file: 'drinks.html', label: 'Drinks', available: true },
+    { id: 'special-occasions', num: 12, file: null, label: 'Special Occasion Meals', available: false },
+    { id: 'approved-meals', num: 13, file: null, label: 'Approved Huntress Meals', available: false },
+    { id: 'improvement-notes', num: 14, file: null, label: 'Recipe Improvement Notes', available: false },
+    { id: 'future-recipes', num: 15, file: 'future-recipes.html', label: 'Future Recipes To Try', available: true }
   ];
+
+  var CHAPTER_PAGES = COOKBOOK_NAV.filter(function (item) {
+    return item.available && item.file;
+  });
+
+  var CHAPTER_SIDEBAR_NOTES = {
+    breakfast: { title: '\u2615 BREAKFAST NOTES', text: 'Breakfast sets the tone for the day. These meals are nourishing, gentle on the body, and designed to be gluten-friendly, onion-free, and IBS-conscious.' },
+    lunch: { title: '\uD83E\uDD57 LUNCH NOTES', text: 'Fresh bowls, gentle soups, and picnic-friendly plates for a calm midday pause.' },
+    dinner: { title: '\uD83C\uDF7D DINNER NOTES', text: 'Satisfying dinners for the end of the day \u2014 gluten-free, onion-free, and South African friendly where it counts.' },
+    braai: { title: '\uD83D\uDD25 BRAAI NOTES', text: 'Fire, friends, and flavour \u2014 braai classics that stay gluten-free, onion-free, and Huntress-safe.' },
+    soups: { title: '\uD83C\uDF72 COMFORT NOTES', text: 'Gentle soups and familiar comfort classics for rainy afternoons and slow evenings.' },
+    desserts: { title: '\uD83C\uDF70 DESSERT NOTES', text: 'Gluten-free treats and no-bake favourites \u2014 because every Huntress deserves something sweet.' },
+    snacks: { title: '\uD83E\uDDF3 SNACK NOTES', text: 'Light bites for trails, picnics, and those in-between moments \u2014 all Huntress-safe.' },
+    drinks: { title: '\u2615 DRINK NOTES', text: 'Comfort drinks, smoothies, coolers and everyday beverages for the Huntress.' },
+    'future-recipes': { title: '\u2728 FUTURE IDEAS', text: 'Recipes to explore when you are ready for the next kitchen adventure.' }
+  };
+  var SVG_BACK = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>';
+  var SVG_HOME = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>';
+  var SVG_PRINT = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>';
+
+  function getNavScope() {
+    var scope = document.body.getAttribute('data-nav-scope');
+    if (scope) return scope;
+    if (document.body.classList.contains('recipe-page')) return 'recipe';
+    if (document.querySelector('[data-cookbook-sidebar]')) return 'chapter';
+    return '';
+  }
+
+  function getNavActive() {
+    return document.body.getAttribute('data-nav-active') || '';
+  }
+
+  function navHref(file, scope) {
+    if (!file) return '#';
+    return scope === 'recipe' ? '../chapters/' + file : file;
+  }
+
+  function resolveToolbarTarget() {
+    var scope = getNavScope();
+    if (scope === 'chapter') {
+      return { href: '../index.html', title: 'Back to cookbook', showHome: false };
+    }
+    if (scope === 'recipe') {
+      var slug = document.body.getAttribute('data-recipe-slug');
+      var recipe = slug ? getRecipe(slug) : null;
+      if (recipe && CHAPTER_BACK[recipe.categoryId]) {
+        var ch = CHAPTER_BACK[recipe.categoryId];
+        return { href: ch.href, title: 'Back to ' + ch.label, showHome: true };
+      }
+      return { href: '../index.html', title: 'Back to cookbook', showHome: true };
+    }
+    return null;
+  }
+
+  function renderToolbar(target) {
+    var mount = document.getElementById('cookbook-toolbar');
+    if (!mount || !target) return;
+
+    var homeBtn = target.showHome
+      ? '<a href="../index.html" class="toolbar-btn" title="Cookbook home">' + SVG_HOME + '<span class="sr-only">Cookbook home</span></a>'
+      : '';
+
+    mount.outerHTML =
+      '<header class="cookbook-toolbar no-print" aria-label="Page tools">' +
+        '<div class="toolbar-inner">' +
+          '<a href="' + esc(target.href) + '" class="toolbar-btn toolbar-back" title="' + esc(target.title) + '">' +
+            SVG_BACK + '<span class="sr-only">' + esc(target.title) + '</span>' +
+          '</a>' +
+          homeBtn +
+          '<button type="button" class="toolbar-btn toolbar-print" title="Print or save as PDF (Ctrl+P)">' +
+            SVG_PRINT + '<span class="sr-only">Print</span>' +
+          '</button>' +
+        '</div>' +
+      '</header>';
+
+    document.querySelectorAll('.toolbar-print').forEach(function (btn) {
+      btn.addEventListener('click', function () { window.print(); });
+    });
+  }
+
+  function renderSidebar() {
+    var aside = document.querySelector('[data-cookbook-sidebar]');
+    if (!aside) return;
+
+    var preserved = [];
+    aside.querySelectorAll('[data-sidebar-preserve]').forEach(function (el) {
+      preserved.push(el.cloneNode(true));
+    });
+
+    var scope = getNavScope();
+    var active = getNavActive();
+    var navHtml = '<ol class="sidebar-nav">';
+    COOKBOOK_NAV.forEach(function (item) {
+      var label = item.num + '. ' + item.label;
+      if (item.id === active) {
+        navHtml += '<li class="active">' + esc(label) + '</li>';
+      } else if (item.available && item.file) {
+        navHtml += '<li><a href="' + navHref(item.file, scope) + '">' + esc(label) + '</a></li>';
+      } else {
+        navHtml += '<li><a href="#">' + esc(label) + '</a></li>';
+      }
+    });
+    navHtml += '</ol>';
+
+    aside.innerHTML =
+      '<div class="sidebar-logo">' +
+        '<img src="../assets/fox-logo.svg" alt="Sly Fox">' +
+        '<div class="sidebar-brand">THE HUNTRESS<br>COOKBOOK</div>' +
+      '</div>' +
+      navHtml +
+      '<p class="sidebar-tagline">Made with care,<br>for the Huntress <span class="heart">\u2665</span></p>';
+
+    preserved.forEach(function (el) { aside.appendChild(el); });
+
+    var chapterNotes = CHAPTER_SIDEBAR_NOTES[active];
+    if (chapterNotes && !preserved.length) {
+      var notesEl = document.createElement('div');
+      notesEl.className = 'sidebar-notes';
+      notesEl.innerHTML =
+        '<div class="sidebar-notes-title">' + esc(chapterNotes.title) + '</div>' +
+        '<p>' + esc(chapterNotes.text) + '</p>';
+      aside.appendChild(notesEl);
+    }
+  }
+
+  function renderCookbookShell() {
+    renderSidebar();
+    renderToolbar(resolveToolbarTarget());
+  }
+
+  function renderLandingNav() {
+    var el = document.querySelector('[data-cookbook-landing-nav]');
+    if (!el) return;
+
+    var html = '';
+    COOKBOOK_NAV.forEach(function (item) {
+      var label = item.num + '. ' + item.label;
+      if (item.available && item.file) {
+        html += '<li><a href="chapters/' + item.file + '"><span>' + esc(label) + '</span> <span class="available">Open \u2192</span></a></li>';
+      } else {
+        html += '<li><a href="#"><span>' + esc(label) + '</span> <span class="coming-soon">Coming soon</span></a></li>';
+      }
+    });
+    el.innerHTML = html;
+  }
 
   function sectionAnchorId(title) {
     return String(title).toLowerCase()
@@ -210,19 +359,10 @@
     el.setAttribute('data-nav-ready', '1');
   }
 
-  function updateRecipeBackLink(recipe) {
-    var ch = CHAPTER_BACK[recipe.categoryId];
-    if (!ch) return;
-    var link = document.querySelector('.toolbar-back');
-    if (!link) return;
-    link.href = ch.href;
-    link.title = 'Back to ' + ch.label;
-    var sr = link.querySelector('.sr-only');
-    if (sr) sr.textContent = 'Back to ' + ch.label;
-  }
-
   function initCookbookToolbar() {
     document.querySelectorAll('.toolbar-print').forEach(function (btn) {
+      if (btn.getAttribute('data-print-bound')) return;
+      btn.setAttribute('data-print-bound', '1');
       btn.addEventListener('click', function () {
         window.print();
       });
@@ -385,8 +525,15 @@
       };
     }
 
-    updateRecipeBackLink(recipe);
+    renderRecipeRating();
+    renderCookbookShell();
     renderRecipeSectionNav(recipe);
+  }
+
+  function renderRecipeRating() {
+    var el = document.querySelector('.recipe-rating');
+    if (!el || !document.body.classList.contains('recipe-page')) return;
+    el.textContent = '\u2606 \u2606 \u2606 \u2606 \u2606';
   }
 
   function applyCookbookSettings() {
@@ -427,15 +574,133 @@
   }
 
   document.addEventListener('DOMContentLoaded', function () {
-    initCookbookToolbar();
+    renderCookbookShell();
     applyCookbookSettings();
+    renderLandingNav();
+    initCookbookToolbar();
     renderChapter();
     hydrateRecipePage();
+    renderIntroduction();
     renderDietaryGuide();
     renderPantryEssentials();
     renderFutureRecipes();
     renderChapterPageNav();
   });
+
+  function renderIntroduction() {
+    var el = document.getElementById('introduction-content');
+    if (!el || !window.HUNTRESS_COOKBOOK || !HUNTRESS_COOKBOOK.introduction) return;
+
+    var data = HUNTRESS_COOKBOOK.introduction;
+    var intro = data.introduction || {};
+    var html = '<header class="chapter-header"><h1>INTRODUCTION</h1><div class="chapter-divider">\u2727 \u2727 \u2727</div></header>';
+
+    if (data.subtitle) {
+      html += '<p class="chapter-intro"><em>' + esc(data.subtitle) + '</em></p>';
+    }
+    if (intro.welcome) {
+      html += '<p class="chapter-intro">' + esc(intro.welcome) + '</p>';
+    }
+    if (intro.purpose) {
+      html += '<p class="chapter-intro">' + esc(intro.purpose) + '</p>';
+    }
+
+    html += '<div class="categories">';
+
+    if (intro.philosophy && intro.philosophy.length) {
+      html += '<section class="category" id="section-philosophy">';
+      html += '<div class="category-header"><h2 class="category-title">Our Philosophy</h2></div>';
+      html += '<ul class="recipe-list">';
+      intro.philosophy.forEach(function (item) { html += '<li>' + esc(item) + '</li>'; });
+      html += '</ul></section>';
+    }
+
+    var profile = data.huntressProfile;
+    if (profile) {
+      if (profile.glutenSensitivity) {
+        html += '<section class="category" id="section-gluten-sensitivity">';
+        html += '<div class="category-header"><h2 class="category-title">Gluten Sensitivity</h2></div>';
+        if (profile.glutenSensitivity.level) {
+          html += '<p class="category-desc">' + esc(profile.glutenSensitivity.level) + '</p>';
+        }
+        html += '<ul class="recipe-list dietary-notes">';
+        asArray(profile.glutenSensitivity.notes).forEach(function (note) { html += '<li>' + esc(note) + '</li>'; });
+        html += '</ul></section>';
+      }
+
+      if (profile.ibsConsiderations) {
+        html += '<section class="category" id="section-ibs-considerations">';
+        html += '<div class="category-header"><h2 class="category-title">IBS Considerations</h2></div>';
+        if (profile.ibsConsiderations.notes && profile.ibsConsiderations.notes.length) {
+          html += '<ul class="recipe-list dietary-notes">';
+          profile.ibsConsiderations.notes.forEach(function (note) { html += '<li>' + esc(note) + '</li>'; });
+          html += '</ul>';
+        }
+        if (profile.ibsConsiderations.avoidFoods && profile.ibsConsiderations.avoidFoods.length) {
+          html += '<p class="category-desc">Foods to approach with caution:</p>';
+          html += '<ul class="recipe-list">';
+          profile.ibsConsiderations.avoidFoods.forEach(function (item) { html += '<li>' + esc(item) + '</li>'; });
+          html += '</ul>';
+        }
+        html += '</section>';
+      }
+
+      if (profile.caffeineSensitivity) {
+        html += '<section class="category" id="section-caffeine-sensitivity">';
+        html += '<div class="category-header"><h2 class="category-title">Caffeine Sensitivity</h2></div>';
+        html += '<ul class="recipe-list dietary-notes">';
+        asArray(profile.caffeineSensitivity.notes).forEach(function (note) { html += '<li>' + esc(note) + '</li>'; });
+        html += '</ul></section>';
+      }
+    }
+
+    var legend = data.cookbookLegend;
+    if (legend) {
+      if (legend.statuses) {
+        html += '<section class="category" id="section-recipe-statuses">';
+        html += '<div class="category-header"><h2 class="category-title">Recipe Statuses</h2></div><ul class="recipe-list dietary-notes">';
+        for (var status in legend.statuses) {
+          html += '<li><strong>' + esc(status) + ':</strong> ' + esc(legend.statuses[status]) + '</li>';
+        }
+        html += '</ul></section>';
+      }
+      if (legend.difficultyLevels) {
+        html += '<section class="category" id="section-difficulty-levels">';
+        html += '<div class="category-header"><h2 class="category-title">Difficulty Levels</h2></div><ul class="recipe-list dietary-notes">';
+        for (var level in legend.difficultyLevels) {
+          html += '<li><strong>' + esc(level) + ':</strong> ' + esc(legend.difficultyLevels[level]) + '</li>';
+        }
+        html += '</ul></section>';
+      }
+    }
+
+    if (data.foxAndHuntressNotes && data.foxAndHuntressNotes.message) {
+      html += '<section class="category" id="section-fox-and-huntress">';
+      html += '<div class="category-header"><h2 class="category-title">Fox &amp; Huntress Notes</h2></div>';
+      html += '<p class="category-desc">' + esc(data.foxAndHuntressNotes.message) + '</p>';
+      html += '</section>';
+    }
+
+    if (data.favouriteSafeFoods && data.favouriteSafeFoods.length) {
+      html += '<section class="category" id="section-favourite-safe-foods">';
+      html += '<div class="category-header"><h2 class="category-title">Favourite Safe Foods</h2></div>';
+      html += '<ul class="recipe-list">';
+      data.favouriteSafeFoods.forEach(function (item) { html += '<li>' + esc(item) + '</li>'; });
+      html += '</ul></section>';
+    }
+
+    if (data.emergencyFoods && data.emergencyFoods.length) {
+      html += '<section class="category" id="section-emergency-foods">';
+      html += '<div class="category-header"><h2 class="category-title">Emergency Foods</h2></div>';
+      html += '<ul class="recipe-list">';
+      data.emergencyFoods.forEach(function (item) { html += '<li>' + esc(item) + '</li>'; });
+      html += '</ul></section>';
+    }
+
+    html += '</div>';
+    html += '<footer class="chapter-footer"><div class="page-number">\u25C2 1 \u25B8</div></footer>';
+    el.innerHTML = html;
+  }
 
   function renderDietaryGuide() {
     var el = document.getElementById('dietary-guide-content');
