@@ -72,7 +72,6 @@
         }
       ]
     },
-
     {
       "name": "Vegetables",
       "description": "Huntress-friendly vegetables.",
@@ -115,7 +114,6 @@
         }
       ]
     },
-
     {
       "name": "Vegetables To Avoid",
       "description": "Known IBS triggers.",
@@ -132,7 +130,6 @@
         }
       ]
     },
-
     {
       "name": "Fruit",
       "description": "Safe fruit options.",
@@ -170,7 +167,6 @@
         }
       ]
     },
-
     {
       "name": "Carbohydrates",
       "description": "Safe carbohydrate options.",
@@ -209,7 +205,6 @@
         }
       ]
     },
-
     {
       "name": "Dairy",
       "description": "Common dairy ingredients used throughout the cookbook.",
@@ -240,7 +235,6 @@
         }
       ]
     },
-
     {
       "name": "Herbs & Spices",
       "description": "The flavour section.",
@@ -283,7 +277,6 @@
         }
       ]
     },
-
     {
       "name": "Oils & Sweeteners",
       "description": "Cooking fats and sweeteners.",
@@ -306,7 +299,6 @@
         }
       ]
     },
-
     {
       "name": "Avoid List",
       "description": "Always double-check labels.",

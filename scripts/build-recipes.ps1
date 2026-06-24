@@ -13,12 +13,6 @@ function Write-Utf8File([string]$path, [string]$content) {
     [System.IO.File]::WriteAllText($path, $content, $utf8)
 }
 
-$v1 = Read-JsonFile "$root\data\Huntress_Cookbook_Recipes_v1.json"
-$details = @{}
-if (Test-Path "$root\data\recipes.json") {
-    (Read-JsonFile "$root\data\recipes.json") | ForEach-Object { $details[$_.name] = $_ }
-}
-
 $slugOverrides = @{
     "Yogurt & Honey Bowl" = "yogurt-honey-breakfast-bowl"
     "Yogurt & Honey Breakfast Bowl" = "yogurt-honey-breakfast-bowl"
@@ -127,9 +121,14 @@ function Get-ImageFile($recipe, $slug) {
 
 function Get-RecipeSlug([string]$name, [string]$id, [string]$catId) {
     if ($slugOverrides.ContainsKey($name)) { return $slugOverrides[$name] }
+    if ($id -and $id -match '^[a-z0-9]+(-[a-z0-9]+)*$') {
+        $idFile = "$root\recipes\$id.html"
+        if (Test-Path $idFile) { return $id }
+    }
     $slug = Get-Slug $name
     $existingFile = "$root\recipes\$slug.html"
     if (Test-Path $existingFile) { return $slug }
+    if ($id -and $id -match '^[a-z0-9]+(-[a-z0-9]+)*$') { return $id }
     if ($id -and $id -match "^$([regex]::Escape($catId))-(.+)$") { return $Matches[1] }
     return $slug
 }
@@ -142,6 +141,14 @@ $sectionIcons = @{
     "Light Lunches" = "salad"
     "Salads & Bowls" = "salad"
     "Soups" = "soup"
+    "Soup Collection" = "soup"
+    "Comfort Bowls" = "bowl"
+    "Cold Weather Favourites" = "warm"
+    "Classic Comfort Foods" = "home"
+    "Baked Comfort Dishes" = "warm"
+    "Recovery Meals" = "bowl"
+    "Winter Favourites" = "warm"
+    "Comfort Classics" = "home"
     "Picnic Friendly" = "picnic"
     "Bites & Skewers" = "skewer"
     "Warm Lunches" = "warm"
@@ -180,12 +187,13 @@ $sectionIcons = @{
     "Future Drink Projects" = "clock"
 }
 
-# Per-chapter JSON files in data/ (add more as you split sections out of v1)
+# Per-chapter JSON files in data/
 $chapterDataFiles = [ordered]@{
     breakfast = "breakfast.json"
     lunch     = "lunch.json"
     dinner    = "dinner.json"
     braai     = "braai.json"
+    soups     = "comfortFood.json"
     desserts  = "desserts.json"
     snacks    = "snacks.json"
     drinks    = "drinks.json"
@@ -255,58 +263,13 @@ function Import-ChapterFile([string]$chapterId, [string]$fileName, [string]$catL
     }
 }
 
-function Build-RecipeFromV1($name, $catId, $catLabel) {
-    $slug = Get-RecipeSlug $name $null $catId
-    $d = $details[$name]
-    $hasExisting = $null -ne $allRecipes[$slug]
-    $existingName = if ($hasExisting) { $allRecipes[$slug].name } else { $null }
-    return [ordered]@{
-        id = if ($d -and $d.id) { $d.id } else { "$catId-$slug" }
-        slug = $slug
-        name = $name
-        categoryId = if ($hasExisting) { $allRecipes[$slug].categoryId } else { $catId }
-        category = if ($d) { $catLabel } elseif ($hasExisting) { $allRecipes[$slug].category } else { $catLabel }
-        status = "untested"
-        description = if ($d -and $d.description) { $d.description } elseif ($hasExisting) { $allRecipes[$slug].description } else { "Gluten-free, onion-free, and IBS-conscious. Recipe details to be added after testing." }
-        difficulty = if ($d -and $d.difficulty) { $d.difficulty } elseif ($hasExisting) { $allRecipes[$slug].difficulty } else { "TBD" }
-        prepTime = if ($d -and $d.prepTime) { Parse-Minutes $d.prepTime } elseif ($hasExisting) { $allRecipes[$slug].prepTime } else { 0 }
-        cookTime = if ($d -and $d.cookTime) { Parse-Minutes $d.cookTime } elseif ($hasExisting) { $allRecipes[$slug].cookTime } else { 0 }
-        servings = if ($d -and $d.servings) { Parse-Servings $d.servings } elseif ($hasExisting) { $allRecipes[$slug].servings } else { 0 }
-        tags = if ($d -and $d.tags) { @($d.tags) } elseif ($hasExisting) { Ensure-Array $allRecipes[$slug].tags "Gluten Free" } else { @("Gluten Free", "Onion Free") }
-        ingredients = if ($d -and $d.ingredients) { Ensure-Array $d.ingredients "Ingredients to be confirmed after testing." } elseif ($hasExisting) { Ensure-Array $allRecipes[$slug].ingredients "Ingredients to be confirmed after testing." } else { @("Ingredients to be confirmed after testing.") }
-        instructions = if ($d -and $d.instructions) { Ensure-Array $d.instructions "Method to be added once this recipe has been tested." } elseif ($hasExisting) { Ensure-Array $allRecipes[$slug].instructions "Method to be added once this recipe has been tested." } else { @("Method to be added once this recipe has been tested.") }
-        huntressNotes = if ($d -and $d.huntressNotes) { Join-Notes $d.huntressNotes "GF. Onion-Free. IBS-conscious." } elseif ($hasExisting) { $allRecipes[$slug].huntressNotes } else { "GF. Onion-Free. IBS-conscious." }
-        foxNotes = if ($d -and $d.foxNotes) { Join-Notes $d.foxNotes "Add Fox Notes after the first cook." } elseif ($hasExisting) { $allRecipes[$slug].foxNotes } else { "Add Fox Notes after the first cook." }
-        image = "$slug.jpg"
-    }
-}
-
-# v1 category keys covered by split JSON files (skip in v1 loop)
-$v1SkipCategories = @{
-    Breakfast = $true
-    Lunch     = $true
-    Dinner    = $true
-    Braai     = $true
-    Desserts  = $true
-    SnacksPicnicFoods = $true
-}
-
 function Load-DataJson([string]$fileName) {
     $path = Join-Path $root "data\$fileName"
     if (-not (Test-Path $path)) { return $null }
     return Read-JsonFile $path
 }
 
-$chapterSectionsJson = @'
-{
-  "soups": [
-    {"title":"Soups","icon":"soup","desc":"Gentle, warming bowls.","names":["Creamy Butternut Soup","Tomato & Basil Soup","Carrot & Ginger Soup","Chicken & Vegetable Soup","Roasted Red Pepper Soup"]},
-    {"title":"Comfort Classics","icon":"home","desc":"Familiar favourites for slow evenings.","names":["Cottage Pie","Shepherd's Pie","Bobotie","Beef Stew","Potjie","Butternut & Bacon Bake","Loaded Sweet Potatoes","Chicken & Rice Bake","Simple Chicken & Rice","Soft Scrambled Eggs","Honey Yogurt Bowl"]}
-  ]
-}
-'@
-
-$chapterSections = $chapterSectionsJson | ConvertFrom-Json
+$chapterSections = [PSCustomObject]@{}
 
 $allRecipes = [ordered]@{}
 $categories = @()
@@ -326,27 +289,6 @@ foreach ($entry in $chapterDataFiles.GetEnumerator()) {
     }
 }
 
-foreach ($prop in $v1.categories.PSObject.Properties) {
-    $catKey = $prop.Name
-    if ($v1SkipCategories.ContainsKey($catKey)) { continue }
-    if (-not $categoryMeta.ContainsKey($catKey)) { continue }
-    $meta = $categoryMeta[$catKey]
-    $catId = $meta.id
-    $catLabel = $meta.label
-    $recipeSlugs = @()
-    foreach ($name in @($prop.Value)) {
-        $slug = Get-RecipeSlug $name $null $catId
-        if ($null -ne $allRecipes[$slug]) {
-            if ($recipeSlugs -notcontains $slug) { $recipeSlugs += $slug }
-            continue
-        }
-        $recipe = Build-RecipeFromV1 $name $catId $catLabel
-        $allRecipes[$slug] = $recipe
-        $recipeSlugs += $slug
-    }
-    $categories += [ordered]@{ id = $catId; name = $catLabel; recipeSlugs = $recipeSlugs }
-}
-
 $introduction = Load-DataJson "introduction.json"
 if ($introduction) { Write-Host "Loaded introduction from data/introduction.json" }
 
@@ -354,19 +296,18 @@ $pantryEssentials = Load-DataJson "pantry-essentials.json"
 if ($pantryEssentials) { Write-Host "Loaded pantry essentials from data/pantry-essentials.json" }
 
 $dietaryGuide = Load-DataJson "dietary-guide.json"
-if (-not $dietaryGuide) { $dietaryGuide = $v1.dietaryGuide }
-else { Write-Host "Loaded dietary guide from data/dietary-guide.json" }
+if ($dietaryGuide) { Write-Host "Loaded dietary guide from data/dietary-guide.json" }
 
 $futureRecipes = Load-DataJson "future-recipes.json"
-if (-not $futureRecipes) { $futureRecipes = @{ names = @($v1.futureRecipes) } }
+if (-not $futureRecipes) { $futureRecipes = @{ names = @() } }
 else { Write-Host "Loaded future recipes from data/future-recipes.json" }
 
 $settings = Load-DataJson "cookbook-settings.json"
 if ($settings) { Write-Host "Loaded cookbook settings from data/cookbook-settings.json" }
 
 $output = [ordered]@{
-    version = if ($settings -and $settings.version) { $settings.version } elseif ($v1.version) { $v1.version } else { "1.0" }
-    project = if ($settings -and $settings.cookbookName) { $settings.cookbookName } elseif ($v1.project) { $v1.project } else { "The Huntress Cookbook" }
+    version = if ($settings -and $settings.version) { $settings.version } else { "1.0" }
+    project = if ($settings -and $settings.cookbookName) { $settings.cookbookName } else { "The Huntress Cookbook" }
     settings = $settings
     introduction = $introduction
     dietaryGuide = $dietaryGuide

@@ -3,1094 +3,1079 @@
   "description": "South African braai favourites adapted to be Huntress-friendly, gluten-conscious and onion-free.",
   "groups": [
     {
-  "group": "Braai Proteins",
-  "description": "The stars of the fire. High-protein braai meals designed to be Huntress-friendly and easy to prepare.",
-  "recipes": [
-    {
-      "id": "braai-garlic-herb-chicken-sosaties",
-      "name": "Garlic & Herb Chicken Sosaties",
-      "category": "Braai",
-      "subcategory": "Braai Proteins",
-      "description": "Tender chicken skewers marinated in garlic and herbs.",
-      "prepTime": "20 min",
-      "cookTime": "15 min",
-      "difficulty": "Easy",
-      "servings": "4",
-      "status": "Untested",
-      "ingredients": [
-        "600g chicken breast",
-        "2 garlic cloves",
-        "1 tsp rosemary",
-        "1 tsp thyme",
-        "1 tbsp olive oil",
-        "Salt",
-        "Pepper"
-      ],
-      "instructions": [
-        "Cube chicken.",
-        "Mix marinade ingredients.",
-        "Marinate for 30 minutes.",
-        "Thread onto skewers.",
-        "Braai over medium coals.",
-        "Serve hot."
-      ],
-      "huntressNotes": [
-        "Gluten Free",
-        "Onion Free",
-        "High Protein"
-      ],
-      "foxNotes": [
-        "Great first braai recipe to master."
-      ],
-      "tags": [
-        "Braai",
-        "Chicken",
-        "Protein"
-      ],
-      "imagePrompt": "Chicken sosaties cooking over South African braai coals, rustic outdoor photography"
+      "group": "Braai Proteins",
+      "description": "The stars of the fire. High-protein braai meals designed to be Huntress-friendly and easy to prepare.",
+      "recipes": [
+        {
+          "id": "braai-garlic-herb-chicken-sosaties",
+          "name": "Garlic & Herb Chicken Sosaties",
+          "category": "Braai",
+          "subcategory": "Braai Proteins",
+          "description": "Tender chicken skewers marinated in garlic and herbs.",
+          "prepTime": "20 min",
+          "cookTime": "15 min",
+          "difficulty": "Easy",
+          "servings": "4",
+          "status": "Untested",
+          "ingredients": [
+            "600g chicken breast",
+            "2 garlic cloves",
+            "1 tsp rosemary",
+            "1 tsp thyme",
+            "1 tbsp olive oil",
+            "Salt",
+            "Pepper"
+          ],
+          "instructions": [
+            "Cube chicken.",
+            "Mix marinade ingredients.",
+            "Marinate for 30 minutes.",
+            "Thread onto skewers.",
+            "Braai over medium coals.",
+            "Serve hot."
+          ],
+          "huntressNotes": [
+            "Gluten Free",
+            "Onion Free",
+            "High Protein"
+          ],
+          "foxNotes": [
+            "Great first braai recipe to master."
+          ],
+          "tags": [
+            "Braai",
+            "Chicken",
+            "Protein"
+          ],
+          "imagePrompt": "Chicken sosaties cooking over South African braai coals, rustic outdoor photography"
+        },
+        {
+          "id": "braai-beef-sosaties",
+          "name": "Beef Sosaties",
+          "category": "Braai",
+          "subcategory": "Braai Proteins",
+          "description": "Traditional beef sosaties adapted to avoid onion-heavy marinades.",
+          "prepTime": "25 min",
+          "cookTime": "15 min",
+          "difficulty": "Easy",
+          "servings": "4",
+          "status": "Untested",
+          "ingredients": [
+            "700g beef cubes",
+            "1 tbsp olive oil",
+            "1 tsp paprika",
+            "1 tsp garlic powder",
+            "Salt",
+            "Pepper"
+          ],
+          "instructions": [
+            "Season beef cubes.",
+            "Thread onto skewers.",
+            "Braai until desired doneness.",
+            "Rest briefly.",
+            "Serve."
+          ],
+          "huntressNotes": [
+            "Gluten Free",
+            "Onion Free"
+          ],
+          "foxNotes": [
+            "Excellent for weekend braais."
+          ],
+          "tags": [
+            "Braai",
+            "Beef",
+            "South African"
+          ],
+          "imagePrompt": "Beef sosaties grilling over open coals, traditional South African braai photography"
+        },
+        {
+          "id": "braai-steak-rosemary-butter",
+          "name": "Steak with Rosemary Butter",
+          "category": "Braai",
+          "subcategory": "Braai Proteins",
+          "description": "Simple steak elevated with homemade rosemary butter.",
+          "prepTime": "10 min",
+          "cookTime": "12 min",
+          "difficulty": "Easy",
+          "servings": "2",
+          "status": "Untested",
+          "ingredients": [
+            "2 steaks",
+            "2 tbsp butter",
+            "1 tsp rosemary",
+            "Salt",
+            "Pepper"
+          ],
+          "instructions": [
+            "Season steaks.",
+            "Mix butter and rosemary.",
+            "Braai steaks to preferred doneness.",
+            "Top with rosemary butter.",
+            "Rest before serving."
+          ],
+          "huntressNotes": [
+            "Gluten Free",
+            "Date Night Braai"
+          ],
+          "foxNotes": [
+            "One of the highest reward-to-effort meals."
+          ],
+          "tags": [
+            "Steak",
+            "Braai",
+            "Date Night"
+          ],
+          "imagePrompt": "Juicy steak with rosemary butter beside braai fire, premium outdoor food photography"
+        },
+        {
+          "id": "braai-bacon-wrapped-chicken",
+          "name": "Bacon Wrapped Chicken",
+          "category": "Braai",
+          "subcategory": "Braai Proteins",
+          "description": "Chicken breasts wrapped in bacon and braaied until crispy.",
+          "prepTime": "15 min",
+          "cookTime": "20 min",
+          "difficulty": "Easy",
+          "servings": "4",
+          "status": "Untested",
+          "ingredients": [
+            "4 chicken breasts",
+            "8 bacon rashers",
+            "Paprika",
+            "Salt",
+            "Pepper"
+          ],
+          "instructions": [
+            "Season chicken.",
+            "Wrap each piece with bacon.",
+            "Secure with toothpicks.",
+            "Braai over medium heat.",
+            "Cook until chicken is done and bacon is crisp."
+          ],
+          "huntressNotes": [
+            "Gluten Free",
+            "High Protein"
+          ],
+          "foxNotes": [
+            "Almost impossible not to enjoy."
+          ],
+          "tags": [
+            "Chicken",
+            "Bacon",
+            "Braai"
+          ],
+          "imagePrompt": "Bacon wrapped chicken cooking on braai grid, rustic South African food photography"
+        },
+        {
+          "id": "braai-lemon-garlic-chicken-thighs",
+          "name": "Lemon Garlic Chicken Thighs",
+          "category": "Braai",
+          "subcategory": "Braai Proteins",
+          "description": "Juicy chicken thighs with lemon and garlic marinade.",
+          "prepTime": "20 min",
+          "cookTime": "20 min",
+          "difficulty": "Easy",
+          "servings": "4",
+          "status": "Untested",
+          "ingredients": [
+            "8 chicken thighs",
+            "1 lemon",
+            "3 garlic cloves",
+            "1 tbsp olive oil",
+            "Salt",
+            "Pepper"
+          ],
+          "instructions": [
+            "Mix marinade.",
+            "Coat chicken thoroughly.",
+            "Marinate for 1 hour.",
+            "Braai over medium coals.",
+            "Cook until golden and juicy."
+          ],
+          "huntressNotes": [
+            "Gluten Free",
+            "Onion Free"
+          ],
+          "foxNotes": [
+            "Extremely forgiving recipe for beginner braai masters."
+          ],
+          "tags": [
+            "Chicken",
+            "Braai",
+            "Family Favourite"
+          ],
+          "imagePrompt": "Golden lemon garlic chicken thighs on braai grill, warm outdoor photography"
+        }
+      ]
     },
-
     {
-      "id": "braai-beef-sosaties",
-      "name": "Beef Sosaties",
-      "category": "Braai",
-      "subcategory": "Braai Proteins",
-      "description": "Traditional beef sosaties adapted to avoid onion-heavy marinades.",
-      "prepTime": "25 min",
-      "cookTime": "15 min",
-      "difficulty": "Easy",
-      "servings": "4",
-      "status": "Untested",
-      "ingredients": [
-        "700g beef cubes",
-        "1 tbsp olive oil",
-        "1 tsp paprika",
-        "1 tsp garlic powder",
-        "Salt",
-        "Pepper"
-      ],
-      "instructions": [
-        "Season beef cubes.",
-        "Thread onto skewers.",
-        "Braai until desired doneness.",
-        "Rest briefly.",
-        "Serve."
-      ],
-      "huntressNotes": [
-        "Gluten Free",
-        "Onion Free"
-      ],
-      "foxNotes": [
-        "Excellent for weekend braais."
-      ],
-      "tags": [
-        "Braai",
-        "Beef",
-        "South African"
-      ],
-      "imagePrompt": "Beef sosaties grilling over open coals, traditional South African braai photography"
+      "group": "Braai Sides",
+      "description": "The supporting cast of the braai. These sides are gluten-free, onion-free and designed to pair perfectly with meats cooked over the fire.",
+      "recipes": [
+        {
+          "id": "braai-roasted-sweet-potatoes",
+          "name": "Roasted Sweet Potatoes",
+          "category": "Braai",
+          "subcategory": "Braai Sides",
+          "description": "Sweet potato wedges roasted until crispy on the outside and soft inside.",
+          "prepTime": "10 min",
+          "cookTime": "35 min",
+          "difficulty": "Easy",
+          "servings": "4",
+          "status": "Untested",
+          "ingredients": [
+            "3 sweet potatoes",
+            "1 tbsp olive oil",
+            "1 tsp paprika",
+            "Salt",
+            "Pepper"
+          ],
+          "instructions": [
+            "Cut sweet potatoes into wedges.",
+            "Toss with oil and seasonings.",
+            "Roast until golden.",
+            "Serve alongside braai meats."
+          ],
+          "huntressNotes": [
+            "Gluten Free",
+            "Very Filling",
+            "Easy Digestion"
+          ],
+          "foxNotes": [
+            "A guaranteed safe side dish."
+          ],
+          "tags": [
+            "Sweet Potato",
+            "Braai",
+            "Side Dish"
+          ],
+          "imagePrompt": "Golden roasted sweet potato wedges in rustic serving dish, South African braai photography"
+        },
+        {
+          "id": "braai-braaied-butternut",
+          "name": "Braaied Butternut",
+          "category": "Braai",
+          "subcategory": "Braai Sides",
+          "description": "Caramelised butternut cooked over the coals until sweet and tender.",
+          "prepTime": "10 min",
+          "cookTime": "25 min",
+          "difficulty": "Easy",
+          "servings": "4",
+          "status": "Untested",
+          "ingredients": [
+            "1 medium butternut",
+            "1 tbsp olive oil",
+            "Salt",
+            "Pepper"
+          ],
+          "instructions": [
+            "Slice butternut into thick wedges.",
+            "Brush lightly with olive oil.",
+            "Place on braai grid.",
+            "Cook until tender and lightly charred.",
+            "Season and serve."
+          ],
+          "huntressNotes": [
+            "Gluten Free",
+            "Naturally Sweet"
+          ],
+          "foxNotes": [
+            "Works with almost every braai protein."
+          ],
+          "tags": [
+            "Butternut",
+            "Braai",
+            "Vegetable"
+          ],
+          "imagePrompt": "Caramelised butternut roasting over braai coals, rustic outdoor food photography"
+        },
+        {
+          "id": "braai-garlic-baby-potatoes",
+          "name": "Garlic Baby Potatoes",
+          "category": "Braai",
+          "subcategory": "Braai Sides",
+          "description": "Foil-wrapped baby potatoes cooked with garlic butter.",
+          "prepTime": "10 min",
+          "cookTime": "30 min",
+          "difficulty": "Easy",
+          "servings": "4",
+          "status": "Untested",
+          "ingredients": [
+            "500g baby potatoes",
+            "2 tbsp butter",
+            "2 garlic cloves",
+            "Salt",
+            "Pepper"
+          ],
+          "instructions": [
+            "Parboil potatoes for 10 minutes.",
+            "Place in foil tray.",
+            "Add butter and garlic.",
+            "Seal with foil.",
+            "Cook on braai until tender.",
+            "Serve warm."
+          ],
+          "huntressNotes": [
+            "Gluten Free",
+            "Onion Free"
+          ],
+          "foxNotes": [
+            "One of the easiest braai sides to prepare."
+          ],
+          "tags": [
+            "Potatoes",
+            "Braai",
+            "Comfort Food"
+          ],
+          "imagePrompt": "Garlic butter baby potatoes in foil tray beside braai fire, rustic South African cooking"
+        },
+        {
+          "id": "braai-cheese-stuffed-mushrooms",
+          "name": "Cheese Stuffed Mushrooms",
+          "category": "Braai",
+          "subcategory": "Braai Sides",
+          "description": "Large mushrooms filled with cheese and cooked until bubbling.",
+          "prepTime": "15 min",
+          "cookTime": "15 min",
+          "difficulty": "Easy",
+          "servings": "4",
+          "status": "Untested",
+          "ingredients": [
+            "8 large mushrooms",
+            "100g cheddar cheese",
+            "1 tsp parsley",
+            "Black pepper"
+          ],
+          "instructions": [
+            "Remove mushroom stems.",
+            "Fill centres with cheese.",
+            "Sprinkle parsley over top.",
+            "Cook on braai until cheese melts.",
+            "Serve immediately."
+          ],
+          "huntressNotes": [
+            "Gluten Free",
+            "Vegetarian Friendly"
+          ],
+          "foxNotes": [
+            "Looks impressive with very little effort."
+          ],
+          "tags": [
+            "Mushrooms",
+            "Cheese",
+            "Braai"
+          ],
+          "imagePrompt": "Cheese stuffed mushrooms cooking on braai grid, rustic outdoor food photography"
+        },
+        {
+          "id": "braai-gf-braaibroodjie",
+          "name": "GF Braaibroodjie",
+          "category": "Braai",
+          "subcategory": "Braai Sides",
+          "description": "A gluten-free version of the South African favourite.",
+          "prepTime": "10 min",
+          "cookTime": "10 min",
+          "difficulty": "Easy",
+          "servings": "2",
+          "status": "Untested",
+          "ingredients": [
+            "4 slices GF bread",
+            "Cheddar cheese",
+            "Tomato slices",
+            "Butter"
+          ],
+          "instructions": [
+            "Butter bread lightly.",
+            "Add cheese and tomato.",
+            "Close sandwiches.",
+            "Toast on braai grid.",
+            "Cook until golden and crisp."
+          ],
+          "huntressNotes": [
+            "Gluten Free",
+            "Contains Tomato"
+          ],
+          "foxNotes": [
+            "Lets the Huntress enjoy a braai classic."
+          ],
+          "tags": [
+            "Braaibroodjie",
+            "South African",
+            "Braai"
+          ],
+          "imagePrompt": "Golden gluten free braaibroodjie toasted over braai coals, traditional South African photography"
+        },
+        {
+          "id": "braai-foil-packet-veggies",
+          "name": "Foil Packet Veggies",
+          "category": "Braai",
+          "subcategory": "Braai Sides",
+          "description": "Simple vegetables cooked in foil directly on the coals.",
+          "prepTime": "10 min",
+          "cookTime": "25 min",
+          "difficulty": "Easy",
+          "servings": "4",
+          "status": "Untested",
+          "ingredients": [
+            "Carrots",
+            "Bell peppers",
+            "Baby potatoes",
+            "Olive oil",
+            "Salt",
+            "Pepper"
+          ],
+          "instructions": [
+            "Chop vegetables evenly.",
+            "Place in foil packet.",
+            "Add oil and seasoning.",
+            "Seal packet tightly.",
+            "Cook on braai until tender.",
+            "Serve hot."
+          ],
+          "huntressNotes": [
+            "Gluten Free",
+            "Onion Free"
+          ],
+          "foxNotes": [
+            "Extremely versatile and difficult to mess up."
+          ],
+          "tags": [
+            "Vegetables",
+            "Braai",
+            "Healthy"
+          ],
+          "imagePrompt": "Foil packet vegetables cooking over braai coals, rustic outdoor food photography"
+        }
+      ]
     },
-
-    {
-      "id": "braai-steak-rosemary-butter",
-      "name": "Steak with Rosemary Butter",
-      "category": "Braai",
-      "subcategory": "Braai Proteins",
-      "description": "Simple steak elevated with homemade rosemary butter.",
-      "prepTime": "10 min",
-      "cookTime": "12 min",
-      "difficulty": "Easy",
-      "servings": "2",
-      "status": "Untested",
-      "ingredients": [
-        "2 steaks",
-        "2 tbsp butter",
-        "1 tsp rosemary",
-        "Salt",
-        "Pepper"
-      ],
-      "instructions": [
-        "Season steaks.",
-        "Mix butter and rosemary.",
-        "Braai steaks to preferred doneness.",
-        "Top with rosemary butter.",
-        "Rest before serving."
-      ],
-      "huntressNotes": [
-        "Gluten Free",
-        "Date Night Braai"
-      ],
-      "foxNotes": [
-        "One of the highest reward-to-effort meals."
-      ],
-      "tags": [
-        "Steak",
-        "Braai",
-        "Date Night"
-      ],
-      "imagePrompt": "Juicy steak with rosemary butter beside braai fire, premium outdoor food photography"
-    },
-
-    {
-      "id": "braai-bacon-wrapped-chicken",
-      "name": "Bacon Wrapped Chicken",
-      "category": "Braai",
-      "subcategory": "Braai Proteins",
-      "description": "Chicken breasts wrapped in bacon and braaied until crispy.",
-      "prepTime": "15 min",
-      "cookTime": "20 min",
-      "difficulty": "Easy",
-      "servings": "4",
-      "status": "Untested",
-      "ingredients": [
-        "4 chicken breasts",
-        "8 bacon rashers",
-        "Paprika",
-        "Salt",
-        "Pepper"
-      ],
-      "instructions": [
-        "Season chicken.",
-        "Wrap each piece with bacon.",
-        "Secure with toothpicks.",
-        "Braai over medium heat.",
-        "Cook until chicken is done and bacon is crisp."
-      ],
-      "huntressNotes": [
-        "Gluten Free",
-        "High Protein"
-      ],
-      "foxNotes": [
-        "Almost impossible not to enjoy."
-      ],
-      "tags": [
-        "Chicken",
-        "Bacon",
-        "Braai"
-      ],
-      "imagePrompt": "Bacon wrapped chicken cooking on braai grid, rustic South African food photography"
-    },
-
-    {
-      "id": "braai-lemon-garlic-chicken-thighs",
-      "name": "Lemon Garlic Chicken Thighs",
-      "category": "Braai",
-      "subcategory": "Braai Proteins",
-      "description": "Juicy chicken thighs with lemon and garlic marinade.",
-      "prepTime": "20 min",
-      "cookTime": "20 min",
-      "difficulty": "Easy",
-      "servings": "4",
-      "status": "Untested",
-      "ingredients": [
-        "8 chicken thighs",
-        "1 lemon",
-        "3 garlic cloves",
-        "1 tbsp olive oil",
-        "Salt",
-        "Pepper"
-      ],
-      "instructions": [
-        "Mix marinade.",
-        "Coat chicken thoroughly.",
-        "Marinate for 1 hour.",
-        "Braai over medium coals.",
-        "Cook until golden and juicy."
-      ],
-      "huntressNotes": [
-        "Gluten Free",
-        "Onion Free"
-      ],
-      "foxNotes": [
-        "Extremely forgiving recipe for beginner braai masters."
-      ],
-      "tags": [
-        "Chicken",
-        "Braai",
-        "Family Favourite"
-      ],
-      "imagePrompt": "Golden lemon garlic chicken thighs on braai grill, warm outdoor photography"
-    }
-  ]
-},
-    {
-  "group": "Braai Sides",
-  "description": "The supporting cast of the braai. These sides are gluten-free, onion-free and designed to pair perfectly with meats cooked over the fire.",
-  "recipes": [
-    {
-      "id": "braai-roasted-sweet-potatoes",
-      "name": "Roasted Sweet Potatoes",
-      "category": "Braai",
-      "subcategory": "Braai Sides",
-      "description": "Sweet potato wedges roasted until crispy on the outside and soft inside.",
-      "prepTime": "10 min",
-      "cookTime": "35 min",
-      "difficulty": "Easy",
-      "servings": "4",
-      "status": "Untested",
-      "ingredients": [
-        "3 sweet potatoes",
-        "1 tbsp olive oil",
-        "1 tsp paprika",
-        "Salt",
-        "Pepper"
-      ],
-      "instructions": [
-        "Cut sweet potatoes into wedges.",
-        "Toss with oil and seasonings.",
-        "Roast until golden.",
-        "Serve alongside braai meats."
-      ],
-      "huntressNotes": [
-        "Gluten Free",
-        "Very Filling",
-        "Easy Digestion"
-      ],
-      "foxNotes": [
-        "A guaranteed safe side dish."
-      ],
-      "tags": [
-        "Sweet Potato",
-        "Braai",
-        "Side Dish"
-      ],
-      "imagePrompt": "Golden roasted sweet potato wedges in rustic serving dish, South African braai photography"
-    },
-
-    {
-      "id": "braai-braaied-butternut",
-      "name": "Braaied Butternut",
-      "category": "Braai",
-      "subcategory": "Braai Sides",
-      "description": "Caramelised butternut cooked over the coals until sweet and tender.",
-      "prepTime": "10 min",
-      "cookTime": "25 min",
-      "difficulty": "Easy",
-      "servings": "4",
-      "status": "Untested",
-      "ingredients": [
-        "1 medium butternut",
-        "1 tbsp olive oil",
-        "Salt",
-        "Pepper"
-      ],
-      "instructions": [
-        "Slice butternut into thick wedges.",
-        "Brush lightly with olive oil.",
-        "Place on braai grid.",
-        "Cook until tender and lightly charred.",
-        "Season and serve."
-      ],
-      "huntressNotes": [
-        "Gluten Free",
-        "Naturally Sweet"
-      ],
-      "foxNotes": [
-        "Works with almost every braai protein."
-      ],
-      "tags": [
-        "Butternut",
-        "Braai",
-        "Vegetable"
-      ],
-      "imagePrompt": "Caramelised butternut roasting over braai coals, rustic outdoor food photography"
-    },
-
-    {
-      "id": "braai-garlic-baby-potatoes",
-      "name": "Garlic Baby Potatoes",
-      "category": "Braai",
-      "subcategory": "Braai Sides",
-      "description": "Foil-wrapped baby potatoes cooked with garlic butter.",
-      "prepTime": "10 min",
-      "cookTime": "30 min",
-      "difficulty": "Easy",
-      "servings": "4",
-      "status": "Untested",
-      "ingredients": [
-        "500g baby potatoes",
-        "2 tbsp butter",
-        "2 garlic cloves",
-        "Salt",
-        "Pepper"
-      ],
-      "instructions": [
-        "Parboil potatoes for 10 minutes.",
-        "Place in foil tray.",
-        "Add butter and garlic.",
-        "Seal with foil.",
-        "Cook on braai until tender.",
-        "Serve warm."
-      ],
-      "huntressNotes": [
-        "Gluten Free",
-        "Onion Free"
-      ],
-      "foxNotes": [
-        "One of the easiest braai sides to prepare."
-      ],
-      "tags": [
-        "Potatoes",
-        "Braai",
-        "Comfort Food"
-      ],
-      "imagePrompt": "Garlic butter baby potatoes in foil tray beside braai fire, rustic South African cooking"
-    },
-
-    {
-      "id": "braai-cheese-stuffed-mushrooms",
-      "name": "Cheese Stuffed Mushrooms",
-      "category": "Braai",
-      "subcategory": "Braai Sides",
-      "description": "Large mushrooms filled with cheese and cooked until bubbling.",
-      "prepTime": "15 min",
-      "cookTime": "15 min",
-      "difficulty": "Easy",
-      "servings": "4",
-      "status": "Untested",
-      "ingredients": [
-        "8 large mushrooms",
-        "100g cheddar cheese",
-        "1 tsp parsley",
-        "Black pepper"
-      ],
-      "instructions": [
-        "Remove mushroom stems.",
-        "Fill centres with cheese.",
-        "Sprinkle parsley over top.",
-        "Cook on braai until cheese melts.",
-        "Serve immediately."
-      ],
-      "huntressNotes": [
-        "Gluten Free",
-        "Vegetarian Friendly"
-      ],
-      "foxNotes": [
-        "Looks impressive with very little effort."
-      ],
-      "tags": [
-        "Mushrooms",
-        "Cheese",
-        "Braai"
-      ],
-      "imagePrompt": "Cheese stuffed mushrooms cooking on braai grid, rustic outdoor food photography"
-    },
-
-    {
-      "id": "braai-gf-braaibroodjie",
-      "name": "GF Braaibroodjie",
-      "category": "Braai",
-      "subcategory": "Braai Sides",
-      "description": "A gluten-free version of the South African favourite.",
-      "prepTime": "10 min",
-      "cookTime": "10 min",
-      "difficulty": "Easy",
-      "servings": "2",
-      "status": "Untested",
-      "ingredients": [
-        "4 slices GF bread",
-        "Cheddar cheese",
-        "Tomato slices",
-        "Butter"
-      ],
-      "instructions": [
-        "Butter bread lightly.",
-        "Add cheese and tomato.",
-        "Close sandwiches.",
-        "Toast on braai grid.",
-        "Cook until golden and crisp."
-      ],
-      "huntressNotes": [
-        "Gluten Free",
-        "Contains Tomato"
-      ],
-      "foxNotes": [
-        "Lets the Huntress enjoy a braai classic."
-      ],
-      "tags": [
-        "Braaibroodjie",
-        "South African",
-        "Braai"
-      ],
-      "imagePrompt": "Golden gluten free braaibroodjie toasted over braai coals, traditional South African photography"
-    },
-
-    {
-      "id": "braai-foil-packet-veggies",
-      "name": "Foil Packet Veggies",
-      "category": "Braai",
-      "subcategory": "Braai Sides",
-      "description": "Simple vegetables cooked in foil directly on the coals.",
-      "prepTime": "10 min",
-      "cookTime": "25 min",
-      "difficulty": "Easy",
-      "servings": "4",
-      "status": "Untested",
-      "ingredients": [
-        "Carrots",
-        "Bell peppers",
-        "Baby potatoes",
-        "Olive oil",
-        "Salt",
-        "Pepper"
-      ],
-      "instructions": [
-        "Chop vegetables evenly.",
-        "Place in foil packet.",
-        "Add oil and seasoning.",
-        "Seal packet tightly.",
-        "Cook on braai until tender.",
-        "Serve hot."
-      ],
-      "huntressNotes": [
-        "Gluten Free",
-        "Onion Free"
-      ],
-      "foxNotes": [
-        "Extremely versatile and difficult to mess up."
-      ],
-      "tags": [
-        "Vegetables",
-        "Braai",
-        "Healthy"
-      ],
-      "imagePrompt": "Foil packet vegetables cooking over braai coals, rustic outdoor food photography"
-    }
-  ]
-},
     {
       "name": "Fire & Foil Favourites",
       "recipes": [
         {
-  "id": "foil-potatoes",
-  "name": "Foil Potatoes",
-  "category": "Braai",
-  "subcategory": "Fire & Foil Favourites",
-  "description": "Simple foil-wrapped potatoes cooked slowly in the coals until soft and fluffy.",
-  "prepTime": "10 min",
-  "cookTime": "45 min",
-  "difficulty": "Easy",
-  "servings": "4",
-  "status": "Untested",
-  "ingredients": [
-    "4 large potatoes",
-    "2 tbsp butter",
-    "Salt",
-    "Pepper"
-  ],
-  "instructions": [
-    "Wrap each potato in foil.",
-    "Place near hot coals.",
-    "Cook until soft throughout.",
-    "Open carefully.",
-    "Add butter and seasoning.",
-    "Serve immediately."
-  ],
-  "huntressNotes": [
-    "Gluten Free",
-    "Simple Comfort Food"
-  ],
-  "foxNotes": [
-    "One of the easiest braai sides ever."
-  ],
-  "tags": [
-    "Foil",
-    "Braai",
-    "Potatoes"
-  ],
-  "imagePrompt": "Foil wrapped potatoes cooking beside glowing braai coals, rustic outdoor photography"
-},
+          "id": "foil-potatoes",
+          "name": "Foil Potatoes",
+          "category": "Braai",
+          "subcategory": "Fire & Foil Favourites",
+          "description": "Simple foil-wrapped potatoes cooked slowly in the coals until soft and fluffy.",
+          "prepTime": "10 min",
+          "cookTime": "45 min",
+          "difficulty": "Easy",
+          "servings": "4",
+          "status": "Untested",
+          "ingredients": [
+            "4 large potatoes",
+            "2 tbsp butter",
+            "Salt",
+            "Pepper"
+          ],
+          "instructions": [
+            "Wrap each potato in foil.",
+            "Place near hot coals.",
+            "Cook until soft throughout.",
+            "Open carefully.",
+            "Add butter and seasoning.",
+            "Serve immediately."
+          ],
+          "huntressNotes": [
+            "Gluten Free",
+            "Simple Comfort Food"
+          ],
+          "foxNotes": [
+            "One of the easiest braai sides ever."
+          ],
+          "tags": [
+            "Foil",
+            "Braai",
+            "Potatoes"
+          ],
+          "imagePrompt": "Foil wrapped potatoes cooking beside glowing braai coals, rustic outdoor photography"
+        },
         {
-  "id": "stuffed-mushrooms",
-  "name": "Stuffed Mushrooms",
-  "category": "Braai",
-  "subcategory": "Fire & Foil Favourites",
-  "description": "Large mushrooms filled with cheese and herbs cooked over the braai.",
-  "prepTime": "15 min",
-  "cookTime": "20 min",
-  "difficulty": "Easy",
-  "servings": "4",
-  "status": "Untested",
-  "ingredients": [
-    "8 large mushrooms",
-    "100g cheddar cheese",
-    "1 tsp parsley",
-    "Black pepper"
-  ],
-  "instructions": [
-    "Remove mushroom stems.",
-    "Fill mushrooms with cheese.",
-    "Add herbs.",
-    "Place on braai grid.",
-    "Cook until cheese bubbles.",
-    "Serve warm."
-  ],
-  "huntressNotes": [
-    "Gluten Free"
-  ],
-  "foxNotes": [
-    "Looks much fancier than the effort required."
-  ],
-  "tags": [
-    "Mushrooms",
-    "Braai",
-    "Cheese"
-  ],
-  "imagePrompt": "Stuffed mushrooms cooking on braai grill, rustic South African outdoor food photography"
-}
+          "id": "stuffed-mushrooms",
+          "name": "Stuffed Mushrooms",
+          "category": "Braai",
+          "subcategory": "Fire & Foil Favourites",
+          "description": "Large mushrooms filled with cheese and herbs cooked over the braai.",
+          "prepTime": "15 min",
+          "cookTime": "20 min",
+          "difficulty": "Easy",
+          "servings": "4",
+          "status": "Untested",
+          "ingredients": [
+            "8 large mushrooms",
+            "100g cheddar cheese",
+            "1 tsp parsley",
+            "Black pepper"
+          ],
+          "instructions": [
+            "Remove mushroom stems.",
+            "Fill mushrooms with cheese.",
+            "Add herbs.",
+            "Place on braai grid.",
+            "Cook until cheese bubbles.",
+            "Serve warm."
+          ],
+          "huntressNotes": [
+            "Gluten Free"
+          ],
+          "foxNotes": [
+            "Looks much fancier than the effort required."
+          ],
+          "tags": [
+            "Mushrooms",
+            "Braai",
+            "Cheese"
+          ],
+          "imagePrompt": "Stuffed mushrooms cooking on braai grill, rustic South African outdoor food photography"
+        }
       ]
     },
     {
       "name": "Braai Desserts",
       "recipes": [
         {
-  "id": "braaied-peaches",
-  "name": "Braaied Peaches",
-  "category": "Braai",
-  "subcategory": "Braai Desserts",
-  "description": "Sweet peaches lightly caramelised over the coals.",
-  "prepTime": "5 min",
-  "cookTime": "10 min",
-  "difficulty": "Easy",
-  "servings": "4",
-  "status": "Untested",
-  "ingredients": [
-    "4 peaches",
-    "1 tbsp honey",
-    "Cinnamon"
-  ],
-  "instructions": [
-    "Cut peaches in half.",
-    "Remove pits.",
-    "Brush with honey.",
-    "Sprinkle cinnamon.",
-    "Place on braai grid.",
-    "Cook until caramelised."
-  ],
-  "huntressNotes": [
-    "Gluten Free",
-    "Naturally Sweet"
-  ],
-  "foxNotes": [
-    "Excellent with vanilla ice cream."
-  ],
-  "tags": [
-    "Dessert",
-    "Fruit",
-    "Braai"
-  ],
-  "imagePrompt": "Caramelised peaches cooking on braai grill, golden sunset outdoor photography"
-},
+          "id": "braaied-peaches",
+          "name": "Braaied Peaches",
+          "category": "Braai",
+          "subcategory": "Braai Desserts",
+          "description": "Sweet peaches lightly caramelised over the coals.",
+          "prepTime": "5 min",
+          "cookTime": "10 min",
+          "difficulty": "Easy",
+          "servings": "4",
+          "status": "Untested",
+          "ingredients": [
+            "4 peaches",
+            "1 tbsp honey",
+            "Cinnamon"
+          ],
+          "instructions": [
+            "Cut peaches in half.",
+            "Remove pits.",
+            "Brush with honey.",
+            "Sprinkle cinnamon.",
+            "Place on braai grid.",
+            "Cook until caramelised."
+          ],
+          "huntressNotes": [
+            "Gluten Free",
+            "Naturally Sweet"
+          ],
+          "foxNotes": [
+            "Excellent with vanilla ice cream."
+          ],
+          "tags": [
+            "Dessert",
+            "Fruit",
+            "Braai"
+          ],
+          "imagePrompt": "Caramelised peaches cooking on braai grill, golden sunset outdoor photography"
+        },
         {
-  "id": "cinnamon-braai-apples",
-  "name": "Cinnamon Braai Apples",
-  "category": "Braai",
-  "subcategory": "Braai Desserts",
-  "description": "Warm apples cooked with cinnamon until soft and fragrant.",
-  "prepTime": "10 min",
-  "cookTime": "20 min",
-  "difficulty": "Easy",
-  "servings": "4",
-  "status": "Untested",
-  "ingredients": [
-    "4 apples",
-    "1 tsp cinnamon",
-    "1 tbsp honey"
-  ],
-  "instructions": [
-    "Core apples.",
-    "Fill centres with cinnamon and honey.",
-    "Wrap in foil.",
-    "Cook on coals until soft.",
-    "Serve warm."
-  ],
-  "huntressNotes": [
-    "Gluten Free",
-    "Winter Favourite"
-  ],
-  "foxNotes": [
-    "Smells incredible while cooking."
-  ],
-  "tags": [
-    "Dessert",
-    "Apple",
-    "Braai"
-  ],
-  "imagePrompt": "Foil wrapped cinnamon apples beside braai coals, cozy outdoor dessert photography"
-}
+          "id": "cinnamon-braai-apples",
+          "name": "Cinnamon Braai Apples",
+          "category": "Braai",
+          "subcategory": "Braai Desserts",
+          "description": "Warm apples cooked with cinnamon until soft and fragrant.",
+          "prepTime": "10 min",
+          "cookTime": "20 min",
+          "difficulty": "Easy",
+          "servings": "4",
+          "status": "Untested",
+          "ingredients": [
+            "4 apples",
+            "1 tsp cinnamon",
+            "1 tbsp honey"
+          ],
+          "instructions": [
+            "Core apples.",
+            "Fill centres with cinnamon and honey.",
+            "Wrap in foil.",
+            "Cook on coals until soft.",
+            "Serve warm."
+          ],
+          "huntressNotes": [
+            "Gluten Free",
+            "Winter Favourite"
+          ],
+          "foxNotes": [
+            "Smells incredible while cooking."
+          ],
+          "tags": [
+            "Dessert",
+            "Apple",
+            "Braai"
+          ],
+          "imagePrompt": "Foil wrapped cinnamon apples beside braai coals, cozy outdoor dessert photography"
+        }
       ]
     },
     {
       "name": "Fox & Huntress Braai Platters",
       "recipes": [
         {
-  "id": "fox-huntress-braai",
-  "name": "The Fox & Huntress Braai",
-  "category": "Braai",
-  "description": "The signature braai platter of the cookbook featuring a balanced selection of meat, vegetables and braai favourites.",
-  "prepTime": "30 min",
-  "cookTime": "45 min",
-  "difficulty": "Medium",
-  "servings": "4",
-  "status": "Untested",
-  "ingredients": [
-    "500g rump steak",
-    "4 chicken sosaties",
-    "4 foil potatoes",
-    "250g mushrooms",
-    "2 mealies",
-    "100g butter",
-    "1 tsp garlic powder",
-    "Salt",
-    "Black pepper"
-  ],
-  "instructions": [
-    "Prepare the fire and allow coals to become medium-hot.",
-    "Wrap potatoes in foil and place on the braai first.",
-    "Season steak with salt and pepper.",
-    "Place steak and sosaties on the grill.",
-    "Brush mushrooms with melted butter and garlic powder.",
-    "Braai mushrooms and mealies until cooked.",
-    "Turn meats regularly for even cooking.",
-    "Allow steak to rest before slicing.",
-    "Serve everything together on a large sharing platter."
-  ],
-  "huntressNotes": [
-    "Gluten Free",
-    "Onion Free",
-    "Signature Braai Platter"
-  ],
-  "foxNotes": [
-    "The official braai platter of the cookbook."
-  ],
-  "tags": [
-    "Braai",
-    "Sharing Platter",
-    "Fox & Huntress"
-  ],
-  "imagePrompt": "Large South African braai platter with steak, sosaties, potatoes and vegetables arranged on rustic wooden table"
-},
+          "id": "fox-huntress-braai",
+          "name": "The Fox & Huntress Braai",
+          "category": "Braai",
+          "description": "The signature braai platter of the cookbook featuring a balanced selection of meat, vegetables and braai favourites.",
+          "prepTime": "30 min",
+          "cookTime": "45 min",
+          "difficulty": "Medium",
+          "servings": "4",
+          "status": "Untested",
+          "ingredients": [
+            "500g rump steak",
+            "4 chicken sosaties",
+            "4 foil potatoes",
+            "250g mushrooms",
+            "2 mealies",
+            "100g butter",
+            "1 tsp garlic powder",
+            "Salt",
+            "Black pepper"
+          ],
+          "instructions": [
+            "Prepare the fire and allow coals to become medium-hot.",
+            "Wrap potatoes in foil and place on the braai first.",
+            "Season steak with salt and pepper.",
+            "Place steak and sosaties on the grill.",
+            "Brush mushrooms with melted butter and garlic powder.",
+            "Braai mushrooms and mealies until cooked.",
+            "Turn meats regularly for even cooking.",
+            "Allow steak to rest before slicing.",
+            "Serve everything together on a large sharing platter."
+          ],
+          "huntressNotes": [
+            "Gluten Free",
+            "Onion Free",
+            "Signature Braai Platter"
+          ],
+          "foxNotes": [
+            "The official braai platter of the cookbook."
+          ],
+          "tags": [
+            "Braai",
+            "Sharing Platter",
+            "Fox & Huntress"
+          ],
+          "imagePrompt": "Large South African braai platter with steak, sosaties, potatoes and vegetables arranged on rustic wooden table"
+        },
         {
-  "id": "summer-braai",
-  "name": "Summer Braai Platter",
-  "category": "Braai",
-  "description": "A lighter braai platter designed for warm summer afternoons.",
-  "prepTime": "25 min",
-  "cookTime": "40 min",
-  "difficulty": "Medium",
-  "servings": "4",
-  "status": "Untested",
-  "ingredients": [
-    "4 chicken fillets",
-    "2 mealies",
-    "250g mushrooms",
-    "1 cucumber",
-    "250g grapes",
-    "100g feta cheese",
-    "Olive oil",
-    "Salt",
-    "Black pepper"
-  ],
-  "instructions": [
-    "Season chicken with olive oil, salt and pepper.",
-    "Braai chicken until fully cooked.",
-    "Cook mushrooms and mealies over medium coals.",
-    "Slice cucumber and prepare grapes.",
-    "Crumble feta over cucumber salad.",
-    "Allow chicken to rest briefly.",
-    "Arrange everything on a large serving platter.",
-    "Serve immediately."
-  ],
-  "huntressNotes": [
-    "Gluten Free",
-    "Summer Friendly",
-    "Lighter Option"
-  ],
-  "foxNotes": [
-    "Excellent for hot KwaZulu-Natal afternoons."
-  ],
-  "tags": [
-    "Braai",
-    "Summer",
-    "Chicken"
-  ],
-  "imagePrompt": "Fresh summer braai platter with grilled chicken, mealies, grapes and salad on outdoor patio"
-},
+          "id": "summer-braai",
+          "name": "Summer Braai Platter",
+          "category": "Braai",
+          "description": "A lighter braai platter designed for warm summer afternoons.",
+          "prepTime": "25 min",
+          "cookTime": "40 min",
+          "difficulty": "Medium",
+          "servings": "4",
+          "status": "Untested",
+          "ingredients": [
+            "4 chicken fillets",
+            "2 mealies",
+            "250g mushrooms",
+            "1 cucumber",
+            "250g grapes",
+            "100g feta cheese",
+            "Olive oil",
+            "Salt",
+            "Black pepper"
+          ],
+          "instructions": [
+            "Season chicken with olive oil, salt and pepper.",
+            "Braai chicken until fully cooked.",
+            "Cook mushrooms and mealies over medium coals.",
+            "Slice cucumber and prepare grapes.",
+            "Crumble feta over cucumber salad.",
+            "Allow chicken to rest briefly.",
+            "Arrange everything on a large serving platter.",
+            "Serve immediately."
+          ],
+          "huntressNotes": [
+            "Gluten Free",
+            "Summer Friendly",
+            "Lighter Option"
+          ],
+          "foxNotes": [
+            "Excellent for hot KwaZulu-Natal afternoons."
+          ],
+          "tags": [
+            "Braai",
+            "Summer",
+            "Chicken"
+          ],
+          "imagePrompt": "Fresh summer braai platter with grilled chicken, mealies, grapes and salad on outdoor patio"
+        },
         {
-  "id": "winter-braai",
-  "name": "Winter Braai Platter",
-  "category": "Braai",
-  "description": "A hearty braai platter built for colder evenings around the fire.",
-  "prepTime": "25 min",
-  "cookTime": "45 min",
-  "difficulty": "Medium",
-  "servings": "4",
-  "status": "Untested",
-  "ingredients": [
-    "500g rump steak",
-    "4 boerewors portions",
-    "4 foil potatoes",
-    "250g mushrooms",
-    "100g butter",
-    "1 tsp garlic powder",
-    "Salt",
-    "Black pepper"
-  ],
-  "instructions": [
-    "Prepare a strong braai fire.",
-    "Wrap potatoes in foil and cook first.",
-    "Season steak and braai to preferred doneness.",
-    "Cook boerewors over medium coals.",
-    "Brush mushrooms with butter and garlic powder.",
-    "Braai mushrooms until tender.",
-    "Allow meat to rest.",
-    "Arrange on a large serving platter.",
-    "Serve hot."
-  ],
-  "huntressNotes": [
-    "Gluten Free",
-    "Comfort Food",
-    "Cold Weather Favourite"
-  ],
-  "foxNotes": [
-    "Made for winter evenings around the fire."
-  ],
-  "tags": [
-    "Braai",
-    "Winter",
-    "Steak"
-  ],
-  "imagePrompt": "Hearty winter braai platter with steak, boerewors, foil potatoes and mushrooms beside firepit"
-}
+          "id": "winter-braai",
+          "name": "Winter Braai Platter",
+          "category": "Braai",
+          "description": "A hearty braai platter built for colder evenings around the fire.",
+          "prepTime": "25 min",
+          "cookTime": "45 min",
+          "difficulty": "Medium",
+          "servings": "4",
+          "status": "Untested",
+          "ingredients": [
+            "500g rump steak",
+            "4 boerewors portions",
+            "4 foil potatoes",
+            "250g mushrooms",
+            "100g butter",
+            "1 tsp garlic powder",
+            "Salt",
+            "Black pepper"
+          ],
+          "instructions": [
+            "Prepare a strong braai fire.",
+            "Wrap potatoes in foil and cook first.",
+            "Season steak and braai to preferred doneness.",
+            "Cook boerewors over medium coals.",
+            "Brush mushrooms with butter and garlic powder.",
+            "Braai mushrooms until tender.",
+            "Allow meat to rest.",
+            "Arrange on a large serving platter.",
+            "Serve hot."
+          ],
+          "huntressNotes": [
+            "Gluten Free",
+            "Comfort Food",
+            "Cold Weather Favourite"
+          ],
+          "foxNotes": [
+            "Made for winter evenings around the fire."
+          ],
+          "tags": [
+            "Braai",
+            "Winter",
+            "Steak"
+          ],
+          "imagePrompt": "Hearty winter braai platter with steak, boerewors, foil potatoes and mushrooms beside firepit"
+        }
       ]
     },
     {
-  "group": "Braai Salads",
-  "description": "Fresh braai salads designed to complement fire-cooked meats while remaining Huntress-friendly.",
-  "recipes": [
-    {
-      "id": "braai-greek-salad",
-      "name": "Greek Salad (Onion Free)",
-      "category": "Braai",
-      "subcategory": "Braai Salads",
-      "description": "A refreshing Greek-style salad adapted to be completely onion free.",
-      "prepTime": "15 min",
-      "cookTime": "0 min",
-      "difficulty": "Easy",
-      "servings": "4",
-      "status": "Untested",
-      "ingredients": [
-        "1 cucumber",
-        "3 tomatoes",
-        "100g feta cheese",
-        "Olives",
-        "1 tbsp olive oil",
-        "1 tsp oregano"
-      ],
-      "instructions": [
-        "Dice cucumber and tomatoes.",
-        "Add olives.",
-        "Crumble feta over the top.",
-        "Drizzle with olive oil.",
-        "Sprinkle oregano.",
-        "Serve chilled."
-      ],
-      "huntressNotes": [
-        "Gluten Free",
-        "Onion Free",
-        "IBS Friendly"
-      ],
-      "foxNotes": [
-        "Pairs with almost every braai protein."
-      ],
-      "tags": [
-        "Salad",
-        "Greek",
-        "Braai"
-      ],
-      "imagePrompt": "Fresh onion free Greek salad with feta and olives, summer braai photography"
+      "group": "Braai Salads",
+      "description": "Fresh braai salads designed to complement fire-cooked meats while remaining Huntress-friendly.",
+      "recipes": [
+        {
+          "id": "braai-greek-salad",
+          "name": "Greek Salad (Onion Free)",
+          "category": "Braai",
+          "subcategory": "Braai Salads",
+          "description": "A refreshing Greek-style salad adapted to be completely onion free.",
+          "prepTime": "15 min",
+          "cookTime": "0 min",
+          "difficulty": "Easy",
+          "servings": "4",
+          "status": "Untested",
+          "ingredients": [
+            "1 cucumber",
+            "3 tomatoes",
+            "100g feta cheese",
+            "Olives",
+            "1 tbsp olive oil",
+            "1 tsp oregano"
+          ],
+          "instructions": [
+            "Dice cucumber and tomatoes.",
+            "Add olives.",
+            "Crumble feta over the top.",
+            "Drizzle with olive oil.",
+            "Sprinkle oregano.",
+            "Serve chilled."
+          ],
+          "huntressNotes": [
+            "Gluten Free",
+            "Onion Free",
+            "IBS Friendly"
+          ],
+          "foxNotes": [
+            "Pairs with almost every braai protein."
+          ],
+          "tags": [
+            "Salad",
+            "Greek",
+            "Braai"
+          ],
+          "imagePrompt": "Fresh onion free Greek salad with feta and olives, summer braai photography"
+        },
+        {
+          "id": "braai-potato-salad",
+          "name": "Potato Salad (Onion Free)",
+          "category": "Braai",
+          "subcategory": "Braai Salads",
+          "description": "A creamy potato salad without onions but full of flavour.",
+          "prepTime": "20 min",
+          "cookTime": "20 min",
+          "difficulty": "Easy",
+          "servings": "6",
+          "status": "Untested",
+          "ingredients": [
+            "6 potatoes",
+            "3 tbsp mayonnaise",
+            "1 tsp mustard",
+            "Parsley",
+            "Salt",
+            "Pepper"
+          ],
+          "instructions": [
+            "Boil potatoes until tender.",
+            "Allow to cool.",
+            "Cut into chunks.",
+            "Mix mayonnaise and mustard.",
+            "Combine with potatoes.",
+            "Season and chill."
+          ],
+          "huntressNotes": [
+            "Gluten Free",
+            "Onion Free",
+            "Braai Classic"
+          ],
+          "foxNotes": [
+            "The salad most people expect at a braai."
+          ],
+          "tags": [
+            "Potato Salad",
+            "Braai",
+            "Classic"
+          ],
+          "imagePrompt": "Creamy onion free potato salad in rustic serving bowl, South African braai photography"
+        },
+        {
+          "id": "braai-cucumber-feta-salad",
+          "name": "Cucumber & Feta Salad",
+          "category": "Braai",
+          "subcategory": "Braai Salads",
+          "description": "A cool and refreshing salad perfect for hot summer braais.",
+          "prepTime": "10 min",
+          "cookTime": "0 min",
+          "difficulty": "Easy",
+          "servings": "4",
+          "status": "Untested",
+          "ingredients": [
+            "1 cucumber",
+            "100g feta",
+            "1 tbsp olive oil",
+            "Black pepper"
+          ],
+          "instructions": [
+            "Slice cucumber.",
+            "Crumble feta over cucumber.",
+            "Drizzle olive oil.",
+            "Add pepper.",
+            "Serve cold."
+          ],
+          "huntressNotes": [
+            "Gluten Free",
+            "Very Light"
+          ],
+          "foxNotes": [
+            "Excellent for summer braais."
+          ],
+          "tags": [
+            "Salad",
+            "Summer",
+            "Braai"
+          ],
+          "imagePrompt": "Cucumber and feta salad in rustic bowl, refreshing summer braai photography"
+        },
+        {
+          "id": "braai-carrot-apple-salad",
+          "name": "Carrot & Apple Salad",
+          "category": "Braai",
+          "subcategory": "Braai Salads",
+          "description": "A sweet and crunchy salad that balances richer braai foods.",
+          "prepTime": "15 min",
+          "cookTime": "0 min",
+          "difficulty": "Easy",
+          "servings": "4",
+          "status": "Untested",
+          "ingredients": [
+            "3 carrots",
+            "2 apples",
+            "1 tbsp honey",
+            "1 tsp lemon juice"
+          ],
+          "instructions": [
+            "Grate carrots.",
+            "Grate apples.",
+            "Mix together.",
+            "Add honey and lemon juice.",
+            "Serve chilled."
+          ],
+          "huntressNotes": [
+            "Gluten Free",
+            "Naturally Sweet"
+          ],
+          "foxNotes": [
+            "A surprisingly good pairing with beef."
+          ],
+          "tags": [
+            "Salad",
+            "Apple",
+            "Braai"
+          ],
+          "imagePrompt": "Fresh carrot and apple salad in rustic serving bowl, colourful braai side photography"
+        }
+      ]
     },
-
     {
-      "id": "braai-potato-salad",
-      "name": "Potato Salad (Onion Free)",
-      "category": "Braai",
-      "subcategory": "Braai Salads",
-      "description": "A creamy potato salad without onions but full of flavour.",
-      "prepTime": "20 min",
-      "cookTime": "20 min",
-      "difficulty": "Easy",
-      "servings": "6",
-      "status": "Untested",
-      "ingredients": [
-        "6 potatoes",
-        "3 tbsp mayonnaise",
-        "1 tsp mustard",
-        "Parsley",
-        "Salt",
-        "Pepper"
-      ],
-      "instructions": [
-        "Boil potatoes until tender.",
-        "Allow to cool.",
-        "Cut into chunks.",
-        "Mix mayonnaise and mustard.",
-        "Combine with potatoes.",
-        "Season and chill."
-      ],
-      "huntressNotes": [
-        "Gluten Free",
-        "Onion Free",
-        "Braai Classic"
-      ],
-      "foxNotes": [
-        "The salad most people expect at a braai."
-      ],
-      "tags": [
-        "Potato Salad",
-        "Braai",
-        "Classic"
-      ],
-      "imagePrompt": "Creamy onion free potato salad in rustic serving bowl, South African braai photography"
-    },
-
-    {
-      "id": "braai-cucumber-feta-salad",
-      "name": "Cucumber & Feta Salad",
-      "category": "Braai",
-      "subcategory": "Braai Salads",
-      "description": "A cool and refreshing salad perfect for hot summer braais.",
-      "prepTime": "10 min",
-      "cookTime": "0 min",
-      "difficulty": "Easy",
-      "servings": "4",
-      "status": "Untested",
-      "ingredients": [
-        "1 cucumber",
-        "100g feta",
-        "1 tbsp olive oil",
-        "Black pepper"
-      ],
-      "instructions": [
-        "Slice cucumber.",
-        "Crumble feta over cucumber.",
-        "Drizzle olive oil.",
-        "Add pepper.",
-        "Serve cold."
-      ],
-      "huntressNotes": [
-        "Gluten Free",
-        "Very Light"
-      ],
-      "foxNotes": [
-        "Excellent for summer braais."
-      ],
-      "tags": [
-        "Salad",
-        "Summer",
-        "Braai"
-      ],
-      "imagePrompt": "Cucumber and feta salad in rustic bowl, refreshing summer braai photography"
-    },
-
-    {
-      "id": "braai-carrot-apple-salad",
-      "name": "Carrot & Apple Salad",
-      "category": "Braai",
-      "subcategory": "Braai Salads",
-      "description": "A sweet and crunchy salad that balances richer braai foods.",
-      "prepTime": "15 min",
-      "cookTime": "0 min",
-      "difficulty": "Easy",
-      "servings": "4",
-      "status": "Untested",
-      "ingredients": [
-        "3 carrots",
-        "2 apples",
-        "1 tbsp honey",
-        "1 tsp lemon juice"
-      ],
-      "instructions": [
-        "Grate carrots.",
-        "Grate apples.",
-        "Mix together.",
-        "Add honey and lemon juice.",
-        "Serve chilled."
-      ],
-      "huntressNotes": [
-        "Gluten Free",
-        "Naturally Sweet"
-      ],
-      "foxNotes": [
-        "A surprisingly good pairing with beef."
-      ],
-      "tags": [
-        "Salad",
-        "Apple",
-        "Braai"
-      ],
-      "imagePrompt": "Fresh carrot and apple salad in rustic serving bowl, colourful braai side photography"
+      "group": "Braai Sauces & Extras",
+      "description": "Simple sauces, bastes and dressings that elevate a braai without introducing ingredients that may upset the Huntress.",
+      "recipes": [
+        {
+          "id": "braai-garlic-butter-baste",
+          "name": "Garlic Butter Baste",
+          "category": "Braai",
+          "subcategory": "Braai Sauces & Extras",
+          "description": "A rich garlic butter baste that works beautifully with chicken, steak and fish.",
+          "prepTime": "5 min",
+          "cookTime": "5 min",
+          "difficulty": "Easy",
+          "servings": "6",
+          "status": "Untested",
+          "ingredients": [
+            "100g butter",
+            "3 garlic cloves",
+            "1 tsp parsley",
+            "Black pepper"
+          ],
+          "instructions": [
+            "Melt butter gently.",
+            "Add crushed garlic.",
+            "Add parsley and pepper.",
+            "Mix thoroughly.",
+            "Brush onto meat during cooking."
+          ],
+          "huntressNotes": [
+            "Gluten Free",
+            "Onion Free"
+          ],
+          "foxNotes": [
+            "The most useful baste in the cookbook."
+          ],
+          "tags": [
+            "Baste",
+            "Garlic",
+            "Braai"
+          ],
+          "imagePrompt": "Melted garlic butter baste in rustic bowl beside braai fire, outdoor cooking photography"
+        },
+        {
+          "id": "braai-lemon-herb-baste",
+          "name": "Lemon Herb Baste",
+          "category": "Braai",
+          "subcategory": "Braai Sauces & Extras",
+          "description": "A fresh citrus baste perfect for chicken and seafood.",
+          "prepTime": "5 min",
+          "cookTime": "0 min",
+          "difficulty": "Easy",
+          "servings": "6",
+          "status": "Untested",
+          "ingredients": [
+            "1 lemon",
+            "1 tbsp olive oil",
+            "1 tsp rosemary",
+            "1 tsp thyme",
+            "Black pepper"
+          ],
+          "instructions": [
+            "Juice the lemon.",
+            "Combine all ingredients.",
+            "Whisk together.",
+            "Brush onto meat during braai."
+          ],
+          "huntressNotes": [
+            "Gluten Free",
+            "Light Option"
+          ],
+          "foxNotes": [
+            "Excellent on chicken thighs and hake."
+          ],
+          "tags": [
+            "Baste",
+            "Lemon",
+            "Chicken"
+          ],
+          "imagePrompt": "Fresh lemon herb baste with rosemary and thyme, rustic outdoor food photography"
+        },
+        {
+          "id": "braai-honey-mustard-dressing",
+          "name": "Honey Mustard Dressing",
+          "category": "Braai",
+          "subcategory": "Braai Sauces & Extras",
+          "description": "A sweet and tangy dressing for salads and grilled meats.",
+          "prepTime": "5 min",
+          "cookTime": "0 min",
+          "difficulty": "Easy",
+          "servings": "6",
+          "status": "Untested",
+          "ingredients": [
+            "2 tbsp honey",
+            "1 tbsp mustard",
+            "1 tbsp olive oil",
+            "Black pepper"
+          ],
+          "instructions": [
+            "Combine all ingredients in a bowl.",
+            "Whisk until smooth.",
+            "Serve immediately or refrigerate."
+          ],
+          "huntressNotes": [
+            "Check Mustard Label For Gluten",
+            "Use Quality Honey"
+          ],
+          "foxNotes": [
+            "Fantastic on Greek salad."
+          ],
+          "tags": [
+            "Dressing",
+            "Salad",
+            "Honey"
+          ],
+          "imagePrompt": "Honey mustard dressing in glass jar beside fresh salad ingredients, cookbook photography"
+        },
+        {
+          "id": "braai-herb-yogurt-sauce",
+          "name": "Herb Yogurt Sauce",
+          "category": "Braai",
+          "subcategory": "Braai Sauces & Extras",
+          "description": "A cool and creamy sauce that balances smoky braai flavours.",
+          "prepTime": "10 min",
+          "cookTime": "0 min",
+          "difficulty": "Easy",
+          "servings": "6",
+          "status": "Untested",
+          "ingredients": [
+            "200g Greek yogurt",
+            "1 tsp parsley",
+            "1 tsp chives",
+            "1 tsp lemon juice",
+            "Black pepper"
+          ],
+          "instructions": [
+            "Combine all ingredients.",
+            "Mix thoroughly.",
+            "Refrigerate for 15 minutes.",
+            "Serve chilled."
+          ],
+          "huntressNotes": [
+            "Gluten Free",
+            "Cooling Sauce"
+          ],
+          "foxNotes": [
+            "Excellent with sosaties and chicken."
+          ],
+          "tags": [
+            "Sauce",
+            "Yogurt",
+            "Braai"
+          ],
+          "imagePrompt": "Creamy herb yogurt sauce in rustic bowl, fresh outdoor dining photography"
+        }
+      ]
     }
-  ]
-},
-{
-  "group": "Braai Sauces & Extras",
-  "description": "Simple sauces, bastes and dressings that elevate a braai without introducing ingredients that may upset the Huntress.",
-  "recipes": [
-    {
-      "id": "braai-garlic-butter-baste",
-      "name": "Garlic Butter Baste",
-      "category": "Braai",
-      "subcategory": "Braai Sauces & Extras",
-      "description": "A rich garlic butter baste that works beautifully with chicken, steak and fish.",
-      "prepTime": "5 min",
-      "cookTime": "5 min",
-      "difficulty": "Easy",
-      "servings": "6",
-      "status": "Untested",
-      "ingredients": [
-        "100g butter",
-        "3 garlic cloves",
-        "1 tsp parsley",
-        "Black pepper"
-      ],
-      "instructions": [
-        "Melt butter gently.",
-        "Add crushed garlic.",
-        "Add parsley and pepper.",
-        "Mix thoroughly.",
-        "Brush onto meat during cooking."
-      ],
-      "huntressNotes": [
-        "Gluten Free",
-        "Onion Free"
-      ],
-      "foxNotes": [
-        "The most useful baste in the cookbook."
-      ],
-      "tags": [
-        "Baste",
-        "Garlic",
-        "Braai"
-      ],
-      "imagePrompt": "Melted garlic butter baste in rustic bowl beside braai fire, outdoor cooking photography"
-    },
-
-    {
-      "id": "braai-lemon-herb-baste",
-      "name": "Lemon Herb Baste",
-      "category": "Braai",
-      "subcategory": "Braai Sauces & Extras",
-      "description": "A fresh citrus baste perfect for chicken and seafood.",
-      "prepTime": "5 min",
-      "cookTime": "0 min",
-      "difficulty": "Easy",
-      "servings": "6",
-      "status": "Untested",
-      "ingredients": [
-        "1 lemon",
-        "1 tbsp olive oil",
-        "1 tsp rosemary",
-        "1 tsp thyme",
-        "Black pepper"
-      ],
-      "instructions": [
-        "Juice the lemon.",
-        "Combine all ingredients.",
-        "Whisk together.",
-        "Brush onto meat during braai."
-      ],
-      "huntressNotes": [
-        "Gluten Free",
-        "Light Option"
-      ],
-      "foxNotes": [
-        "Excellent on chicken thighs and hake."
-      ],
-      "tags": [
-        "Baste",
-        "Lemon",
-        "Chicken"
-      ],
-      "imagePrompt": "Fresh lemon herb baste with rosemary and thyme, rustic outdoor food photography"
-    },
-
-    {
-      "id": "braai-honey-mustard-dressing",
-      "name": "Honey Mustard Dressing",
-      "category": "Braai",
-      "subcategory": "Braai Sauces & Extras",
-      "description": "A sweet and tangy dressing for salads and grilled meats.",
-      "prepTime": "5 min",
-      "cookTime": "0 min",
-      "difficulty": "Easy",
-      "servings": "6",
-      "status": "Untested",
-      "ingredients": [
-        "2 tbsp honey",
-        "1 tbsp mustard",
-        "1 tbsp olive oil",
-        "Black pepper"
-      ],
-      "instructions": [
-        "Combine all ingredients in a bowl.",
-        "Whisk until smooth.",
-        "Serve immediately or refrigerate."
-      ],
-      "huntressNotes": [
-        "Check Mustard Label For Gluten",
-        "Use Quality Honey"
-      ],
-      "foxNotes": [
-        "Fantastic on Greek salad."
-      ],
-      "tags": [
-        "Dressing",
-        "Salad",
-        "Honey"
-      ],
-      "imagePrompt": "Honey mustard dressing in glass jar beside fresh salad ingredients, cookbook photography"
-    },
-
-    {
-      "id": "braai-herb-yogurt-sauce",
-      "name": "Herb Yogurt Sauce",
-      "category": "Braai",
-      "subcategory": "Braai Sauces & Extras",
-      "description": "A cool and creamy sauce that balances smoky braai flavours.",
-      "prepTime": "10 min",
-      "cookTime": "0 min",
-      "difficulty": "Easy",
-      "servings": "6",
-      "status": "Untested",
-      "ingredients": [
-        "200g Greek yogurt",
-        "1 tsp parsley",
-        "1 tsp chives",
-        "1 tsp lemon juice",
-        "Black pepper"
-      ],
-      "instructions": [
-        "Combine all ingredients.",
-        "Mix thoroughly.",
-        "Refrigerate for 15 minutes.",
-        "Serve chilled."
-      ],
-      "huntressNotes": [
-        "Gluten Free",
-        "Cooling Sauce"
-      ],
-      "foxNotes": [
-        "Excellent with sosaties and chicken."
-      ],
-      "tags": [
-        "Sauce",
-        "Yogurt",
-        "Braai"
-      ],
-      "imagePrompt": "Creamy herb yogurt sauce in rustic bowl, fresh outdoor dining photography"
-    }
-  ]
-}
   ]
 }

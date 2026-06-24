@@ -8,9 +8,9 @@ Open **`index.html`** in your browser to browse the cookbook.
 
 ### What's included
 
-- **Breakfast chapter** — 10 recipes from the breakfast chapter import
-- **Dinner & Desserts chapters** — recipes from `data/recipes.json`
-- **Recipe data** — structured JSON at `data/recipes.json` (source for dinner, desserts, and cross-reference)
+- **Recipe chapters** — breakfast, lunch, dinner, braai, soups, desserts, snacks, drinks
+- **Guide pages** — introduction, dietary guide, pantry essentials, future recipes
+- **Recipe data** — per-chapter JSON files in `data/` (see below)
 - **Print-ready** — press `Ctrl+P` on any page to save as PDF
 
 ### Folder structure
@@ -19,25 +19,28 @@ Open **`index.html`** in your browser to browse the cookbook.
 huntress-cookbook/
 ├── index.html              ← Start here
 ├── data/
-│   └── recipes.json        ← Structured recipe data (JSON source)
+│   ├── breakfast.json
+│   ├── lunch.json
+│   ├── dinner.json
+│   ├── braai.json
+│   ├── comfortFood.json
+│   ├── desserts.json
+│   ├── snacks.json
+│   ├── drinks.json
+│   ├── introduction.json
+│   ├── dietary-guide.json
+│   ├── pantry-essentials.json
+│   ├── future-recipes.json
+│   └── cookbook-settings.json
 ├── chapters/
-│   ├── breakfast.html
-│   ├── dinner.html
-│   └── desserts.html
 ├── recipes/
-│   ├── cheese-herb-omelette.html
-│   ├── garlic-butter-chicken.html
-│   ├── bobotie-gf.html
-│   ├── malva-pudding-gf.html
-│   ├── peppermint-crisp-tart-gf.html
-│   └── … (breakfast recipes)
 ├── css/
-│   └── cookbook.css        ← Design system
+│   └── cookbook.css
 ├── js/
-│   └── auth.js             ← Password gate
+│   ├── recipes.js          ← Generated — do not edit by hand
+│   ├── cookbook.js
+│   └── auth.js
 └── assets/
-    ├── fox-logo.svg
-    └── images/             ← Add your food photos here
 ```
 
 ## Adding Photos
@@ -58,13 +61,13 @@ Copy `recipes/cheese-herb-omelette.html` as a template. Update:
 
 Link the new recipe from the relevant chapter page.
 
-Recipe HTML pages include a `data-recipe-id` attribute matching the `id` field in `data/recipes.json` where applicable.
+Recipe HTML pages use `data-recipe-slug` and `data-recipe-id` for hydration from `js/recipes.js`.
 
 ## Recipe data (JS)
 
-All recipe data lives in **`js/recipes.js`** (generated from `data/Huntress_Cookbook_Recipes_v1.json` + `data/recipes.json`).
+All recipe data lives in **`js/recipes.js`** (generated from the JSON files in `data/`).
 
-To rebuild after editing the JSON source files:
+To rebuild after editing chapter JSON or guide files:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File scripts/build-recipes.ps1

@@ -1,0 +1,424 @@
+{
+    "category": "Soups & Comfort Foods",
+    "description": "Warm, comforting meals designed for colder days, recovery periods and wholesome family dinners.",
+    "groups": [
+        {
+            "name": "Soups",
+            "recipes": [
+                {
+                    "id": "butternut-soup",
+                    "name": "Butternut Soup",
+                    "category": "Soups & Comfort Foods",
+                    "description": "A rich and velvety butternut soup perfect for cold evenings.",
+                    "prepTime": "15 min",
+                    "cookTime": "35 min",
+                    "difficulty": "Easy",
+                    "servings": "4",
+                    "status": "Untested",
+                    "ingredients": [
+                        "1 medium butternut",
+                        "750ml chicken stock",
+                        "250ml cream",
+                        "1 tsp garlic powder",
+                        "Salt",
+                        "Black pepper"
+                    ],
+                    "instructions": [
+                        "Peel and cube the butternut.",
+                        "Add butternut and stock to a pot.",
+                        "Simmer until butternut is soft.",
+                        "Blend until smooth.",
+                        "Add cream and seasonings.",
+                        "Heat gently.",
+                        "Serve warm."
+                    ],
+                    "huntressNotes": [
+                        "Gluten Free",
+                        "Onion Free",
+                        "Comfort Food"
+                    ],
+                    "foxNotes": [
+                        "One of the safest soups in the cookbook."
+                    ],
+                    "tags": [
+                        "Soup",
+                        "Butternut",
+                        "Winter"
+                    ],
+                    "image": "butternut-soup.jpg",
+                    "imagePrompt": "Creamy butternut soup served in rustic bowl with warm lighting"
+                },
+                {
+                    "id": "tomato-basil-soup",
+                    "name": "Tomato & Basil Soup",
+                    "category": "Soups & Comfort Foods",
+                    "description": "A classic tomato soup with fresh basil and rich flavour.",
+                    "prepTime": "15 min",
+                    "cookTime": "30 min",
+                    "difficulty": "Easy",
+                    "servings": "4",
+                    "status": "Untested",
+                    "ingredients": [
+                        "800g tomatoes",
+                        "750ml stock",
+                        "Fresh basil",
+                        "1 tbsp olive oil",
+                        "Salt",
+                        "Black pepper"
+                    ],
+                    "instructions": [
+                        "Roughly chop tomatoes.",
+                        "Cook tomatoes in olive oil.",
+                        "Add stock and basil.",
+                        "Simmer for 25 minutes.",
+                        "Blend until smooth.",
+                        "Season and serve."
+                    ],
+                    "huntressNotes": [
+                        "Gluten Free",
+                        "Comfort Food"
+                    ],
+                    "foxNotes": [
+                        "Pairs beautifully with gluten free toast."
+                    ],
+                    "tags": [
+                        "Tomato",
+                        "Soup",
+                        "Comfort Food"
+                    ],
+                    "image": "tomato-basil-soup.jpg",
+                    "imagePrompt": "Tomato basil soup served in ceramic bowl with basil garnish"
+                },
+                {
+                    "id": "carrot-ginger-soup",
+                    "name": "Carrot & Ginger Soup",
+                    "category": "Soups & Comfort Foods",
+                    "description": "A warming soup with natural sweetness from carrots and a hint of ginger.",
+                    "prepTime": "15 min",
+                    "cookTime": "30 min",
+                    "difficulty": "Easy",
+                    "servings": "4",
+                    "status": "Untested",
+                    "ingredients": [
+                        "600g carrots",
+                        "750ml stock",
+                        "1 tsp grated ginger",
+                        "250ml cream",
+                        "Salt",
+                        "Black pepper"
+                    ],
+                    "instructions": [
+                        "Peel and slice carrots.",
+                        "Add carrots and stock to a pot.",
+                        "Cook until carrots are soft.",
+                        "Add ginger.",
+                        "Blend until smooth.",
+                        "Add cream.",
+                        "Serve warm."
+                    ],
+                    "huntressNotes": [
+                        "Gluten Free",
+                        "Onion Free"
+                    ],
+                    "foxNotes": [
+                        "Very comforting on rainy days."
+                    ],
+                    "tags": [
+                        "Carrot",
+                        "Ginger",
+                        "Soup"
+                    ],
+                    "image": "carrot-ginger-soup.jpg",
+                    "imagePrompt": "Creamy carrot ginger soup with fresh herbs in rustic bowl"
+                },
+                {
+                    "id": "chicken-vegetable-soup",
+                    "name": "Chicken & Vegetable Soup",
+                    "category": "Soups & Comfort Foods",
+                    "description": "A hearty chicken soup loaded with vegetables and flavour.",
+                    "prepTime": "20 min",
+                    "cookTime": "40 min",
+                    "difficulty": "Easy",
+                    "servings": "6",
+                    "status": "Untested",
+                    "ingredients": [
+                        "500g chicken breast",
+                        "2 carrots",
+                        "2 celery stalks",
+                        "1 sweet potato",
+                        "1 litre chicken stock",
+                        "Salt",
+                        "Black pepper"
+                    ],
+                    "instructions": [
+                        "Dice vegetables.",
+                        "Cube chicken.",
+                        "Add stock to large pot.",
+                        "Add vegetables and chicken.",
+                        "Simmer for 35 to 40 minutes.",
+                        "Season to taste.",
+                        "Serve warm."
+                    ],
+                    "huntressNotes": [
+                        "Gluten Free",
+                        "High Protein"
+                    ],
+                    "foxNotes": [
+                        "Excellent when recovering from illness."
+                    ],
+                    "tags": [
+                        "Chicken",
+                        "Vegetables",
+                        "Soup"
+                    ],
+                    "image": "chicken-vegetable-soup.jpg",
+                    "imagePrompt": "Hearty chicken vegetable soup with carrots and herbs in rustic bowl"
+                },
+                {
+                    "id": "chicken-soup",
+                    "name": "Chicken Soup",
+                    "category": "Soups & Comfort Foods",
+                    "description": "A gentle, nourishing soup perfect for recovery days and cold evenings.",
+                    "prepTime": "15 min",
+                    "cookTime": "45 min",
+                    "difficulty": "Easy",
+                    "servings": "6",
+                    "status": "Untested",
+                    "ingredients": [
+                        "500g chicken breast",
+                        "3 carrots",
+                        "1 litre chicken stock",
+                        "2 garlic cloves",
+                        "Salt",
+                        "Pepper"
+                    ],
+                    "instructions": [
+                        "Dice chicken and carrots.",
+                        "Bring stock to a simmer.",
+                        "Add chicken and vegetables.",
+                        "Cook until chicken is tender.",
+                        "Season to taste.",
+                        "Serve warm."
+                    ],
+                    "huntressNotes": [
+                        "Gluten Free",
+                        "Recovery Meal",
+                        "Easy Digestion"
+                    ],
+                    "foxNotes": [
+                        "Ideal when energy is low or digestion is sensitive."
+                    ],
+                    "tags": [
+                        "Soup",
+                        "Recovery",
+                        "Comfort Food"
+                    ],
+                    "image": "chicken-soup.jpg",
+                    "imagePrompt": "Homemade chicken soup with carrots in rustic bowl, warm comforting food photography"
+                },
+                {
+                    "id": "roasted-red-pepper-soup",
+                    "name": "Roasted Red Pepper Soup",
+                    "category": "Soups & Comfort Foods",
+                    "description": "A smooth roasted pepper soup with a rich and slightly sweet flavour.",
+                    "prepTime": "15 min",
+                    "cookTime": "35 min",
+                    "difficulty": "Easy",
+                    "servings": "4",
+                    "status": "Untested",
+                    "ingredients": [
+                        "4 red peppers",
+                        "750ml stock",
+                        "1 tbsp olive oil",
+                        "250ml cream",
+                        "Salt",
+                        "Black pepper"
+                    ],
+                    "instructions": [
+                        "Roast peppers until skins darken.",
+                        "Remove skins.",
+                        "Blend peppers with stock.",
+                        "Transfer to pot.",
+                        "Add cream.",
+                        "Heat gently.",
+                        "Season and serve."
+                    ],
+                    "huntressNotes": [
+                        "Gluten Free",
+                        "Onion Free"
+                    ],
+                    "foxNotes": [
+                        "One of the most flavourful soups in the collection."
+                    ],
+                    "tags": [
+                        "Red Pepper",
+                        "Soup",
+                        "Comfort Food"
+                    ],
+                    "image": "roasted-red-pepper-soup.jpg",
+                    "imagePrompt": "Roasted red pepper soup served in elegant bowl with cream swirl"
+                }
+            ]
+        },
+        {
+            "name": "Comfort Bowls",
+            "recipes": [
+                {
+                    "id": "chicken-rice-bowl",
+                    "name": "Chicken Rice Bowl",
+                    "category": "Soups & Comfort Foods",
+                    "description": "A simple comfort bowl featuring tender chicken and fluffy rice.",
+                    "prepTime": "15 min",
+                    "cookTime": "25 min",
+                    "difficulty": "Easy",
+                    "servings": "4",
+                    "status": "Untested",
+                    "ingredients": [
+                        "500g chicken breast",
+                        "2 cups cooked rice",
+                        "1 cup carrots",
+                        "1 tbsp olive oil",
+                        "Salt",
+                        "Black pepper"
+                    ],
+                    "instructions": [
+                        "Cook rice according to package instructions.",
+                        "Season and cook chicken.",
+                        "Slice chicken into strips.",
+                        "Steam carrots until tender.",
+                        "Layer rice, carrots and chicken in bowls.",
+                        "Serve warm."
+                    ],
+                    "huntressNotes": [
+                        "Gluten Free",
+                        "High Protein"
+                    ],
+                    "foxNotes": [
+                        "One of the easiest comfort meals in the cookbook."
+                    ],
+                    "tags": [
+                        "Chicken",
+                        "Rice",
+                        "Comfort Bowl"
+                    ],
+                    "imagePrompt": "Chicken rice comfort bowl with vegetables in rustic ceramic bowl"
+                },
+                {
+                    "id": "beef-comfort-bowl",
+                    "name": "Beef Comfort Bowl",
+                    "category": "Soups & Comfort Foods",
+                    "description": "A hearty beef bowl designed for colder evenings.",
+                    "prepTime": "15 min",
+                    "cookTime": "30 min",
+                    "difficulty": "Easy",
+                    "servings": "4",
+                    "status": "Untested",
+                    "ingredients": [
+                        "500g beef strips",
+                        "2 cups cooked rice",
+                        "1 cup mushrooms",
+                        "Salt",
+                        "Black pepper"
+                    ],
+                    "instructions": [
+                        "Cook rice.",
+                        "Season and cook beef strips.",
+                        "Cook mushrooms separately.",
+                        "Assemble ingredients into bowls.",
+                        "Serve warm."
+                    ],
+                    "huntressNotes": [
+                        "Gluten Free"
+                    ],
+                    "foxNotes": [
+                        "Feels like winter comfort food."
+                    ],
+                    "tags": [
+                        "Beef",
+                        "Rice",
+                        "Comfort"
+                    ],
+                    "imagePrompt": "Hearty beef comfort bowl with mushrooms and rice"
+                },
+                {
+                    "id": "creamy-mashed-potato-bowl",
+                    "name": "Creamy Mashed Potato Bowl",
+                    "category": "Soups & Comfort Foods",
+                    "description": "Creamy mashed potatoes topped with protein and vegetables.",
+                    "prepTime": "20 min",
+                    "cookTime": "30 min",
+                    "difficulty": "Easy",
+                    "servings": "4",
+                    "status": "Untested",
+                    "ingredients": [
+                        "6 potatoes",
+                        "50g butter",
+                        "250ml milk",
+                        "300g chicken",
+                        "Salt",
+                        "Black pepper"
+                    ],
+                    "instructions": [
+                        "Boil potatoes until soft.",
+                        "Mash with butter and milk.",
+                        "Cook chicken separately.",
+                        "Place mash into bowls.",
+                        "Top with chicken.",
+                        "Serve warm."
+                    ],
+                    "huntressNotes": [
+                        "Gluten Free",
+                        "Comfort Food"
+                    ],
+                    "foxNotes": [
+                        "Excellent on cold evenings."
+                    ],
+                    "tags": [
+                        "Mashed Potato",
+                        "Comfort",
+                        "Chicken"
+                    ],
+                    "imagePrompt": "Creamy mashed potato bowl topped with chicken and herbs"
+                },
+                {
+                    "id": "roast-vegetable-bowl",
+                    "name": "Roast Vegetable Bowl",
+                    "category": "Soups & Comfort Foods",
+                    "description": "Roasted vegetables served in a warm and comforting bowl.",
+                    "prepTime": "15 min",
+                    "cookTime": "35 min",
+                    "difficulty": "Easy",
+                    "servings": "4",
+                    "status": "Untested",
+                    "ingredients": [
+                        "Sweet potato",
+                        "Carrots",
+                        "Peppers",
+                        "Olive oil",
+                        "Salt",
+                        "Black pepper"
+                    ],
+                    "instructions": [
+                        "Chop vegetables.",
+                        "Toss with olive oil.",
+                        "Roast until tender.",
+                        "Serve warm in bowls."
+                    ],
+                    "huntressNotes": [
+                        "Gluten Free",
+                        "Vegetable Focused"
+                    ],
+                    "foxNotes": [
+                        "Pairs well with grilled chicken."
+                    ],
+                    "tags": [
+                        "Vegetables",
+                        "Comfort Bowl",
+                        "Healthy"
+                    ],
+                    "imagePrompt": "Roasted vegetable comfort bowl with colourful vegetables"
+                }
+            ]
+        }
+    ]
+}

@@ -585,6 +585,7 @@ var HUNTRESS_COOKBOOK = {
                           "lunch":  "Balanced midday meals that are gluten-friendly, onion-free, portable, and satisfying.",
                           "dinner":  "Comforting evening meals designed around the Huntress\u0027 dietary needs while still feeling satisfying and special.",
                           "braai":  "South African braai favourites adapted to be Huntress-friendly, gluten-conscious and onion-free.",
+                          "soups":  "Warm, comforting meals designed for colder days, recovery periods and wholesome family dinners.",
                           "desserts":  "Sweet treats and comforting desserts adapted to be Huntress-friendly, gluten-conscious and made with simple ingredients.",
                           "snacks":  "Quick snacks, lunchbox fillers and road-trip foods that fit the Huntress lifestyle and dietary needs.",
                           "drinks":  "Comfort drinks, smoothies, coolers and everyday beverages designed to be Huntress-friendly and easy to make in a South African kitchen."
@@ -597,7 +598,7 @@ var HUNTRESS_COOKBOOK = {
                                                "cheese-herb-omelette",
                                                "mushroom-spinach-omelette",
                                                "bacon-avocado-eggs",
-                                               "soft-scrambled-eggs",
+                                               "breakfast-soft-scrambled-eggs",
                                                "shakshuka-onion-free",
                                                "feta-spinach-frittata",
                                                "berry-smoothie-bowl",
@@ -613,8 +614,8 @@ var HUNTRESS_COOKBOOK = {
                                                "french-toast-gf-bread",
                                                "overnight-oats",
                                                "boiled-eggs-fruit",
-                                               "rice-cakes-peanut-butter",
-                                               "gf-muffins",
+                                               "breakfast-rice-cakes-peanut-butter",
+                                               "breakfast-gf-muffins",
                                                "yogurt-pots"
                                            ]
                        },
@@ -627,9 +628,6 @@ var HUNTRESS_COOKBOOK = {
                                                "tuna-stuffed-peppers",
                                                "egg-salad-bowl",
                                                "chicken-rice-bowl",
-                                               "butternut-soup",
-                                               "tomato-basil-soup",
-                                               "carrot-ginger-soup",
                                                "chicken-skewers",
                                                "mini-frittatas",
                                                "savoury-gf-muffins",
@@ -659,8 +657,9 @@ var HUNTRESS_COOKBOOK = {
                                                "prawn-rice-bowl",
                                                "bobotie-gf",
                                                "butternut-bacon-bake",
-                                               "chicken-soup",
                                                "loaded-sweet-potatoes",
+                                               "chicken-stew",
+                                               "slow-cooked-pot-roast",
                                                "shepherds-pie"
                                            ]
                        },
@@ -670,7 +669,7 @@ var HUNTRESS_COOKBOOK = {
                            "recipeSlugs":  [
                                                "garlic-herb-chicken-sosaties",
                                                "beef-sosaties",
-                                               "steak-rosemary-butter",
+                                               "braai-steak-rosemary-butter",
                                                "bacon-wrapped-chicken",
                                                "lemon-garlic-chicken-thighs",
                                                "roasted-sweet-potatoes",
@@ -694,6 +693,22 @@ var HUNTRESS_COOKBOOK = {
                                                "lemon-herb-baste",
                                                "honey-mustard-dressing",
                                                "herb-yogurt-sauce"
+                                           ]
+                       },
+                       {
+                           "id":  "soups",
+                           "name":  "Soups \u0026 Comfort Foods",
+                           "recipeSlugs":  [
+                                               "butternut-soup",
+                                               "tomato-basil-soup",
+                                               "carrot-ginger-soup",
+                                               "chicken-vegetable-soup",
+                                               "chicken-soup",
+                                               "roasted-red-pepper-soup",
+                                               "chicken-rice-bowl",
+                                               "beef-comfort-bowl",
+                                               "creamy-mashed-potato-bowl",
+                                               "roast-vegetable-bowl"
                                            ]
                        },
                        {
@@ -817,63 +832,9 @@ var HUNTRESS_COOKBOOK = {
                                                "fox-huntress-signature-caf-menu",
                                                "caffeine-reference-guide"
                                            ]
-                       },
-                       {
-                           "id":  "soups",
-                           "name":  "Soups \u0026 Comfort Foods",
-                           "recipeSlugs":  [
-                                               "creamy-butternut-soup",
-                                               "tomato-basil-soup",
-                                               "carrot-ginger-soup",
-                                               "chicken-vegetable-soup",
-                                               "roasted-red-pepper-soup",
-                                               "cottage-pie",
-                                               "shepherds-pie",
-                                               "bobotie-gf",
-                                               "beef-stew",
-                                               "potjie",
-                                               "butternut-bacon-bake",
-                                               "loaded-sweet-potatoes",
-                                               "chicken-rice-bake",
-                                               "simple-chicken-rice",
-                                               "soft-scrambled-eggs",
-                                               "honey-yogurt-bowl"
-                                           ]
                        }
                    ],
     "chapters":  {
-                     "soups":  [
-                                   {
-                                       "title":  "Soups",
-                                       "icon":  "soup",
-                                       "desc":  "Gentle, warming bowls.",
-                                       "names":  [
-                                                     "Creamy Butternut Soup",
-                                                     "Tomato \u0026 Basil Soup",
-                                                     "Carrot \u0026 Ginger Soup",
-                                                     "Chicken \u0026 Vegetable Soup",
-                                                     "Roasted Red Pepper Soup"
-                                                 ]
-                                   },
-                                   {
-                                       "title":  "Comfort Classics",
-                                       "icon":  "home",
-                                       "desc":  "Familiar favourites for slow evenings.",
-                                       "names":  [
-                                                     "Cottage Pie",
-                                                     "Shepherd\u0027s Pie",
-                                                     "Bobotie",
-                                                     "Beef Stew",
-                                                     "Potjie",
-                                                     "Butternut \u0026 Bacon Bake",
-                                                     "Loaded Sweet Potatoes",
-                                                     "Chicken \u0026 Rice Bake",
-                                                     "Simple Chicken \u0026 Rice",
-                                                     "Soft Scrambled Eggs",
-                                                     "Honey Yogurt Bowl"
-                                                 ]
-                                   }
-                               ],
                      "breakfast":  [
                                        {
                                            "title":  "Egg Based Breakfasts",
@@ -937,16 +898,6 @@ var HUNTRESS_COOKBOOK = {
                                                      "Tuna Stuffed Peppers",
                                                      "Egg Salad Bowl",
                                                      "Chicken \u0026 Rice Bowl"
-                                                 ]
-                                   },
-                                   {
-                                       "title":  "Soups",
-                                       "icon":  "soup",
-                                       "desc":  "Comforting lunches perfect for colder days, recovery meals, and gentle digestion.",
-                                       "names":  [
-                                                     "Butternut Soup",
-                                                     "Tomato \u0026 Basil Soup",
-                                                     "Carrot \u0026 Ginger Soup"
                                                  ]
                                    },
                                    {
@@ -1014,8 +965,9 @@ var HUNTRESS_COOKBOOK = {
                                         "names":  [
                                                       "Bobotie (GF Version)",
                                                       "Butternut \u0026 Bacon Bake",
-                                                      "Chicken Soup",
                                                       "Loaded Sweet Potatoes",
+                                                      "Chicken Stew",
+                                                      "Slow Cooked Pot Roast",
                                                       "Shepherd\u0027s Pie"
                                                   ]
                                     }
@@ -1094,6 +1046,32 @@ var HUNTRESS_COOKBOOK = {
                                                      "Lemon Herb Baste",
                                                      "Honey Mustard Dressing",
                                                      "Herb Yogurt Sauce"
+                                                 ]
+                                   }
+                               ],
+                     "soups":  [
+                                   {
+                                       "title":  "Soups",
+                                       "icon":  "soup",
+                                       "desc":  "",
+                                       "names":  [
+                                                     "Butternut Soup",
+                                                     "Tomato \u0026 Basil Soup",
+                                                     "Carrot \u0026 Ginger Soup",
+                                                     "Chicken \u0026 Vegetable Soup",
+                                                     "Chicken Soup",
+                                                     "Roasted Red Pepper Soup"
+                                                 ]
+                                   },
+                                   {
+                                       "title":  "Comfort Bowls",
+                                       "icon":  "bowl",
+                                       "desc":  "",
+                                       "names":  [
+                                                     "Chicken Rice Bowl",
+                                                     "Beef Comfort Bowl",
+                                                     "Creamy Mashed Potato Bowl",
+                                                     "Roast Vegetable Bowl"
                                                  ]
                                    }
                                ],
@@ -1473,42 +1451,42 @@ var HUNTRESS_COOKBOOK = {
                                                "foxNotes":  "Perfect quick breakfast before a busy day.",
                                                "image":  "bacon-avocado-eggs.jpg"
                                            },
-                    "soft-scrambled-eggs":  {
-                                                "id":  "breakfast-soft-scrambled-eggs",
-                                                "slug":  "soft-scrambled-eggs",
-                                                "name":  "Soft Scrambled Eggs with Chives",
-                                                "categoryId":  "breakfast",
-                                                "category":  "Breakfast",
-                                                "status":  "untested",
-                                                "description":  "Creamy scrambled eggs cooked slowly for maximum softness.",
-                                                "difficulty":  "Easy",
-                                                "prepTime":  5,
-                                                "cookTime":  8,
-                                                "servings":  1,
-                                                "tags":  [
-                                                             "Gluten Free",
-                                                             "Recovery Meal",
-                                                             "High Protein"
-                                                         ],
-                                                "ingredients":  [
-                                                                    "3 eggs",
-                                                                    "1 tbsp butter",
-                                                                    "Chives",
-                                                                    "Salt"
-                                                                ],
-                                                "instructions":  [
-                                                                     "Whisk eggs thoroughly.",
-                                                                     "Melt butter over low heat.",
-                                                                     "Add eggs.",
-                                                                     "Stir continuously.",
-                                                                     "Cook slowly until creamy.",
-                                                                     "Add chives.",
-                                                                     "Serve immediately."
-                                                                 ],
-                                                "huntressNotes":  "Easy Digestion. Recovery Friendly. Gluten Free",
-                                                "foxNotes":  "Great option when digestion is sensitive.",
-                                                "image":  "soft-scrambled-eggs.jpg"
-                                            },
+                    "breakfast-soft-scrambled-eggs":  {
+                                                          "id":  "breakfast-soft-scrambled-eggs",
+                                                          "slug":  "breakfast-soft-scrambled-eggs",
+                                                          "name":  "Soft Scrambled Eggs with Chives",
+                                                          "categoryId":  "breakfast",
+                                                          "category":  "Breakfast",
+                                                          "status":  "untested",
+                                                          "description":  "Creamy scrambled eggs cooked slowly for maximum softness.",
+                                                          "difficulty":  "Easy",
+                                                          "prepTime":  5,
+                                                          "cookTime":  8,
+                                                          "servings":  1,
+                                                          "tags":  [
+                                                                       "Gluten Free",
+                                                                       "Recovery Meal",
+                                                                       "High Protein"
+                                                                   ],
+                                                          "ingredients":  [
+                                                                              "3 eggs",
+                                                                              "1 tbsp butter",
+                                                                              "Chives",
+                                                                              "Salt"
+                                                                          ],
+                                                          "instructions":  [
+                                                                               "Whisk eggs thoroughly.",
+                                                                               "Melt butter over low heat.",
+                                                                               "Add eggs.",
+                                                                               "Stir continuously.",
+                                                                               "Cook slowly until creamy.",
+                                                                               "Add chives.",
+                                                                               "Serve immediately."
+                                                                           ],
+                                                          "huntressNotes":  "Easy Digestion. Recovery Friendly. Gluten Free",
+                                                          "foxNotes":  "Great option when digestion is sensitive.",
+                                                          "image":  "soft-scrambled-eggs.jpg"
+                                                      },
                     "shakshuka-onion-free":  {
                                                  "id":  "breakfast-shakshuka",
                                                  "slug":  "shakshuka-onion-free",
@@ -2032,74 +2010,74 @@ var HUNTRESS_COOKBOOK = {
                                               "foxNotes":  "Excellent road trip breakfast.",
                                               "image":  "boiled-eggs-fruit.jpg"
                                           },
-                    "rice-cakes-peanut-butter":  {
-                                                     "id":  "breakfast-rice-cakes-peanut-butter",
-                                                     "slug":  "rice-cakes-peanut-butter",
-                                                     "name":  "Rice Cakes with Peanut Butter",
-                                                     "categoryId":  "breakfast",
-                                                     "category":  "Breakfast",
-                                                     "status":  "untested",
-                                                     "description":  "A fast breakfast with healthy fats and long-lasting energy.",
-                                                     "difficulty":  "Easy",
-                                                     "prepTime":  2,
-                                                     "cookTime":  0,
-                                                     "servings":  1,
-                                                     "tags":  [
-                                                                  "Quick Breakfast",
-                                                                  "Gluten Free",
-                                                                  "Portable"
-                                                              ],
-                                                     "ingredients":  [
-                                                                         "2 rice cakes",
-                                                                         "1 tbsp peanut butter",
-                                                                         "1 banana (not overripe)"
-                                                                     ],
-                                                     "instructions":  [
-                                                                          "Spread peanut butter on rice cakes.",
-                                                                          "Slice banana.",
-                                                                          "Arrange banana slices on top.",
-                                                                          "Serve immediately."
-                                                                      ],
-                                                     "huntressNotes":  "Avoid Overripe Bananas. Gluten Free",
-                                                     "foxNotes":  "Fastest breakfast in the cookbook.",
-                                                     "image":  "rice-cakes-peanut-butter.jpg"
-                                                 },
-                    "gf-muffins":  {
-                                       "id":  "breakfast-gf-muffins",
-                                       "slug":  "gf-muffins",
-                                       "name":  "GF Breakfast Muffins",
-                                       "categoryId":  "breakfast",
-                                       "category":  "Breakfast",
-                                       "status":  "untested",
-                                       "description":  "Portable savoury muffins ideal for meal prep and busy weeks.",
-                                       "difficulty":  "Medium",
-                                       "prepTime":  15,
-                                       "cookTime":  25,
-                                       "servings":  6,
-                                       "tags":  [
-                                                    "Meal Prep",
-                                                    "Portable",
-                                                    "Gluten Free"
-                                                ],
-                                       "ingredients":  [
-                                                           "1 cup GF flour",
-                                                           "2 eggs",
-                                                           "100g cheese",
-                                                           "4 bacon rashers",
-                                                           "125ml milk"
-                                                       ],
-                                       "instructions":  [
-                                                            "Cook bacon and chop finely.",
-                                                            "Mix dry ingredients.",
-                                                            "Add eggs and milk.",
-                                                            "Fold in bacon and cheese.",
-                                                            "Fill muffin tray.",
-                                                            "Bake at 180°C for 20-25 minutes."
-                                                        ],
-                                       "huntressNotes":  "Gluten Free. Meal Prep Friendly",
-                                       "foxNotes":  "Perfect for making a batch on Sunday.",
-                                       "image":  "gf-muffins.jpg"
-                                   },
+                    "breakfast-rice-cakes-peanut-butter":  {
+                                                               "id":  "breakfast-rice-cakes-peanut-butter",
+                                                               "slug":  "breakfast-rice-cakes-peanut-butter",
+                                                               "name":  "Rice Cakes with Peanut Butter",
+                                                               "categoryId":  "breakfast",
+                                                               "category":  "Breakfast",
+                                                               "status":  "untested",
+                                                               "description":  "A fast breakfast with healthy fats and long-lasting energy.",
+                                                               "difficulty":  "Easy",
+                                                               "prepTime":  2,
+                                                               "cookTime":  0,
+                                                               "servings":  1,
+                                                               "tags":  [
+                                                                            "Quick Breakfast",
+                                                                            "Gluten Free",
+                                                                            "Portable"
+                                                                        ],
+                                                               "ingredients":  [
+                                                                                   "2 rice cakes",
+                                                                                   "1 tbsp peanut butter",
+                                                                                   "1 banana (not overripe)"
+                                                                               ],
+                                                               "instructions":  [
+                                                                                    "Spread peanut butter on rice cakes.",
+                                                                                    "Slice banana.",
+                                                                                    "Arrange banana slices on top.",
+                                                                                    "Serve immediately."
+                                                                                ],
+                                                               "huntressNotes":  "Avoid Overripe Bananas. Gluten Free",
+                                                               "foxNotes":  "Fastest breakfast in the cookbook.",
+                                                               "image":  "rice-cakes-peanut-butter.jpg"
+                                                           },
+                    "breakfast-gf-muffins":  {
+                                                 "id":  "breakfast-gf-muffins",
+                                                 "slug":  "breakfast-gf-muffins",
+                                                 "name":  "GF Breakfast Muffins",
+                                                 "categoryId":  "breakfast",
+                                                 "category":  "Breakfast",
+                                                 "status":  "untested",
+                                                 "description":  "Portable savoury muffins ideal for meal prep and busy weeks.",
+                                                 "difficulty":  "Medium",
+                                                 "prepTime":  15,
+                                                 "cookTime":  25,
+                                                 "servings":  6,
+                                                 "tags":  [
+                                                              "Meal Prep",
+                                                              "Portable",
+                                                              "Gluten Free"
+                                                          ],
+                                                 "ingredients":  [
+                                                                     "1 cup GF flour",
+                                                                     "2 eggs",
+                                                                     "100g cheese",
+                                                                     "4 bacon rashers",
+                                                                     "125ml milk"
+                                                                 ],
+                                                 "instructions":  [
+                                                                      "Cook bacon and chop finely.",
+                                                                      "Mix dry ingredients.",
+                                                                      "Add eggs and milk.",
+                                                                      "Fold in bacon and cheese.",
+                                                                      "Fill muffin tray.",
+                                                                      "Bake at 180°C for 20-25 minutes."
+                                                                  ],
+                                                 "huntressNotes":  "Gluten Free. Meal Prep Friendly",
+                                                 "foxNotes":  "Perfect for making a batch on Sunday.",
+                                                 "image":  "breakfast-gf-muffins.jpg"
+                                             },
                     "yogurt-pots":  {
                                         "id":  "breakfast-yogurt-pots",
                                         "slug":  "yogurt-pots",
@@ -2315,125 +2293,6 @@ var HUNTRESS_COOKBOOK = {
                                               "foxNotes":  "Excellent work lunch.",
                                               "image":  "chicken-rice-bowl.jpg"
                                           },
-                    "butternut-soup":  {
-                                           "id":  "lunch-butternut-soup",
-                                           "slug":  "butternut-soup",
-                                           "name":  "Butternut Soup",
-                                           "categoryId":  "lunch",
-                                           "category":  "Lunch",
-                                           "status":  "untested",
-                                           "description":  "A creamy, comforting soup that is naturally sweet and perfect for winter lunches.",
-                                           "difficulty":  "Easy",
-                                           "prepTime":  15,
-                                           "cookTime":  35,
-                                           "servings":  4,
-                                           "tags":  [
-                                                        "Gluten Free",
-                                                        "Soup",
-                                                        "Winter",
-                                                        "Comfort Food"
-                                                    ],
-                                           "ingredients":  [
-                                                               "1 medium butternut",
-                                                               "2 garlic cloves",
-                                                               "500ml GF vegetable stock",
-                                                               "125ml cream",
-                                                               "1 tbsp olive oil",
-                                                               "Salt",
-                                                               "Pepper"
-                                                           ],
-                                           "instructions":  [
-                                                                "Peel and cube the butternut.",
-                                                                "Roast until soft and lightly caramelised.",
-                                                                "Heat olive oil in a pot.",
-                                                                "Cook garlic until fragrant.",
-                                                                "Add butternut and stock.",
-                                                                "Simmer for 10 minutes.",
-                                                                "Blend until smooth.",
-                                                                "Stir in cream.",
-                                                                "Season and serve."
-                                                            ],
-                                           "huntressNotes":  "Gluten Free. Onion Free. Winter Favourite. IBS Friendly",
-                                           "foxNotes":  "One of the safest comfort meals in the cookbook.",
-                                           "image":  "butternut-soup.jpg"
-                                       },
-                    "tomato-basil-soup":  {
-                                              "id":  "lunch-tomato-basil-soup",
-                                              "slug":  "tomato-basil-soup",
-                                              "name":  "Tomato \u0026 Basil Soup",
-                                              "categoryId":  "lunch",
-                                              "category":  "Lunch",
-                                              "status":  "untested",
-                                              "description":  "A light and flavourful soup made from roasted tomatoes and fresh basil.",
-                                              "difficulty":  "Easy",
-                                              "prepTime":  10,
-                                              "cookTime":  30,
-                                              "servings":  4,
-                                              "tags":  [
-                                                           "Gluten Free",
-                                                           "Soup",
-                                                           "Vegetarian"
-                                                       ],
-                                              "ingredients":  [
-                                                                  "6 tomatoes",
-                                                                  "2 garlic cloves",
-                                                                  "Fresh basil",
-                                                                  "500ml GF vegetable stock",
-                                                                  "1 tbsp olive oil",
-                                                                  "Salt",
-                                                                  "Pepper"
-                                                              ],
-                                              "instructions":  [
-                                                                   "Roast tomatoes until softened.",
-                                                                   "Heat olive oil in a pot.",
-                                                                   "Cook garlic briefly.",
-                                                                   "Add tomatoes and stock.",
-                                                                   "Simmer for 15 minutes.",
-                                                                   "Blend until smooth.",
-                                                                   "Add basil.",
-                                                                   "Season and serve."
-                                                               ],
-                                              "huntressNotes":  "Gluten Free. Onion Free. Light Lunch",
-                                              "foxNotes":  "Pairs well with gluten-free toast.",
-                                              "image":  "tomato-basil-soup.jpg"
-                                          },
-                    "carrot-ginger-soup":  {
-                                               "id":  "lunch-carrot-ginger-soup",
-                                               "slug":  "carrot-ginger-soup",
-                                               "name":  "Carrot \u0026 Ginger Soup",
-                                               "categoryId":  "lunch",
-                                               "category":  "Lunch",
-                                               "status":  "untested",
-                                               "description":  "A warming soup with natural sweetness and a gentle ginger kick.",
-                                               "difficulty":  "Easy",
-                                               "prepTime":  10,
-                                               "cookTime":  30,
-                                               "servings":  4,
-                                               "tags":  [
-                                                            "Gluten Free",
-                                                            "Soup",
-                                                            "Comfort Food"
-                                                        ],
-                                               "ingredients":  [
-                                                                   "6 carrots",
-                                                                   "1 tbsp fresh ginger",
-                                                                   "500ml GF vegetable stock",
-                                                                   "100ml cream",
-                                                                   "Salt",
-                                                                   "Pepper"
-                                                               ],
-                                               "instructions":  [
-                                                                    "Slice carrots.",
-                                                                    "Cook carrots in stock until soft.",
-                                                                    "Add ginger.",
-                                                                    "Blend until smooth.",
-                                                                    "Stir in cream.",
-                                                                    "Season and serve."
-                                                                ],
-                                               "huntressNotes":  "Gluten Free. Onion Free. Easy Digestion",
-                                               "foxNotes":  "Great recovery-day meal.",
-                                               "image":  "carrot-ginger-soup.jpg"
-                                           },
                     "chicken-skewers":  {
                                             "id":  "lunch-chicken-skewers",
                                             "slug":  "chicken-skewers",
@@ -3268,43 +3127,6 @@ var HUNTRESS_COOKBOOK = {
                                                  "foxNotes":  "Excellent side dish or light dinner.",
                                                  "image":  "butternut-bacon-bake.jpg"
                                              },
-                    "chicken-soup":  {
-                                         "id":  "dinner-chicken-soup",
-                                         "slug":  "chicken-soup",
-                                         "name":  "Chicken Soup",
-                                         "categoryId":  "dinner",
-                                         "category":  "Dinner",
-                                         "status":  "untested",
-                                         "description":  "A gentle, nourishing soup perfect for recovery days and cold evenings.",
-                                         "difficulty":  "Easy",
-                                         "prepTime":  15,
-                                         "cookTime":  45,
-                                         "servings":  6,
-                                         "tags":  [
-                                                      "Soup",
-                                                      "Recovery",
-                                                      "Comfort Food"
-                                                  ],
-                                         "ingredients":  [
-                                                             "500g chicken breast",
-                                                             "3 carrots",
-                                                             "1 litre chicken stock",
-                                                             "2 garlic cloves",
-                                                             "Salt",
-                                                             "Pepper"
-                                                         ],
-                                         "instructions":  [
-                                                              "Dice chicken and carrots.",
-                                                              "Bring stock to a simmer.",
-                                                              "Add chicken and vegetables.",
-                                                              "Cook until chicken is tender.",
-                                                              "Season to taste.",
-                                                              "Serve warm."
-                                                          ],
-                                         "huntressNotes":  "Gluten Free. Recovery Meal. Easy Digestion",
-                                         "foxNotes":  "Ideal when energy is low or digestion is sensitive.",
-                                         "image":  "chicken-soup.jpg"
-                                     },
                     "loaded-sweet-potatoes":  {
                                                   "id":  "dinner-loaded-sweet-potatoes",
                                                   "slug":  "loaded-sweet-potatoes",
@@ -3340,6 +3162,77 @@ var HUNTRESS_COOKBOOK = {
                                                   "huntressNotes":  "Gluten Free. Comfort Food. Very Filling",
                                                   "foxNotes":  "One of the easiest comfort meals to make.",
                                                   "image":  "loaded-sweet-potatoes.jpg"
+                                              },
+                    "chicken-stew":  {
+                                         "id":  "dinner-chicken-stew",
+                                         "slug":  "chicken-stew",
+                                         "name":  "Chicken Stew",
+                                         "categoryId":  "dinner",
+                                         "category":  "Dinner",
+                                         "status":  "untested",
+                                         "description":  "A hearty chicken stew perfect for winter evenings.",
+                                         "difficulty":  "Easy",
+                                         "prepTime":  20,
+                                         "cookTime":  60,
+                                         "servings":  6,
+                                         "tags":  [
+                                                      "Stew",
+                                                      "Chicken",
+                                                      "Winter"
+                                                  ],
+                                         "ingredients":  [
+                                                             "600g chicken",
+                                                             "2 carrots",
+                                                             "2 potatoes",
+                                                             "1 litre chicken stock",
+                                                             "Salt",
+                                                             "Black pepper"
+                                                         ],
+                                         "instructions":  [
+                                                              "Brown chicken lightly.",
+                                                              "Add vegetables and stock.",
+                                                              "Simmer for 1 hour.",
+                                                              "Season and serve."
+                                                          ],
+                                         "huntressNotes":  "Gluten Free. Winter Favourite",
+                                         "foxNotes":  "A classic comfort meal.",
+                                         "image":  "chicken-stew.jpg"
+                                     },
+                    "slow-cooked-pot-roast":  {
+                                                  "id":  "dinner-slow-cooked-pot-roast",
+                                                  "slug":  "slow-cooked-pot-roast",
+                                                  "name":  "Slow Cooked Pot Roast",
+                                                  "categoryId":  "dinner",
+                                                  "category":  "Dinner",
+                                                  "status":  "untested",
+                                                  "description":  "Tender beef roast cooked slowly until falling apart.",
+                                                  "difficulty":  "Medium",
+                                                  "prepTime":  20,
+                                                  "cookTime":  4,
+                                                  "servings":  6,
+                                                  "tags":  [
+                                                               "Pot Roast",
+                                                               "Beef",
+                                                               "Comfort Food"
+                                                           ],
+                                                  "ingredients":  [
+                                                                      "1kg beef roast",
+                                                                      "Carrots",
+                                                                      "Potatoes",
+                                                                      "750ml beef stock",
+                                                                      "Salt",
+                                                                      "Black pepper"
+                                                                  ],
+                                                  "instructions":  [
+                                                                       "Season beef roast.",
+                                                                       "Place in roasting dish.",
+                                                                       "Add vegetables and stock.",
+                                                                       "Cook low and slow until tender.",
+                                                                       "Slice and serve."
+                                                                   ],
+                                                  "huntressNotes":  "Gluten Free. Special Occasion Meal",
+                                                  "foxNotes":  "A Sunday family-style meal.",
+                                                  "image":  "slow-cooked-pot-roast.jpg"
                                               },
                     "shepherds-pie":  {
                                           "id":  "dinner-shepherds-pie",
@@ -3453,41 +3346,41 @@ var HUNTRESS_COOKBOOK = {
                                           "foxNotes":  "Excellent for weekend braais.",
                                           "image":  "beef-sosaties.jpg"
                                       },
-                    "steak-rosemary-butter":  {
-                                                  "id":  "braai-steak-rosemary-butter",
-                                                  "slug":  "steak-rosemary-butter",
-                                                  "name":  "Steak with Rosemary Butter",
-                                                  "categoryId":  "braai",
-                                                  "category":  "Braai",
-                                                  "status":  "untested",
-                                                  "description":  "Simple steak elevated with homemade rosemary butter.",
-                                                  "difficulty":  "Easy",
-                                                  "prepTime":  10,
-                                                  "cookTime":  12,
-                                                  "servings":  2,
-                                                  "tags":  [
-                                                               "Steak",
-                                                               "Braai",
-                                                               "Date Night"
-                                                           ],
-                                                  "ingredients":  [
-                                                                      "2 steaks",
-                                                                      "2 tbsp butter",
-                                                                      "1 tsp rosemary",
-                                                                      "Salt",
-                                                                      "Pepper"
-                                                                  ],
-                                                  "instructions":  [
-                                                                       "Season steaks.",
-                                                                       "Mix butter and rosemary.",
-                                                                       "Braai steaks to preferred doneness.",
-                                                                       "Top with rosemary butter.",
-                                                                       "Rest before serving."
-                                                                   ],
-                                                  "huntressNotes":  "Gluten Free. Date Night Braai",
-                                                  "foxNotes":  "One of the highest reward-to-effort meals.",
-                                                  "image":  "steak-rosemary-butter.jpg"
-                                              },
+                    "braai-steak-rosemary-butter":  {
+                                                        "id":  "braai-steak-rosemary-butter",
+                                                        "slug":  "braai-steak-rosemary-butter",
+                                                        "name":  "Steak with Rosemary Butter",
+                                                        "categoryId":  "braai",
+                                                        "category":  "Braai",
+                                                        "status":  "untested",
+                                                        "description":  "Simple steak elevated with homemade rosemary butter.",
+                                                        "difficulty":  "Easy",
+                                                        "prepTime":  10,
+                                                        "cookTime":  12,
+                                                        "servings":  2,
+                                                        "tags":  [
+                                                                     "Steak",
+                                                                     "Braai",
+                                                                     "Date Night"
+                                                                 ],
+                                                        "ingredients":  [
+                                                                            "2 steaks",
+                                                                            "2 tbsp butter",
+                                                                            "1 tsp rosemary",
+                                                                            "Salt",
+                                                                            "Pepper"
+                                                                        ],
+                                                        "instructions":  [
+                                                                             "Season steaks.",
+                                                                             "Mix butter and rosemary.",
+                                                                             "Braai steaks to preferred doneness.",
+                                                                             "Top with rosemary butter.",
+                                                                             "Rest before serving."
+                                                                         ],
+                                                        "huntressNotes":  "Gluten Free. Date Night Braai",
+                                                        "foxNotes":  "One of the highest reward-to-effort meals.",
+                                                        "image":  "braai-steak-rosemary-butter.jpg"
+                                                    },
                     "bacon-wrapped-chicken":  {
                                                   "id":  "braai-bacon-wrapped-chicken",
                                                   "slug":  "bacon-wrapped-chicken",
@@ -4271,6 +4164,340 @@ var HUNTRESS_COOKBOOK = {
                                               "foxNotes":  "Excellent with sosaties and chicken.",
                                               "image":  "herb-yogurt-sauce.jpg"
                                           },
+                    "butternut-soup":  {
+                                           "id":  "butternut-soup",
+                                           "slug":  "butternut-soup",
+                                           "name":  "Butternut Soup",
+                                           "categoryId":  "soups",
+                                           "category":  "Soups \u0026 Comfort Foods",
+                                           "status":  "untested",
+                                           "description":  "A rich and velvety butternut soup perfect for cold evenings.",
+                                           "difficulty":  "Easy",
+                                           "prepTime":  15,
+                                           "cookTime":  35,
+                                           "servings":  4,
+                                           "tags":  [
+                                                        "Soup",
+                                                        "Butternut",
+                                                        "Winter"
+                                                    ],
+                                           "ingredients":  [
+                                                               "1 medium butternut",
+                                                               "750ml chicken stock",
+                                                               "250ml cream",
+                                                               "1 tsp garlic powder",
+                                                               "Salt",
+                                                               "Black pepper"
+                                                           ],
+                                           "instructions":  [
+                                                                "Peel and cube the butternut.",
+                                                                "Add butternut and stock to a pot.",
+                                                                "Simmer until butternut is soft.",
+                                                                "Blend until smooth.",
+                                                                "Add cream and seasonings.",
+                                                                "Heat gently.",
+                                                                "Serve warm."
+                                                            ],
+                                           "huntressNotes":  "Gluten Free. Onion Free. Comfort Food",
+                                           "foxNotes":  "One of the safest soups in the cookbook.",
+                                           "image":  "butternut-soup.jpg"
+                                       },
+                    "tomato-basil-soup":  {
+                                              "id":  "tomato-basil-soup",
+                                              "slug":  "tomato-basil-soup",
+                                              "name":  "Tomato \u0026 Basil Soup",
+                                              "categoryId":  "soups",
+                                              "category":  "Soups \u0026 Comfort Foods",
+                                              "status":  "untested",
+                                              "description":  "A classic tomato soup with fresh basil and rich flavour.",
+                                              "difficulty":  "Easy",
+                                              "prepTime":  15,
+                                              "cookTime":  30,
+                                              "servings":  4,
+                                              "tags":  [
+                                                           "Tomato",
+                                                           "Soup",
+                                                           "Comfort Food"
+                                                       ],
+                                              "ingredients":  [
+                                                                  "800g tomatoes",
+                                                                  "750ml stock",
+                                                                  "Fresh basil",
+                                                                  "1 tbsp olive oil",
+                                                                  "Salt",
+                                                                  "Black pepper"
+                                                              ],
+                                              "instructions":  [
+                                                                   "Roughly chop tomatoes.",
+                                                                   "Cook tomatoes in olive oil.",
+                                                                   "Add stock and basil.",
+                                                                   "Simmer for 25 minutes.",
+                                                                   "Blend until smooth.",
+                                                                   "Season and serve."
+                                                               ],
+                                              "huntressNotes":  "Gluten Free. Comfort Food",
+                                              "foxNotes":  "Pairs beautifully with gluten free toast.",
+                                              "image":  "tomato-basil-soup.jpg"
+                                          },
+                    "carrot-ginger-soup":  {
+                                               "id":  "carrot-ginger-soup",
+                                               "slug":  "carrot-ginger-soup",
+                                               "name":  "Carrot \u0026 Ginger Soup",
+                                               "categoryId":  "soups",
+                                               "category":  "Soups \u0026 Comfort Foods",
+                                               "status":  "untested",
+                                               "description":  "A warming soup with natural sweetness from carrots and a hint of ginger.",
+                                               "difficulty":  "Easy",
+                                               "prepTime":  15,
+                                               "cookTime":  30,
+                                               "servings":  4,
+                                               "tags":  [
+                                                            "Carrot",
+                                                            "Ginger",
+                                                            "Soup"
+                                                        ],
+                                               "ingredients":  [
+                                                                   "600g carrots",
+                                                                   "750ml stock",
+                                                                   "1 tsp grated ginger",
+                                                                   "250ml cream",
+                                                                   "Salt",
+                                                                   "Black pepper"
+                                                               ],
+                                               "instructions":  [
+                                                                    "Peel and slice carrots.",
+                                                                    "Add carrots and stock to a pot.",
+                                                                    "Cook until carrots are soft.",
+                                                                    "Add ginger.",
+                                                                    "Blend until smooth.",
+                                                                    "Add cream.",
+                                                                    "Serve warm."
+                                                                ],
+                                               "huntressNotes":  "Gluten Free. Onion Free",
+                                               "foxNotes":  "Very comforting on rainy days.",
+                                               "image":  "carrot-ginger-soup.jpg"
+                                           },
+                    "chicken-vegetable-soup":  {
+                                                   "id":  "chicken-vegetable-soup",
+                                                   "slug":  "chicken-vegetable-soup",
+                                                   "name":  "Chicken \u0026 Vegetable Soup",
+                                                   "categoryId":  "soups",
+                                                   "category":  "Soups \u0026 Comfort Foods",
+                                                   "status":  "untested",
+                                                   "description":  "A hearty chicken soup loaded with vegetables and flavour.",
+                                                   "difficulty":  "Easy",
+                                                   "prepTime":  20,
+                                                   "cookTime":  40,
+                                                   "servings":  6,
+                                                   "tags":  [
+                                                                "Chicken",
+                                                                "Vegetables",
+                                                                "Soup"
+                                                            ],
+                                                   "ingredients":  [
+                                                                       "500g chicken breast",
+                                                                       "2 carrots",
+                                                                       "2 celery stalks",
+                                                                       "1 sweet potato",
+                                                                       "1 litre chicken stock",
+                                                                       "Salt",
+                                                                       "Black pepper"
+                                                                   ],
+                                                   "instructions":  [
+                                                                        "Dice vegetables.",
+                                                                        "Cube chicken.",
+                                                                        "Add stock to large pot.",
+                                                                        "Add vegetables and chicken.",
+                                                                        "Simmer for 35 to 40 minutes.",
+                                                                        "Season to taste.",
+                                                                        "Serve warm."
+                                                                    ],
+                                                   "huntressNotes":  "Gluten Free. High Protein",
+                                                   "foxNotes":  "Excellent when recovering from illness.",
+                                                   "image":  "chicken-vegetable-soup.jpg"
+                                               },
+                    "chicken-soup":  {
+                                         "id":  "chicken-soup",
+                                         "slug":  "chicken-soup",
+                                         "name":  "Chicken Soup",
+                                         "categoryId":  "soups",
+                                         "category":  "Soups \u0026 Comfort Foods",
+                                         "status":  "untested",
+                                         "description":  "A gentle, nourishing soup perfect for recovery days and cold evenings.",
+                                         "difficulty":  "Easy",
+                                         "prepTime":  15,
+                                         "cookTime":  45,
+                                         "servings":  6,
+                                         "tags":  [
+                                                      "Soup",
+                                                      "Recovery",
+                                                      "Comfort Food"
+                                                  ],
+                                         "ingredients":  [
+                                                             "500g chicken breast",
+                                                             "3 carrots",
+                                                             "1 litre chicken stock",
+                                                             "2 garlic cloves",
+                                                             "Salt",
+                                                             "Pepper"
+                                                         ],
+                                         "instructions":  [
+                                                              "Dice chicken and carrots.",
+                                                              "Bring stock to a simmer.",
+                                                              "Add chicken and vegetables.",
+                                                              "Cook until chicken is tender.",
+                                                              "Season to taste.",
+                                                              "Serve warm."
+                                                          ],
+                                         "huntressNotes":  "Gluten Free. Recovery Meal. Easy Digestion",
+                                         "foxNotes":  "Ideal when energy is low or digestion is sensitive.",
+                                         "image":  "chicken-soup.jpg"
+                                     },
+                    "roasted-red-pepper-soup":  {
+                                                    "id":  "roasted-red-pepper-soup",
+                                                    "slug":  "roasted-red-pepper-soup",
+                                                    "name":  "Roasted Red Pepper Soup",
+                                                    "categoryId":  "soups",
+                                                    "category":  "Soups \u0026 Comfort Foods",
+                                                    "status":  "untested",
+                                                    "description":  "A smooth roasted pepper soup with a rich and slightly sweet flavour.",
+                                                    "difficulty":  "Easy",
+                                                    "prepTime":  15,
+                                                    "cookTime":  35,
+                                                    "servings":  4,
+                                                    "tags":  [
+                                                                 "Red Pepper",
+                                                                 "Soup",
+                                                                 "Comfort Food"
+                                                             ],
+                                                    "ingredients":  [
+                                                                        "4 red peppers",
+                                                                        "750ml stock",
+                                                                        "1 tbsp olive oil",
+                                                                        "250ml cream",
+                                                                        "Salt",
+                                                                        "Black pepper"
+                                                                    ],
+                                                    "instructions":  [
+                                                                         "Roast peppers until skins darken.",
+                                                                         "Remove skins.",
+                                                                         "Blend peppers with stock.",
+                                                                         "Transfer to pot.",
+                                                                         "Add cream.",
+                                                                         "Heat gently.",
+                                                                         "Season and serve."
+                                                                     ],
+                                                    "huntressNotes":  "Gluten Free. Onion Free",
+                                                    "foxNotes":  "One of the most flavourful soups in the collection.",
+                                                    "image":  "roasted-red-pepper-soup.jpg"
+                                                },
+                    "beef-comfort-bowl":  {
+                                              "id":  "beef-comfort-bowl",
+                                              "slug":  "beef-comfort-bowl",
+                                              "name":  "Beef Comfort Bowl",
+                                              "categoryId":  "soups",
+                                              "category":  "Soups \u0026 Comfort Foods",
+                                              "status":  "untested",
+                                              "description":  "A hearty beef bowl designed for colder evenings.",
+                                              "difficulty":  "Easy",
+                                              "prepTime":  15,
+                                              "cookTime":  30,
+                                              "servings":  4,
+                                              "tags":  [
+                                                           "Beef",
+                                                           "Rice",
+                                                           "Comfort"
+                                                       ],
+                                              "ingredients":  [
+                                                                  "500g beef strips",
+                                                                  "2 cups cooked rice",
+                                                                  "1 cup mushrooms",
+                                                                  "Salt",
+                                                                  "Black pepper"
+                                                              ],
+                                              "instructions":  [
+                                                                   "Cook rice.",
+                                                                   "Season and cook beef strips.",
+                                                                   "Cook mushrooms separately.",
+                                                                   "Assemble ingredients into bowls.",
+                                                                   "Serve warm."
+                                                               ],
+                                              "huntressNotes":  "Gluten Free",
+                                              "foxNotes":  "Feels like winter comfort food.",
+                                              "image":  "beef-comfort-bowl.jpg"
+                                          },
+                    "creamy-mashed-potato-bowl":  {
+                                                      "id":  "creamy-mashed-potato-bowl",
+                                                      "slug":  "creamy-mashed-potato-bowl",
+                                                      "name":  "Creamy Mashed Potato Bowl",
+                                                      "categoryId":  "soups",
+                                                      "category":  "Soups \u0026 Comfort Foods",
+                                                      "status":  "untested",
+                                                      "description":  "Creamy mashed potatoes topped with protein and vegetables.",
+                                                      "difficulty":  "Easy",
+                                                      "prepTime":  20,
+                                                      "cookTime":  30,
+                                                      "servings":  4,
+                                                      "tags":  [
+                                                                   "Mashed Potato",
+                                                                   "Comfort",
+                                                                   "Chicken"
+                                                               ],
+                                                      "ingredients":  [
+                                                                          "6 potatoes",
+                                                                          "50g butter",
+                                                                          "250ml milk",
+                                                                          "300g chicken",
+                                                                          "Salt",
+                                                                          "Black pepper"
+                                                                      ],
+                                                      "instructions":  [
+                                                                           "Boil potatoes until soft.",
+                                                                           "Mash with butter and milk.",
+                                                                           "Cook chicken separately.",
+                                                                           "Place mash into bowls.",
+                                                                           "Top with chicken.",
+                                                                           "Serve warm."
+                                                                       ],
+                                                      "huntressNotes":  "Gluten Free. Comfort Food",
+                                                      "foxNotes":  "Excellent on cold evenings.",
+                                                      "image":  "creamy-mashed-potato-bowl.jpg"
+                                                  },
+                    "roast-vegetable-bowl":  {
+                                                 "id":  "roast-vegetable-bowl",
+                                                 "slug":  "roast-vegetable-bowl",
+                                                 "name":  "Roast Vegetable Bowl",
+                                                 "categoryId":  "soups",
+                                                 "category":  "Soups \u0026 Comfort Foods",
+                                                 "status":  "untested",
+                                                 "description":  "Roasted vegetables served in a warm and comforting bowl.",
+                                                 "difficulty":  "Easy",
+                                                 "prepTime":  15,
+                                                 "cookTime":  35,
+                                                 "servings":  4,
+                                                 "tags":  [
+                                                              "Vegetables",
+                                                              "Comfort Bowl",
+                                                              "Healthy"
+                                                          ],
+                                                 "ingredients":  [
+                                                                     "Sweet potato",
+                                                                     "Carrots",
+                                                                     "Peppers",
+                                                                     "Olive oil",
+                                                                     "Salt",
+                                                                     "Black pepper"
+                                                                 ],
+                                                 "instructions":  [
+                                                                      "Chop vegetables.",
+                                                                      "Toss with olive oil.",
+                                                                      "Roast until tender.",
+                                                                      "Serve warm in bowls."
+                                                                  ],
+                                                 "huntressNotes":  "Gluten Free. Vegetable Focused",
+                                                 "foxNotes":  "Pairs well with grilled chicken.",
+                                                 "image":  "roast-vegetable-bowl.jpg"
+                                             },
                     "malva-pudding-gf":  {
                                              "id":  "gf-malva-pudding",
                                              "slug":  "malva-pudding-gf",
@@ -7533,160 +7760,6 @@ var HUNTRESS_COOKBOOK = {
                                                      "huntressNotes":  "Useful For Caffeine Sensitivity",
                                                      "foxNotes":  "One of the most practical pages in the drinks chapter.",
                                                      "image":  "caffeine-reference-guide.jpg"
-                                                 },
-                    "creamy-butternut-soup":  {
-                                                  "id":  "soups-creamy-butternut-soup",
-                                                  "slug":  "creamy-butternut-soup",
-                                                  "name":  "Creamy Butternut Soup",
-                                                  "categoryId":  "soups",
-                                                  "category":  "Soups \u0026 Comfort Foods",
-                                                  "status":  "untested",
-                                                  "description":  "Gluten-free, onion-free, and IBS-conscious. Recipe details to be added after testing.",
-                                                  "difficulty":  "TBD",
-                                                  "prepTime":  0,
-                                                  "cookTime":  0,
-                                                  "servings":  0,
-                                                  "tags":  [
-                                                               "Gluten Free",
-                                                               "Onion Free"
-                                                           ],
-                                                  "ingredients":  "Ingredients to be confirmed after testing.",
-                                                  "instructions":  "Method to be added once this recipe has been tested.",
-                                                  "huntressNotes":  "GF. Onion-Free. IBS-conscious.",
-                                                  "foxNotes":  "Add Fox Notes after the first cook.",
-                                                  "image":  "creamy-butternut-soup.jpg"
-                                              },
-                    "chicken-vegetable-soup":  {
-                                                   "id":  "soups-chicken-vegetable-soup",
-                                                   "slug":  "chicken-vegetable-soup",
-                                                   "name":  "Chicken \u0026 Vegetable Soup",
-                                                   "categoryId":  "soups",
-                                                   "category":  "Soups \u0026 Comfort Foods",
-                                                   "status":  "untested",
-                                                   "description":  "Gluten-free, onion-free, and IBS-conscious. Recipe details to be added after testing.",
-                                                   "difficulty":  "TBD",
-                                                   "prepTime":  0,
-                                                   "cookTime":  0,
-                                                   "servings":  0,
-                                                   "tags":  [
-                                                                "Gluten Free",
-                                                                "Onion Free"
-                                                            ],
-                                                   "ingredients":  "Ingredients to be confirmed after testing.",
-                                                   "instructions":  "Method to be added once this recipe has been tested.",
-                                                   "huntressNotes":  "GF. Onion-Free. IBS-conscious.",
-                                                   "foxNotes":  "Add Fox Notes after the first cook.",
-                                                   "image":  "chicken-vegetable-soup.jpg"
-                                               },
-                    "roasted-red-pepper-soup":  {
-                                                    "id":  "soups-roasted-red-pepper-soup",
-                                                    "slug":  "roasted-red-pepper-soup",
-                                                    "name":  "Roasted Red Pepper Soup",
-                                                    "categoryId":  "soups",
-                                                    "category":  "Soups \u0026 Comfort Foods",
-                                                    "status":  "untested",
-                                                    "description":  "Gluten-free, onion-free, and IBS-conscious. Recipe details to be added after testing.",
-                                                    "difficulty":  "TBD",
-                                                    "prepTime":  0,
-                                                    "cookTime":  0,
-                                                    "servings":  0,
-                                                    "tags":  [
-                                                                 "Gluten Free",
-                                                                 "Onion Free"
-                                                             ],
-                                                    "ingredients":  "Ingredients to be confirmed after testing.",
-                                                    "instructions":  "Method to be added once this recipe has been tested.",
-                                                    "huntressNotes":  "GF. Onion-Free. IBS-conscious.",
-                                                    "foxNotes":  "Add Fox Notes after the first cook.",
-                                                    "image":  "roasted-red-pepper-soup.jpg"
-                                                },
-                    "beef-stew":  {
-                                      "id":  "soups-beef-stew",
-                                      "slug":  "beef-stew",
-                                      "name":  "Beef Stew",
-                                      "categoryId":  "soups",
-                                      "category":  "Soups \u0026 Comfort Foods",
-                                      "status":  "untested",
-                                      "description":  "Gluten-free, onion-free, and IBS-conscious. Recipe details to be added after testing.",
-                                      "difficulty":  "TBD",
-                                      "prepTime":  0,
-                                      "cookTime":  0,
-                                      "servings":  0,
-                                      "tags":  [
-                                                   "Gluten Free",
-                                                   "Onion Free"
-                                               ],
-                                      "ingredients":  "Ingredients to be confirmed after testing.",
-                                      "instructions":  "Method to be added once this recipe has been tested.",
-                                      "huntressNotes":  "GF. Onion-Free. IBS-conscious.",
-                                      "foxNotes":  "Add Fox Notes after the first cook.",
-                                      "image":  "beef-stew.jpg"
-                                  },
-                    "potjie":  {
-                                   "id":  "soups-potjie",
-                                   "slug":  "potjie",
-                                   "name":  "Potjie",
-                                   "categoryId":  "soups",
-                                   "category":  "Soups \u0026 Comfort Foods",
-                                   "status":  "untested",
-                                   "description":  "Gluten-free, onion-free, and IBS-conscious. Recipe details to be added after testing.",
-                                   "difficulty":  "TBD",
-                                   "prepTime":  0,
-                                   "cookTime":  0,
-                                   "servings":  0,
-                                   "tags":  [
-                                                "Gluten Free",
-                                                "Onion Free"
-                                            ],
-                                   "ingredients":  "Ingredients to be confirmed after testing.",
-                                   "instructions":  "Method to be added once this recipe has been tested.",
-                                   "huntressNotes":  "GF. Onion-Free. IBS-conscious.",
-                                   "foxNotes":  "Add Fox Notes after the first cook.",
-                                   "image":  "potjie.jpg"
-                               },
-                    "simple-chicken-rice":  {
-                                                "id":  "soups-simple-chicken-rice",
-                                                "slug":  "simple-chicken-rice",
-                                                "name":  "Simple Chicken \u0026 Rice",
-                                                "categoryId":  "soups",
-                                                "category":  "Soups \u0026 Comfort Foods",
-                                                "status":  "untested",
-                                                "description":  "Gluten-free, onion-free, and IBS-conscious. Recipe details to be added after testing.",
-                                                "difficulty":  "TBD",
-                                                "prepTime":  0,
-                                                "cookTime":  0,
-                                                "servings":  0,
-                                                "tags":  [
-                                                             "Gluten Free",
-                                                             "Onion Free"
-                                                         ],
-                                                "ingredients":  "Ingredients to be confirmed after testing.",
-                                                "instructions":  "Method to be added once this recipe has been tested.",
-                                                "huntressNotes":  "GF. Onion-Free. IBS-conscious.",
-                                                "foxNotes":  "Add Fox Notes after the first cook.",
-                                                "image":  "simple-chicken-rice.jpg"
-                                            },
-                    "honey-yogurt-bowl":  {
-                                              "id":  "soups-honey-yogurt-bowl",
-                                              "slug":  "honey-yogurt-bowl",
-                                              "name":  "Honey Yogurt Bowl",
-                                              "categoryId":  "soups",
-                                              "category":  "Soups \u0026 Comfort Foods",
-                                              "status":  "untested",
-                                              "description":  "Gluten-free, onion-free, and IBS-conscious. Recipe details to be added after testing.",
-                                              "difficulty":  "TBD",
-                                              "prepTime":  0,
-                                              "cookTime":  0,
-                                              "servings":  0,
-                                              "tags":  [
-                                                           "Gluten Free",
-                                                           "Onion Free"
-                                                       ],
-                                              "ingredients":  "Ingredients to be confirmed after testing.",
-                                              "instructions":  "Method to be added once this recipe has been tested.",
-                                              "huntressNotes":  "GF. Onion-Free. IBS-conscious.",
-                                              "foxNotes":  "Add Fox Notes after the first cook.",
-                                              "image":  "honey-yogurt-bowl.jpg"
-                                          }
+                                                 }
                 }
 };

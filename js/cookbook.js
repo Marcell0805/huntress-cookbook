@@ -253,25 +253,45 @@
   }
 
   function findRecipeSectionContext(recipe) {
-    var sections = HUNTRESS_COOKBOOK.chapters[recipe.categoryId];
-    if (!sections) return null;
+    var chapters = HUNTRESS_COOKBOOK.chapters;
+    if (!chapters) return null;
 
-    for (var si = 0; si < sections.length; si++) {
-      var sec = sections[si];
-      for (var ri = 0; ri < sec.names.length; ri++) {
-        var match = findRecipeByName(sec.names[ri]);
-        if (match && match.slug === recipe.slug) {
-          return {
-            sectionTitle: sec.title,
-            sectionIndex: si,
-            chapterId: recipe.categoryId,
-            recipeIndex: ri,
-            names: sec.names
-          };
+    var matches = [];
+    for (var chapterId in chapters) {
+      if (!chapters.hasOwnProperty(chapterId)) continue;
+      var sections = chapters[chapterId];
+      for (var si = 0; si < sections.length; si++) {
+        var sec = sections[si];
+        for (var ri = 0; ri < sec.names.length; ri++) {
+          var match = findRecipeByName(sec.names[ri]);
+          if (match && match.slug === recipe.slug) {
+            matches.push({
+              sectionTitle: sec.title,
+              sectionIndex: si,
+              chapterId: chapterId,
+              recipeIndex: ri,
+              names: sec.names
+            });
+          }
         }
       }
     }
-    return null;
+
+    if (!matches.length) return null;
+    if (matches.length === 1) return matches[0];
+
+    var ref = (document.referrer || '').toLowerCase();
+    for (var i = 0; i < matches.length; i++) {
+      var back = CHAPTER_BACK[matches[i].chapterId];
+      if (!back) continue;
+      var chapterFile = back.href.split('/').pop().toLowerCase();
+      if (ref.indexOf(chapterFile) !== -1) {
+        return matches[i];
+      }
+    }
+
+    matches.sort(function (a, b) { return b.names.length - a.names.length; });
+    return matches[0];
   }
 
   function chapterSectionHref(chapterId, sectionTitle) {
@@ -530,10 +550,65 @@
     renderRecipeSectionNav(recipe);
   }
 
-  function renderRecipeRating() {
+  function renderRecipeRating(initialRating) {
     var el = document.querySelector('.recipe-rating');
     if (!el || !document.body.classList.contains('recipe-page')) return;
-    el.textContent = '\u2606 \u2606 \u2606 \u2606 \u2606';
+
+    var max = 5;
+    var current = Math.max(0, Math.min(max, parseInt(initialRating, 10) || 0));
+
+    el.innerHTML = '';
+    el.setAttribute('role', 'group');
+    el.classList.add('recipe-rating-interactive');
+
+    for (var i = 1; i <= max; i++) {
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'star-btn';
+      btn.setAttribute('data-value', String(i));
+      btn.setAttribute('aria-label', 'Rate ' + i + ' out of ' + max);
+      el.appendChild(btn);
+    }
+
+    function updateAriaLabel(value) {
+      el.setAttribute(
+        'aria-label',
+        value ? ('Rated ' + value + ' out of ' + max) : 'Rating not yet set — click a star'
+      );
+    }
+
+    function paint(value) {
+      var stars = el.querySelectorAll('.star-btn');
+      for (var s = 0; s < stars.length; s++) {
+        var v = s + 1;
+        var filled = v <= value;
+        stars[s].textContent = filled ? '\u2605' : '\u2606';
+        stars[s].classList.toggle('is-filled', filled);
+        stars[s].setAttribute('aria-pressed', filled ? 'true' : 'false');
+      }
+    }
+
+    paint(current);
+    updateAriaLabel(current);
+
+    el.addEventListener('click', function (e) {
+      var btn = e.target.closest('.star-btn');
+      if (!btn) return;
+      var val = parseInt(btn.getAttribute('data-value'), 10);
+      current = current === val ? 0 : val;
+      paint(current);
+      updateAriaLabel(current);
+    });
+
+    el.addEventListener('mouseover', function (e) {
+      var btn = e.target.closest('.star-btn');
+      if (!btn) return;
+      paint(parseInt(btn.getAttribute('data-value'), 10));
+    });
+
+    el.addEventListener('mouseleave', function () {
+      paint(current);
+    });
   }
 
   function applyCookbookSettings() {

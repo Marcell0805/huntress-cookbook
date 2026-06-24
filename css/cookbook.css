@@ -733,10 +733,49 @@ body {
 
 .recipe-rating {
   grid-column: 1 / -1;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2em;
   font-size: 1.2rem;
   color: var(--warm-gold);
-  letter-spacing: 0.2em;
+}
+
+.recipe-rating .star-btn {
+  font: inherit;
+  font-size: 1.35rem;
+  line-height: 1;
+  padding: 0.15em 0.1em;
+  border: none;
+  background: transparent;
+  color: var(--warm-gold);
+  cursor: pointer;
+  opacity: 0.4;
+  transition: opacity 0.15s ease, transform 0.1s ease;
+}
+
+.recipe-rating .star-btn.is-filled {
+  opacity: 1;
+}
+
+.recipe-rating:hover .star-btn {
+  opacity: 0.55;
+}
+
+.recipe-rating .star-btn.is-filled,
+.recipe-rating:hover .star-btn.is-filled {
+  opacity: 1;
+}
+
+.recipe-rating .star-btn:hover,
+.recipe-rating .star-btn:focus-visible {
+  transform: scale(1.12);
+}
+
+.recipe-rating .star-btn:focus-visible {
+  outline: 2px solid var(--forest-green);
+  outline-offset: 2px;
+  border-radius: 2px;
 }
 
 .recipe-photo {
