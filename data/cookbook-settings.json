@@ -1,0 +1,25 @@
+{
+  "cookbookName": "The Huntress Cookbook",
+  "version": "1.0",
+  "authors": [
+    "The Fox",
+    "The Huntress"
+  ],
+  "tagline": "Made with care, for the Huntress",
+  "homeQuote": "Good food, good mood, best day.",
+  "auth": {
+    "password": "0657",
+    "storageKey": "huntress_cookbook_auth"
+  },
+  "theme": {
+    "primaryColor": "#1a3d2e",
+    "secondaryColor": "#e8d5a3",
+    "accentColor": "#f5f0e8",
+    "warmGold": "#c9a227"
+  },
+  "dietaryProfile": {
+    "glutenSensitive": true,
+    "ibsConscious": true,
+    "onionFree": true
+  }
+}

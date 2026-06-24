@@ -1,0 +1,202 @@
+{
+  "category": "Soups & Comfort Foods",
+  "description": "Warm, comforting meals designed for colder days, recovery periods and wholesome family dinners.",
+  "groups": [
+    {
+      "name": "Soup Collection",
+      "recipes": [
+        {
+          "id": "creamy-butternut-soup",
+          "name": "Creamy Butternut Soup",
+          "prepTime": "15 min",
+          "cookTime": "35 min",
+          "difficulty": "Easy",
+          "servings": "4",
+          "status": "Untested"
+        },
+        {
+          "id": "tomato-basil-soup",
+          "name": "Tomato & Basil Soup",
+          "prepTime": "10 min",
+          "cookTime": "30 min",
+          "difficulty": "Easy",
+          "servings": "4",
+          "status": "Untested"
+        },
+        {
+          "id": "carrot-ginger-soup",
+          "name": "Carrot & Ginger Soup",
+          "prepTime": "10 min",
+          "cookTime": "30 min",
+          "difficulty": "Easy",
+          "servings": "4",
+          "status": "Untested"
+        },
+        {
+          "id": "chicken-vegetable-soup",
+          "name": "Chicken & Vegetable Soup",
+          "prepTime": "15 min",
+          "cookTime": "45 min",
+          "difficulty": "Easy",
+          "servings": "6",
+          "status": "Untested"
+        },
+        {
+          "id": "roasted-red-pepper-soup",
+          "name": "Roasted Red Pepper Soup",
+          "prepTime": "15 min",
+          "cookTime": "35 min",
+          "difficulty": "Easy",
+          "servings": "4",
+          "status": "Untested"
+        }
+      ]
+    },
+    {
+      "name": "Classic Comfort Foods",
+      "recipes": [
+        {
+          "id": "comfort-cottage-pie",
+          "name": "Cottage Pie",
+          "prepTime": "25 min",
+          "cookTime": "45 min",
+          "difficulty": "Medium",
+          "servings": "6",
+          "status": "Untested"
+        },
+        {
+          "id": "comfort-shepherds-pie",
+          "name": "Shepherd's Pie",
+          "prepTime": "25 min",
+          "cookTime": "45 min",
+          "difficulty": "Medium",
+          "servings": "6",
+          "status": "Untested"
+        },
+        {
+          "id": "comfort-bobotie",
+          "name": "Bobotie",
+          "prepTime": "25 min",
+          "cookTime": "45 min",
+          "difficulty": "Medium",
+          "servings": "6",
+          "status": "Untested"
+        },
+        {
+          "id": "comfort-beef-stew",
+          "name": "Beef Stew",
+          "prepTime": "20 min",
+          "cookTime": "3 hrs",
+          "difficulty": "Medium",
+          "servings": "6",
+          "status": "Untested"
+        },
+        {
+          "id": "comfort-potjie",
+          "name": "Potjie",
+          "prepTime": "20 min",
+          "cookTime": "3 hrs",
+          "difficulty": "Medium",
+          "servings": "6",
+          "status": "Untested"
+        }
+      ]
+    },
+    {
+      "name": "Baked Comfort Dishes",
+      "recipes": [
+        {
+          "id": "butternut-bacon-bake-comfort",
+          "name": "Butternut & Bacon Bake",
+          "prepTime": "15 min",
+          "cookTime": "40 min",
+          "difficulty": "Easy",
+          "servings": "4",
+          "status": "Untested"
+        },
+        {
+          "id": "loaded-sweet-potatoes-comfort",
+          "name": "Loaded Sweet Potatoes",
+          "prepTime": "15 min",
+          "cookTime": "50 min",
+          "difficulty": "Easy",
+          "servings": "4",
+          "status": "Untested"
+        },
+        {
+          "id": "chicken-rice-bake-comfort",
+          "name": "Chicken & Rice Bake",
+          "prepTime": "15 min",
+          "cookTime": "45 min",
+          "difficulty": "Easy",
+          "servings": "6",
+          "status": "Untested"
+        }
+      ]
+    },
+    {
+      "name": "Recovery Meals",
+      "recipes": [
+        {
+          "id": "simple-chicken-rice",
+          "name": "Simple Chicken & Rice",
+          "prepTime": "10 min",
+          "cookTime": "25 min",
+          "difficulty": "Easy",
+          "servings": "2",
+          "status": "Untested"
+        },
+        {
+          "id": "soft-scrambled-eggs",
+          "name": "Soft Scrambled Eggs",
+          "prepTime": "5 min",
+          "cookTime": "8 min",
+          "difficulty": "Easy",
+          "servings": "1",
+          "status": "Untested"
+        },
+        {
+          "id": "honey-yogurt-bowl",
+          "name": "Honey Yogurt Bowl",
+          "prepTime": "5 min",
+          "cookTime": "0 min",
+          "difficulty": "Easy",
+          "servings": "1",
+          "status": "Untested"
+        }
+      ]
+    },
+    {
+      "name": "Winter Favourites",
+      "recipes": [
+        {
+          "id": "winter-butternut-soup",
+          "name": "Winter Favourite: Creamy Butternut Soup",
+          "prepTime": "15 min",
+          "cookTime": "35 min",
+          "difficulty": "Easy",
+          "servings": "4",
+          "status": "Untested"
+        },
+        {
+          "id": "winter-cottage-pie",
+          "name": "Winter Favourite: Cottage Pie",
+          "prepTime": "25 min",
+          "cookTime": "45 min",
+          "difficulty": "Medium",
+          "servings": "6",
+          "status": "Untested"
+        },
+        {
+          "id": "winter-beef-stew",
+          "name": "Winter Favourite: Beef Stew",
+          "prepTime": "20 min",
+          "cookTime": "3 hrs",
+          "difficulty": "Medium",
+          "servings": "6",
+          "status": "Untested"
+        }
+      ]
+    }
+  ]
+}

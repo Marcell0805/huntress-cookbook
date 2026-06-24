@@ -1,0 +1,1306 @@
+{
+  "category": "Drinks",
+  "description": "Comfort drinks, smoothies, coolers and everyday beverages designed to be Huntress-friendly and easy to make in a South African kitchen.",
+  "groups": [
+    {
+      "name": "Morning Drinks",
+      "recipes": [
+	  {
+  "id": "honey-lemon-water",
+  "name": "Honey Lemon Water",
+  "category": "Drinks",
+  "description": "A simple morning drink that is gentle on the stomach and refreshing.",
+  "prepTime": "5 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "1",
+  "status": "Untested",
+  "ingredients": [
+    "250ml warm water",
+    "1 tbsp honey",
+    "1 tsp lemon juice"
+  ],
+  "instructions": [
+    "Warm the water slightly.",
+    "Add honey and stir until dissolved.",
+    "Add lemon juice.",
+    "Serve immediately."
+  ],
+  "huntressNotes": [
+    "Caffeine Free",
+    "Gentle Morning Drink"
+  ],
+  "foxNotes": [
+    "A great replacement for morning coffee."
+  ],
+  "tags": [
+    "Morning",
+    "Honey",
+    "Caffeine Free"
+  ],
+  "imagePrompt": "Warm honey lemon water in glass mug beside sunrise breakfast scene"
+},
+{
+  "id": "warm-honey-cinnamon-milk",
+  "name": "Warm Honey & Cinnamon Milk",
+  "category": "Drinks",
+  "description": "A comforting warm drink perfect for slow mornings.",
+  "prepTime": "5 min",
+  "cookTime": "5 min",
+  "difficulty": "Easy",
+  "servings": "1",
+  "status": "Untested",
+  "ingredients": [
+    "250ml milk",
+    "1 tbsp honey",
+    "1 tsp cinnamon"
+  ],
+  "instructions": [
+    "Heat milk gently.",
+    "Add honey and cinnamon.",
+    "Whisk lightly.",
+    "Serve warm."
+  ],
+  "huntressNotes": [
+    "Caffeine Free",
+    "Comforting"
+  ],
+  "foxNotes": [
+    "Excellent on cold mornings."
+  ],
+  "tags": [
+    "Milk",
+    "Cinnamon",
+    "Morning"
+  ],
+  "imagePrompt": "Warm cinnamon milk in ceramic mug, cozy morning photography"
+},
+{
+  "id": "light-breakfast-smoothie",
+  "name": "Light Breakfast Smoothie",
+  "category": "Drinks",
+  "description": "A quick smoothie for busy mornings.",
+  "prepTime": "5 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "1",
+  "status": "Untested",
+  "ingredients": [
+    "1 cup milk",
+    "1 peach",
+    "1 tbsp honey",
+    "1/2 cup yogurt"
+  ],
+  "instructions": [
+    "Add all ingredients to blender.",
+    "Blend until smooth.",
+    "Serve chilled."
+  ],
+  "huntressNotes": [
+    "Low Caffeine",
+    "Breakfast Friendly"
+  ],
+  "foxNotes": [
+    "Perfect for work mornings."
+  ],
+  "tags": [
+    "Smoothie",
+    "Breakfast",
+    "Morning"
+  ],
+  "imagePrompt": "Breakfast smoothie in tall glass beside fresh fruit"
+},
+{
+  "id": "berry-yogurt-morning-smoothie",
+  "name": "Berry Yogurt Smoothie",
+  "category": "Drinks",
+  "description": "A creamy berry smoothie packed with flavour.",
+  "prepTime": "5 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "1",
+  "status": "Untested",
+  "ingredients": [
+    "1 cup mixed berries",
+    "1/2 cup yogurt",
+    "1 tbsp honey",
+    "1/2 cup milk"
+  ],
+  "instructions": [
+    "Combine ingredients.",
+    "Blend until smooth.",
+    "Serve cold."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Breakfast Friendly"
+  ],
+  "foxNotes": [
+    "One of the safest smoothie options."
+  ],
+  "tags": [
+    "Berries",
+    "Smoothie",
+    "Breakfast"
+  ],
+  "imagePrompt": "Berry smoothie in tall glass with fresh berries"
+},
+{
+  "id": "peach-breakfast-smoothie",
+  "name": "Peach Breakfast Smoothie",
+  "category": "Drinks",
+  "description": "A sweet and refreshing peach smoothie.",
+  "prepTime": "5 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "1",
+  "status": "Untested",
+  "ingredients": [
+    "2 peaches",
+    "1/2 cup yogurt",
+    "1 cup milk",
+    "1 tbsp honey"
+  ],
+  "instructions": [
+    "Blend all ingredients together.",
+    "Serve chilled."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Fruit Based"
+  ],
+  "foxNotes": [
+    "Very South African summer energy."
+  ],
+  "tags": [
+    "Peach",
+    "Smoothie",
+    "Morning"
+  ],
+  "imagePrompt": "Fresh peach smoothie served beside sliced peaches"
+}
+	  ]
+    },
+    {
+      "name": "Smoothies & Blended Drinks",
+      "recipes": [
+	  {
+  "id": "peach-honey-smoothie",
+  "name": "Peach & Honey Smoothie",
+  "category": "Drinks",
+  "description": "A refreshing peach smoothie sweetened with honey.",
+  "prepTime": "5 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "1",
+  "status": "Untested",
+  "ingredients": [
+    "2 peaches",
+    "1 cup milk",
+    "1 tbsp honey"
+  ],
+  "instructions": [
+    "Blend all ingredients until smooth.",
+    "Serve cold."
+  ],
+  "huntressNotes": [
+    "Gluten Free"
+  ],
+  "foxNotes": [
+    "Simple and refreshing."
+  ],
+  "tags": [
+    "Peach",
+    "Smoothie"
+  ],
+  "imagePrompt": "Peach smoothie in tall chilled glass"
+},
+{
+  "id": "grape-smoothie",
+  "name": "Grape Smoothie",
+  "category": "Drinks",
+  "description": "A light smoothie featuring fresh grapes.",
+  "prepTime": "5 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "1",
+  "status": "Untested",
+  "ingredients": [
+    "1 cup grapes",
+    "1/2 cup yogurt",
+    "1/2 cup milk"
+  ],
+  "instructions": [
+    "Blend ingredients until smooth.",
+    "Serve immediately."
+  ],
+  "huntressNotes": [
+    "Uses Known Safe Foods"
+  ],
+  "foxNotes": [
+    "Perfect summer drink."
+  ],
+  "tags": [
+    "Grapes",
+    "Smoothie"
+  ],
+  "imagePrompt": "Fresh grape smoothie in glass with grapes beside it"
+},
+{
+  "id": "strawberries-cream-smoothie",
+  "name": "Strawberries & Cream Smoothie",
+  "category": "Drinks",
+  "description": "A creamy smoothie inspired by strawberries and cream.",
+  "prepTime": "5 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "1",
+  "status": "Untested",
+  "ingredients": [
+    "1 cup strawberries",
+    "1/2 cup cream",
+    "1/2 cup milk",
+    "1 tbsp honey"
+  ],
+  "instructions": [
+    "Blend ingredients together.",
+    "Serve chilled."
+  ],
+  "huntressNotes": [
+    "Gluten Free"
+  ],
+  "foxNotes": [
+    "Almost a milkshake."
+  ],
+  "tags": [
+    "Strawberries",
+    "Cream",
+    "Smoothie"
+  ],
+  "imagePrompt": "Strawberry cream smoothie in elegant glass"
+},
+{
+  "id": "apple-cinnamon-smoothie",
+  "name": "Apple Cinnamon Smoothie",
+  "category": "Drinks",
+  "description": "A smoothie with warm apple pie flavours.",
+  "prepTime": "5 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "1",
+  "status": "Untested",
+  "ingredients": [
+    "1 apple",
+    "1 cup milk",
+    "1 tsp cinnamon",
+    "1 tbsp honey"
+  ],
+  "instructions": [
+    "Blend until smooth.",
+    "Serve cold."
+  ],
+  "huntressNotes": [
+    "Gluten Free"
+  ],
+  "foxNotes": [
+    "Great during autumn."
+  ],
+  "tags": [
+    "Apple",
+    "Cinnamon",
+    "Smoothie"
+  ],
+  "imagePrompt": "Apple cinnamon smoothie beside fresh apples"
+},
+{
+  "id": "tropical-mango-smoothie",
+  "name": "Tropical Mango Smoothie",
+  "category": "Drinks",
+  "description": "A tropical smoothie packed with mango flavour.",
+  "prepTime": "5 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "1",
+  "status": "Untested",
+  "ingredients": [
+    "1 mango",
+    "1/2 cup yogurt",
+    "1/2 cup milk",
+    "1 tbsp honey"
+  ],
+  "instructions": [
+    "Blend ingredients until smooth.",
+    "Serve cold."
+  ],
+  "huntressNotes": [
+    "Gluten Free"
+  ],
+  "foxNotes": [
+    "Feels like a beach holiday in a glass."
+  ],
+  "tags": [
+    "Mango",
+    "Smoothie",
+    "Summer"
+  ],
+  "imagePrompt": "Bright tropical mango smoothie with fresh mango slices"
+}
+	  ]
+    },
+    {
+      "name": "Summer Coolers",
+      "recipes": [{
+  "id": "honey-lemon-cooler",
+  "name": "Honey Lemon Cooler",
+  "category": "Drinks",
+  "description": "A refreshing citrus drink perfect for hot South African days.",
+  "prepTime": "5 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "500ml cold water",
+    "2 tbsp honey",
+    "2 tbsp lemon juice",
+    "Ice cubes"
+  ],
+  "instructions": [
+    "Combine water, honey and lemon juice.",
+    "Stir until honey dissolves.",
+    "Add ice.",
+    "Serve chilled."
+  ],
+  "huntressNotes": [
+    "Caffeine Free",
+    "Refreshing"
+  ],
+  "foxNotes": [
+    "Perfect after a hot day outdoors."
+  ],
+  "tags": [
+    "Cooler",
+    "Summer",
+    "Lemon"
+  ],
+  "imagePrompt": "Honey lemon cooler served over ice on a sunny summer day"
+},
+{
+  "id": "peach-iced-tea",
+  "name": "Peach Iced Tea (Low Caffeine)",
+  "category": "Drinks",
+  "description": "A lightly brewed peach iced tea with reduced caffeine.",
+  "prepTime": "10 min",
+  "cookTime": "10 min",
+  "difficulty": "Easy",
+  "servings": "4",
+  "status": "Untested",
+  "ingredients": [
+    "2 tea bags",
+    "1 peach",
+    "1 tbsp honey",
+    "750ml water",
+    "Ice cubes"
+  ],
+  "instructions": [
+    "Brew tea and allow to cool.",
+    "Blend peach into puree.",
+    "Mix tea, peach and honey.",
+    "Serve over ice."
+  ],
+  "huntressNotes": [
+    "Contains Mild Caffeine"
+  ],
+  "foxNotes": [
+    "Keep tea weak due to caffeine sensitivity."
+  ],
+  "tags": [
+    "Iced Tea",
+    "Peach",
+    "Summer"
+  ],
+  "imagePrompt": "Peach iced tea in tall glass with ice and fresh peach slices"
+},
+{
+  "id": "berry-cooler",
+  "name": "Berry Cooler",
+  "category": "Drinks",
+  "description": "A berry-infused cooler bursting with fresh fruit flavour.",
+  "prepTime": "5 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "1 cup mixed berries",
+    "500ml cold water",
+    "1 tbsp honey",
+    "Ice cubes"
+  ],
+  "instructions": [
+    "Blend berries and honey.",
+    "Mix with water.",
+    "Strain if desired.",
+    "Serve over ice."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Refreshing"
+  ],
+  "foxNotes": [
+    "Very pretty presentation."
+  ],
+  "tags": [
+    "Berries",
+    "Cooler",
+    "Summer"
+  ],
+  "imagePrompt": "Berry cooler with fresh berries and ice in glass"
+},
+{
+  "id": "grape-refresher",
+  "name": "Grape Refresher",
+  "category": "Drinks",
+  "description": "A light grape-based drink using one of the Huntress's safest fruits.",
+  "prepTime": "5 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "1 cup grapes",
+    "500ml cold water",
+    "Ice cubes"
+  ],
+  "instructions": [
+    "Blend grapes and water.",
+    "Strain if desired.",
+    "Serve cold over ice."
+  ],
+  "huntressNotes": [
+    "Uses Known Safe Foods"
+  ],
+  "foxNotes": [
+    "Simple and refreshing."
+  ],
+  "tags": [
+    "Grapes",
+    "Cooler",
+    "Summer"
+  ],
+  "imagePrompt": "Refreshing grape drink with ice and fresh grapes"
+},
+{
+  "id": "mint-lemon-cooler",
+  "name": "Mint & Lemon Cooler",
+  "category": "Drinks",
+  "description": "A crisp and refreshing lemon cooler with fresh mint.",
+  "prepTime": "5 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "500ml water",
+    "2 tbsp lemon juice",
+    "Fresh mint",
+    "Ice cubes"
+  ],
+  "instructions": [
+    "Combine ingredients.",
+    "Lightly bruise mint leaves.",
+    "Serve over ice."
+  ],
+  "huntressNotes": [
+    "Caffeine Free"
+  ],
+  "foxNotes": [
+    "Extremely refreshing during summer."
+  ],
+  "tags": [
+    "Mint",
+    "Lemon",
+    "Summer"
+  ],
+  "imagePrompt": "Mint lemon cooler with fresh mint leaves and ice"
+},
+{
+  "id": "frozen-fruit-slush",
+  "name": "Frozen Fruit Slush",
+  "category": "Drinks",
+  "description": "A blended frozen fruit drink ideal for hot afternoons.",
+  "prepTime": "10 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "2 cups frozen fruit",
+    "250ml water",
+    "1 tbsp honey"
+  ],
+  "instructions": [
+    "Blend all ingredients until slushy.",
+    "Serve immediately."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Summer Favourite"
+  ],
+  "foxNotes": [
+    "Can use almost any fruit combination."
+  ],
+  "tags": [
+    "Slush",
+    "Frozen",
+    "Summer"
+  ],
+  "imagePrompt": "Frozen fruit slush served in chilled glass on hot summer day"
+}]
+    },
+    {
+      "name": "Comfort Drinks",
+      "recipes": [{
+  "id": "classic-hot-chocolate",
+  "name": "Classic Hot Chocolate",
+  "category": "Drinks",
+  "description": "Rich hot chocolate for cozy evenings.",
+  "prepTime": "5 min",
+  "cookTime": "5 min",
+  "difficulty": "Easy",
+  "servings": "1",
+  "status": "Untested",
+  "ingredients": [
+    "250ml milk",
+    "2 tbsp cocoa powder",
+    "1 tbsp sugar",
+    "20g dark chocolate"
+  ],
+  "instructions": [
+    "Heat milk gently.",
+    "Whisk in cocoa and sugar.",
+    "Add chocolate.",
+    "Serve warm."
+  ],
+  "huntressNotes": [
+    "Contains Mild Caffeine"
+  ],
+  "foxNotes": [
+    "Movie night approved."
+  ],
+  "tags": [
+    "Hot Chocolate",
+    "Comfort",
+    "Winter"
+  ],
+  "imagePrompt": "Rich hot chocolate in ceramic mug beside blanket"
+},
+{
+  "id": "honey-cinnamon-milk",
+  "name": "Honey Cinnamon Milk",
+  "category": "Drinks",
+  "description": "A warm caffeine-free comfort drink.",
+  "prepTime": "5 min",
+  "cookTime": "5 min",
+  "difficulty": "Easy",
+  "servings": "1",
+  "status": "Untested",
+  "ingredients": [
+    "250ml milk",
+    "1 tbsp honey",
+    "1 tsp cinnamon"
+  ],
+  "instructions": [
+    "Warm milk.",
+    "Add honey and cinnamon.",
+    "Whisk lightly.",
+    "Serve warm."
+  ],
+  "huntressNotes": [
+    "Caffeine Free"
+  ],
+  "foxNotes": [
+    "Simple but incredibly comforting."
+  ],
+  "tags": [
+    "Milk",
+    "Honey",
+    "Comfort"
+  ],
+  "imagePrompt": "Warm honey cinnamon milk in rustic mug"
+},
+{
+  "id": "vanilla-steamed-milk",
+  "name": "Vanilla Steamed Milk",
+  "category": "Drinks",
+  "description": "A café-style drink without the caffeine.",
+  "prepTime": "5 min",
+  "cookTime": "5 min",
+  "difficulty": "Easy",
+  "servings": "1",
+  "status": "Untested",
+  "ingredients": [
+    "250ml milk",
+    "1 tsp vanilla essence",
+    "1 tsp honey"
+  ],
+  "instructions": [
+    "Heat milk gently.",
+    "Add vanilla and honey.",
+    "Whisk until frothy.",
+    "Serve warm."
+  ],
+  "huntressNotes": [
+    "Caffeine Free"
+  ],
+  "foxNotes": [
+    "Feels like a coffee shop treat."
+  ],
+  "tags": [
+    "Vanilla",
+    "Comfort",
+    "Warm Drink"
+  ],
+  "imagePrompt": "Vanilla steamed milk in café mug with foam"
+},
+{
+  "id": "warm-apple-cinnamon-drink",
+  "name": "Warm Apple Cinnamon Drink",
+  "category": "Drinks",
+  "description": "A warm drink inspired by baked apples.",
+  "prepTime": "10 min",
+  "cookTime": "10 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "2 apples",
+    "500ml water",
+    "1 tsp cinnamon",
+    "1 tbsp honey"
+  ],
+  "instructions": [
+    "Simmer apples in water.",
+    "Add cinnamon and honey.",
+    "Blend lightly.",
+    "Serve warm."
+  ],
+  "huntressNotes": [
+    "Caffeine Free"
+  ],
+  "foxNotes": [
+    "Perfect for rainy days."
+  ],
+  "tags": [
+    "Apple",
+    "Cinnamon",
+    "Comfort"
+  ],
+  "imagePrompt": "Warm apple cinnamon drink beside rainy window"
+},
+{
+  "id": "golden-honey-milk",
+  "name": "Golden Honey Milk",
+  "category": "Drinks",
+  "description": "A soothing warm milk drink with honey and spices.",
+  "prepTime": "5 min",
+  "cookTime": "5 min",
+  "difficulty": "Easy",
+  "servings": "1",
+  "status": "Untested",
+  "ingredients": [
+    "250ml milk",
+    "1 tbsp honey",
+    "1/2 tsp cinnamon"
+  ],
+  "instructions": [
+    "Heat milk gently.",
+    "Add honey and cinnamon.",
+    "Whisk until combined.",
+    "Serve warm."
+  ],
+  "huntressNotes": [
+    "Caffeine Free",
+    "Evening Friendly"
+  ],
+  "foxNotes": [
+    "Great before bed."
+  ],
+  "tags": [
+    "Honey",
+    "Milk",
+    "Comfort"
+  ],
+  "imagePrompt": "Golden honey milk in cozy mug with soft lighting"
+}]
+    },
+    {
+      "name": "Road Trip Drinks",
+      "recipes": [
+	  {
+  "id": "cold-water-infusion",
+  "name": "Cold Water Infusion",
+  "category": "Drinks",
+  "description": "A refreshing infused water perfect for long drives.",
+  "prepTime": "5 min",
+  "cookTime": "1 hr chill",
+  "difficulty": "Easy",
+  "servings": "4",
+  "status": "Untested",
+  "ingredients": [
+    "1 litre water",
+    "Lemon slices",
+    "Grapes",
+    "Mint leaves"
+  ],
+  "instructions": [
+    "Add ingredients to water bottle or jug.",
+    "Refrigerate for at least 1 hour.",
+    "Serve cold."
+  ],
+  "huntressNotes": [
+    "Caffeine Free",
+    "Travel Friendly"
+  ],
+  "foxNotes": [
+    "Much nicer than plain water on long drives."
+  ],
+  "tags": [
+    "Infused Water",
+    "Road Trip",
+    "Hydration"
+  ],
+  "imagePrompt": "Infused water bottle with grapes, lemon and mint beside scenic road trip"
+},
+{
+  "id": "honey-lemon-travel-bottle",
+  "name": "Honey Lemon Travel Bottle",
+  "category": "Drinks",
+  "description": "A simple hydration drink for road trips and outdoor adventures.",
+  "prepTime": "5 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "750ml water",
+    "2 tbsp honey",
+    "2 tbsp lemon juice"
+  ],
+  "instructions": [
+    "Combine all ingredients in bottle.",
+    "Shake thoroughly.",
+    "Keep chilled if possible."
+  ],
+  "huntressNotes": [
+    "Caffeine Free",
+    "Gentle Hydration"
+  ],
+  "foxNotes": [
+    "Ideal for hiking and travel days."
+  ],
+  "tags": [
+    "Hydration",
+    "Travel",
+    "Honey Lemon"
+  ],
+  "imagePrompt": "Travel water bottle filled with honey lemon drink beside hiking gear"
+},
+{
+  "id": "berry-hydration-drink",
+  "name": "Berry Hydration Drink",
+  "category": "Drinks",
+  "description": "A lightly flavoured berry drink designed for hydration.",
+  "prepTime": "5 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "1/2 cup berries",
+    "750ml water",
+    "1 tbsp honey"
+  ],
+  "instructions": [
+    "Blend berries and honey.",
+    "Mix with water.",
+    "Strain if desired.",
+    "Bottle and chill."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Travel Friendly"
+  ],
+  "foxNotes": [
+    "A good alternative to sugary drinks."
+  ],
+  "tags": [
+    "Berry",
+    "Hydration",
+    "Travel"
+  ],
+  "imagePrompt": "Berry hydration drink in reusable bottle beside road trip map"
+},
+{
+  "id": "peach-cooler-bottle",
+  "name": "Peach Cooler Bottle",
+  "category": "Drinks",
+  "description": "A peach-based travel drink for warm summer journeys.",
+  "prepTime": "10 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "1 peach",
+    "750ml water",
+    "1 tbsp honey"
+  ],
+  "instructions": [
+    "Blend peach and honey.",
+    "Mix with water.",
+    "Bottle and chill."
+  ],
+  "huntressNotes": [
+    "Gluten Free"
+  ],
+  "foxNotes": [
+    "Very refreshing on hot days."
+  ],
+  "tags": [
+    "Peach",
+    "Travel",
+    "Summer"
+  ],
+  "imagePrompt": "Peach cooler bottle with fresh peaches beside scenic countryside road"
+},
+{
+  "id": "travel-smoothie",
+  "name": "Travel Smoothie",
+  "category": "Drinks",
+  "description": "A filling smoothie designed for long journeys.",
+  "prepTime": "5 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "1",
+  "status": "Untested",
+  "ingredients": [
+    "1 peach",
+    "1/2 cup yogurt",
+    "1 cup milk",
+    "1 tbsp honey"
+  ],
+  "instructions": [
+    "Blend all ingredients.",
+    "Pour into insulated bottle.",
+    "Keep chilled."
+  ],
+  "huntressNotes": [
+    "Breakfast Friendly",
+    "Travel Friendly"
+  ],
+  "foxNotes": [
+    "Useful for early starts."
+  ],
+  "tags": [
+    "Smoothie",
+    "Travel",
+    "Breakfast"
+  ],
+  "imagePrompt": "Travel smoothie in insulated bottle beside sunrise road trip scene"
+}
+	  ]
+    },
+    {
+      "name": "Fox & Huntress Café Collection",
+      "recipes": [
+	  {
+  "id": "huntress-hot-chocolate",
+  "name": "The Huntress Hot Chocolate",
+  "category": "Drinks",
+  "description": "A rich but gentle hot chocolate designed with the Huntress in mind.",
+  "prepTime": "5 min",
+  "cookTime": "5 min",
+  "difficulty": "Easy",
+  "servings": "1",
+  "status": "Untested",
+  "ingredients": [
+    "250ml milk",
+    "1 tbsp cocoa powder",
+    "1 tbsp honey",
+    "20g dark chocolate"
+  ],
+  "instructions": [
+    "Heat milk gently.",
+    "Add cocoa and honey.",
+    "Stir until smooth.",
+    "Serve warm."
+  ],
+  "huntressNotes": [
+    "Contains Mild Caffeine"
+  ],
+  "foxNotes": [
+    "Official café menu item."
+  ],
+  "tags": [
+    "Hot Chocolate",
+    "Fox & Huntress",
+    "Comfort"
+  ],
+  "imagePrompt": "Luxury hot chocolate served in cozy café setting"
+},
+{
+  "id": "fox-morning-brew",
+  "name": "The Fox's Morning Brew",
+  "category": "Drinks",
+  "description": "A caffeine-free morning drink for adventure planning sessions.",
+  "prepTime": "5 min",
+  "cookTime": "5 min",
+  "difficulty": "Easy",
+  "servings": "1",
+  "status": "Untested",
+  "ingredients": [
+    "250ml warm water",
+    "1 tbsp honey",
+    "1 tsp lemon juice"
+  ],
+  "instructions": [
+    "Combine ingredients.",
+    "Serve warm."
+  ],
+  "huntressNotes": [
+    "Caffeine Free"
+  ],
+  "foxNotes": [
+    "Best enjoyed while planning trips."
+  ],
+  "tags": [
+    "Morning",
+    "Fox & Huntress",
+    "Caffeine Free"
+  ],
+  "imagePrompt": "Warm honey lemon drink beside notebook and travel plans"
+},
+{
+  "id": "date-night-hot-chocolate",
+  "name": "Fox & Huntress Date Night Hot Chocolate",
+  "category": "Drinks",
+  "description": "A cozy drink designed for movie nights and rainy evenings.",
+  "prepTime": "5 min",
+  "cookTime": "5 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "500ml milk",
+    "2 tbsp cocoa powder",
+    "2 tbsp honey",
+    "40g dark chocolate"
+  ],
+  "instructions": [
+    "Heat milk gently.",
+    "Add cocoa and honey.",
+    "Melt chocolate into mixture.",
+    "Serve in two mugs."
+  ],
+  "huntressNotes": [
+    "Contains Mild Caffeine"
+  ],
+  "foxNotes": [
+    "Designed for movie nights."
+  ],
+  "tags": [
+    "Date Night",
+    "Hot Chocolate",
+    "Fox & Huntress"
+  ],
+  "imagePrompt": "Two mugs of hot chocolate beside blankets and candles"
+},
+{
+  "id": "mountain-view-smoothie",
+  "name": "Mountain View Smoothie",
+  "category": "Drinks",
+  "description": "A fruit smoothie inspired by Drakensberg adventures.",
+  "prepTime": "5 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "1",
+  "status": "Untested",
+  "ingredients": [
+    "1 peach",
+    "1/2 cup berries",
+    "1 cup milk",
+    "1 tbsp honey"
+  ],
+  "instructions": [
+    "Blend ingredients.",
+    "Serve chilled."
+  ],
+  "huntressNotes": [
+    "Gluten Free"
+  ],
+  "foxNotes": [
+    "Made for mountain mornings."
+  ],
+  "tags": [
+    "Smoothie",
+    "Adventure",
+    "Fox & Huntress"
+  ],
+  "imagePrompt": "Fruit smoothie overlooking mountain scenery"
+},
+{
+  "id": "campfire-chocolate-milk",
+  "name": "Campfire Chocolate Milk",
+  "category": "Drinks",
+  "description": "A simple warm chocolate drink inspired by evenings around a fire.",
+  "prepTime": "5 min",
+  "cookTime": "5 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "500ml milk",
+    "2 tbsp cocoa powder",
+    "2 tbsp honey"
+  ],
+  "instructions": [
+    "Heat milk.",
+    "Whisk in cocoa and honey.",
+    "Serve warm."
+  ],
+  "huntressNotes": [
+    "Contains Mild Caffeine"
+  ],
+  "foxNotes": [
+    "Made for camping trips."
+  ],
+  "tags": [
+    "Campfire",
+    "Chocolate",
+    "Comfort"
+  ],
+  "imagePrompt": "Warm chocolate milk beside campfire under stars"
+},
+{
+  "id": "drakensberg-sunrise-smoothie",
+  "name": "Drakensberg Sunrise Smoothie",
+  "category": "Drinks",
+  "description": "A bright fruit smoothie inspired by sunrise over the mountains.",
+  "prepTime": "5 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "1",
+  "status": "Untested",
+  "ingredients": [
+    "1 mango",
+    "1 peach",
+    "1/2 cup yogurt",
+    "1 tbsp honey"
+  ],
+  "instructions": [
+    "Blend ingredients until smooth.",
+    "Serve chilled."
+  ],
+  "huntressNotes": [
+    "Gluten Free"
+  ],
+  "foxNotes": [
+    "The official Drakensberg breakfast drink."
+  ],
+  "tags": [
+    "Smoothie",
+    "Drakensberg",
+    "Fox & Huntress"
+  ],
+  "imagePrompt": "Mango and peach smoothie with sunrise mountain backdrop"
+}
+	  ]
+    },
+    {
+      "name": "Future Drink Projects",
+      "recipes": [
+	  {
+  "id": "homemade-iced-tea-collection",
+  "name": "Homemade Iced Tea Collection",
+  "category": "Drinks",
+  "description": "A collection of low-caffeine iced teas designed to be Huntress-friendly.",
+  "prepTime": "TBD",
+  "cookTime": "TBD",
+  "difficulty": "TBD",
+  "servings": "TBD",
+  "status": "Researching",
+  "ingredients": [],
+  "instructions": [
+    "Research caffeine-friendly tea options.",
+    "Develop fruit flavour combinations.",
+    "Test sweetness levels.",
+    "Create recipe collection."
+  ],
+  "huntressNotes": [
+    "Low Caffeine Focus",
+    "Recipe Collection Under Development"
+  ],
+  "foxNotes": [
+    "Could become an entire chapter by itself."
+  ],
+  "tags": [
+    "Iced Tea",
+    "Research Project",
+    "Summer Drinks"
+  ],
+  "imagePrompt": "Collection of homemade iced teas served in elegant glass bottles"
+},
+{
+  "id": "gf-milkshake-collection",
+  "name": "Gluten Free Milkshake Collection",
+  "category": "Drinks",
+  "description": "A collection of gluten-free milkshakes using simple ingredients.",
+  "prepTime": "TBD",
+  "cookTime": "TBD",
+  "difficulty": "TBD",
+  "servings": "TBD",
+  "status": "Researching",
+  "ingredients": [],
+  "instructions": [
+    "Develop milkshake flavours.",
+    "Verify gluten-free ingredients.",
+    "Test consistency.",
+    "Build recipe collection."
+  ],
+  "huntressNotes": [
+    "Gluten Free Focus"
+  ],
+  "foxNotes": [
+    "Chocolate, strawberry and peach should be first."
+  ],
+  "tags": [
+    "Milkshake",
+    "Research Project",
+    "Dessert Drinks"
+  ],
+  "imagePrompt": "Selection of gluten free milkshakes in tall café glasses"
+},
+{
+  "id": "electrolyte-adventure-drink",
+  "name": "Electrolyte Adventure Drink",
+  "category": "Drinks",
+  "description": "A homemade hydration drink for hiking, road trips and outdoor adventures.",
+  "prepTime": "TBD",
+  "cookTime": "TBD",
+  "difficulty": "Easy",
+  "servings": "TBD",
+  "status": "Researching",
+  "ingredients": [],
+  "instructions": [
+    "Research electrolyte balance.",
+    "Test flavour combinations.",
+    "Develop hydration formula.",
+    "Finalize recipe."
+  ],
+  "huntressNotes": [
+    "Adventure Friendly"
+  ],
+  "foxNotes": [
+    "Would be useful for Drakensberg hikes."
+  ],
+  "tags": [
+    "Hydration",
+    "Adventure",
+    "Research Project"
+  ],
+  "imagePrompt": "Homemade electrolyte drink beside hiking gear and mountain scenery"
+},
+{
+  "id": "berry-cafe-cooler",
+  "name": "Berry Café Cooler",
+  "category": "Drinks",
+  "description": "A premium berry-based café drink for the Fox & Huntress collection.",
+  "prepTime": "TBD",
+  "cookTime": "TBD",
+  "difficulty": "TBD",
+  "servings": "TBD",
+  "status": "Researching",
+  "ingredients": [],
+  "instructions": [
+    "Develop berry flavour profile.",
+    "Test presentation styles.",
+    "Refine recipe.",
+    "Finalize café version."
+  ],
+  "huntressNotes": [
+    "Potential Signature Drink"
+  ],
+  "foxNotes": [
+    "This one has café menu potential."
+  ],
+  "tags": [
+    "Berry",
+    "Café Collection",
+    "Research Project"
+  ],
+  "imagePrompt": "Premium berry cooler served in elegant café glass"
+},
+{
+  "id": "fox-huntress-signature-menu",
+  "name": "Fox & Huntress Signature Café Menu",
+  "category": "Drinks",
+  "description": "A living collection of the best drinks discovered throughout the cookbook journey.",
+  "prepTime": "Ongoing",
+  "cookTime": "Ongoing",
+  "difficulty": "Varies",
+  "servings": "Varies",
+  "status": "Living Document",
+  "ingredients": [],
+  "instructions": [
+    "Test recipes from the cookbook.",
+    "Record favourites.",
+    "Refine recipes over time.",
+    "Build the final signature menu."
+  ],
+  "huntressNotes": [
+    "Living Collection",
+    "Built Around Proven Favourite Drinks"
+  ],
+  "foxNotes": [
+    "This becomes the 'best of the best' section."
+  ],
+  "tags": [
+    "Signature Menu",
+    "Fox & Huntress",
+    "Living Document"
+  ],
+  "imagePrompt": "Elegant café menu featuring signature Fox and Huntress drinks"
+},
+{
+  "id": "caffeine-reference-guide",
+  "name": "Caffeine Reference Guide",
+  "category": "Reference",
+  "description": "A quick guide to caffeine levels in common drinks to help manage caffeine sensitivity.",
+  "prepTime": "N/A",
+  "cookTime": "N/A",
+  "difficulty": "Reference",
+  "servings": "N/A",
+  "status": "Reference",
+  "ingredients": [],
+  "instructions": [
+    "Use as a quick reference when selecting drinks.",
+    "Adjust recipes based on caffeine tolerance."
+  ],
+  "huntressNotes": [
+    "Useful For Caffeine Sensitivity"
+  ],
+  "foxNotes": [
+    "One of the most practical pages in the drinks chapter."
+  ],
+  "tags": [
+    "Reference",
+    "Caffeine",
+    "Guide"
+  ],
+  "imagePrompt": "Clean infographic showing caffeine levels in common drinks"
+}
+	  ]
+    }
+  ]
+}

@@ -1,0 +1,337 @@
+{
+  "category": "Pantry Essentials",
+  "description": "Core ingredients that make cooking for the Huntress easier, safer and more enjoyable.",
+  "groups": [
+    {
+      "name": "Proteins",
+      "description": "Protein staples for breakfasts, lunches and dinners.",
+      "items": [
+        {
+          "name": "Chicken Breast",
+          "priority": "Essential",
+          "notes": [
+            "High protein",
+            "Versatile",
+            "Freezer friendly"
+          ]
+        },
+        {
+          "name": "Chicken Thighs",
+          "priority": "Essential",
+          "notes": [
+            "More flavourful than breast",
+            "Excellent for braais"
+          ]
+        },
+        {
+          "name": "Beef Mince",
+          "priority": "Essential",
+          "notes": [
+            "Used in cottage pie",
+            "Used in meatballs",
+            "Used in bobotie"
+          ]
+        },
+        {
+          "name": "Steak",
+          "priority": "Recommended",
+          "notes": [
+            "Date night meals",
+            "Braai meals"
+          ]
+        },
+        {
+          "name": "Eggs",
+          "priority": "Essential",
+          "notes": [
+            "Breakfast staple",
+            "Quick meals"
+          ]
+        },
+        {
+          "name": "Tuna",
+          "priority": "Essential",
+          "notes": [
+            "Quick lunches",
+            "Emergency protein"
+          ]
+        },
+        {
+          "name": "Hake",
+          "priority": "Recommended",
+          "notes": [
+            "Easy seafood option"
+          ]
+        },
+        {
+          "name": "Salmon",
+          "priority": "Luxury",
+          "notes": [
+            "Date night meals"
+          ]
+        }
+      ]
+    },
+
+    {
+      "name": "Vegetables",
+      "description": "Huntress-friendly vegetables.",
+      "items": [
+        {
+          "name": "Carrots",
+          "priority": "Essential"
+        },
+        {
+          "name": "Bell Peppers",
+          "priority": "Essential"
+        },
+        {
+          "name": "Spinach",
+          "priority": "Essential"
+        },
+        {
+          "name": "Tomatoes",
+          "priority": "Essential"
+        },
+        {
+          "name": "Lettuce",
+          "priority": "Recommended"
+        },
+        {
+          "name": "Cucumber",
+          "priority": "Recommended"
+        },
+        {
+          "name": "Butternut",
+          "priority": "Essential"
+        },
+        {
+          "name": "Sweet Potatoes",
+          "priority": "Essential"
+        },
+        {
+          "name": "Mushrooms",
+          "priority": "Recommended"
+        }
+      ]
+    },
+
+    {
+      "name": "Vegetables To Avoid",
+      "description": "Known IBS triggers.",
+      "items": [
+        {
+          "name": "Onions",
+          "priority": "Avoid",
+          "reason": "Severe cramping and bloating"
+        },
+        {
+          "name": "Broccoli",
+          "priority": "Avoid",
+          "reason": "Heavy bloating"
+        }
+      ]
+    },
+
+    {
+      "name": "Fruit",
+      "description": "Safe fruit options.",
+      "items": [
+        {
+          "name": "Strawberries",
+          "priority": "Essential"
+        },
+        {
+          "name": "Blueberries",
+          "priority": "Recommended"
+        },
+        {
+          "name": "Grapes",
+          "priority": "Recommended"
+        },
+        {
+          "name": "Apples",
+          "priority": "Recommended"
+        },
+        {
+          "name": "Peaches",
+          "priority": "Recommended"
+        },
+        {
+          "name": "Mango",
+          "priority": "Recommended"
+        },
+        {
+          "name": "Bananas",
+          "priority": "Use Carefully",
+          "notes": [
+            "Avoid overripe bananas"
+          ]
+        }
+      ]
+    },
+
+    {
+      "name": "Carbohydrates",
+      "description": "Safe carbohydrate options.",
+      "items": [
+        {
+          "name": "Rice",
+          "priority": "Essential"
+        },
+        {
+          "name": "Potatoes",
+          "priority": "Essential"
+        },
+        {
+          "name": "Sweet Potatoes",
+          "priority": "Essential"
+        },
+        {
+          "name": "GF Oats",
+          "priority": "Essential"
+        },
+        {
+          "name": "GF Bread",
+          "priority": "Recommended"
+        },
+        {
+          "name": "GF Pasta",
+          "priority": "Recommended"
+        },
+        {
+          "name": "Rice Cakes",
+          "priority": "Recommended"
+        },
+        {
+          "name": "Rice Paper Sheets",
+          "priority": "Recommended"
+        }
+      ]
+    },
+
+    {
+      "name": "Dairy",
+      "description": "Common dairy ingredients used throughout the cookbook.",
+      "items": [
+        {
+          "name": "Greek Yogurt",
+          "priority": "Essential"
+        },
+        {
+          "name": "Milk",
+          "priority": "Essential"
+        },
+        {
+          "name": "Cream",
+          "priority": "Recommended"
+        },
+        {
+          "name": "Cheddar Cheese",
+          "priority": "Essential"
+        },
+        {
+          "name": "Feta",
+          "priority": "Recommended"
+        },
+        {
+          "name": "Parmesan",
+          "priority": "Luxury"
+        }
+      ]
+    },
+
+    {
+      "name": "Herbs & Spices",
+      "description": "The flavour section.",
+      "items": [
+        {
+          "name": "Garlic",
+          "priority": "Essential"
+        },
+        {
+          "name": "Paprika",
+          "priority": "Essential"
+        },
+        {
+          "name": "Rosemary",
+          "priority": "Recommended"
+        },
+        {
+          "name": "Thyme",
+          "priority": "Recommended"
+        },
+        {
+          "name": "Basil",
+          "priority": "Recommended"
+        },
+        {
+          "name": "Parsley",
+          "priority": "Recommended"
+        },
+        {
+          "name": "Cinnamon",
+          "priority": "Essential"
+        },
+        {
+          "name": "Salt",
+          "priority": "Essential"
+        },
+        {
+          "name": "Black Pepper",
+          "priority": "Essential"
+        }
+      ]
+    },
+
+    {
+      "name": "Oils & Sweeteners",
+      "description": "Cooking fats and sweeteners.",
+      "items": [
+        {
+          "name": "Olive Oil",
+          "priority": "Essential"
+        },
+        {
+          "name": "Butter",
+          "priority": "Essential"
+        },
+        {
+          "name": "Honey",
+          "priority": "Essential"
+        },
+        {
+          "name": "Sugar",
+          "priority": "Recommended"
+        }
+      ]
+    },
+
+    {
+      "name": "Avoid List",
+      "description": "Always double-check labels.",
+      "items": [
+        {
+          "name": "Artificial Sweeteners",
+          "priority": "Avoid"
+        },
+        {
+          "name": "Soy Products",
+          "priority": "Avoid"
+        },
+        {
+          "name": "Plant Based Meats",
+          "priority": "Avoid"
+        },
+        {
+          "name": "Wine",
+          "priority": "Avoid"
+        },
+        {
+          "name": "Very Oily Foods",
+          "priority": "Avoid"
+        }
+      ]
+    }
+  ]
+}

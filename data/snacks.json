@@ -1,0 +1,1454 @@
+{
+  "category": "Snacks & Picnic Foods",
+  "description": "Quick snacks, lunchbox fillers and road-trip foods that fit the Huntress lifestyle and dietary needs.",
+  "groups": [
+    {
+      "name": "South African Favourites",
+      "recipes": [
+	  {
+  "id": "droewors-cup",
+  "name": "Droëwors Cup",
+  "category": "Snacks",
+  "description": "A simple protein-rich South African snack featuring quality droëwors.",
+  "prepTime": "2 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "1",
+  "status": "Untested",
+  "ingredients": [
+    "50g droëwors"
+  ],
+  "instructions": [
+    "Place droëwors into a serving cup or bowl.",
+    "Serve immediately."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "High Protein",
+    "Road Trip Friendly"
+  ],
+  "foxNotes": [
+    "Always verify seasonings are gluten free."
+  ],
+  "tags": [
+    "Droëwors",
+    "South African",
+    "Protein Snack"
+  ],
+  "imagePrompt": "Traditional South African droewors served in rustic wooden bowl, natural food photography"
+},
+{
+  "id": "biltong-snack-bowl",
+  "name": "Biltong Snack Bowl",
+  "category": "Snacks",
+  "description": "A classic South African snack bowl built around quality biltong.",
+  "prepTime": "3 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "1",
+  "status": "Untested",
+  "ingredients": [
+    "60g sliced biltong"
+  ],
+  "instructions": [
+    "Slice biltong if necessary.",
+    "Place into serving bowl.",
+    "Enjoy."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "High Protein"
+  ],
+  "foxNotes": [
+    "Perfect for road trips and hiking days."
+  ],
+  "tags": [
+    "Biltong",
+    "Protein",
+    "South African"
+  ],
+  "imagePrompt": "Sliced South African biltong served in rustic bowl, premium snack photography"
+},
+{
+  "id": "cheese-droewors-platter",
+  "name": "Cheese & Droëwors Platter",
+  "category": "Snacks",
+  "description": "A simple platter combining cheese and droëwors for a filling snack.",
+  "prepTime": "5 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "50g droëwors",
+    "100g cheddar cheese"
+  ],
+  "instructions": [
+    "Slice cheese into cubes.",
+    "Arrange cheese and droëwors on a serving board.",
+    "Serve immediately."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "High Protein",
+    "Sharing Snack"
+  ],
+  "foxNotes": [
+    "Excellent with grapes."
+  ],
+  "tags": [
+    "Cheese",
+    "Droëwors",
+    "Snack Board"
+  ],
+  "imagePrompt": "Cheddar cheese cubes and droewors arranged on rustic wooden board, South African snack photography"
+},
+{
+  "id": "boiled-eggs-biltong",
+  "name": "Boiled Eggs & Biltong",
+  "category": "Snacks",
+  "description": "A high-protein snack combining boiled eggs and biltong.",
+  "prepTime": "5 min",
+  "cookTime": "10 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "2 eggs",
+    "50g biltong",
+    "Salt",
+    "Black pepper"
+  ],
+  "instructions": [
+    "Boil eggs until desired firmness.",
+    "Peel and halve eggs.",
+    "Serve with biltong.",
+    "Season lightly."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "High Protein",
+    "Very Filling"
+  ],
+  "foxNotes": [
+    "Great after a hike or gym session."
+  ],
+  "tags": [
+    "Eggs",
+    "Biltong",
+    "Protein Snack"
+  ],
+  "imagePrompt": "Boiled eggs and sliced biltong served on rustic plate, healthy protein snack photography"
+},
+{
+  "id": "braai-leftover-snack-plate",
+  "name": "Braai Leftover Snack Plate",
+  "category": "Snacks",
+  "description": "A practical snack plate built from leftover braai meats and sides.",
+  "prepTime": "5 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "Leftover steak",
+    "Leftover chicken",
+    "Cheese cubes",
+    "Cucumber slices"
+  ],
+  "instructions": [
+    "Slice leftover meats into bite-sized pieces.",
+    "Arrange on serving plate.",
+    "Add cheese and cucumber.",
+    "Serve cold or lightly warmed."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Reduces Food Waste",
+    "High Protein"
+  ],
+  "foxNotes": [
+    "One of the most realistic South African snacks."
+  ],
+  "tags": [
+    "Braai",
+    "Leftovers",
+    "Protein"
+  ],
+  "imagePrompt": "South African braai leftover snack plate with steak, chicken and cheese, rustic food photography"
+}
+	  ]
+    },
+    {
+      "name": "Protein Snacks",
+      "recipes": [
+	  {
+  "id": "egg-muffins",
+  "name": "Egg Muffins",
+  "category": "Snacks",
+  "description": "Portable protein-packed egg muffins perfect for meal prep and busy days.",
+  "prepTime": "10 min",
+  "cookTime": "20 min",
+  "difficulty": "Easy",
+  "servings": "6",
+  "status": "Untested",
+  "ingredients": [
+    "6 eggs",
+    "50g cheddar cheese",
+    "1 bell pepper",
+    "Salt",
+    "Black pepper"
+  ],
+  "instructions": [
+    "Preheat oven to 180°C.",
+    "Whisk eggs in a bowl.",
+    "Add diced pepper and cheese.",
+    "Season lightly.",
+    "Pour into muffin tray.",
+    "Bake until set and golden.",
+    "Allow to cool before serving."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Onion Free",
+    "Meal Prep Friendly"
+  ],
+  "foxNotes": [
+    "Great for grab-and-go breakfasts too."
+  ],
+  "tags": [
+    "Eggs",
+    "Protein",
+    "Meal Prep"
+  ],
+  "imagePrompt": "Golden egg muffins with cheese and peppers on wooden serving board, healthy snack photography"
+},
+{
+  "id": "chicken-snack-cups",
+  "name": "Chicken Snack Cups",
+  "category": "Snacks",
+  "description": "Simple chicken snack portions that are easy to prepare and highly filling.",
+  "prepTime": "10 min",
+  "cookTime": "15 min",
+  "difficulty": "Easy",
+  "servings": "4",
+  "status": "Untested",
+  "ingredients": [
+    "300g chicken breast",
+    "1 tsp paprika",
+    "Salt",
+    "Black pepper"
+  ],
+  "instructions": [
+    "Season chicken.",
+    "Cook until fully done.",
+    "Allow to cool slightly.",
+    "Slice into bite-sized pieces.",
+    "Divide into serving cups."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "High Protein"
+  ],
+  "foxNotes": [
+    "Excellent for work lunches and road trips."
+  ],
+  "tags": [
+    "Chicken",
+    "Protein",
+    "Snack"
+  ],
+  "imagePrompt": "Chicken snack cups with seasoned chicken pieces, healthy protein snack photography"
+},
+{
+  "id": "tuna-cucumber-boats",
+  "name": "Tuna Cucumber Boats",
+  "category": "Snacks",
+  "description": "Fresh cucumber halves filled with seasoned tuna.",
+  "prepTime": "10 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "1 cucumber",
+    "1 tin tuna",
+    "1 tbsp mayonnaise",
+    "Black pepper"
+  ],
+  "instructions": [
+    "Cut cucumber in half lengthwise.",
+    "Remove some of the centre.",
+    "Mix tuna with mayonnaise.",
+    "Fill cucumber halves.",
+    "Season lightly and serve."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Light Snack",
+    "High Protein"
+  ],
+  "foxNotes": [
+    "Very refreshing during summer."
+  ],
+  "tags": [
+    "Tuna",
+    "Cucumber",
+    "Protein"
+  ],
+  "imagePrompt": "Tuna cucumber boats filled with tuna mixture, fresh healthy snack photography"
+},
+{
+  "id": "cheese-cubes-ham",
+  "name": "Cheese Cubes & Ham",
+  "category": "Snacks",
+  "description": "A simple protein-rich snack requiring almost no preparation.",
+  "prepTime": "5 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "100g cheddar cheese",
+    "100g sliced ham"
+  ],
+  "instructions": [
+    "Cut cheese into cubes.",
+    "Roll or fold ham slices.",
+    "Arrange on serving plate.",
+    "Serve immediately."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "High Protein"
+  ],
+  "foxNotes": [
+    "One of the easiest snacks in the cookbook."
+  ],
+  "tags": [
+    "Cheese",
+    "Ham",
+    "Protein"
+  ],
+  "imagePrompt": "Cheese cubes and sliced ham on rustic snack board, simple protein snack photography"
+},
+{
+  "id": "mini-chicken-skewers",
+  "name": "Mini Chicken Skewers",
+  "category": "Snacks",
+  "description": "Small grilled chicken skewers perfect for sharing or meal prep.",
+  "prepTime": "15 min",
+  "cookTime": "15 min",
+  "difficulty": "Easy",
+  "servings": "4",
+  "status": "Untested",
+  "ingredients": [
+    "400g chicken breast",
+    "1 tsp paprika",
+    "1 tsp garlic powder",
+    "Salt",
+    "Black pepper"
+  ],
+  "instructions": [
+    "Cut chicken into cubes.",
+    "Season chicken.",
+    "Thread onto small skewers.",
+    "Cook until golden and fully cooked.",
+    "Serve warm or cold."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Onion Free",
+    "High Protein"
+  ],
+  "foxNotes": [
+    "A fantastic hiking snack."
+  ],
+  "tags": [
+    "Chicken",
+    "Skewers",
+    "Protein"
+  ],
+  "imagePrompt": "Mini grilled chicken skewers arranged on serving board, healthy protein snack photography"
+},
+{
+  "id": "peanut-butter-protein-bites",
+  "name": "Peanut Butter Protein Bites",
+  "category": "Snacks",
+  "description": "Small energy bites made with peanut butter and simple ingredients.",
+  "prepTime": "15 min",
+  "cookTime": "30 min chill",
+  "difficulty": "Easy",
+  "servings": "12",
+  "status": "Untested",
+  "ingredients": [
+    "1 cup peanut butter",
+    "2 tbsp honey",
+    "1 cup gluten free oats"
+  ],
+  "instructions": [
+    "Mix all ingredients together.",
+    "Roll into small balls.",
+    "Place on tray.",
+    "Refrigerate until firm.",
+    "Serve chilled."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Energy Boost",
+    "Road Trip Friendly"
+  ],
+  "foxNotes": [
+    "Great before long walks or hikes."
+  ],
+  "tags": [
+    "Peanut Butter",
+    "Energy Bites",
+    "Snack"
+  ],
+  "imagePrompt": "Peanut butter protein bites arranged on wooden serving board, healthy snack photography"
+}
+	  ]
+    },
+    {
+      "name": "Fruit & Light Snacks",
+      "recipes": [
+	  {
+  "id": "honey-yogurt-grapes",
+  "name": "Honey Yogurt & Grapes",
+  "category": "Snacks",
+  "description": "A simple snack built around ingredients the Huntress already enjoys.",
+  "prepTime": "5 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "1 cup plain yogurt",
+    "1 cup grapes",
+    "1 tbsp honey"
+  ],
+  "instructions": [
+    "Add yogurt to serving bowls.",
+    "Top with grapes.",
+    "Drizzle with honey.",
+    "Serve chilled."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Simple Everyday Snack",
+    "Uses Known Safe Foods"
+  ],
+  "foxNotes": [
+    "Probably one of the safest snack options in the cookbook."
+  ],
+  "tags": [
+    "Yogurt",
+    "Grapes",
+    "Light Snack"
+  ],
+  "imagePrompt": "Yogurt bowl topped with grapes and honey, fresh healthy snack photography"
+},
+{
+  "id": "apple-peanut-butter",
+  "name": "Apple Slices & Peanut Butter",
+  "category": "Snacks",
+  "description": "Fresh apple slices paired with peanut butter for a balanced snack.",
+  "prepTime": "5 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "2 apples",
+    "2 tbsp peanut butter"
+  ],
+  "instructions": [
+    "Wash apples.",
+    "Slice into wedges.",
+    "Serve with peanut butter for dipping."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Naturally Sweet"
+  ],
+  "foxNotes": [
+    "Easy snack for work or travel."
+  ],
+  "tags": [
+    "Apple",
+    "Peanut Butter",
+    "Snack"
+  ],
+  "imagePrompt": "Fresh apple slices served with peanut butter dip, healthy snack photography"
+},
+{
+  "id": "berry-yogurt-bowl",
+  "name": "Berry Yogurt Bowl",
+  "category": "Snacks",
+  "description": "A light snack combining berries with creamy yogurt.",
+  "prepTime": "5 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "1 cup plain yogurt",
+    "1 cup mixed berries",
+    "1 tbsp honey"
+  ],
+  "instructions": [
+    "Add yogurt to bowl.",
+    "Top with berries.",
+    "Drizzle lightly with honey.",
+    "Serve chilled."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Light Snack"
+  ],
+  "foxNotes": [
+    "Feels fancy while taking almost no effort."
+  ],
+  "tags": [
+    "Berries",
+    "Yogurt",
+    "Healthy"
+  ],
+  "imagePrompt": "Berry yogurt bowl with fresh berries and honey, healthy snack photography"
+},
+{
+  "id": "peach-slices-cream",
+  "name": "Peach Slices & Cream",
+  "category": "Snacks",
+  "description": "Fresh peaches served with lightly whipped cream.",
+  "prepTime": "10 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "2 peaches",
+    "125ml cream",
+    "1 tsp honey"
+  ],
+  "instructions": [
+    "Slice peaches.",
+    "Whip cream lightly.",
+    "Add honey.",
+    "Serve peaches with cream."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Light Dessert Style Snack"
+  ],
+  "foxNotes": [
+    "Feels halfway between a snack and dessert."
+  ],
+  "tags": [
+    "Peaches",
+    "Cream",
+    "Snack"
+  ],
+  "imagePrompt": "Fresh peach slices served with whipped cream, elegant snack photography"
+},
+{
+  "id": "fruit-salad-cup",
+  "name": "Fruit Salad Cup",
+  "category": "Snacks",
+  "description": "A colourful fruit cup perfect for warm days.",
+  "prepTime": "10 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "4",
+  "status": "Untested",
+  "ingredients": [
+    "Grapes",
+    "Apples",
+    "Peaches",
+    "Berries",
+    "1 tbsp honey"
+  ],
+  "instructions": [
+    "Wash all fruit.",
+    "Cut into bite-sized pieces.",
+    "Combine in large bowl.",
+    "Drizzle lightly with honey.",
+    "Serve chilled."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Refreshing Summer Snack"
+  ],
+  "foxNotes": [
+    "Very flexible depending on available fruit."
+  ],
+  "tags": [
+    "Fruit",
+    "Healthy",
+    "Summer"
+  ],
+  "imagePrompt": "Colourful fruit salad cup filled with fresh seasonal fruit, bright healthy photography"
+},
+{
+  "id": "frozen-grapes",
+  "name": "Frozen Grapes",
+  "category": "Snacks",
+  "description": "A surprisingly refreshing snack for hot South African afternoons.",
+  "prepTime": "5 min",
+  "cookTime": "Freeze 3 hrs",
+  "difficulty": "Easy",
+  "servings": "4",
+  "status": "Untested",
+  "ingredients": [
+    "2 cups grapes"
+  ],
+  "instructions": [
+    "Wash grapes thoroughly.",
+    "Pat dry.",
+    "Place on tray.",
+    "Freeze until firm.",
+    "Serve directly from freezer."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Summer Friendly",
+    "Naturally Sweet"
+  ],
+  "foxNotes": [
+    "One of the most underrated snacks ever."
+  ],
+  "tags": [
+    "Grapes",
+    "Frozen",
+    "Summer Snack"
+  ],
+  "imagePrompt": "Frozen grapes in chilled serving bowl, refreshing summer snack photography"
+}
+	  ]
+    },
+    {
+      "name": "Movie Night Snacks",
+      "recipes": [
+	  {
+  "id": "gf-popcorn-mix",
+  "name": "GF Popcorn Mix",
+  "category": "Snacks",
+  "description": "A simple movie night popcorn seasoned with butter and a touch of sweetness.",
+  "prepTime": "5 min",
+  "cookTime": "5 min",
+  "difficulty": "Easy",
+  "servings": "4",
+  "status": "Untested",
+  "ingredients": [
+    "6 cups popcorn",
+    "2 tbsp melted butter",
+    "1 tbsp honey",
+    "Pinch of salt"
+  ],
+  "instructions": [
+    "Prepare popcorn.",
+    "Drizzle with melted butter.",
+    "Add honey lightly.",
+    "Sprinkle with salt.",
+    "Toss well and serve."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Movie Night Favourite"
+  ],
+  "foxNotes": [
+    "Always check pre-packaged popcorn flavourings for hidden gluten."
+  ],
+  "tags": [
+    "Popcorn",
+    "Movie Night",
+    "Snack"
+  ],
+  "imagePrompt": "Fresh popcorn in large bowl beside movie setup, cozy movie night photography"
+},
+{
+  "id": "brownie-bites-movie-night",
+  "name": "Brownie Bites",
+  "category": "Snacks",
+  "description": "Small chocolate brownie squares perfect for sharing during a movie.",
+  "prepTime": "5 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "4",
+  "status": "Untested",
+  "ingredients": [
+    "GF Brownie Bites"
+  ],
+  "instructions": [
+    "Prepare brownie bites beforehand.",
+    "Arrange on serving plate.",
+    "Serve with tea, hot chocolate or milk."
+  ],
+  "huntressNotes": [
+    "Gluten Free"
+  ],
+  "foxNotes": [
+    "Links directly to the dessert section."
+  ],
+  "tags": [
+    "Brownies",
+    "Chocolate",
+    "Movie Night"
+  ],
+  "imagePrompt": "Chocolate brownie bites on rustic serving board during movie night, cozy dessert photography"
+},
+{
+  "id": "movie-night-cheese-board",
+  "name": "Movie Night Cheese Board",
+  "category": "Snacks",
+  "description": "A simple cheese board designed for sharing while watching a movie.",
+  "prepTime": "10 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "Cheddar cheese",
+    "Gouda cheese",
+    "Grapes",
+    "GF crackers"
+  ],
+  "instructions": [
+    "Slice cheeses.",
+    "Arrange on serving board.",
+    "Add grapes and crackers.",
+    "Serve immediately."
+  ],
+  "huntressNotes": [
+    "Gluten Free Option Available",
+    "Sharing Snack"
+  ],
+  "foxNotes": [
+    "Feels much fancier than the effort involved."
+  ],
+  "tags": [
+    "Cheese Board",
+    "Movie Night",
+    "Sharing"
+  ],
+  "imagePrompt": "Cheese board with grapes and gluten free crackers beside cozy movie setup"
+},
+{
+  "id": "chocolate-covered-strawberries-snack",
+  "name": "Chocolate Covered Strawberries",
+  "category": "Snacks",
+  "description": "Fresh strawberries dipped in chocolate for a simple movie night treat.",
+  "prepTime": "15 min",
+  "cookTime": "15 min",
+  "difficulty": "Easy",
+  "servings": "4",
+  "status": "Untested",
+  "ingredients": [
+    "250g strawberries",
+    "200g dark chocolate"
+  ],
+  "instructions": [
+    "Wash and dry strawberries.",
+    "Melt chocolate.",
+    "Dip strawberries into chocolate.",
+    "Allow chocolate to set.",
+    "Serve chilled."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Naturally Portion Controlled"
+  ],
+  "foxNotes": [
+    "Movie night and date night approved."
+  ],
+  "tags": [
+    "Chocolate",
+    "Strawberries",
+    "Movie Night"
+  ],
+  "imagePrompt": "Chocolate covered strawberries served beside blankets and movie setup, romantic snack photography"
+},
+{
+  "id": "snack-platter-for-two",
+  "name": "Snack Platter For Two",
+  "category": "Snacks",
+  "description": "A balanced sharing platter built specifically for relaxed evenings together.",
+  "prepTime": "15 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "Droëwors",
+    "Cheese cubes",
+    "Grapes",
+    "GF crackers",
+    "Chocolate squares"
+  ],
+  "instructions": [
+    "Arrange all ingredients on serving board.",
+    "Create separate sections for sweet and savoury items.",
+    "Serve immediately."
+  ],
+  "huntressNotes": [
+    "Gluten Free Options Available",
+    "Sharing Snack"
+  ],
+  "foxNotes": [
+    "Peak Fox & Huntress energy."
+  ],
+  "tags": [
+    "Sharing Board",
+    "Movie Night",
+    "Date Night"
+  ],
+  "imagePrompt": "Rustic snack platter with droewors, cheese, grapes and chocolate for two people"
+},
+{
+  "id": "hot-chocolate-movie-kit",
+  "name": "Hot Chocolate Movie Kit",
+  "category": "Snacks",
+  "description": "Everything needed for a cozy movie night hot chocolate experience.",
+  "prepTime": "5 min",
+  "cookTime": "5 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "500ml milk",
+    "4 tbsp cocoa powder",
+    "2 tbsp sugar",
+    "Dark chocolate shavings"
+  ],
+  "instructions": [
+    "Heat milk gently.",
+    "Add cocoa powder and sugar.",
+    "Whisk until smooth.",
+    "Pour into mugs.",
+    "Top with chocolate shavings.",
+    "Serve warm."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Contains Mild Caffeine"
+  ],
+  "foxNotes": [
+    "Ideal for rainy evenings."
+  ],
+  "tags": [
+    "Hot Chocolate",
+    "Movie Night",
+    "Comfort"
+  ],
+  "imagePrompt": "Two mugs of hot chocolate beside blankets and movie setup, cozy evening photography"
+}
+	  ]
+    },
+    {
+      "name": "Road Trip Snacks",
+      "recipes": [
+	  {
+  "id": "droewors-road-pack",
+  "name": "Droëwors Road Pack",
+  "category": "Snacks",
+  "description": "A classic South African road trip snack that's easy to carry and packed with protein.",
+  "prepTime": "2 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "100g droëwors"
+  ],
+  "instructions": [
+    "Portion droëwors into snack containers or bags.",
+    "Pack for travel.",
+    "Enjoy during the journey."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Travel Friendly",
+    "High Protein"
+  ],
+  "foxNotes": [
+    "A South African road trip essential."
+  ],
+  "tags": [
+    "Droëwors",
+    "Road Trip",
+    "Protein"
+  ],
+  "imagePrompt": "Droewors packed in travel snack container beside road trip gear, South African travel photography"
+},
+{
+  "id": "biltong-nuts-mix",
+  "name": "Biltong & Nuts Mix",
+  "category": "Snacks",
+  "description": "A protein-rich trail mix featuring biltong and mixed nuts.",
+  "prepTime": "5 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "4",
+  "status": "Untested",
+  "ingredients": [
+    "100g biltong",
+    "100g mixed nuts"
+  ],
+  "instructions": [
+    "Slice biltong into bite-sized pieces.",
+    "Mix with nuts.",
+    "Divide into travel containers.",
+    "Pack for the road."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "High Protein",
+    "Travel Friendly"
+  ],
+  "foxNotes": [
+    "Great for long drives and hiking trips."
+  ],
+  "tags": [
+    "Biltong",
+    "Nuts",
+    "Road Trip"
+  ],
+  "imagePrompt": "Biltong and mixed nuts trail mix in travel container, outdoor adventure snack photography"
+},
+{
+  "id": "travel-boiled-eggs",
+  "name": "Travel Boiled Eggs",
+  "category": "Snacks",
+  "description": "Simple boiled eggs packed for a filling road trip snack.",
+  "prepTime": "5 min",
+  "cookTime": "10 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "4 eggs",
+    "Salt",
+    "Black pepper"
+  ],
+  "instructions": [
+    "Boil eggs to desired firmness.",
+    "Allow to cool.",
+    "Peel or leave shells on.",
+    "Pack into container.",
+    "Season when ready to eat."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "High Protein"
+  ],
+  "foxNotes": [
+    "Very filling and surprisingly convenient."
+  ],
+  "tags": [
+    "Eggs",
+    "Protein",
+    "Travel"
+  ],
+  "imagePrompt": "Boiled eggs packed in travel container for road trip snack, healthy travel food photography"
+},
+{
+  "id": "cheese-cubes-travel-pack",
+  "name": "Cheese Cubes Travel Pack",
+  "category": "Snacks",
+  "description": "A simple cooler-box snack featuring cubed cheese.",
+  "prepTime": "5 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "150g cheddar cheese"
+  ],
+  "instructions": [
+    "Cut cheese into cubes.",
+    "Store in airtight container.",
+    "Keep chilled until needed."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Travel Friendly"
+  ],
+  "foxNotes": [
+    "Pairs well with grapes."
+  ],
+  "tags": [
+    "Cheese",
+    "Road Trip",
+    "Snack"
+  ],
+  "imagePrompt": "Cheese cubes packed in cooler box container, road trip snack photography"
+},
+{
+  "id": "grapes-road-cup",
+  "name": "Grapes Road Cup",
+  "category": "Snacks",
+  "description": "Fresh grapes portioned into convenient travel containers.",
+  "prepTime": "5 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "2 cups grapes"
+  ],
+  "instructions": [
+    "Wash grapes thoroughly.",
+    "Allow to dry.",
+    "Divide into travel containers.",
+    "Keep cool until serving."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Known Safe Food",
+    "Refreshing Snack"
+  ],
+  "foxNotes": [
+    "One of the safest road trip foods for the Huntress."
+  ],
+  "tags": [
+    "Grapes",
+    "Fruit",
+    "Travel"
+  ],
+  "imagePrompt": "Fresh grapes in travel snack cup beside scenic road trip setting"
+},
+{
+  "id": "chicken-snack-box",
+  "name": "Chicken Snack Box",
+  "category": "Snacks",
+  "description": "A balanced road trip snack box with chicken and fresh vegetables.",
+  "prepTime": "10 min",
+  "cookTime": "15 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "250g cooked chicken",
+    "Cucumber slices",
+    "Cheese cubes",
+    "Salt",
+    "Pepper"
+  ],
+  "instructions": [
+    "Cook and cool chicken.",
+    "Slice into bite-sized pieces.",
+    "Arrange in lunch container.",
+    "Add cucumber and cheese.",
+    "Keep chilled until serving."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "High Protein",
+    "Travel Friendly"
+  ],
+  "foxNotes": [
+    "Excellent for long drives to Underberg or the Drakensberg."
+  ],
+  "tags": [
+    "Chicken",
+    "Protein",
+    "Road Trip"
+  ],
+  "imagePrompt": "Chicken snack box with cucumber and cheese packed for outdoor adventure"
+},
+{
+  "id": "fruit-travel-container",
+  "name": "Fruit Travel Container",
+  "category": "Snacks",
+  "description": "A colourful mix of Huntress-friendly fruits prepared for travel.",
+  "prepTime": "10 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "Grapes",
+    "Apple slices",
+    "Peach slices",
+    "Berries"
+  ],
+  "instructions": [
+    "Wash and prepare fruit.",
+    "Slice larger fruit.",
+    "Place into travel container.",
+    "Keep chilled."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Refreshing",
+    "Travel Friendly"
+  ],
+  "foxNotes": [
+    "Great alternative to petrol station snacks."
+  ],
+  "tags": [
+    "Fruit",
+    "Road Trip",
+    "Healthy"
+  ],
+  "imagePrompt": "Colourful fruit container packed for scenic road trip adventure photography"
+}
+	  ]
+    },
+    {
+      "name": "Fox & Huntress Snack Boards",
+      "recipes": [
+		{
+  "id": "fox-huntress-snack-board",
+  "name": "The Fox & Huntress Snack Board",
+  "category": "Snacks",
+  "description": "The signature snack board of the cookbook featuring Huntress-safe favourites.",
+  "prepTime": "15 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "Droëwors",
+    "Cheddar cheese cubes",
+    "Grapes",
+    "Apple slices",
+    "GF crackers",
+    "Dark chocolate squares"
+  ],
+  "instructions": [
+    "Arrange ingredients on a serving board.",
+    "Separate sweet and savoury items.",
+    "Add grapes and apple slices around the board.",
+    "Serve immediately."
+  ],
+  "huntressNotes": [
+    "Gluten Free Options Available",
+    "Built Around Known Safe Foods"
+  ],
+  "foxNotes": [
+    "The flagship snack board of the cookbook."
+  ],
+  "tags": [
+    "Snack Board",
+    "Sharing",
+    "Fox & Huntress"
+  ],
+  "imagePrompt": "Rustic snack board with droewors, cheese, grapes and chocolate arranged for two people"
+},
+{
+  "id": "mountain-hike-snack-board",
+  "name": "Mountain Hike Snack Board",
+  "category": "Snacks",
+  "description": "A high-energy snack board designed for hiking adventures and scenic breaks.",
+  "prepTime": "10 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "Biltong",
+    "Mixed nuts",
+    "Grapes",
+    "Apple slices",
+    "Cheese cubes"
+  ],
+  "instructions": [
+    "Prepare ingredients.",
+    "Arrange on portable serving board or container.",
+    "Pack for the hike.",
+    "Enjoy at a scenic viewpoint."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "High Protein",
+    "Adventure Friendly"
+  ],
+  "foxNotes": [
+    "Perfect for Drakensberg viewpoints."
+  ],
+  "tags": [
+    "Hiking",
+    "Adventure",
+    "Snack Board"
+  ],
+  "imagePrompt": "Portable snack board with biltong, cheese and fruit overlooking mountain scenery"
+},
+{
+  "id": "movie-night-snack-board",
+  "name": "Movie Night Snack Board",
+  "category": "Snacks",
+  "description": "A cozy snack board built specifically for evenings on the couch.",
+  "prepTime": "15 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "Chocolate covered strawberries",
+    "GF popcorn",
+    "Cheese cubes",
+    "Dark chocolate",
+    "GF crackers"
+  ],
+  "instructions": [
+    "Prepare all ingredients.",
+    "Arrange neatly on serving board.",
+    "Serve with hot chocolate or tea."
+  ],
+  "huntressNotes": [
+    "Gluten Free Options Available",
+    "Sharing Snack"
+  ],
+  "foxNotes": [
+    "Movie night solved."
+  ],
+  "tags": [
+    "Movie Night",
+    "Sharing",
+    "Snack Board"
+  ],
+  "imagePrompt": "Cozy movie night snack board with popcorn, strawberries and chocolate beside blankets"
+},
+{
+  "id": "road-trip-snack-box",
+  "name": "Road Trip Snack Box",
+  "category": "Snacks",
+  "description": "A complete snack box designed for long drives and weekend adventures.",
+  "prepTime": "15 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "Droëwors",
+    "Cheese cubes",
+    "Grapes",
+    "Apple slices",
+    "Boiled eggs",
+    "Mixed nuts"
+  ],
+  "instructions": [
+    "Prepare all ingredients.",
+    "Pack into compartment containers.",
+    "Keep chilled where necessary.",
+    "Enjoy throughout the journey."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Travel Friendly",
+    "Built Around Safe Foods"
+  ],
+  "foxNotes": [
+    "Ideal for Underberg, Drakensberg and reserve trips."
+  ],
+  "tags": [
+    "Road Trip",
+    "Travel",
+    "Snack Box"
+  ],
+  "imagePrompt": "Travel snack box filled with droewors, fruit, cheese and eggs beside scenic road trip view"
+}
+	  ]
+    },
+    {
+      "name": "Future Snack Projects",
+      "recipes": [
+	  {
+  "id": "gf-cheese-crackers",
+  "name": "GF Cheese Crackers",
+  "category": "Snacks",
+  "description": "Homemade gluten-free cheese crackers for snack boards and lunchboxes.",
+  "prepTime": "TBD",
+  "cookTime": "TBD",
+  "difficulty": "TBD",
+  "servings": "TBD",
+  "status": "Researching",
+  "ingredients": [],
+  "instructions": [
+    "Research gluten-free flour options.",
+    "Develop cracker texture.",
+    "Test baking times.",
+    "Finalize recipe."
+  ],
+  "huntressNotes": [
+    "Potential Lunchbox Snack",
+    "Recipe Under Development"
+  ],
+  "foxNotes": [
+    "Would pair perfectly with cheese boards."
+  ],
+  "tags": [
+    "Crackers",
+    "Research Project",
+    "Gluten Free"
+  ],
+  "imagePrompt": "Homemade gluten free cheese crackers on wooden serving board, artisan snack photography"
+},
+{
+  "id": "gf-trail-mix-clusters",
+  "name": "GF Trail Mix Clusters",
+  "category": "Snacks",
+  "description": "Crunchy clusters made from nuts, seeds and honey.",
+  "prepTime": "TBD",
+  "cookTime": "TBD",
+  "difficulty": "TBD",
+  "servings": "TBD",
+  "status": "Researching",
+  "ingredients": [],
+  "instructions": [
+    "Research ingredient combinations.",
+    "Test binding agents.",
+    "Develop texture.",
+    "Finalize recipe."
+  ],
+  "huntressNotes": [
+    "Adventure Snack",
+    "Recipe Under Development"
+  ],
+  "foxNotes": [
+    "Could become a hiking staple."
+  ],
+  "tags": [
+    "Trail Mix",
+    "Research Project",
+    "Adventure Snack"
+  ],
+  "imagePrompt": "Homemade trail mix clusters with nuts and seeds, outdoor adventure snack photography"
+},
+{
+  "id": "homemade-biltong",
+  "name": "Homemade Biltong",
+  "category": "Snacks",
+  "description": "A future project to create homemade South African biltong.",
+  "prepTime": "TBD",
+  "cookTime": "Several Days",
+  "difficulty": "Hard",
+  "servings": "TBD",
+  "status": "Researching",
+  "ingredients": [],
+  "instructions": [
+    "Research curing methods.",
+    "Develop spice blend.",
+    "Test drying times.",
+    "Finalize process."
+  ],
+  "huntressNotes": [
+    "Verify Seasonings Are Gluten Free"
+  ],
+  "foxNotes": [
+    "A rite of passage for any South African cookbook."
+  ],
+  "tags": [
+    "Biltong",
+    "South African",
+    "Research Project"
+  ],
+  "imagePrompt": "Traditional homemade South African biltong hanging to dry, rustic food photography"
+},
+{
+  "id": "homemade-droewors",
+  "name": "Homemade Droëwors",
+  "category": "Snacks",
+  "description": "A future project focused on making traditional droëwors at home.",
+  "prepTime": "TBD",
+  "cookTime": "Several Days",
+  "difficulty": "Hard",
+  "servings": "TBD",
+  "status": "Researching",
+  "ingredients": [],
+  "instructions": [
+    "Research droëwors recipes.",
+    "Develop seasoning blend.",
+    "Test drying conditions.",
+    "Finalize process."
+  ],
+  "huntressNotes": [
+    "Verify Ingredients Are Gluten Free"
+  ],
+  "foxNotes": [
+    "The Huntress deserves premium droëwors."
+  ],
+  "tags": [
+    "Droëwors",
+    "South African",
+    "Research Project"
+  ],
+  "imagePrompt": "Traditional homemade droewors hanging in drying cabinet, South African food photography"
+},
+{
+  "id": "gf-seed-crackers",
+  "name": "GF Seed Crackers",
+  "category": "Snacks",
+  "description": "Crunchy gluten-free crackers made from seeds and simple ingredients.",
+  "prepTime": "TBD",
+  "cookTime": "TBD",
+  "difficulty": "TBD",
+  "servings": "TBD",
+  "status": "Researching",
+  "ingredients": [],
+  "instructions": [
+    "Research seed combinations.",
+    "Develop cracker structure.",
+    "Test baking process.",
+    "Finalize recipe."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Recipe Under Development"
+  ],
+  "foxNotes": [
+    "Would work well on snack boards."
+  ],
+  "tags": [
+    "Seed Crackers",
+    "Research Project",
+    "Gluten Free"
+  ],
+  "imagePrompt": "Homemade gluten free seed crackers served on artisan board, healthy snack photography"
+},
+{
+  "id": "huntress-emergency-snack-box",
+  "name": "The Huntress Emergency Snack Box",
+  "category": "Snacks",
+  "description": "A collection of safe foods designed for long days, road trips, stressful periods or unexpected hunger.",
+  "prepTime": "10 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "1",
+  "status": "Living Document",
+  "ingredients": [
+    "Droëwors",
+    "Biltong",
+    "Grapes",
+    "Cheese cubes",
+    "Plain yogurt",
+    "GF crackers",
+    "Honey sachets"
+  ],
+  "instructions": [
+    "Pack safe foods into a travel container.",
+    "Replace items as needed.",
+    "Keep chilled items cool.",
+    "Use whenever needed."
+  ],
+  "huntressNotes": [
+    "Built Around Known Safe Foods",
+    "Stress Friendly",
+    "Travel Friendly"
+  ],
+  "foxNotes": [
+    "Possibly the most important snack entry in the entire cookbook."
+  ],
+  "tags": [
+    "Emergency Food",
+    "Travel",
+    "Safe Foods"
+  ],
+  "imagePrompt": "Organized emergency snack box filled with gluten free snacks, travel food photography"
+}
+	  ]
+    }
+  ]
+}

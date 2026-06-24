@@ -1,0 +1,71 @@
+{
+  "category": "Future Recipes",
+  "description": "Recipes and meals to research, develop or test in future versions of the cookbook.",
+  "groups": [
+    {
+      "name": "High Priority",
+      "recipes": [
+        {
+          "name": "Gluten-Free Lasagne",
+          "status": "Researching",
+          "priority": "High"
+        },
+        {
+          "name": "Gluten-Free Pizza",
+          "status": "Researching",
+          "priority": "High"
+        },
+        {
+          "name": "Gluten-Free Chicken Pie",
+          "status": "Researching",
+          "priority": "High"
+        },
+        {
+          "name": "Gluten-Free Brownies",
+          "status": "Researching",
+          "priority": "High"
+        },
+        {
+          "name": "Gluten-Free Cheesecake",
+          "status": "Researching",
+          "priority": "High"
+        },
+        {
+          "name": "Gluten-Free Lemon Meringue",
+          "status": "Researching",
+          "priority": "High"
+        },
+        {
+          "name": "Gluten-Free Chocolate Cake",
+          "status": "Researching",
+          "priority": "High"
+        }
+      ]
+    },
+    {
+      "name": "Medium Priority",
+      "recipes": [
+        {
+          "name": "Gluten-Free Vetkoek",
+          "status": "Researching",
+          "priority": "Medium"
+        },
+        {
+          "name": "Gluten-Free Doughnuts",
+          "status": "Researching",
+          "priority": "Medium"
+        },
+        {
+          "name": "Gluten-Free Wraps",
+          "status": "Researching",
+          "priority": "Medium"
+        },
+        {
+          "name": "Gluten-Free Burger Buns",
+          "status": "Researching",
+          "priority": "Medium"
+        }
+      ]
+    }
+  ]
+}

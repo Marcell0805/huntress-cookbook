@@ -1,0 +1,1000 @@
+{
+  "category": "Breakfast",
+  "description": "Start the day with meals that are nourishing, gentle on the body, and designed to be gluten-friendly, onion-free, and IBS-conscious.",
+  "groups": [
+    {
+  "group": "Egg Based Breakfasts",
+  "description": "Protein-rich breakfasts that are naturally gluten-free, onion-free and ideal for starting the day with sustained energy.",
+  "recipes": [
+    {
+      "id": "breakfast-cheese-herb-omelette",
+      "name": "Cheese & Herb Omelette",
+      "category": "Breakfast",
+      "subcategory": "Egg Based Breakfasts",
+      "description": "A simple high-protein breakfast that is quick to prepare and gentle on digestion.",
+      "prepTime": "5 min",
+      "cookTime": "10 min",
+      "difficulty": "Easy",
+      "servings": "1",
+      "status": "Untested",
+      "ingredients": [
+        "3 eggs",
+        "30g cheddar cheese",
+        "1 tsp parsley",
+        "1 tsp butter",
+        "Salt",
+        "Black pepper"
+      ],
+      "instructions": [
+        "Crack eggs into a bowl.",
+        "Add salt and pepper.",
+        "Whisk until fully combined.",
+        "Heat butter in a non-stick pan.",
+        "Pour egg mixture into the pan.",
+        "Cook until almost set.",
+        "Add cheese and parsley.",
+        "Fold the omelette in half.",
+        "Serve immediately."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Onion Free",
+        "IBS Friendly",
+        "High Protein"
+      ],
+      "foxNotes": [
+        "Great beginner recipe.",
+        "Easy to customise with safe ingredients."
+      ],
+      "tags": [
+        "Gluten Free",
+        "Onion Free",
+        "Breakfast",
+        "High Protein"
+      ],
+      "image": "images/breakfast/cheese-herb-omelette.jpg",
+      "imagePrompt": "Golden cheese omelette with fresh herbs on rustic plate, morning sunlight, premium cookbook photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    },
+    {
+      "id": "breakfast-mushroom-spinach-omelette",
+      "name": "Mushroom & Spinach Omelette",
+      "category": "Breakfast",
+      "subcategory": "Egg Based Breakfasts",
+      "description": "A nutritious omelette packed with vegetables and protein.",
+      "prepTime": "10 min",
+      "cookTime": "10 min",
+      "difficulty": "Easy",
+      "servings": "1",
+      "status": "Untested",
+      "ingredients": [
+        "3 eggs",
+        "50g mushrooms",
+        "Handful spinach",
+        "30g cheddar cheese",
+        "1 tsp butter",
+        "Salt",
+        "Black pepper"
+      ],
+      "instructions": [
+        "Slice mushrooms.",
+        "Heat butter in a pan.",
+        "Cook mushrooms until softened.",
+        "Add spinach and cook until wilted.",
+        "Remove vegetables from pan.",
+        "Whisk eggs with seasoning.",
+        "Cook eggs in pan.",
+        "Add mushroom mixture and cheese.",
+        "Fold and serve."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Onion Free"
+      ],
+      "foxNotes": [
+        "A good way to add vegetables without upsetting digestion."
+      ],
+      "tags": [
+        "Gluten Free",
+        "Vegetarian",
+        "High Protein"
+      ],
+      "image": "images/breakfast/mushroom-spinach-omelette.jpg",
+      "imagePrompt": "Spinach and mushroom omelette with melted cheese, rustic breakfast setting, cookbook photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    },
+    {
+      "id": "breakfast-bacon-avocado-eggs",
+      "name": "Bacon & Avocado Eggs",
+      "category": "Breakfast",
+      "subcategory": "Egg Based Breakfasts",
+      "description": "Simple protein-rich breakfast with healthy fats that keeps you full for hours.",
+      "prepTime": "5 min",
+      "cookTime": "10 min",
+      "difficulty": "Easy",
+      "servings": "1",
+      "status": "Untested",
+      "ingredients": [
+        "2 eggs",
+        "2 bacon rashers",
+        "Half avocado",
+        "Salt",
+        "Black pepper"
+      ],
+      "instructions": [
+        "Cook bacon until crispy.",
+        "Prepare eggs to preference.",
+        "Slice avocado.",
+        "Plate ingredients.",
+        "Season and serve."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Very Filling",
+        "High Protein"
+      ],
+      "foxNotes": [
+        "Perfect quick breakfast before a busy day."
+      ],
+      "tags": [
+        "Gluten Free",
+        "Protein Rich",
+        "Healthy Fats"
+      ],
+      "image": "images/breakfast/bacon-avocado-eggs.jpg",
+      "imagePrompt": "Crispy bacon, eggs and avocado breakfast plate, rustic wooden table, natural morning lighting",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    },
+    {
+      "id": "breakfast-soft-scrambled-eggs",
+      "name": "Soft Scrambled Eggs with Chives",
+      "category": "Breakfast",
+      "subcategory": "Egg Based Breakfasts",
+      "description": "Creamy scrambled eggs cooked slowly for maximum softness.",
+      "prepTime": "5 min",
+      "cookTime": "8 min",
+      "difficulty": "Easy",
+      "servings": "1",
+      "status": "Untested",
+      "ingredients": [
+        "3 eggs",
+        "1 tbsp butter",
+        "Chives",
+        "Salt"
+      ],
+      "instructions": [
+        "Whisk eggs thoroughly.",
+        "Melt butter over low heat.",
+        "Add eggs.",
+        "Stir continuously.",
+        "Cook slowly until creamy.",
+        "Add chives.",
+        "Serve immediately."
+      ],
+      "huntressNotes": [
+        "Easy Digestion",
+        "Recovery Friendly",
+        "Gluten Free"
+      ],
+      "foxNotes": [
+        "Great option when digestion is sensitive."
+      ],
+      "tags": [
+        "Gluten Free",
+        "Recovery Meal",
+        "High Protein"
+      ],
+      "image": "images/breakfast/soft-scrambled-eggs.jpg",
+      "imagePrompt": "Creamy soft scrambled eggs with fresh chives, elegant breakfast photography, warm tones",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    },
+    {
+      "id": "breakfast-shakshuka",
+      "name": "Shakshuka (Onion-Free)",
+      "category": "Breakfast",
+      "subcategory": "Egg Based Breakfasts",
+      "description": "Eggs poached in a rich tomato and pepper sauce adapted to be onion-free.",
+      "prepTime": "10 min",
+      "cookTime": "20 min",
+      "difficulty": "Medium",
+      "servings": "2",
+      "status": "Untested",
+      "ingredients": [
+        "1 tin chopped tomatoes",
+        "1 red pepper",
+        "2 garlic cloves",
+        "1 tsp paprika",
+        "3 eggs",
+        "1 tbsp olive oil"
+      ],
+      "instructions": [
+        "Heat olive oil.",
+        "Cook peppers until softened.",
+        "Add garlic.",
+        "Add tomatoes and paprika.",
+        "Simmer for 15 minutes.",
+        "Create wells in sauce.",
+        "Crack eggs into wells.",
+        "Cover and cook until eggs are set."
+      ],
+      "huntressNotes": [
+        "Onion Free",
+        "Weekend Breakfast",
+        "Gluten Free"
+      ],
+      "foxNotes": [
+        "Looks impressive for very little effort."
+      ],
+      "tags": [
+        "Gluten Free",
+        "Weekend Breakfast",
+        "Egg Based"
+      ],
+      "image": "images/breakfast/shakshuka.jpg",
+      "imagePrompt": "Onion-free shakshuka in cast iron pan with eggs and tomato sauce, rustic breakfast photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    },
+    {
+      "id": "breakfast-feta-spinach-frittata",
+      "name": "Feta & Spinach Frittata",
+      "category": "Breakfast",
+      "subcategory": "Egg Based Breakfasts",
+      "description": "A baked egg dish that works well for meal prep and brunches.",
+      "prepTime": "10 min",
+      "cookTime": "25 min",
+      "difficulty": "Medium",
+      "servings": "4",
+      "status": "Untested",
+      "ingredients": [
+        "6 eggs",
+        "100g feta",
+        "1 cup spinach",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Preheat oven to 180°C.",
+        "Whisk eggs and seasoning.",
+        "Add spinach and feta.",
+        "Pour into baking dish.",
+        "Bake for 20-25 minutes.",
+        "Allow to cool slightly before serving."
+      ],
+      "huntressNotes": [
+        "Meal Prep Friendly",
+        "Gluten Free",
+        "Onion Free"
+      ],
+      "foxNotes": [
+        "Excellent for making ahead of time."
+      ],
+      "tags": [
+        "Gluten Free",
+        "Meal Prep",
+        "Brunch"
+      ],
+      "image": "images/breakfast/feta-spinach-frittata.jpg",
+      "imagePrompt": "Golden baked feta and spinach frittata, sliced and served on wooden board, cookbook photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    }
+  ]
+},
+    {
+  "group": "Smoothies & Bowls",
+  "description": "Light, refreshing breakfasts that are easy to prepare and gentle on digestion.",
+  "recipes": [
+    {
+      "id": "breakfast-berry-smoothie-bowl",
+      "name": "Berry Smoothie Bowl",
+      "category": "Breakfast",
+      "subcategory": "Smoothies & Bowls",
+      "description": "A refreshing berry breakfast bowl packed with antioxidants and protein.",
+      "prepTime": "10 min",
+      "cookTime": "0 min",
+      "difficulty": "Easy",
+      "servings": "1",
+      "status": "Untested",
+      "ingredients": [
+        "1 cup frozen mixed berries",
+        "150g Greek yogurt",
+        "1 tsp honey",
+        "2 tbsp GF granola",
+        "Fresh strawberries"
+      ],
+      "instructions": [
+        "Blend berries and yogurt until smooth.",
+        "Pour into a bowl.",
+        "Top with granola.",
+        "Add fresh strawberries.",
+        "Drizzle honey over the top."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Refreshing Summer Breakfast",
+        "Naturally Sweet"
+      ],
+      "foxNotes": [
+        "Looks beautiful when topped with fresh fruit."
+      ],
+      "tags": [
+        "Gluten Free",
+        "Breakfast Bowl",
+        "Summer"
+      ],
+      "image": "images/breakfast/berry-smoothie-bowl.jpg",
+      "imagePrompt": "Berry smoothie bowl topped with strawberries and granola, elegant breakfast photography, natural morning lighting",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    },
+    {
+      "id": "breakfast-chia-pudding",
+      "name": "Chia Pudding",
+      "category": "Breakfast",
+      "subcategory": "Smoothies & Bowls",
+      "description": "A simple overnight breakfast that requires almost no morning preparation.",
+      "prepTime": "5 min",
+      "cookTime": "Overnight",
+      "difficulty": "Easy",
+      "servings": "1",
+      "status": "Untested",
+      "ingredients": [
+        "3 tbsp chia seeds",
+        "250ml milk",
+        "1 tsp honey",
+        "Mixed berries"
+      ],
+      "instructions": [
+        "Combine chia seeds and milk.",
+        "Add honey.",
+        "Mix thoroughly.",
+        "Refrigerate overnight.",
+        "Top with berries before serving."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Meal Prep Friendly",
+        "Easy Morning Option"
+      ],
+      "foxNotes": [
+        "Prepare multiple jars at once for the week."
+      ],
+      "tags": [
+        "Gluten Free",
+        "Meal Prep",
+        "Healthy"
+      ],
+      "image": "images/breakfast/chia-pudding.jpg",
+      "imagePrompt": "Glass jar of chia pudding topped with berries, rustic breakfast styling, cookbook photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    },
+    {
+      "id": "breakfast-yogurt-honey-bowl",
+      "name": "Yogurt & Honey Breakfast Bowl",
+      "category": "Breakfast",
+      "subcategory": "Smoothies & Bowls",
+      "description": "A quick and simple breakfast using ingredients that are easy to keep on hand.",
+      "prepTime": "5 min",
+      "cookTime": "0 min",
+      "difficulty": "Easy",
+      "servings": "1",
+      "status": "Untested",
+      "ingredients": [
+        "200g Greek yogurt",
+        "1 tbsp honey",
+        "Strawberries",
+        "Blueberries"
+      ],
+      "instructions": [
+        "Add yogurt to a bowl.",
+        "Arrange berries on top.",
+        "Drizzle honey over everything.",
+        "Serve immediately."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Quick Breakfast",
+        "Naturally Sweetened"
+      ],
+      "foxNotes": [
+        "Perfect backup breakfast when time is limited."
+      ],
+      "tags": [
+        "Gluten Free",
+        "Quick Breakfast",
+        "High Protein"
+      ],
+      "image": "images/breakfast/yogurt-honey-bowl.jpg",
+      "imagePrompt": "Greek yogurt bowl with berries and honey drizzle, fresh breakfast photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    },
+    {
+      "id": "breakfast-berry-banana-smoothie",
+      "name": "Berry & Banana Smoothie",
+      "category": "Breakfast",
+      "subcategory": "Smoothies & Bowls",
+      "description": "A creamy smoothie that combines fruit and dairy into a filling breakfast.",
+      "prepTime": "5 min",
+      "cookTime": "0 min",
+      "difficulty": "Easy",
+      "servings": "1",
+      "status": "Untested",
+      "ingredients": [
+        "1 handful berries",
+        "1 banana (not overripe)",
+        "250ml milk",
+        "100g Greek yogurt"
+      ],
+      "instructions": [
+        "Add all ingredients to blender.",
+        "Blend until smooth.",
+        "Serve immediately."
+      ],
+      "huntressNotes": [
+        "Avoid Overripe Bananas",
+        "Gluten Free"
+      ],
+      "foxNotes": [
+        "Easy breakfast before road trips."
+      ],
+      "tags": [
+        "Smoothie",
+        "Gluten Free",
+        "Quick"
+      ],
+      "image": "images/breakfast/berry-banana-smoothie.jpg",
+      "imagePrompt": "Berry banana smoothie in glass jar with fresh fruit beside it, cookbook photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    },
+    {
+      "id": "breakfast-tropical-smoothie-bowl",
+      "name": "Tropical Smoothie Bowl",
+      "category": "Breakfast",
+      "subcategory": "Smoothies & Bowls",
+      "description": "A bright tropical breakfast bowl packed with fruit flavours.",
+      "prepTime": "10 min",
+      "cookTime": "0 min",
+      "difficulty": "Easy",
+      "servings": "1",
+      "status": "Untested",
+      "ingredients": [
+        "1 cup mango",
+        "1/2 cup pineapple",
+        "150g Greek yogurt",
+        "1 tsp honey"
+      ],
+      "instructions": [
+        "Blend fruit and yogurt.",
+        "Pour into bowl.",
+        "Top with fruit pieces.",
+        "Drizzle honey."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Summer Favourite"
+      ],
+      "foxNotes": [
+        "Feels like a holiday breakfast."
+      ],
+      "tags": [
+        "Tropical",
+        "Gluten Free",
+        "Breakfast Bowl"
+      ],
+      "image": "images/breakfast/tropical-smoothie-bowl.jpg",
+      "imagePrompt": "Tropical smoothie bowl with mango and pineapple, bright colourful breakfast photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    },
+    {
+      "id": "breakfast-peanut-butter-berry-bowl",
+      "name": "Peanut Butter & Berry Bowl",
+      "category": "Breakfast",
+      "subcategory": "Smoothies & Bowls",
+      "description": "A filling breakfast bowl with added protein and healthy fats.",
+      "prepTime": "10 min",
+      "cookTime": "0 min",
+      "difficulty": "Easy",
+      "servings": "1",
+      "status": "Untested",
+      "ingredients": [
+        "200g Greek yogurt",
+        "1 tbsp peanut butter",
+        "Mixed berries",
+        "1 tsp honey"
+      ],
+      "instructions": [
+        "Add yogurt to bowl.",
+        "Mix through peanut butter.",
+        "Top with berries.",
+        "Drizzle honey and serve."
+      ],
+      "huntressNotes": [
+        "Very Filling",
+        "Gluten Free"
+      ],
+      "foxNotes": [
+        "Great option after gym sessions."
+      ],
+      "tags": [
+        "Protein Rich",
+        "Gluten Free",
+        "Breakfast Bowl"
+      ],
+      "image": "images/breakfast/peanut-butter-berry-bowl.jpg",
+      "imagePrompt": "Greek yogurt bowl with peanut butter swirl and berries, rustic breakfast cookbook photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    }
+  ]
+},
+    {
+  "group": "Warm & Comforting",
+  "description": "Cozy breakfasts perfect for colder mornings, slow weekends, and comfort-food cravings without compromising the Huntress' dietary needs.",
+  "recipes": [
+    {
+      "id": "breakfast-creamy-cinnamon-oats",
+      "name": "Creamy Cinnamon Oats",
+      "category": "Breakfast",
+      "subcategory": "Warm & Comforting",
+      "description": "A warm bowl of creamy oats lightly sweetened with honey and cinnamon.",
+      "prepTime": "5 min",
+      "cookTime": "10 min",
+      "difficulty": "Easy",
+      "servings": "1",
+      "status": "Untested",
+      "ingredients": [
+        "1/2 cup GF oats",
+        "250ml milk",
+        "1 tsp honey",
+        "1 tsp cinnamon"
+      ],
+      "instructions": [
+        "Add oats and milk to a saucepan.",
+        "Cook over medium heat while stirring.",
+        "Add cinnamon.",
+        "Cook until thick and creamy.",
+        "Drizzle honey over the top.",
+        "Serve warm."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Winter Favourite",
+        "Gentle on Digestion"
+      ],
+      "foxNotes": [
+        "Simple comfort food that feels like a warm hug."
+      ],
+      "tags": [
+        "Gluten Free",
+        "Comfort Food",
+        "Winter"
+      ],
+      "image": "images/breakfast/creamy-cinnamon-oats.jpg",
+      "imagePrompt": "Creamy cinnamon oats in ceramic bowl with honey drizzle, warm morning light, cozy cookbook photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    },
+    {
+      "id": "breakfast-sweet-potato-hash",
+      "name": "Sweet Potato Breakfast Hash",
+      "category": "Breakfast",
+      "subcategory": "Warm & Comforting",
+      "description": "A hearty breakfast combining roasted sweet potato, bacon, and eggs.",
+      "prepTime": "10 min",
+      "cookTime": "25 min",
+      "difficulty": "Easy",
+      "servings": "2",
+      "status": "Untested",
+      "ingredients": [
+        "2 sweet potatoes",
+        "4 bacon rashers",
+        "2 eggs",
+        "1 tsp paprika",
+        "Olive oil",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Cube sweet potatoes.",
+        "Season with paprika, salt and pepper.",
+        "Roast until golden.",
+        "Cook bacon until crispy.",
+        "Prepare eggs to preference.",
+        "Combine and serve."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "High Protein",
+        "Very Filling"
+      ],
+      "foxNotes": [
+        "Excellent breakfast before hiking or road trips."
+      ],
+      "tags": [
+        "Gluten Free",
+        "Protein Rich",
+        "Weekend Breakfast"
+      ],
+      "image": "images/breakfast/sweet-potato-hash.jpg",
+      "imagePrompt": "Sweet potato breakfast hash with bacon and eggs in cast iron skillet, rustic breakfast photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    },
+    {
+      "id": "breakfast-gf-pancakes",
+      "name": "Gluten-Free Pancakes",
+      "category": "Breakfast",
+      "subcategory": "Warm & Comforting",
+      "description": "Soft fluffy pancakes made using gluten-free flour for a special weekend breakfast.",
+      "prepTime": "10 min",
+      "cookTime": "15 min",
+      "difficulty": "Easy",
+      "servings": "2",
+      "status": "Untested",
+      "ingredients": [
+        "1 cup GF flour",
+        "1 egg",
+        "250ml milk",
+        "1 tsp baking powder",
+        "1 tbsp sugar",
+        "Butter"
+      ],
+      "instructions": [
+        "Mix dry ingredients.",
+        "Add egg and milk.",
+        "Whisk until smooth.",
+        "Heat a non-stick pan.",
+        "Cook pancakes until golden on both sides.",
+        "Serve with honey and berries."
+      ],
+      "huntressNotes": [
+        "Weekend Treat",
+        "Gluten Free"
+      ],
+      "foxNotes": [
+        "One of the recipes most likely to earn bonus points."
+      ],
+      "tags": [
+        "Gluten Free",
+        "Weekend Breakfast",
+        "Comfort Food"
+      ],
+      "image": "images/breakfast/gf-pancakes.jpg",
+      "imagePrompt": "Stack of gluten free pancakes with berries and honey, premium breakfast cookbook photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    },
+    {
+      "id": "breakfast-apple-cinnamon-oats",
+      "name": "Apple & Cinnamon Oats",
+      "category": "Breakfast",
+      "subcategory": "Warm & Comforting",
+      "description": "A comforting oat breakfast featuring soft apples and warming cinnamon.",
+      "prepTime": "5 min",
+      "cookTime": "10 min",
+      "difficulty": "Easy",
+      "servings": "1",
+      "status": "Untested",
+      "ingredients": [
+        "1/2 cup GF oats",
+        "250ml milk",
+        "1 apple",
+        "1 tsp cinnamon",
+        "1 tsp honey"
+      ],
+      "instructions": [
+        "Dice apple into small cubes.",
+        "Cook oats in milk.",
+        "Add apple and cinnamon.",
+        "Cook until apples soften slightly.",
+        "Top with honey.",
+        "Serve warm."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Winter Breakfast",
+        "Naturally Sweet"
+      ],
+      "foxNotes": [
+        "Smells amazing while cooking."
+      ],
+      "tags": [
+        "Gluten Free",
+        "Comfort Food",
+        "Winter"
+      ],
+      "image": "images/breakfast/apple-cinnamon-oats.jpg",
+      "imagePrompt": "Warm bowl of oats with apple slices and cinnamon, cozy breakfast photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    },
+    {
+      "id": "breakfast-gf-french-toast",
+      "name": "French Toast (GF Bread)",
+      "category": "Breakfast",
+      "subcategory": "Warm & Comforting",
+      "description": "Classic French toast adapted using gluten-free bread.",
+      "prepTime": "10 min",
+      "cookTime": "10 min",
+      "difficulty": "Easy",
+      "servings": "2",
+      "status": "Untested",
+      "ingredients": [
+        "4 slices GF bread",
+        "2 eggs",
+        "125ml milk",
+        "1 tsp cinnamon",
+        "Butter",
+        "Honey"
+      ],
+      "instructions": [
+        "Whisk eggs, milk and cinnamon.",
+        "Dip bread into mixture.",
+        "Heat butter in pan.",
+        "Cook bread until golden.",
+        "Serve with honey."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Comfort Breakfast",
+        "Special Occasion Breakfast"
+      ],
+      "foxNotes": [
+        "Perfect lazy Sunday breakfast."
+      ],
+      "tags": [
+        "Gluten Free",
+        "Comfort Food",
+        "Weekend Breakfast"
+      ],
+      "image": "images/breakfast/gf-french-toast.jpg",
+      "imagePrompt": "Golden french toast made with gluten free bread, honey drizzle, rustic breakfast cookbook photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    }
+  ]
+},
+    {
+  "group": "Quick & On-The-Go",
+  "description": "Simple breakfasts for busy mornings, road trips, adventures, and meal prep days.",
+  "recipes": [
+    {
+      "id": "breakfast-overnight-oats",
+      "name": "Overnight Oats",
+      "category": "Breakfast",
+      "subcategory": "Quick & On-The-Go",
+      "description": "A make-ahead breakfast requiring almost no effort in the morning.",
+      "prepTime": "5 min",
+      "cookTime": "Overnight",
+      "difficulty": "Easy",
+      "servings": "1",
+      "status": "Untested",
+      "ingredients": [
+        "1/2 cup GF oats",
+        "250ml milk",
+        "1 tsp honey",
+        "Strawberries",
+        "Blueberries"
+      ],
+      "instructions": [
+        "Combine oats and milk in a container.",
+        "Add honey and stir.",
+        "Seal and refrigerate overnight.",
+        "Top with berries before serving."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Meal Prep Friendly",
+        "Easy Morning Option"
+      ],
+      "foxNotes": [
+        "Great breakfast before work."
+      ],
+      "tags": [
+        "Meal Prep",
+        "Gluten Free",
+        "Quick Breakfast"
+      ],
+      "image": "images/breakfast/overnight-oats.jpg",
+      "imagePrompt": "Glass jar of overnight oats topped with fresh berries, rustic breakfast photography, morning sunlight",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    },
+    {
+      "id": "breakfast-boiled-eggs-fruit",
+      "name": "Boiled Eggs & Fruit",
+      "category": "Breakfast",
+      "subcategory": "Quick & On-The-Go",
+      "description": "A simple high-protein breakfast that travels well.",
+      "prepTime": "5 min",
+      "cookTime": "10 min",
+      "difficulty": "Easy",
+      "servings": "1",
+      "status": "Untested",
+      "ingredients": [
+        "2 eggs",
+        "Handful grapes",
+        "4 strawberries"
+      ],
+      "instructions": [
+        "Boil eggs.",
+        "Allow to cool.",
+        "Prepare fruit.",
+        "Pack into container."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Travel Friendly",
+        "High Protein"
+      ],
+      "foxNotes": [
+        "Excellent road trip breakfast."
+      ],
+      "tags": [
+        "Gluten Free",
+        "Portable",
+        "Protein Rich"
+      ],
+      "image": "images/breakfast/boiled-eggs-fruit.jpg",
+      "imagePrompt": "Boiled eggs with strawberries and grapes in lunch container, healthy breakfast photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    },
+    {
+      "id": "breakfast-rice-cakes-peanut-butter",
+      "name": "Rice Cakes with Peanut Butter",
+      "category": "Breakfast",
+      "subcategory": "Quick & On-The-Go",
+      "description": "A fast breakfast with healthy fats and long-lasting energy.",
+      "prepTime": "2 min",
+      "cookTime": "0 min",
+      "difficulty": "Easy",
+      "servings": "1",
+      "status": "Untested",
+      "ingredients": [
+        "2 rice cakes",
+        "1 tbsp peanut butter",
+        "1 banana (not overripe)"
+      ],
+      "instructions": [
+        "Spread peanut butter on rice cakes.",
+        "Slice banana.",
+        "Arrange banana slices on top.",
+        "Serve immediately."
+      ],
+      "huntressNotes": [
+        "Avoid Overripe Bananas",
+        "Gluten Free"
+      ],
+      "foxNotes": [
+        "Fastest breakfast in the cookbook."
+      ],
+      "tags": [
+        "Quick Breakfast",
+        "Gluten Free",
+        "Portable"
+      ],
+      "image": "images/breakfast/rice-cakes-peanut-butter.jpg",
+      "imagePrompt": "Rice cakes topped with peanut butter and banana slices, bright breakfast photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    },
+    {
+      "id": "breakfast-gf-muffins",
+      "name": "GF Breakfast Muffins",
+      "category": "Breakfast",
+      "subcategory": "Quick & On-The-Go",
+      "description": "Portable savoury muffins ideal for meal prep and busy weeks.",
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "difficulty": "Medium",
+      "servings": "6",
+      "status": "Untested",
+      "ingredients": [
+        "1 cup GF flour",
+        "2 eggs",
+        "100g cheese",
+        "4 bacon rashers",
+        "125ml milk"
+      ],
+      "instructions": [
+        "Cook bacon and chop finely.",
+        "Mix dry ingredients.",
+        "Add eggs and milk.",
+        "Fold in bacon and cheese.",
+        "Fill muffin tray.",
+        "Bake at 180°C for 20-25 minutes."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Meal Prep Friendly"
+      ],
+      "foxNotes": [
+        "Perfect for making a batch on Sunday."
+      ],
+      "tags": [
+        "Meal Prep",
+        "Portable",
+        "Gluten Free"
+      ],
+      "image": "images/breakfast/gf-breakfast-muffins.jpg",
+      "imagePrompt": "Golden savoury gluten free breakfast muffins on wooden board, rustic cookbook photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    },
+    {
+      "id": "breakfast-yogurt-pots",
+      "name": "Yogurt Pots",
+      "category": "Breakfast",
+      "subcategory": "Quick & On-The-Go",
+      "description": "Layered yogurt pots that can be prepared ahead of time.",
+      "prepTime": "5 min",
+      "cookTime": "0 min",
+      "difficulty": "Easy",
+      "servings": "1",
+      "status": "Untested",
+      "ingredients": [
+        "200g Greek yogurt",
+        "1 tsp honey",
+        "Strawberries",
+        "Blueberries"
+      ],
+      "instructions": [
+        "Add yogurt to container.",
+        "Layer berries on top.",
+        "Drizzle honey.",
+        "Seal and refrigerate."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Meal Prep Friendly",
+        "Quick Breakfast"
+      ],
+      "foxNotes": [
+        "Good emergency breakfast when time is tight."
+      ],
+      "tags": [
+        "Gluten Free",
+        "Meal Prep",
+        "Quick Breakfast"
+      ],
+      "image": "images/breakfast/yogurt-pots.jpg",
+      "imagePrompt": "Layered yogurt breakfast pot with berries and honey, clean breakfast photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    }
+  ]
+}
+  ]
+}

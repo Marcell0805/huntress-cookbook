@@ -1,98 +1,8 @@
 {
   "version": "1.0",
   "project": "The Huntress Cookbook",
-  "dietaryGuide": {
-    "glutenSensitive": true,
-    "ibsConscious": true,
-    "avoid": [
-      "Onions",
-      "Broccoli",
-      "Artificial Sweeteners",
-      "Soy Products",
-      "Plant-Based Meats",
-      "Overripe Bananas",
-      "Wine",
-      "Very Oily Foods"
-    ],
-    "limit": [
-      "Gluten",
-      "Soft Drinks",
-      "Caffeine"
-    ],
-    "preferredSweeteners": [
-      "Honey",
-      "Sugar"
-    ]
-  },
   "categories": {
-    "Breakfast": [
-      "Cheese & Herb Omelette",
-      "Mushroom & Spinach Omelette",
-      "Bacon & Avocado Eggs",
-      "Shakshuka (Onion-Free)",
-      "Overnight Oats",
-      "Berry Smoothie Bowl",
-      "Chia Pudding",
-      "Yogurt & Honey Bowl",
-      "Creamy Cinnamon Oats",
-      "Sweet Potato Breakfast Hash",
-      "Gluten-Free Pancakes",
-      "French Toast (GF Bread)"
-    ],
-    "Lunch": [
-      "Chicken & Avocado Salad",
-      "Greek Salad (Onion-Free)",
-      "Tuna Stuffed Peppers",
-      "Egg Salad Bowl",
-      "Chicken & Rice Bowl",
-      "Butternut Soup",
-      "Tomato & Basil Soup",
-      "Carrot & Ginger Soup",
-      "Chicken Skewers",
-      "Mini Frittatas",
-      "Savoury GF Muffins",
-      "Cheese Board Lunch",
-      "Rice Paper Rolls",
-      "Sweet Potato & Chicken Bowl",
-      "Beef Meatballs & Rice"
-    ],
-    "Dinner": [
-      "Garlic Butter Chicken",
-      "Lemon Herb Chicken",
-      "Creamy Mushroom Chicken",
-      "Tuscan Chicken",
-      "Chicken & Rice Bake",
-      "Cottage Pie",
-      "Steak & Sweet Potato",
-      "Beef Meatballs",
-      "Slow Cooked Beef Stew",
-      "Beef Potjie",
-      "Lemon Garlic Hake",
-      "Garlic Butter Salmon",
-      "Tuna Patties",
-      "Prawn & Rice Bowl",
-      "Bobotie (GF Version)",
-      "Butternut & Bacon Bake",
-      "Chicken Soup",
-      "Loaded Sweet Potatoes",
-      "Shepherd's Pie"
-    ],
-    "Braai": [
-      "Garlic Butter Chicken Braai",
-      "Lemon Herb Chicken Sosaties",
-      "Steak Over The Coals",
-      "Lamb Chops",
-      "Huntress-Safe Boerewors",
-      "Sweet Potato Wedges",
-      "Braaied Corn",
-      "Greek Salad",
-      "Beetroot Salad",
-      "Potato Salad (Onion-Free)",
-      "Foil Potatoes",
-      "Stuffed Mushrooms",
-      "Braaied Peaches",
-      "Cinnamon Braai Apples"
-    ],
+    "_note": "Split chapters: breakfast, lunch, dinner, braai, desserts, snacks, drinks JSON files. Run scripts/build-recipes.ps1 after edits.",
     "SoupsComfortFoods": [
       "Creamy Butternut Soup",
       "Tomato & Basil Soup",
@@ -110,44 +20,6 @@
       "Simple Chicken & Rice",
       "Soft Scrambled Eggs",
       "Honey Yogurt Bowl"
-    ],
-    "Desserts": [
-      "Malva Pudding (GF)",
-      "Peppermint Crisp Tart (GF)",
-      "Milk Tart (GF)",
-      "Chocolate Mousse",
-      "Chocolate Covered Strawberries",
-      "Hot Chocolate Mug",
-      "Honey Roasted Peaches",
-      "Cinnamon Apples",
-      "Berry & Cream Cups",
-      "Strawberry Cheesecake Cups",
-      "Blueberry Cheesecake Cups",
-      "Berry Frozen Yogurt",
-      "Mango Sorbet",
-      "Rice Pudding",
-      "Vanilla Custard"
-    ],
-    "SnacksPicnicFoods": [
-      "Cheese & Rice Crackers",
-      "Boiled Eggs & Fruit",
-      "Chicken Snack Box",
-      "Chia Berry Cups",
-      "Yogurt & Honey Pot",
-      "Trail Mix (Huntress Safe)",
-      "Rice Cakes & Peanut Butter",
-      "Mini Frittatas",
-      "Picnic Cheese Board",
-      "Chicken Skewers"
     ]
-  },
-  "futureRecipes": [
-    "Gluten-Free Lasagne",
-    "Gluten-Free Pizza",
-    "Gluten-Free Chicken Pie",
-    "Gluten-Free Brownies",
-    "Gluten-Free Cheesecake",
-    "Gluten-Free Lemon Meringue",
-    "Gluten-Free Chocolate Cake"
-  ]
+  }
 }

@@ -1,0 +1,63 @@
+{
+  "category": "Dietary Guide",
+  "title": "The Huntress Feeding Manual",
+  "description": "A quick-reference guide for cooking meals that are safe and enjoyable for the Huntress.",
+  "sections": [
+    {
+      "title": "Gluten Sensitivity",
+      "description": "The Huntress is highly gluten sensitive and close to being gluten intolerant.",
+      "notes": [
+        "Gluten should be avoided where possible.",
+        "Some gluten foods cause stronger reactions than others.",
+        "Large gluten meals may trigger a 'gluten coma'.",
+        "Symptoms may include bloating, fatigue and digestive discomfort."
+      ]
+    },
+    {
+      "title": "IBS Considerations",
+      "description": "IBS is generally manageable but can be influenced heavily by stress and anxiety.",
+      "notes": [
+        "Stress is a major trigger.",
+        "Certain foods can cause bloating or cramping.",
+        "Simple meals are often easier to tolerate."
+      ]
+    },
+    {
+      "title": "Foods To Avoid",
+      "items": [
+        "Onions",
+        "Broccoli",
+        "Artificial Sweeteners",
+        "Soy Products",
+        "Plant Based Meats",
+        "Overripe Bananas",
+        "Wine",
+        "Very Oily Foods"
+      ]
+    },
+    {
+      "title": "Foods To Limit",
+      "items": [
+        "Gluten",
+        "Soft Drinks",
+        "Caffeine"
+      ]
+    },
+    {
+      "title": "Preferred Sweeteners",
+      "items": [
+        "Honey",
+        "Sugar"
+      ]
+    },
+    {
+      "title": "Shopping Notes",
+      "notes": [
+        "Always read labels.",
+        "Watch for hidden gluten in sauces and spice blends.",
+        "Verify marinades before use.",
+        "Check gluten-free claims carefully."
+      ]
+    }
+  ]
+}

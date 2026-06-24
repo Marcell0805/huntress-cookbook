@@ -95,7 +95,7 @@ powershell -ExecutionPolicy Bypass -File scripts/build-recipes.ps1
 2. Install **Live Server** when prompted (or Extensions → search "Live Server")
 3. Right-click **`index.html`** → **Open with Live Server**
 
-Your browser opens at **`http://127.0.0.1:5500`** (not 8080). Save any file and the page refreshes automatically.
+Your browser opens at **`http://127.0.0.1:5501`** (port 5500 is often used by Oracle on Windows). Save any file and the page refreshes automatically.
 
 > Live Server is a VS Code extension — you do **not** need Python or Node installed.
 

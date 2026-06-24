@@ -1,0 +1,101 @@
+{
+  "title": "The Fox & Huntress Cookbook",
+  "version": "1.0",
+  "subtitle": "A South African Gluten-Conscious Cookbook",
+  "introduction": {
+    "welcome": "Welcome to the Fox & Huntress Cookbook. This collection was created to make cooking easier, safer and more enjoyable while working around gluten sensitivity, IBS triggers and caffeine sensitivity. The goal is not restriction, but creating delicious food that can be enjoyed with confidence.",
+    
+    "purpose": "This cookbook focuses on practical South African meals made from ingredients commonly available in local supermarkets. Recipes are designed to be simple, realistic and suitable for everyday life while still leaving room for special occasions, adventures and date nights.",
+
+    "philosophy": [
+      "Food should be enjoyable.",
+      "Safe foods should still be delicious.",
+      "Simple meals are often the best meals.",
+      "South African ingredients should be celebrated.",
+      "The cookbook should continue growing over time."
+    ]
+  },
+
+  "huntressProfile": {
+    "glutenSensitivity": {
+      "level": "Sensitive / Near Intolerant",
+      "notes": [
+        "Gluten should be avoided where possible.",
+        "Some gluten-containing foods are tolerated better than others.",
+        "Large amounts of gluten can result in extreme fatigue and bloating.",
+        "Treat foods containing gluten should be occasional and non-consecutive."
+      ]
+    },
+
+    "ibsConsiderations": {
+      "notes": [
+        "Stress and anxiety can significantly affect symptoms.",
+        "Tolerance may vary from day to day."
+      ],
+
+      "avoidFoods": [
+        "Onions",
+        "Broccoli",
+        "Artificial Sweeteners",
+        "Excessive Soda",
+        "Soya",
+        "Plant Based Meat Alternatives",
+        "Overripe Bananas",
+        "Wine",
+        "Very Oily Foods"
+      ]
+    },
+
+    "caffeineSensitivity": {
+      "notes": [
+        "Coffee should be consumed in moderation.",
+        "Large caffeine intake may cause discomfort.",
+        "Low caffeine and caffeine-free alternatives are preferred."
+      ]
+    }
+  },
+
+  "cookbookLegend": {
+    "statuses": {
+      "Untested": "Recipe has been researched but not yet cooked.",
+      "Approved": "Recipe has been tested and approved.",
+      "Researching": "Recipe concept exists but requires development.",
+      "Living Document": "Recipe or collection is continuously updated.",
+      "Reference": "Informational content rather than a recipe."
+    },
+
+    "difficultyLevels": {
+      "Easy": "Beginner friendly.",
+      "Medium": "Requires some cooking experience.",
+      "Hard": "Advanced preparation or techniques."
+    }
+  },
+
+  "foxAndHuntressNotes": {
+    "message": "This cookbook is more than a recipe collection. It is a record of meals, adventures, road trips, braais, movie nights and future memories. Recipes may evolve over time as new favourites are discovered and old ones are refined."
+  },
+
+  "favouriteSafeFoods": [
+    "Grapes",
+    "Yogurt",
+    "Honey",
+    "Chicken",
+    "Beef",
+    "Biltong",
+    "Droëwors",
+    "Cheese",
+    "Eggs",
+    "Peaches",
+    "Berries"
+  ],
+
+  "emergencyFoods": [
+    "Droëwors",
+    "Biltong",
+    "Grapes",
+    "Cheese Cubes",
+    "Plain Yogurt",
+    "Gluten Free Crackers",
+    "Honey"
+  ]
+}

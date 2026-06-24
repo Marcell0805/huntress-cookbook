@@ -1,0 +1,19 @@
+{
+  "category": "Approved Huntress Meals",
+  "description": "Recipes that have been tested, enjoyed and approved by the Huntress.",
+  "ratingGuide": {
+    "1": "Not Great",
+    "2": "Needs Work",
+    "3": "Good",
+    "4": "Very Good",
+    "5": "Huntress Favourite"
+  },
+  "recipes": [
+  ],
+  "statistics": {
+    "totalApprovedRecipes": 0,
+    "fiveStarRecipes": 0,
+    "foxApprovedRecipes": 0,
+    "huntressApprovedRecipes": 0
+  }
+}

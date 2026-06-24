@@ -1,0 +1,728 @@
+{
+  "category": "Lunch",
+  "description": "Balanced midday meals that are gluten-friendly, onion-free, portable, and satisfying.",
+  "groups": [
+    {
+  "group": "Light Lunches",
+  "description": "Fresh, balanced lunches that are filling without feeling heavy and work well for both home and office meals.",
+  "recipes": [
+    {
+      "id": "lunch-chicken-avocado-salad",
+      "name": "Chicken & Avocado Salad",
+      "category": "Lunch",
+      "subcategory": "Light Lunches",
+      "description": "A protein-rich salad packed with healthy fats and fresh vegetables.",
+      "prepTime": "15 min",
+      "cookTime": "10 min",
+      "difficulty": "Easy",
+      "servings": "1",
+      "status": "Untested",
+      "ingredients": [
+        "150g chicken breast",
+        "1/2 avocado",
+        "Mixed lettuce",
+        "Cherry tomatoes",
+        "Cucumber",
+        "Olive oil",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Season chicken breast.",
+        "Cook until golden and fully cooked.",
+        "Slice avocado and vegetables.",
+        "Arrange salad ingredients in a bowl.",
+        "Slice chicken and place on top.",
+        "Drizzle with olive oil."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Onion Free",
+        "High Protein"
+      ],
+      "foxNotes": [
+        "One of the safest lunch options."
+      ],
+      "tags": [
+        "Gluten Free",
+        "High Protein",
+        "Salad"
+      ],
+      "image": "images/lunch/chicken-avocado-salad.jpg",
+      "imagePrompt": "Fresh chicken avocado salad with cucumber and tomatoes, premium healthy food photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    },
+    {
+      "id": "lunch-greek-salad",
+      "name": "Greek Salad (Onion-Free)",
+      "category": "Lunch",
+      "subcategory": "Light Lunches",
+      "description": "A refreshing Greek-style salad adapted to be onion-free.",
+      "prepTime": "10 min",
+      "cookTime": "0 min",
+      "difficulty": "Easy",
+      "servings": "2",
+      "status": "Untested",
+      "ingredients": [
+        "Cucumber",
+        "Tomatoes",
+        "Feta cheese",
+        "Olives",
+        "Olive oil",
+        "Oregano"
+      ],
+      "instructions": [
+        "Dice cucumber and tomatoes.",
+        "Add feta and olives.",
+        "Season with oregano.",
+        "Drizzle olive oil over salad.",
+        "Serve immediately."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Onion Free",
+        "IBS Friendly"
+      ],
+      "foxNotes": [
+        "Excellent side dish for braais too."
+      ],
+      "tags": [
+        "Gluten Free",
+        "Salad",
+        "Vegetarian"
+      ],
+      "image": "images/lunch/greek-salad.jpg",
+      "imagePrompt": "Greek salad with feta, cucumber and tomatoes, bright Mediterranean food photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    },
+    {
+      "id": "lunch-tuna-stuffed-peppers",
+      "name": "Tuna Stuffed Peppers",
+      "category": "Lunch",
+      "subcategory": "Light Lunches",
+      "description": "Crunchy peppers filled with a simple tuna mixture.",
+      "prepTime": "15 min",
+      "cookTime": "0 min",
+      "difficulty": "Easy",
+      "servings": "2",
+      "status": "Untested",
+      "ingredients": [
+        "1 tin tuna",
+        "2 bell peppers",
+        "2 tbsp mayonnaise",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Drain tuna.",
+        "Mix tuna with mayonnaise.",
+        "Cut peppers in half.",
+        "Remove seeds.",
+        "Fill peppers with tuna mixture.",
+        "Serve chilled."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Travel Friendly"
+      ],
+      "foxNotes": [
+        "Good picnic lunch."
+      ],
+      "tags": [
+        "Gluten Free",
+        "High Protein",
+        "Quick Lunch"
+      ],
+      "image": "images/lunch/tuna-stuffed-peppers.jpg",
+      "imagePrompt": "Bell peppers stuffed with tuna filling, colourful healthy lunch photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    },
+    {
+      "id": "lunch-egg-salad-bowl",
+      "name": "Egg Salad Bowl",
+      "category": "Lunch",
+      "subcategory": "Light Lunches",
+      "description": "Simple egg salad served over fresh greens.",
+      "prepTime": "10 min",
+      "cookTime": "10 min",
+      "difficulty": "Easy",
+      "servings": "1",
+      "status": "Untested",
+      "ingredients": [
+        "3 eggs",
+        "Mixed lettuce",
+        "Cucumber",
+        "1 tbsp mayonnaise",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Boil eggs.",
+        "Cool and chop eggs.",
+        "Mix with mayonnaise.",
+        "Prepare salad greens.",
+        "Serve egg mixture over greens."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "High Protein"
+      ],
+      "foxNotes": [
+        "Simple and budget friendly."
+      ],
+      "tags": [
+        "Gluten Free",
+        "Protein Rich",
+        "Quick Lunch"
+      ],
+      "image": "images/lunch/egg-salad-bowl.jpg",
+      "imagePrompt": "Egg salad bowl with lettuce and cucumber, fresh healthy lunch photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    },
+    {
+      "id": "lunch-chicken-rice-bowl",
+      "name": "Chicken & Rice Bowl",
+      "category": "Lunch",
+      "subcategory": "Light Lunches",
+      "description": "Balanced lunch with lean protein and rice.",
+      "prepTime": "15 min",
+      "cookTime": "20 min",
+      "difficulty": "Easy",
+      "servings": "2",
+      "status": "Untested",
+      "ingredients": [
+        "150g chicken breast",
+        "1 cup cooked rice",
+        "Carrots",
+        "Cucumber",
+        "Olive oil"
+      ],
+      "instructions": [
+        "Cook rice.",
+        "Cook seasoned chicken.",
+        "Slice vegetables.",
+        "Assemble bowl.",
+        "Serve warm."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Meal Prep Friendly"
+      ],
+      "foxNotes": [
+        "Excellent work lunch."
+      ],
+      "tags": [
+        "Meal Prep",
+        "Gluten Free",
+        "High Protein"
+      ],
+      "image": "images/lunch/chicken-rice-bowl.jpg",
+      "imagePrompt": "Chicken rice bowl with vegetables, healthy meal prep photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    }
+  ]
+},
+    {
+  "group": "Soups",
+  "description": "Comforting lunches perfect for colder days, recovery meals, and gentle digestion.",
+  "recipes": [
+    {
+      "id": "lunch-butternut-soup",
+      "name": "Butternut Soup",
+      "category": "Lunch",
+      "subcategory": "Soups",
+      "description": "A creamy, comforting soup that is naturally sweet and perfect for winter lunches.",
+      "prepTime": "15 min",
+      "cookTime": "35 min",
+      "difficulty": "Easy",
+      "servings": "4",
+      "status": "Untested",
+      "ingredients": [
+        "1 medium butternut",
+        "2 garlic cloves",
+        "500ml GF vegetable stock",
+        "125ml cream",
+        "1 tbsp olive oil",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Peel and cube the butternut.",
+        "Roast until soft and lightly caramelised.",
+        "Heat olive oil in a pot.",
+        "Cook garlic until fragrant.",
+        "Add butternut and stock.",
+        "Simmer for 10 minutes.",
+        "Blend until smooth.",
+        "Stir in cream.",
+        "Season and serve."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Onion Free",
+        "Winter Favourite",
+        "IBS Friendly"
+      ],
+      "foxNotes": [
+        "One of the safest comfort meals in the cookbook."
+      ],
+      "tags": [
+        "Gluten Free",
+        "Soup",
+        "Winter",
+        "Comfort Food"
+      ],
+      "image": "images/lunch/butternut-soup.jpg",
+      "imagePrompt": "Creamy roasted butternut soup in rustic bowl, warm lighting, cozy winter cookbook photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    },
+    {
+      "id": "lunch-tomato-basil-soup",
+      "name": "Tomato & Basil Soup",
+      "category": "Lunch",
+      "subcategory": "Soups",
+      "description": "A light and flavourful soup made from roasted tomatoes and fresh basil.",
+      "prepTime": "10 min",
+      "cookTime": "30 min",
+      "difficulty": "Easy",
+      "servings": "4",
+      "status": "Untested",
+      "ingredients": [
+        "6 tomatoes",
+        "2 garlic cloves",
+        "Fresh basil",
+        "500ml GF vegetable stock",
+        "1 tbsp olive oil",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Roast tomatoes until softened.",
+        "Heat olive oil in a pot.",
+        "Cook garlic briefly.",
+        "Add tomatoes and stock.",
+        "Simmer for 15 minutes.",
+        "Blend until smooth.",
+        "Add basil.",
+        "Season and serve."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Onion Free",
+        "Light Lunch"
+      ],
+      "foxNotes": [
+        "Pairs well with gluten-free toast."
+      ],
+      "tags": [
+        "Gluten Free",
+        "Soup",
+        "Vegetarian"
+      ],
+      "image": "images/lunch/tomato-basil-soup.jpg",
+      "imagePrompt": "Tomato basil soup with fresh basil garnish, rustic bowl, elegant cookbook photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    },
+    {
+      "id": "lunch-carrot-ginger-soup",
+      "name": "Carrot & Ginger Soup",
+      "category": "Lunch",
+      "subcategory": "Soups",
+      "description": "A warming soup with natural sweetness and a gentle ginger kick.",
+      "prepTime": "10 min",
+      "cookTime": "30 min",
+      "difficulty": "Easy",
+      "servings": "4",
+      "status": "Untested",
+      "ingredients": [
+        "6 carrots",
+        "1 tbsp fresh ginger",
+        "500ml GF vegetable stock",
+        "100ml cream",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Slice carrots.",
+        "Cook carrots in stock until soft.",
+        "Add ginger.",
+        "Blend until smooth.",
+        "Stir in cream.",
+        "Season and serve."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Onion Free",
+        "Easy Digestion"
+      ],
+      "foxNotes": [
+        "Great recovery-day meal."
+      ],
+      "tags": [
+        "Gluten Free",
+        "Soup",
+        "Comfort Food"
+      ],
+      "image": "images/lunch/carrot-ginger-soup.jpg",
+      "imagePrompt": "Creamy carrot ginger soup in ceramic bowl, warm autumn colours, cookbook photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    }
+  ]
+},
+    {
+  "group": "Picnic Friendly",
+  "description": "Portable lunches designed for adventures, road trips, picnics, hiking days, and outdoor escapes with the Huntress.",
+  "recipes": [
+    {
+      "id": "lunch-chicken-skewers",
+      "name": "Chicken Skewers",
+      "category": "Lunch",
+      "subcategory": "Picnic Friendly",
+      "description": "Tender grilled chicken skewers that taste great warm or cold.",
+      "prepTime": "15 min",
+      "cookTime": "15 min",
+      "difficulty": "Easy",
+      "servings": "4",
+      "status": "Untested",
+      "ingredients": [
+        "500g chicken breast",
+        "1 tsp paprika",
+        "1 tsp garlic powder",
+        "1 tbsp olive oil",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Cut chicken into cubes.",
+        "Season with paprika, garlic, salt and pepper.",
+        "Thread onto skewers.",
+        "Grill until fully cooked.",
+        "Allow to cool slightly.",
+        "Pack for picnic or serve immediately."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Onion Free",
+        "High Protein"
+      ],
+      "foxNotes": [
+        "Perfect for road trips and nature reserves."
+      ],
+      "tags": [
+        "Gluten Free",
+        "Portable",
+        "Picnic",
+        "High Protein"
+      ],
+      "image": "images/lunch/chicken-skewers.jpg",
+      "imagePrompt": "Grilled chicken skewers on wooden serving board, outdoor picnic setting, cookbook photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    },
+    {
+      "id": "lunch-mini-frittatas",
+      "name": "Mini Frittatas",
+      "category": "Lunch",
+      "subcategory": "Picnic Friendly",
+      "description": "Small baked egg cups packed with flavour and protein.",
+      "prepTime": "10 min",
+      "cookTime": "20 min",
+      "difficulty": "Easy",
+      "servings": "6",
+      "status": "Untested",
+      "ingredients": [
+        "6 eggs",
+        "50g feta cheese",
+        "Handful spinach",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Preheat oven to 180°C.",
+        "Whisk eggs.",
+        "Add feta and spinach.",
+        "Pour into muffin tray.",
+        "Bake until set.",
+        "Cool before serving."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Meal Prep Friendly",
+        "Portable"
+      ],
+      "foxNotes": [
+        "Excellent make-ahead picnic food."
+      ],
+      "tags": [
+        "Gluten Free",
+        "Meal Prep",
+        "Portable"
+      ],
+      "image": "images/lunch/mini-frittatas.jpg",
+      "imagePrompt": "Mini baked frittatas in muffin tray, rustic lunch photography, healthy picnic food",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    },
+    {
+      "id": "lunch-savoury-gf-muffins",
+      "name": "Savoury GF Muffins",
+      "category": "Lunch",
+      "subcategory": "Picnic Friendly",
+      "description": "Gluten-free savoury muffins packed with cheese and bacon.",
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "difficulty": "Medium",
+      "servings": "6",
+      "status": "Untested",
+      "ingredients": [
+        "1 cup GF flour",
+        "2 eggs",
+        "100g cheddar cheese",
+        "4 bacon rashers",
+        "125ml milk"
+      ],
+      "instructions": [
+        "Cook bacon and chop finely.",
+        "Mix flour and cheese.",
+        "Add eggs and milk.",
+        "Fold in bacon.",
+        "Fill muffin tray.",
+        "Bake until golden."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Portable",
+        "Great Travel Food"
+      ],
+      "foxNotes": [
+        "Easy to pack for long drives."
+      ],
+      "tags": [
+        "Gluten Free",
+        "Picnic",
+        "Portable"
+      ],
+      "image": "images/lunch/savoury-gf-muffins.jpg",
+      "imagePrompt": "Golden gluten free savoury muffins on wooden board, outdoor picnic photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    },
+    {
+      "id": "lunch-cheese-board",
+      "name": "Cheese Board Lunch",
+      "category": "Lunch",
+      "subcategory": "Picnic Friendly",
+      "description": "A simple picnic-style lunch with cheeses, fruit and gluten-free crackers.",
+      "prepTime": "10 min",
+      "cookTime": "0 min",
+      "difficulty": "Easy",
+      "servings": "2",
+      "status": "Untested",
+      "ingredients": [
+        "Cheddar cheese",
+        "Gouda cheese",
+        "GF crackers",
+        "Grapes",
+        "Strawberries"
+      ],
+      "instructions": [
+        "Slice cheeses.",
+        "Arrange fruit.",
+        "Add crackers.",
+        "Serve immediately."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Picnic Favourite"
+      ],
+      "foxNotes": [
+        "Looks far more impressive than the effort required."
+      ],
+      "tags": [
+        "Gluten Free",
+        "Picnic",
+        "No Cooking"
+      ],
+      "image": "images/lunch/cheese-board.jpg",
+      "imagePrompt": "Rustic cheese board with fruit and gluten free crackers, picnic setting, elegant food photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    },
+    {
+      "id": "lunch-rice-paper-rolls",
+      "name": "Rice Paper Rolls",
+      "category": "Lunch",
+      "subcategory": "Picnic Friendly",
+      "description": "Fresh rice paper rolls filled with vegetables and protein.",
+      "prepTime": "20 min",
+      "cookTime": "0 min",
+      "difficulty": "Medium",
+      "servings": "4",
+      "status": "Untested",
+      "ingredients": [
+        "Rice paper sheets",
+        "Chicken strips",
+        "Carrots",
+        "Cucumber",
+        "Lettuce"
+      ],
+      "instructions": [
+        "Prepare vegetables.",
+        "Cook chicken.",
+        "Soften rice paper sheets.",
+        "Fill with ingredients.",
+        "Roll tightly.",
+        "Serve chilled."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Fresh Lunch Option"
+      ],
+      "foxNotes": [
+        "A fun recipe to make together."
+      ],
+      "tags": [
+        "Gluten Free",
+        "Fresh",
+        "Picnic"
+      ],
+      "image": "images/lunch/rice-paper-rolls.jpg",
+      "imagePrompt": "Fresh rice paper rolls with vegetables and chicken, healthy picnic lunch photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    }
+  ]
+},
+    {
+  "group": "Warm Lunches",
+  "description": "Filling lunches that provide comfort, energy and excellent meal-prep options for busy weeks.",
+  "recipes": [
+    {
+      "id": "lunch-sweet-potato-chicken-bowl",
+      "name": "Sweet Potato & Chicken Bowl",
+      "category": "Lunch",
+      "subcategory": "Warm Lunches",
+      "description": "A nutritious bowl combining roasted sweet potatoes, seasoned chicken and fresh vegetables.",
+      "prepTime": "15 min",
+      "cookTime": "30 min",
+      "difficulty": "Easy",
+      "servings": "2",
+      "status": "Untested",
+      "ingredients": [
+        "2 chicken breasts",
+        "2 sweet potatoes",
+        "1 cucumber",
+        "Cherry tomatoes",
+        "1 tbsp olive oil",
+        "1 tsp paprika",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Preheat oven to 200°C.",
+        "Cube sweet potatoes.",
+        "Toss with olive oil and paprika.",
+        "Roast for 25-30 minutes.",
+        "Season chicken breasts.",
+        "Cook until golden and fully cooked.",
+        "Slice cucumber and tomatoes.",
+        "Assemble bowl with sweet potato, chicken and vegetables.",
+        "Serve warm."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Onion Free",
+        "High Protein",
+        "Meal Prep Friendly"
+      ],
+      "foxNotes": [
+        "Excellent post-adventure meal.",
+        "Keeps well for next-day lunches."
+      ],
+      "tags": [
+        "Gluten Free",
+        "Meal Prep",
+        "High Protein",
+        "Warm Lunch"
+      ],
+      "image": "images/lunch/sweet-potato-chicken-bowl.jpg",
+      "imagePrompt": "Warm chicken and sweet potato bowl with fresh vegetables, healthy meal prep photography, rustic presentation",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    },
+    {
+      "id": "lunch-beef-meatballs-rice",
+      "name": "Beef Meatballs & Rice",
+      "category": "Lunch",
+      "subcategory": "Warm Lunches",
+      "description": "Tender beef meatballs served over rice for a satisfying and protein-rich lunch.",
+      "prepTime": "20 min",
+      "cookTime": "25 min",
+      "difficulty": "Medium",
+      "servings": "4",
+      "status": "Untested",
+      "ingredients": [
+        "500g beef mince",
+        "1 egg",
+        "1 tsp garlic powder",
+        "1 tsp paprika",
+        "2 cups cooked rice",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Combine mince, egg and seasonings.",
+        "Form into meatballs.",
+        "Heat a pan over medium heat.",
+        "Cook meatballs until browned and cooked through.",
+        "Prepare rice if not already cooked.",
+        "Serve meatballs over rice.",
+        "Season to taste."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Onion Free",
+        "High Protein"
+      ],
+      "foxNotes": [
+        "Good batch-cooking recipe.",
+        "Can easily become a dinner as well."
+      ],
+      "tags": [
+        "Gluten Free",
+        "Protein Rich",
+        "Meal Prep",
+        "Comfort Food"
+      ],
+      "image": "images/lunch/beef-meatballs-rice.jpg",
+      "imagePrompt": "Beef meatballs served over fluffy rice, comforting homemade lunch, cookbook photography",
+      "approved": false,
+      "huntressRating": 0,
+      "foxRating": 0
+    }
+  ]
+}
+  ]
+}

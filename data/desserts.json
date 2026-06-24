@@ -1,0 +1,1004 @@
+{
+  "category": "Desserts",
+  "description": "Sweet treats and comforting desserts adapted to be Huntress-friendly, gluten-conscious and made with simple ingredients.",
+  "groups": [
+    {
+      "name": "South African Classics",
+      "recipes": [
+		{
+  "id": "gf-malva-pudding",
+  "name": "Malva Pudding (GF Version)",
+  "category": "Desserts",
+  "description": "A rich and sticky gluten-free version of the famous South African dessert.",
+  "prepTime": "20 min",
+  "cookTime": "40 min",
+  "difficulty": "Medium",
+  "servings": "6",
+  "status": "Untested",
+  "ingredients": [
+    "1 cup GF flour",
+    "1 egg",
+    "125ml milk",
+    "100g sugar",
+    "1 tbsp apricot jam",
+    "1 tsp bicarbonate of soda",
+    "30g butter"
+  ],
+  "instructions": [
+    "Preheat oven to 180°C.",
+    "Mix all pudding ingredients until smooth.",
+    "Pour into greased baking dish.",
+    "Bake until golden and cooked through.",
+    "Prepare sauce while pudding bakes.",
+    "Pour warm sauce over hot pudding.",
+    "Allow to absorb before serving."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "South African Classic",
+    "Best Served Warm"
+  ],
+  "foxNotes": [
+    "One of the most iconic South African desserts."
+  ],
+  "tags": [
+    "Malva Pudding",
+    "South African",
+    "Comfort Dessert"
+  ],
+  "imagePrompt": "Golden gluten free malva pudding with warm sauce, traditional South African dessert photography"
+},
+{
+  "id": "gf-peppermint-crisp-tart",
+  "name": "Peppermint Crisp Tart (GF)",
+  "category": "Desserts",
+  "description": "A gluten-free adaptation of the famous South African fridge tart.",
+  "prepTime": "20 min",
+  "cookTime": "Chill Only",
+  "difficulty": "Easy",
+  "servings": "8",
+  "status": "Untested",
+  "ingredients": [
+    "200g GF biscuits",
+    "250ml cream",
+    "1 tin caramel treat",
+    "2 Peppermint Crisp bars"
+  ],
+  "instructions": [
+    "Crush biscuits.",
+    "Whip cream until soft peaks form.",
+    "Fold cream into caramel treat.",
+    "Layer biscuits and caramel mixture.",
+    "Grate Peppermint Crisp over each layer.",
+    "Refrigerate for at least 3 hours.",
+    "Serve chilled."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "No Baking Required",
+    "South African Favourite"
+  ],
+  "foxNotes": [
+    "Strong candidate for a Huntress favourite."
+  ],
+  "tags": [
+    "Peppermint Crisp",
+    "No Bake",
+    "South African"
+  ],
+  "imagePrompt": "Gluten free peppermint crisp tart layered in glass dish, South African dessert photography"
+},
+{
+  "id": "gf-milk-tart",
+  "name": "Milk Tart (GF)",
+  "category": "Desserts",
+  "description": "A gluten-free version of the beloved South African milk tart.",
+  "prepTime": "25 min",
+  "cookTime": "35 min",
+  "difficulty": "Medium",
+  "servings": "8",
+  "status": "Untested",
+  "ingredients": [
+    "1 GF tart shell",
+    "750ml milk",
+    "2 eggs",
+    "80g sugar",
+    "30g cornflour",
+    "1 tsp cinnamon"
+  ],
+  "instructions": [
+    "Pre-bake tart shell if required.",
+    "Heat milk gently.",
+    "Whisk eggs, sugar and cornflour.",
+    "Slowly combine with warm milk.",
+    "Cook until thickened.",
+    "Pour into tart shell.",
+    "Allow to cool completely.",
+    "Dust with cinnamon."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "South African Classic"
+  ],
+  "foxNotes": [
+    "Excellent served cold."
+  ],
+  "tags": [
+    "Milk Tart",
+    "South African",
+    "Custard"
+  ],
+  "imagePrompt": "Traditional gluten free milk tart dusted with cinnamon, elegant South African dessert photography"
+},
+{
+  "id": "gf-koeksister-bites",
+  "name": "GF Koeksister Bites",
+  "category": "Desserts",
+  "description": "A bite-sized gluten-free version of the famous syrup-soaked South African treat.",
+  "prepTime": "30 min",
+  "cookTime": "20 min",
+  "difficulty": "Hard",
+  "servings": "8",
+  "status": "Researching",
+  "ingredients": [
+    "GF flour blend",
+    "Eggs",
+    "Butter",
+    "Sugar",
+    "Water",
+    "Cinnamon"
+  ],
+  "instructions": [
+    "Prepare dough.",
+    "Shape into small braids or twists.",
+    "Fry until golden.",
+    "Transfer immediately into cold syrup.",
+    "Allow to absorb syrup.",
+    "Serve chilled."
+  ],
+  "huntressNotes": [
+    "Gluten Free Version Still Being Refined"
+  ],
+  "foxNotes": [
+    "Advanced recipe project."
+  ],
+  "tags": [
+    "Koeksister",
+    "South African",
+    "Research Project"
+  ],
+  "imagePrompt": "Golden gluten free koeksister bites coated in syrup, traditional South African dessert photography"
+}
+      ]
+    },
+    {
+      "name": "Chocolate Collection",
+      "recipes": [
+	  {
+  "id": "chocolate-mousse",
+  "name": "Chocolate Mousse",
+  "category": "Desserts",
+  "description": "A smooth and airy chocolate mousse that feels luxurious while remaining surprisingly simple.",
+  "prepTime": "20 min",
+  "cookTime": "Chill 2 hrs",
+  "difficulty": "Medium",
+  "servings": "4",
+  "status": "Untested",
+  "ingredients": [
+    "200g dark chocolate",
+    "250ml cream",
+    "2 eggs",
+    "1 tbsp sugar"
+  ],
+  "instructions": [
+    "Melt chocolate and allow to cool slightly.",
+    "Whip cream until soft peaks form.",
+    "Beat eggs and sugar until light.",
+    "Fold chocolate into egg mixture.",
+    "Gently fold in whipped cream.",
+    "Spoon into serving glasses.",
+    "Refrigerate until set."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Date Night Favourite"
+  ],
+  "foxNotes": [
+    "Looks far more difficult than it actually is."
+  ],
+  "tags": [
+    "Chocolate",
+    "Date Night",
+    "Dessert"
+  ],
+  "imagePrompt": "Elegant chocolate mousse served in glass dessert cups, luxury cookbook photography"
+},
+{
+  "id": "chocolate-covered-strawberries",
+  "name": "Chocolate Covered Strawberries",
+  "category": "Desserts",
+  "description": "Fresh strawberries dipped in rich chocolate for a simple but impressive dessert.",
+  "prepTime": "15 min",
+  "cookTime": "15 min",
+  "difficulty": "Easy",
+  "servings": "4",
+  "status": "Untested",
+  "ingredients": [
+    "250g strawberries",
+    "200g dark chocolate"
+  ],
+  "instructions": [
+    "Wash and dry strawberries completely.",
+    "Melt chocolate gently.",
+    "Dip strawberries into chocolate.",
+    "Place on baking paper.",
+    "Allow chocolate to set.",
+    "Serve chilled or at room temperature."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Simple Date Night Dessert"
+  ],
+  "foxNotes": [
+    "Almost impossible to go wrong."
+  ],
+  "tags": [
+    "Chocolate",
+    "Strawberries",
+    "Easy"
+  ],
+  "imagePrompt": "Chocolate covered strawberries on elegant serving plate, romantic dessert photography"
+},
+{
+  "id": "hot-chocolate-mug",
+  "name": "Hot Chocolate Mug",
+  "category": "Desserts",
+  "description": "A warm and comforting chocolate drink for cold evenings.",
+  "prepTime": "5 min",
+  "cookTime": "5 min",
+  "difficulty": "Easy",
+  "servings": "1",
+  "status": "Untested",
+  "ingredients": [
+    "250ml milk",
+    "2 tbsp cocoa powder",
+    "1 tbsp sugar",
+    "30g dark chocolate"
+  ],
+  "instructions": [
+    "Heat milk gently in a saucepan.",
+    "Whisk in cocoa powder and sugar.",
+    "Add dark chocolate.",
+    "Stir until smooth.",
+    "Pour into mug.",
+    "Serve warm."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Contains Mild Caffeine"
+  ],
+  "foxNotes": [
+    "Great for winter movie nights."
+  ],
+  "tags": [
+    "Hot Chocolate",
+    "Winter",
+    "Comfort"
+  ],
+  "imagePrompt": "Warm hot chocolate in rustic mug beside blanket and book, cozy winter photography"
+},
+{
+  "id": "gf-brownie-bites",
+  "name": "GF Brownie Bites",
+  "category": "Desserts",
+  "description": "Small gluten-free brownie squares packed with rich chocolate flavour.",
+  "prepTime": "20 min",
+  "cookTime": "25 min",
+  "difficulty": "Medium",
+  "servings": "12",
+  "status": "Untested",
+  "ingredients": [
+    "150g dark chocolate",
+    "100g butter",
+    "2 eggs",
+    "100g GF flour",
+    "100g sugar"
+  ],
+  "instructions": [
+    "Preheat oven to 180°C.",
+    "Melt chocolate and butter together.",
+    "Whisk eggs and sugar.",
+    "Combine mixtures.",
+    "Fold in GF flour.",
+    "Pour into baking tray.",
+    "Bake until set.",
+    "Cool and cut into squares."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Chocolate Lovers Dessert"
+  ],
+  "foxNotes": [
+    "A future approved-meals candidate."
+  ],
+  "tags": [
+    "Brownies",
+    "Chocolate",
+    "Baking"
+  ],
+  "imagePrompt": "Fudgy gluten free brownie bites stacked on wooden serving board, premium dessert photography"
+}
+      ]
+    },
+    {
+      "name": "Fruit Based Desserts",
+      "recipes": [
+		{
+  "id": "honey-roasted-peaches",
+  "name": "Honey Roasted Peaches",
+  "category": "Desserts",
+  "description": "Warm roasted peaches drizzled with honey for a simple but elegant dessert.",
+  "prepTime": "10 min",
+  "cookTime": "20 min",
+  "difficulty": "Easy",
+  "servings": "4",
+  "status": "Untested",
+  "ingredients": [
+    "4 peaches",
+    "2 tbsp honey",
+    "1 tsp cinnamon"
+  ],
+  "instructions": [
+    "Preheat oven to 180°C.",
+    "Cut peaches in half and remove pits.",
+    "Place in baking dish.",
+    "Drizzle with honey.",
+    "Sprinkle cinnamon over peaches.",
+    "Bake until soft and lightly caramelised.",
+    "Serve warm."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Naturally Sweet"
+  ],
+  "foxNotes": [
+    "Excellent served with cream or vanilla ice cream."
+  ],
+  "tags": [
+    "Peaches",
+    "Fruit",
+    "Easy Dessert"
+  ],
+  "imagePrompt": "Honey roasted peaches in rustic baking dish, warm summer dessert photography"
+},
+{
+  "id": "cinnamon-apples",
+  "name": "Cinnamon Apples",
+  "category": "Desserts",
+  "description": "Soft baked apples flavoured with cinnamon and honey.",
+  "prepTime": "10 min",
+  "cookTime": "25 min",
+  "difficulty": "Easy",
+  "servings": "4",
+  "status": "Untested",
+  "ingredients": [
+    "4 apples",
+    "1 tbsp honey",
+    "1 tsp cinnamon"
+  ],
+  "instructions": [
+    "Core apples.",
+    "Place in baking dish.",
+    "Fill centres with honey and cinnamon.",
+    "Bake until apples are soft.",
+    "Serve warm."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Comfort Dessert"
+  ],
+  "foxNotes": [
+    "Perfect winter dessert."
+  ],
+  "tags": [
+    "Apple",
+    "Cinnamon",
+    "Comfort Food"
+  ],
+  "imagePrompt": "Warm baked cinnamon apples served in rustic bowls, cozy dessert photography"
+},
+{
+  "id": "berry-cream-cups",
+  "name": "Berry & Cream Cups",
+  "category": "Desserts",
+  "description": "Fresh berries layered with lightly sweetened cream.",
+  "prepTime": "10 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "4",
+  "status": "Untested",
+  "ingredients": [
+    "250g mixed berries",
+    "250ml cream",
+    "1 tbsp honey"
+  ],
+  "instructions": [
+    "Whip cream until soft peaks form.",
+    "Add honey and mix gently.",
+    "Layer berries and cream in glasses.",
+    "Serve immediately or chill briefly."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Light Dessert"
+  ],
+  "foxNotes": [
+    "Looks beautiful with very little effort."
+  ],
+  "tags": [
+    "Berries",
+    "Cream",
+    "No Bake"
+  ],
+  "imagePrompt": "Berry and cream dessert cups layered in elegant glasses, fresh summer dessert photography"
+},
+{
+  "id": "grapes-yogurt-bowl",
+  "name": "Honey Yogurt & Grapes",
+  "category": "Desserts",
+  "description": "A simple and refreshing dessert using ingredients the Huntress already enjoys.",
+  "prepTime": "5 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "1 cup plain yogurt",
+    "1 cup grapes",
+    "1 tbsp honey"
+  ],
+  "instructions": [
+    "Add yogurt to serving bowls.",
+    "Top with grapes.",
+    "Drizzle with honey.",
+    "Serve chilled."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Simple Everyday Dessert"
+  ],
+  "foxNotes": [
+    "Built around foods the Huntress already enjoys."
+  ],
+  "tags": [
+    "Yogurt",
+    "Grapes",
+    "Healthy Dessert"
+  ],
+  "imagePrompt": "Yogurt bowl topped with fresh grapes and honey, light healthy dessert photography"
+}
+      ]
+    },
+    {
+      "name": "Cheesecake Collection",
+      "recipes": [
+{
+  "id": "strawberry-cheesecake-cups",
+  "name": "Strawberry Cheesecake Cups",
+  "category": "Desserts",
+  "description": "Creamy no-bake cheesecake layered with fresh strawberries.",
+  "prepTime": "20 min",
+  "cookTime": "Chill 2 hrs",
+  "difficulty": "Easy",
+  "servings": "6",
+  "status": "Untested",
+  "ingredients": [
+    "250g cream cheese",
+    "250ml cream",
+    "2 tbsp sugar",
+    "200g strawberries",
+    "100g GF biscuits"
+  ],
+  "instructions": [
+    "Crush GF biscuits and place in serving glasses.",
+    "Whip cream until soft peaks form.",
+    "Beat cream cheese and sugar until smooth.",
+    "Fold cream into cream cheese mixture.",
+    "Layer mixture over biscuit base.",
+    "Top with sliced strawberries.",
+    "Refrigerate for 2 hours before serving."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "No Bake Dessert"
+  ],
+  "foxNotes": [
+    "A very strong candidate for date nights."
+  ],
+  "tags": [
+    "Cheesecake",
+    "Strawberries",
+    "No Bake"
+  ],
+  "imagePrompt": "Strawberry cheesecake cups layered in glass dessert jars, elegant cookbook photography"
+},
+{
+  "id": "blueberry-cheesecake-cups",
+  "name": "Blueberry Cheesecake Cups",
+  "category": "Desserts",
+  "description": "Smooth cheesecake cups topped with sweet blueberries.",
+  "prepTime": "20 min",
+  "cookTime": "Chill 2 hrs",
+  "difficulty": "Easy",
+  "servings": "6",
+  "status": "Untested",
+  "ingredients": [
+    "250g cream cheese",
+    "250ml cream",
+    "2 tbsp sugar",
+    "200g blueberries",
+    "100g GF biscuits"
+  ],
+  "instructions": [
+    "Crush GF biscuits and divide between glasses.",
+    "Whip cream until soft peaks form.",
+    "Mix cream cheese and sugar.",
+    "Fold whipped cream into cheesecake mixture.",
+    "Spoon mixture over biscuit layer.",
+    "Top with blueberries.",
+    "Chill before serving."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "No Bake Dessert"
+  ],
+  "foxNotes": [
+    "Looks impressive while being incredibly easy."
+  ],
+  "tags": [
+    "Cheesecake",
+    "Blueberries",
+    "No Bake"
+  ],
+  "imagePrompt": "Blueberry cheesecake cups with fresh berries, luxury dessert photography"
+},
+{
+  "id": "chocolate-cheesecake-cups",
+  "name": "Chocolate Cheesecake Cups",
+  "category": "Desserts",
+  "description": "Rich chocolate cheesecake served in individual portions.",
+  "prepTime": "20 min",
+  "cookTime": "Chill 2 hrs",
+  "difficulty": "Easy",
+  "servings": "6",
+  "status": "Untested",
+  "ingredients": [
+    "250g cream cheese",
+    "150g dark chocolate",
+    "250ml cream",
+    "2 tbsp sugar",
+    "100g GF biscuits"
+  ],
+  "instructions": [
+    "Crush biscuits and place into serving glasses.",
+    "Melt chocolate and allow to cool slightly.",
+    "Beat cream cheese and sugar together.",
+    "Fold chocolate into cream cheese mixture.",
+    "Whip cream and fold into mixture.",
+    "Spoon into glasses.",
+    "Refrigerate until set."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Chocolate Lover's Dessert"
+  ],
+  "foxNotes": [
+    "Feels restaurant-quality without the effort."
+  ],
+  "tags": [
+    "Chocolate",
+    "Cheesecake",
+    "No Bake"
+  ],
+  "imagePrompt": "Chocolate cheesecake cups in elegant glasses with chocolate shavings, premium dessert photography"
+}
+      ]
+    },
+    {
+      "name": "Frozen Desserts",
+      "recipes": [
+{
+  "id": "berry-frozen-yogurt",
+  "name": "Berry Frozen Yogurt",
+  "category": "Desserts",
+  "description": "A refreshing frozen dessert made with berries and yogurt.",
+  "prepTime": "10 min",
+  "cookTime": "Freeze 4 hrs",
+  "difficulty": "Easy",
+  "servings": "4",
+  "status": "Untested",
+  "ingredients": [
+    "2 cups mixed berries",
+    "2 cups plain Greek yogurt",
+    "2 tbsp honey"
+  ],
+  "instructions": [
+    "Blend berries until smooth.",
+    "Mix berries with yogurt and honey.",
+    "Pour mixture into freezer-safe container.",
+    "Freeze for 4 hours.",
+    "Stir once or twice during freezing for a smoother texture.",
+    "Serve slightly softened."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Refreshing Summer Dessert"
+  ],
+  "foxNotes": [
+    "A perfect hot-weather dessert."
+  ],
+  "tags": [
+    "Frozen Yogurt",
+    "Berries",
+    "Summer"
+  ],
+  "imagePrompt": "Berry frozen yogurt served in chilled dessert bowls with fresh berries, summer dessert photography"
+},
+{
+  "id": "mango-sorbet",
+  "name": "Mango Sorbet",
+  "category": "Desserts",
+  "description": "A naturally sweet and refreshing mango sorbet.",
+  "prepTime": "10 min",
+  "cookTime": "Freeze 4 hrs",
+  "difficulty": "Easy",
+  "servings": "4",
+  "status": "Untested",
+  "ingredients": [
+    "3 ripe mangoes",
+    "2 tbsp honey",
+    "1 tbsp lemon juice"
+  ],
+  "instructions": [
+    "Peel and chop mangoes.",
+    "Blend mangoes, honey and lemon juice until smooth.",
+    "Transfer to freezer-safe container.",
+    "Freeze for 4 hours.",
+    "Stir once or twice while freezing.",
+    "Serve chilled."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Naturally Sweet"
+  ],
+  "foxNotes": [
+    "One of the simplest desserts in the cookbook."
+  ],
+  "tags": [
+    "Mango",
+    "Sorbet",
+    "Summer"
+  ],
+  "imagePrompt": "Bright mango sorbet served in chilled glass bowls, tropical dessert photography"
+},
+{
+  "id": "peach-frozen-yogurt",
+  "name": "Peach Frozen Yogurt",
+  "category": "Desserts",
+  "description": "Creamy frozen yogurt blended with sweet peaches.",
+  "prepTime": "10 min",
+  "cookTime": "Freeze 4 hrs",
+  "difficulty": "Easy",
+  "servings": "4",
+  "status": "Untested",
+  "ingredients": [
+    "3 peaches",
+    "2 cups Greek yogurt",
+    "2 tbsp honey"
+  ],
+  "instructions": [
+    "Slice peaches and remove pits.",
+    "Blend peaches until smooth.",
+    "Mix with yogurt and honey.",
+    "Transfer to freezer-safe container.",
+    "Freeze for 4 hours.",
+    "Serve slightly softened."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Summer Favourite"
+  ],
+  "foxNotes": [
+    "A lighter alternative to ice cream."
+  ],
+  "tags": [
+    "Peach",
+    "Frozen Yogurt",
+    "Summer"
+  ],
+  "imagePrompt": "Peach frozen yogurt served with fresh peach slices, refreshing summer dessert photography"
+}
+      ]
+    },
+    {
+      "name": "Fox & Huntress Date Night Desserts",
+      "recipes": [
+{
+  "id": "strawberries-chocolate-board",
+  "name": "Chocolate & Strawberry Board",
+  "category": "Desserts",
+  "description": "A simple sharing platter featuring strawberries, chocolate and sweet treats for a relaxed date night.",
+  "prepTime": "15 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "200g strawberries",
+    "100g dark chocolate",
+    "100g white chocolate",
+    "GF biscuits",
+    "Marshmallows (GF if available)"
+  ],
+  "instructions": [
+    "Wash and prepare strawberries.",
+    "Break chocolate into serving pieces.",
+    "Arrange strawberries on serving board.",
+    "Add biscuits and marshmallows.",
+    "Serve immediately."
+  ],
+  "huntressNotes": [
+    "Gluten Free Options Available",
+    "Perfect For Sharing"
+  ],
+  "foxNotes": [
+    "Minimal effort, maximum effect."
+  ],
+  "tags": [
+    "Date Night",
+    "Sharing Board",
+    "Chocolate"
+  ],
+  "imagePrompt": "Elegant chocolate and strawberry dessert board arranged for two people, romantic date night photography"
+},
+{
+  "id": "peaches-cream-date-night",
+  "name": "Peaches & Cream",
+  "category": "Desserts",
+  "description": "Fresh peaches served with lightly sweetened whipped cream.",
+  "prepTime": "10 min",
+  "cookTime": "0 min",
+  "difficulty": "Easy",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "2 peaches",
+    "250ml cream",
+    "1 tbsp honey",
+    "Cinnamon"
+  ],
+  "instructions": [
+    "Slice peaches into wedges.",
+    "Whip cream until soft peaks form.",
+    "Add honey and mix gently.",
+    "Arrange peaches in serving bowls.",
+    "Top with whipped cream.",
+    "Sprinkle lightly with cinnamon.",
+    "Serve chilled."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Light Dessert"
+  ],
+  "foxNotes": [
+    "Simple, elegant and surprisingly good."
+  ],
+  "tags": [
+    "Peaches",
+    "Date Night",
+    "Fruit Dessert"
+  ],
+  "imagePrompt": "Fresh peaches and whipped cream served in elegant bowls, romantic dessert photography"
+},
+{
+  "id": "mini-cheesecake-board",
+  "name": "Mini Cheesecake Board",
+  "category": "Desserts",
+  "description": "A dessert board featuring miniature cheesecake cups and fresh fruit.",
+  "prepTime": "20 min",
+  "cookTime": "Chill 2 hrs",
+  "difficulty": "Medium",
+  "servings": "2",
+  "status": "Untested",
+  "ingredients": [
+    "2 mini cheesecake cups",
+    "Strawberries",
+    "Blueberries",
+    "Dark chocolate shavings",
+    "Mint leaves"
+  ],
+  "instructions": [
+    "Prepare mini cheesecake cups.",
+    "Arrange cheesecake cups on serving board.",
+    "Add fresh berries around the board.",
+    "Sprinkle chocolate shavings.",
+    "Garnish with mint leaves.",
+    "Serve chilled."
+  ],
+  "huntressNotes": [
+    "Gluten Free",
+    "Date Night Dessert"
+  ],
+  "foxNotes": [
+    "Feels like something from a boutique café."
+  ],
+  "tags": [
+    "Cheesecake",
+    "Date Night",
+    "Dessert Board"
+  ],
+  "imagePrompt": "Mini cheesecake dessert board with berries and chocolate, luxury date night dessert photography"
+}
+      ]
+    },
+    {
+      "name": "Future Dessert Projects",
+      "recipes": [
+{
+  "id": "gf-carrot-cake",
+  "name": "GF Carrot Cake",
+  "category": "Desserts",
+  "description": "A future project to develop a moist and flavourful gluten-free carrot cake.",
+  "prepTime": "TBD",
+  "cookTime": "TBD",
+  "difficulty": "TBD",
+  "servings": "TBD",
+  "status": "Researching",
+  "ingredients": [],
+  "instructions": [
+    "Research gluten-free flour options.",
+    "Test moisture levels.",
+    "Develop cream cheese frosting.",
+    "Finalize recipe."
+  ],
+  "huntressNotes": [
+    "Potential Future Favourite",
+    "Recipe Under Development"
+  ],
+  "foxNotes": [
+    "Worth developing properly rather than rushing."
+  ],
+  "tags": [
+    "Cake",
+    "Research Project",
+    "Gluten Free"
+  ],
+  "imagePrompt": "Moist gluten free carrot cake with cream cheese frosting, premium bakery photography"
+},
+{
+  "id": "gf-red-velvet-cake",
+  "name": "GF Red Velvet Cake",
+  "category": "Desserts",
+  "description": "A gluten-free version of the classic red velvet cake with cream cheese frosting.",
+  "prepTime": "TBD",
+  "cookTime": "TBD",
+  "difficulty": "TBD",
+  "servings": "TBD",
+  "status": "Researching",
+  "ingredients": [],
+  "instructions": [
+    "Research gluten-free flour blends.",
+    "Develop sponge texture.",
+    "Test frosting recipe.",
+    "Finalize recipe."
+  ],
+  "huntressNotes": [
+    "Special Occasion Dessert",
+    "Recipe Under Development"
+  ],
+  "foxNotes": [
+    "Would make a fantastic birthday cake."
+  ],
+  "tags": [
+    "Red Velvet",
+    "Cake",
+    "Research Project"
+  ],
+  "imagePrompt": "Elegant gluten free red velvet cake with cream cheese frosting, luxury bakery photography"
+},
+{
+  "id": "gf-chocolate-cake",
+  "name": "GF Chocolate Cake",
+  "category": "Desserts",
+  "description": "A rich gluten-free chocolate cake intended for celebrations and special occasions.",
+  "prepTime": "TBD",
+  "cookTime": "TBD",
+  "difficulty": "TBD",
+  "servings": "TBD",
+  "status": "Researching",
+  "ingredients": [],
+  "instructions": [
+    "Develop cake structure.",
+    "Test moisture retention.",
+    "Create chocolate frosting.",
+    "Finalize recipe."
+  ],
+  "huntressNotes": [
+    "Chocolate Lovers Project",
+    "Recipe Under Development"
+  ],
+  "foxNotes": [
+    "A must-have long-term recipe."
+  ],
+  "tags": [
+    "Chocolate Cake",
+    "Research Project",
+    "Celebration"
+  ],
+  "imagePrompt": "Rich gluten free chocolate cake layered with chocolate frosting, premium dessert photography"
+},
+{
+  "id": "gf-lemon-meringue",
+  "name": "GF Lemon Meringue",
+  "category": "Desserts",
+  "description": "A future gluten-free lemon meringue pie with bright citrus flavour.",
+  "prepTime": "TBD",
+  "cookTime": "TBD",
+  "difficulty": "TBD",
+  "servings": "TBD",
+  "status": "Researching",
+  "ingredients": [],
+  "instructions": [
+    "Develop gluten-free pastry base.",
+    "Perfect lemon filling.",
+    "Create stable meringue topping.",
+    "Finalize recipe."
+  ],
+  "huntressNotes": [
+    "Recipe Under Development"
+  ],
+  "foxNotes": [
+    "One of the more advanced baking projects."
+  ],
+  "tags": [
+    "Lemon Meringue",
+    "Pie",
+    "Research Project"
+  ],
+  "imagePrompt": "Gluten free lemon meringue pie with golden peaks, elegant dessert photography"
+},
+{
+  "id": "gf-black-forest-cake",
+  "name": "GF Black Forest Cake",
+  "category": "Desserts",
+  "description": "A future gluten-free black forest cake layered with cream and cherries.",
+  "prepTime": "TBD",
+  "cookTime": "TBD",
+  "difficulty": "TBD",
+  "servings": "TBD",
+  "status": "Researching",
+  "ingredients": [],
+  "instructions": [
+    "Develop chocolate sponge.",
+    "Test cherry filling.",
+    "Create whipped cream layers.",
+    "Finalize recipe."
+  ],
+  "huntressNotes": [
+    "Special Occasion Dessert",
+    "Recipe Under Development"
+  ],
+  "foxNotes": [
+    "A long-term showcase recipe."
+  ],
+  "tags": [
+    "Black Forest",
+    "Cake",
+    "Research Project"
+  ],
+  "imagePrompt": "Gluten free black forest cake with cherries and cream, luxury bakery photography"
+}
+      ]
+    }
+  ]
+}

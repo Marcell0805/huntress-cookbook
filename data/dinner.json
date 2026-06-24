@@ -1,0 +1,853 @@
+{
+  "category": "Dinner",
+  "description": "Comforting evening meals designed around the Huntress' dietary needs while still feeling satisfying and special.",
+  "groups": [
+    {
+  "group": "Chicken Dinners",
+  "description": "Simple, comforting chicken dinners designed around the Huntress' dietary needs while remaining practical for everyday South African cooking.",
+  "recipes": [
+    {
+      "id": "dinner-garlic-butter-chicken",
+      "name": "Garlic Butter Chicken",
+      "category": "Dinner",
+      "subcategory": "Chicken Dinners",
+      "description": "Juicy chicken breasts cooked in a rich garlic butter sauce.",
+      "prepTime": "10 min",
+      "cookTime": "25 min",
+      "difficulty": "Easy",
+      "servings": "4",
+      "status": "Untested",
+      "ingredients": [
+        "4 chicken breasts",
+        "2 tbsp butter",
+        "3 garlic cloves",
+        "1 tsp paprika",
+        "Salt",
+        "Black pepper"
+      ],
+      "instructions": [
+        "Season chicken with paprika, salt and pepper.",
+        "Heat butter in a large pan.",
+        "Cook chicken until golden on both sides.",
+        "Add garlic and continue cooking.",
+        "Cook until chicken is fully cooked through.",
+        "Serve immediately."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Onion Free",
+        "High Protein"
+      ],
+      "foxNotes": [
+        "A great first dinner recipe to master."
+      ],
+      "tags": [
+        "Chicken",
+        "High Protein",
+        "Easy"
+      ],
+      "imagePrompt": "Golden garlic butter chicken served on rustic plate with herbs, warm cookbook photography"
+    },
+
+    {
+      "id": "dinner-lemon-herb-chicken",
+      "name": "Lemon Herb Chicken",
+      "category": "Dinner",
+      "subcategory": "Chicken Dinners",
+      "description": "Fresh and light chicken flavoured with lemon and herbs.",
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "difficulty": "Easy",
+      "servings": "4",
+      "status": "Untested",
+      "ingredients": [
+        "4 chicken breasts",
+        "1 lemon",
+        "1 tsp rosemary",
+        "1 tsp thyme",
+        "1 tbsp olive oil",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Mix lemon juice, herbs and olive oil.",
+        "Marinate chicken for 15 minutes.",
+        "Cook chicken until golden and fully cooked.",
+        "Allow chicken to rest for 5 minutes.",
+        "Serve."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Light Meal"
+      ],
+      "foxNotes": [
+        "Excellent served with sweet potato."
+      ],
+      "tags": [
+        "Chicken",
+        "Healthy",
+        "Light"
+      ],
+      "imagePrompt": "Lemon herb chicken with roasted vegetables, rustic South African dinner photography"
+    },
+
+    {
+      "id": "dinner-creamy-mushroom-chicken",
+      "name": "Creamy Mushroom Chicken",
+      "category": "Dinner",
+      "subcategory": "Chicken Dinners",
+      "description": "Comforting chicken in a creamy mushroom sauce.",
+      "prepTime": "15 min",
+      "cookTime": "30 min",
+      "difficulty": "Medium",
+      "servings": "4",
+      "status": "Untested",
+      "ingredients": [
+        "4 chicken breasts",
+        "250g mushrooms",
+        "250ml cream",
+        "2 garlic cloves",
+        "1 tbsp butter",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Cook chicken until browned.",
+        "Remove chicken from the pan.",
+        "Cook mushrooms in butter.",
+        "Add garlic and cook briefly.",
+        "Pour in cream.",
+        "Return chicken to the pan.",
+        "Simmer until sauce thickens."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Comfort Food"
+      ],
+      "foxNotes": [
+        "One of the strongest dinner recipes in the cookbook."
+      ],
+      "tags": [
+        "Chicken",
+        "Creamy",
+        "Comfort Food"
+      ],
+      "imagePrompt": "Creamy mushroom chicken in cast iron pan, warm rustic dinner photography"
+    },
+
+    {
+      "id": "dinner-tuscan-chicken",
+      "name": "Tuscan Chicken",
+      "category": "Dinner",
+      "subcategory": "Chicken Dinners",
+      "description": "Creamy chicken with spinach and cherry tomatoes.",
+      "prepTime": "15 min",
+      "cookTime": "30 min",
+      "difficulty": "Medium",
+      "servings": "4",
+      "status": "Untested",
+      "ingredients": [
+        "4 chicken breasts",
+        "1 cup spinach",
+        "1 cup cherry tomatoes",
+        "250ml cream",
+        "2 garlic cloves",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Cook chicken until browned.",
+        "Remove from pan.",
+        "Cook garlic briefly.",
+        "Add cream and simmer.",
+        "Add spinach and tomatoes.",
+        "Return chicken to pan.",
+        "Cook until everything is heated through."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Onion Free"
+      ],
+      "foxNotes": [
+        "Feels fancy without being difficult."
+      ],
+      "tags": [
+        "Chicken",
+        "Date Night",
+        "Creamy"
+      ],
+      "imagePrompt": "Tuscan chicken with spinach and tomatoes, elegant rustic cookbook photography"
+    },
+
+    {
+      "id": "dinner-chicken-rice-bake",
+      "name": "Chicken & Rice Bake",
+      "category": "Dinner",
+      "subcategory": "Chicken Dinners",
+      "description": "Simple one-dish family meal perfect for meal prep.",
+      "prepTime": "15 min",
+      "cookTime": "45 min",
+      "difficulty": "Easy",
+      "servings": "6",
+      "status": "Untested",
+      "ingredients": [
+        "2 cups rice",
+        "4 chicken breasts",
+        "500ml chicken stock",
+        "1 cup grated cheese",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Preheat oven to 180°C.",
+        "Add rice to baking dish.",
+        "Pour in chicken stock.",
+        "Place seasoned chicken on top.",
+        "Bake until chicken is cooked.",
+        "Sprinkle cheese over the top.",
+        "Bake until cheese has melted."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Meal Prep Friendly"
+      ],
+      "foxNotes": [
+        "Excellent leftovers for lunch."
+      ],
+      "tags": [
+        "Chicken",
+        "Meal Prep",
+        "Family Meal"
+      ],
+      "imagePrompt": "Golden baked chicken and rice casserole, comforting home-cooked dinner photography"
+    }
+  ]
+}
+,
+    {
+  "group": "Beef Dinners",
+  "description": "Hearty South African-inspired dinners that are filling, comforting and practical for everyday cooking.",
+  "recipes": [
+    {
+      "id": "dinner-cottage-pie",
+      "name": "Cottage Pie",
+      "category": "Dinner",
+      "subcategory": "Beef Dinners",
+      "description": "A comforting beef mince dish topped with creamy mashed potatoes.",
+      "prepTime": "25 min",
+      "cookTime": "45 min",
+      "difficulty": "Medium",
+      "servings": "6",
+      "status": "Untested",
+      "ingredients": [
+        "500g beef mince",
+        "4 potatoes",
+        "2 carrots",
+        "2 garlic cloves",
+        "250ml beef stock",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Boil potatoes until soft.",
+        "Mash potatoes and set aside.",
+        "Cook beef mince until browned.",
+        "Add carrots and garlic.",
+        "Pour in stock and simmer.",
+        "Transfer mince mixture to baking dish.",
+        "Top with mashed potatoes.",
+        "Bake until golden."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Onion Free",
+        "Comfort Food"
+      ],
+      "foxNotes": [
+        "One of the strongest winter meals in the cookbook."
+      ],
+      "tags": [
+        "Beef",
+        "Comfort Food",
+        "Winter"
+      ],
+      "imagePrompt": "Golden cottage pie fresh from oven, rustic South African home cooking photography"
+    },
+
+    {
+      "id": "dinner-steak-sweet-potato",
+      "name": "Steak & Sweet Potato",
+      "category": "Dinner",
+      "subcategory": "Beef Dinners",
+      "description": "A simple high-protein dinner with steak and roasted sweet potatoes.",
+      "prepTime": "10 min",
+      "cookTime": "25 min",
+      "difficulty": "Easy",
+      "servings": "2",
+      "status": "Untested",
+      "ingredients": [
+        "2 steaks",
+        "2 sweet potatoes",
+        "Olive oil",
+        "Rosemary",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Cube sweet potatoes.",
+        "Season and roast until golden.",
+        "Season steaks.",
+        "Cook to preferred doneness.",
+        "Rest steaks.",
+        "Serve together."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "High Protein"
+      ],
+      "foxNotes": [
+        "Excellent date-night meal that isn't complicated."
+      ],
+      "tags": [
+        "Steak",
+        "Protein",
+        "Simple"
+      ],
+      "imagePrompt": "Medium rare steak with roasted sweet potatoes, elegant rustic dinner photography"
+    },
+
+    {
+      "id": "dinner-beef-meatballs-rice",
+      "name": "Beef Meatballs & Rice",
+      "category": "Dinner",
+      "subcategory": "Beef Dinners",
+      "description": "Tender homemade meatballs served with fluffy rice.",
+      "prepTime": "20 min",
+      "cookTime": "25 min",
+      "difficulty": "Medium",
+      "servings": "4",
+      "status": "Untested",
+      "ingredients": [
+        "500g beef mince",
+        "1 egg",
+        "1 tsp paprika",
+        "1 tsp garlic powder",
+        "2 cups cooked rice",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Mix mince, egg and seasonings.",
+        "Form meatballs.",
+        "Cook until browned.",
+        "Prepare rice.",
+        "Serve meatballs over rice."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Meal Prep Friendly"
+      ],
+      "foxNotes": [
+        "Makes excellent leftovers."
+      ],
+      "tags": [
+        "Beef",
+        "Meal Prep",
+        "Protein"
+      ],
+      "imagePrompt": "Homemade beef meatballs served over rice, comforting family dinner photography"
+    },
+
+    {
+      "id": "dinner-slow-cooked-beef-stew",
+      "name": "Slow-Cooked Beef Stew",
+      "category": "Dinner",
+      "subcategory": "Beef Dinners",
+      "description": "Rich beef stew perfect for cold winter evenings.",
+      "prepTime": "20 min",
+      "cookTime": "3 hrs",
+      "difficulty": "Medium",
+      "servings": "6",
+      "status": "Untested",
+      "ingredients": [
+        "800g beef cubes",
+        "3 carrots",
+        "500ml beef stock",
+        "2 garlic cloves",
+        "1 tsp thyme",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Brown beef cubes.",
+        "Add vegetables.",
+        "Pour in stock.",
+        "Add seasoning.",
+        "Simmer for several hours.",
+        "Serve warm."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Comfort Food",
+        "Winter Favourite"
+      ],
+      "foxNotes": [
+        "Perfect for rainy weather."
+      ],
+      "tags": [
+        "Stew",
+        "Winter",
+        "Comfort Food"
+      ],
+      "imagePrompt": "Slow cooked beef stew in cast iron pot, warm winter comfort food photography"
+    },
+
+    {
+      "id": "dinner-beef-potjie",
+      "name": "Beef Potjie",
+      "category": "Dinner",
+      "subcategory": "Beef Dinners",
+      "description": "Traditional South African potjie adapted for the Huntress.",
+      "prepTime": "20 min",
+      "cookTime": "3 hrs",
+      "difficulty": "Medium",
+      "servings": "6",
+      "status": "Untested",
+      "ingredients": [
+        "1kg beef cubes",
+        "Carrots",
+        "Butternut",
+        "Mushrooms",
+        "Beef stock",
+        "Garlic",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Brown beef in potjie pot.",
+        "Layer vegetables.",
+        "Add stock.",
+        "Season.",
+        "Cook slowly over coals.",
+        "Serve directly from pot."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Onion Free",
+        "South African Classic"
+      ],
+      "foxNotes": [
+        "Potential future Approved Huntress Meal."
+      ],
+      "tags": [
+        "Potjie",
+        "South African",
+        "Comfort Food"
+      ],
+      "imagePrompt": "Traditional South African beef potjie cooking over coals, rustic outdoor photography"
+    }
+  ]
+},
+    {
+  "group": "Fish & Seafood",
+  "description": "Lighter dinner options that are packed with flavour, protein and simple ingredients readily available in South Africa.",
+  "recipes": [
+    {
+      "id": "dinner-lemon-garlic-hake",
+      "name": "Lemon Garlic Hake",
+      "category": "Dinner",
+      "subcategory": "Fish & Seafood",
+      "description": "A light and refreshing hake dish with lemon and garlic.",
+      "prepTime": "10 min",
+      "cookTime": "15 min",
+      "difficulty": "Easy",
+      "servings": "2",
+      "status": "Untested",
+      "ingredients": [
+        "2 hake fillets",
+        "1 lemon",
+        "2 garlic cloves",
+        "1 tbsp olive oil",
+        "Salt",
+        "Black pepper"
+      ],
+      "instructions": [
+        "Preheat oven to 180°C.",
+        "Place hake fillets in baking dish.",
+        "Mix lemon juice, olive oil and garlic.",
+        "Pour mixture over fish.",
+        "Season with salt and pepper.",
+        "Bake until fish flakes easily.",
+        "Serve immediately."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Onion Free",
+        "Light Meal"
+      ],
+      "foxNotes": [
+        "Great option when wanting something lighter than chicken or beef."
+      ],
+      "tags": [
+        "Seafood",
+        "Healthy",
+        "Light"
+      ],
+      "imagePrompt": "Baked lemon garlic hake fillet with herbs and lemon slices, elegant seafood cookbook photography"
+    },
+
+    {
+      "id": "dinner-garlic-butter-salmon",
+      "name": "Garlic Butter Salmon",
+      "category": "Dinner",
+      "subcategory": "Fish & Seafood",
+      "description": "A rich salmon dish with garlic butter and simple seasoning.",
+      "prepTime": "10 min",
+      "cookTime": "15 min",
+      "difficulty": "Easy",
+      "servings": "2",
+      "status": "Untested",
+      "ingredients": [
+        "2 salmon fillets",
+        "2 tbsp butter",
+        "2 garlic cloves",
+        "Salt",
+        "Black pepper"
+      ],
+      "instructions": [
+        "Preheat oven to 180°C.",
+        "Melt butter and combine with garlic.",
+        "Place salmon in baking dish.",
+        "Pour garlic butter over fish.",
+        "Season lightly.",
+        "Bake until salmon is cooked through.",
+        "Serve warm."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "High Protein",
+        "Date Night Meal"
+      ],
+      "foxNotes": [
+        "One of the more premium meals in the cookbook."
+      ],
+      "tags": [
+        "Salmon",
+        "Date Night",
+        "Seafood"
+      ],
+      "imagePrompt": "Garlic butter salmon fillet with herbs and roasted vegetables, premium dinner photography"
+    },
+
+    {
+      "id": "dinner-tuna-patties",
+      "name": "Tuna Patties",
+      "category": "Dinner",
+      "subcategory": "Fish & Seafood",
+      "description": "Budget-friendly tuna patties that are simple to prepare and surprisingly filling.",
+      "prepTime": "15 min",
+      "cookTime": "15 min",
+      "difficulty": "Easy",
+      "servings": "4",
+      "status": "Untested",
+      "ingredients": [
+        "2 tins tuna",
+        "2 eggs",
+        "1 tsp paprika",
+        "Salt",
+        "Pepper",
+        "Olive oil"
+      ],
+      "instructions": [
+        "Drain tuna.",
+        "Mix tuna with eggs and seasonings.",
+        "Form small patties.",
+        "Heat olive oil in a pan.",
+        "Cook patties until golden on both sides.",
+        "Serve warm."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "High Protein",
+        "Budget Friendly"
+      ],
+      "foxNotes": [
+        "Excellent pantry meal when supplies are running low."
+      ],
+      "tags": [
+        "Tuna",
+        "Budget",
+        "Protein"
+      ],
+      "imagePrompt": "Golden tuna patties on rustic serving plate, homemade seafood dinner photography"
+    },
+
+    {
+      "id": "dinner-prawn-rice-bowl",
+      "name": "Prawn & Rice Bowl",
+      "category": "Dinner",
+      "subcategory": "Fish & Seafood",
+      "description": "A fresh rice bowl featuring prawns and simple vegetables.",
+      "prepTime": "15 min",
+      "cookTime": "20 min",
+      "difficulty": "Medium",
+      "servings": "2",
+      "status": "Untested",
+      "ingredients": [
+        "300g prawns",
+        "1 cup cooked rice",
+        "1 cucumber",
+        "Cherry tomatoes",
+        "1 tbsp olive oil",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Cook rice and set aside.",
+        "Season prawns.",
+        "Cook prawns until pink and tender.",
+        "Prepare vegetables.",
+        "Assemble rice bowls.",
+        "Top with prawns and serve."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Onion Free",
+        "Fresh Dinner Option"
+      ],
+      "foxNotes": [
+        "Feels restaurant-quality while still being simple."
+      ],
+      "tags": [
+        "Prawns",
+        "Rice Bowl",
+        "Seafood"
+      ],
+      "imagePrompt": "Fresh prawn rice bowl with vegetables, modern healthy dinner photography"
+    }
+  ]
+},
+    {
+  "group": "Comfort Food Collection",
+  "description": "The heart of the cookbook. Warm, comforting meals designed for cold evenings, family dinners and days when the Huntress simply needs good food.",
+  "recipes": [
+    {
+      "id": "dinner-bobotie-gf",
+      "name": "Bobotie (GF Version)",
+      "category": "Dinner",
+      "subcategory": "Comfort Food Collection",
+      "description": "A gluten-free adaptation of the South African classic, rich in flavour and perfect for family dinners.",
+      "prepTime": "25 min",
+      "cookTime": "45 min",
+      "difficulty": "Medium",
+      "servings": "6",
+      "status": "Untested",
+      "ingredients": [
+        "500g beef mince",
+        "2 eggs",
+        "125ml milk",
+        "2 slices GF bread",
+        "1 tsp curry powder",
+        "1 tsp turmeric",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Soak GF bread in milk.",
+        "Cook beef mince until browned.",
+        "Add spices and seasoning.",
+        "Mix soaked bread into mince.",
+        "Transfer to baking dish.",
+        "Whisk eggs and remaining milk.",
+        "Pour egg mixture over mince.",
+        "Bake until golden."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "South African Classic",
+        "Comfort Food"
+      ],
+      "foxNotes": [
+        "A recipe worth mastering."
+      ],
+      "tags": [
+        "Bobotie",
+        "South African",
+        "Comfort Food"
+      ],
+      "imagePrompt": "Golden baked gluten free bobotie in ceramic dish, traditional South African comfort food photography"
+    },
+
+    {
+      "id": "dinner-butternut-bacon-bake",
+      "name": "Butternut & Bacon Bake",
+      "category": "Dinner",
+      "subcategory": "Comfort Food Collection",
+      "description": "Sweet roasted butternut combined with crispy bacon and melted cheese.",
+      "prepTime": "15 min",
+      "cookTime": "40 min",
+      "difficulty": "Easy",
+      "servings": "4",
+      "status": "Untested",
+      "ingredients": [
+        "1 medium butternut",
+        "200g bacon",
+        "1 cup grated cheese",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Cube butternut.",
+        "Roast until tender.",
+        "Cook bacon until crispy.",
+        "Combine butternut and bacon in baking dish.",
+        "Top with cheese.",
+        "Bake until cheese melts."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Comfort Food"
+      ],
+      "foxNotes": [
+        "Excellent side dish or light dinner."
+      ],
+      "tags": [
+        "Butternut",
+        "Bacon",
+        "Comfort Food"
+      ],
+      "imagePrompt": "Roasted butternut and bacon bake topped with melted cheese, rustic comfort food photography"
+    },
+
+    {
+      "id": "dinner-chicken-soup",
+      "name": "Chicken Soup",
+      "category": "Dinner",
+      "subcategory": "Comfort Food Collection",
+      "description": "A gentle, nourishing soup perfect for recovery days and cold evenings.",
+      "prepTime": "15 min",
+      "cookTime": "45 min",
+      "difficulty": "Easy",
+      "servings": "6",
+      "status": "Untested",
+      "ingredients": [
+        "500g chicken breast",
+        "3 carrots",
+        "1 litre chicken stock",
+        "2 garlic cloves",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Dice chicken and carrots.",
+        "Bring stock to a simmer.",
+        "Add chicken and vegetables.",
+        "Cook until chicken is tender.",
+        "Season to taste.",
+        "Serve warm."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Recovery Meal",
+        "Easy Digestion"
+      ],
+      "foxNotes": [
+        "Ideal when energy is low or digestion is sensitive."
+      ],
+      "tags": [
+        "Soup",
+        "Recovery",
+        "Comfort Food"
+      ],
+      "imagePrompt": "Homemade chicken soup with carrots in rustic bowl, warm comforting food photography"
+    },
+
+    {
+      "id": "dinner-loaded-sweet-potatoes",
+      "name": "Loaded Sweet Potatoes",
+      "category": "Dinner",
+      "subcategory": "Comfort Food Collection",
+      "description": "Baked sweet potatoes loaded with cheese, bacon and flavour.",
+      "prepTime": "15 min",
+      "cookTime": "50 min",
+      "difficulty": "Easy",
+      "servings": "4",
+      "status": "Untested",
+      "ingredients": [
+        "4 sweet potatoes",
+        "200g bacon",
+        "1 cup grated cheese",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Bake sweet potatoes until soft.",
+        "Cook bacon until crispy.",
+        "Slice open sweet potatoes.",
+        "Fill with cheese and bacon.",
+        "Return to oven until cheese melts.",
+        "Serve immediately."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Comfort Food",
+        "Very Filling"
+      ],
+      "foxNotes": [
+        "One of the easiest comfort meals to make."
+      ],
+      "tags": [
+        "Sweet Potato",
+        "Comfort Food",
+        "Easy"
+      ],
+      "imagePrompt": "Loaded baked sweet potatoes with cheese and bacon, rustic comfort food photography"
+    },
+
+    {
+      "id": "dinner-shepherds-pie",
+      "name": "Shepherd's Pie",
+      "category": "Dinner",
+      "subcategory": "Comfort Food Collection",
+      "description": "A hearty baked mince dish topped with creamy mashed potatoes.",
+      "prepTime": "25 min",
+      "cookTime": "45 min",
+      "difficulty": "Medium",
+      "servings": "6",
+      "status": "Untested",
+      "ingredients": [
+        "500g mince",
+        "5 potatoes",
+        "2 carrots",
+        "250ml stock",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Cook mince until browned.",
+        "Add carrots and stock.",
+        "Simmer until reduced.",
+        "Prepare mashed potatoes.",
+        "Transfer mince mixture to baking dish.",
+        "Top with mashed potatoes.",
+        "Bake until golden."
+      ],
+      "huntressNotes": [
+        "Gluten Free",
+        "Comfort Food",
+        "Family Favourite"
+      ],
+      "foxNotes": [
+        "A reliable winter dinner."
+      ],
+      "tags": [
+        "Pie",
+        "Comfort Food",
+        "Winter"
+      ],
+      "imagePrompt": "Golden shepherds pie fresh from the oven, rustic family dinner photography"
+    }
+  ]
+}
+  ]
+}
