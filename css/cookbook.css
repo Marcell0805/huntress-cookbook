@@ -16,6 +16,10 @@
   --heart-red: #c45c5c;
 }
 
+html {
+  font-size: 18px;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -26,7 +30,7 @@ body {
   font-family: 'Cormorant Garamond', Georgia, serif;
   background: #e8e4dc;
   color: var(--soft-brown);
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 /* ── Page Shell ── */
@@ -119,12 +123,12 @@ body {
 
 .sidebar {
   width: 25%;
-  min-width: 200px;
+  min-width: 220px;
   background: var(--forest-green);
   color: var(--sidebar-muted);
   display: flex;
   flex-direction: column;
-  padding: 2rem 1.25rem;
+  padding: 2rem 1.35rem;
 }
 
 .sidebar-logo {
@@ -140,7 +144,7 @@ body {
 }
 
 .sidebar-brand {
-  font-size: 0.65rem;
+  font-size: 0.72rem;
   letter-spacing: 0.18em;
   color: var(--warm-gold);
   font-weight: 600;
@@ -150,8 +154,8 @@ body {
 .sidebar-nav {
   list-style: none;
   flex: 1;
-  font-size: 0.78rem;
-  line-height: 1.9;
+  font-size: 0.88rem;
+  line-height: 2;
 }
 
 .sidebar-nav li {
@@ -204,8 +208,8 @@ body {
 }
 
 .sidebar-notes p {
-  font-size: 0.72rem;
-  line-height: 1.55;
+  font-size: 0.82rem;
+  line-height: 1.6;
   color: var(--sidebar-muted);
 }
 
@@ -214,7 +218,7 @@ body {
 .main {
   flex: 1;
   min-width: 0;
-  padding: 2rem 2.5rem 1.5rem;
+  padding: 2rem 2.75rem 1.75rem;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -251,11 +255,11 @@ body {
 
 .chapter-intro {
   text-align: center;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   color: var(--soft-brown);
   max-width: 90%;
   margin: 0 auto 1.5rem;
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 /* ── Category Sections ── */
@@ -290,14 +294,14 @@ body {
 }
 
 .category-title {
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-weight: 600;
   color: var(--forest-green);
   letter-spacing: 0.02em;
 }
 
 .category-desc {
-  font-size: 0.78rem;
+  font-size: 0.88rem;
   color: var(--muted-text);
   margin-bottom: 0.4rem;
   padding-left: 2.25rem;
@@ -306,22 +310,22 @@ body {
 .category-content {
   display: grid;
   grid-template-columns: 1fr 1.4fr;
-  gap: 1rem;
+  gap: 1.25rem;
   padding-left: 0.5rem;
   align-items: start;
 }
 
 .recipe-list {
   list-style: none;
-  font-size: 0.82rem;
-  line-height: 1.85;
+  font-size: 0.95rem;
+  line-height: 1.9;
 }
 
 .recipe-list li::before {
   content: '♥';
   color: var(--heart-red);
-  font-size: 0.65rem;
-  margin-right: 0.4rem;
+  font-size: 0.72rem;
+  margin-right: 0.45rem;
 }
 
 .recipe-list a {
@@ -480,11 +484,11 @@ body {
 
 .photo-caption {
   font-family: 'Dancing Script', cursive;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   color: var(--soft-brown);
-  margin-top: 0.25rem;
+  margin-top: 0.35rem;
   min-height: 2.4em;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 /* ── Footer ── */
@@ -501,14 +505,14 @@ body {
 .huntress-tip {
   background: var(--tip-green);
   border-radius: 6px;
-  padding: 0.75rem 1rem;
-  font-size: 0.78rem;
-  line-height: 1.55;
+  padding: 0.85rem 1.1rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
 
 .huntress-tip strong {
   color: var(--forest-green);
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   letter-spacing: 0.08em;
   display: block;
   margin-bottom: 0.25rem;
@@ -585,9 +589,9 @@ body {
 }
 
 .recipe-intro {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   color: var(--soft-brown);
-  line-height: 1.6;
+  line-height: 1.65;
   margin-bottom: 1rem;
   font-style: italic;
 }
@@ -629,7 +633,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 1.25rem;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   color: var(--muted-text);
 }
 
@@ -669,19 +673,18 @@ body {
 }
 
 .recipe-body h2 {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--forest-green);
   letter-spacing: 0.1em;
   font-weight: 600;
   margin-bottom: 0.75rem;
   text-transform: uppercase;
-  font-size: 0.8rem;
 }
 
 .recipe-ingredients ul {
   list-style: none;
-  font-size: 0.9rem;
-  line-height: 1.9;
+  font-size: 1rem;
+  line-height: 1.95;
 }
 
 .recipe-ingredients li::before {
@@ -693,8 +696,8 @@ body {
 
 .recipe-method ol {
   padding-left: 1.25rem;
-  font-size: 0.9rem;
-  line-height: 1.85;
+  font-size: 1rem;
+  line-height: 1.9;
 }
 
 .recipe-method li {
