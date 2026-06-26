@@ -669,3 +669,9 @@ foreach ($file in $htmlFiles) {
     }
 }
 Write-Host "Ensured search scripts on $searchScriptsAdded HTML pages"
+
+$exportScript = Join-Path $PSScriptRoot "export-mobile-seed.ps1"
+if (Test-Path $exportScript) {
+    Write-Host "Exporting mobile seed assets..."
+    & $exportScript
+}

@@ -135,6 +135,17 @@
   var SVG_HOME = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>';
   var SVG_PRINT = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>';
   var SVG_SEARCH = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>';
+  var SVG_ANDROID = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><path d="M12 18h.01"/></svg>';
+
+  function apkDownloadHref() {
+    var scope = getNavScope();
+    var prefix = scope === 'recipe' || scope === 'chapter' ? '../' : '';
+    return prefix + 'downloads/huntress-cookbook.apk';
+  }
+
+  function isAndroidBrowser() {
+    return /Android/i.test(navigator.userAgent);
+  }
 
   function getNavScope() {
     var scope = document.body.getAttribute('data-nav-scope');
@@ -178,6 +189,12 @@
       ? '<a href="../index.html" class="toolbar-btn" title="Cookbook home">' + SVG_HOME + '<span class="sr-only">Cookbook home</span></a>'
       : '';
 
+    var apkBtn = isAndroidBrowser()
+      ? ''
+      : '<a href="' + esc(apkDownloadHref()) + '" class="toolbar-btn toolbar-apk" title="Download Android app" download>' +
+          SVG_ANDROID + '<span class="sr-only">Download Android app</span>' +
+        '</a>';
+
     mount.outerHTML =
       '<header class="cookbook-toolbar no-print" aria-label="Page tools">' +
         '<div class="toolbar-inner">' +
@@ -191,6 +208,7 @@
           '<button type="button" class="toolbar-btn toolbar-print" title="Print or save as PDF (Ctrl+P)">' +
             SVG_PRINT + '<span class="sr-only">Print</span>' +
           '</button>' +
+          apkBtn +
         '</div>' +
       '</header>';
 

@@ -1,264 +1,192 @@
 # Huntress Cookbook — Offline Flutter App (AppGen)
 
-> **Status:** Planned (not implemented)  
-> **Decisions:** AppGen output at `output/HuntressCookbook Mobile`; full on-device CRUD; offline only (no API/online DB).
+> **Status:** In progress  
+> **Reference app:** `AppGen/output/FlutterMobileApp Mobile` (patterns only — do not modify)  
+> **Target app:** `AppGen/output/HuntressCookbook Mobile`  
+> **Decisions:** New Huntress project; full on-device CRUD; offline only (no API/online DB).
 
 ## Goal
 
-Create **`output/HuntressCookbook Mobile`** (new AppGen project) that mirrors the website’s look and behaviour: chapter navigation, recipe browse/detail, search, guide pages, status badges, star ratings, and **full recipe CRUD** — all **offline**, with **no API or online database**.
+Create **`output/HuntressCookbook Mobile`** that mirrors the website: chapter navigation, recipe browse/detail with photos, search, guide pages, status badges, star ratings, and **full recipe CRUD** — all **offline**.
 
-The web app’s 221 HTML pages are **not** ported. The mobile app uses the same compiled data model as [`js/recipes.js`](../../js/recipes.js) (182 recipes at time of writing).
+The web app’s HTML pages are **not** ported. Data comes from the same compiled model as [`js/recipes.js`](../../js/recipes.js) (~182 recipes).
 
 ---
 
-## What you already have (and what to reuse)
+## Reference vs new app
+
+| | Reference | Target |
+|---|-----------|--------|
+| Path | `AppGen/output/FlutterMobileApp Mobile` | `AppGen/output/HuntressCookbook Mobile` |
+| Purpose | AppGen demo (MobileUser, MobileLocation, MobileBooks) | Huntress Cookbook |
+| Data | Dio → localhost API | SQLite + bundled seed JSON |
+| Theme | Navy sidebar `#1B3A5C` | Forest green `#1a3d2e` per [`cookbook.css`](../../css/cookbook.css) |
+
+**Copy from reference:** `GoRouter` + `AppShell`, `AppDrawer`, Riverpod, feature folders, `AppPageHeader`, loading/empty widgets.
+
+**Do not copy:** Dio/API services, demo entities, navy palette.
+
+---
+
+## What to reuse from huntress-cookbook
 
 | Asset | Location | Mobile use |
 |-------|----------|------------|
 | Recipe + chapter model | [`scripts/build-recipes.ps1`](../../scripts/build-recipes.ps1) → `HUNTRESS_COOKBOOK` | Seed import |
-| Search index logic | Same build script → [`js/search-index.js`](../../js/search-index.js) | Rebuild in-app or bundle index JSON |
-| UI behaviour reference | [`js/cookbook.js`](../../js/cookbook.js) | Screen flows, nav, status/ratings rules |
-| Images | `assets/images/{slug}.jpg` | Flutter `assets/images/` |
-| AppGen shell pattern | `AppGen/output/Flutter_App Mobile` | Router, drawer, theme, feature folders |
-
-**AppGen template today:** API-first (Dio → `localhost:5000`). `AppGen/output/Flutter_App/appgen.json` has `Offline.Enabled: false`. The generated offline layer is a **JSON key-value cache**, not relational CRUD — so **full offline CRUD requires custom SQLite repositories** after generation.
-
-**Theme gap:** AppGen `cookbook` preset uses navy sidebar (`#1B3A5C`); Huntress web uses **forest green** (`#1a3d2e`) per [`css/cookbook.css`](../../css/cookbook.css). Update `app_theme_config.dart` after gen.
+| UI behaviour | [`js/cookbook.js`](../../js/cookbook.js) | Nav, status/ratings, screen flows |
+| Images | `assets/images/{slug}.jpg` (~164 on disk) | Flutter `assets/images/` |
+| Export script | [`scripts/export-mobile-seed.ps1`](../../scripts/export-mobile-seed.ps1) | Build-time asset bundle |
 
 ---
 
-## Recommended architecture
+## Architecture
 
 ```mermaid
 flowchart TD
-  subgraph build [Build time]
+  subgraph build [huntress-cookbook build]
     JSON[data/*.json]
     PS[build-recipes.ps1]
+    Export[export-mobile-seed.ps1]
     Seed[cookbook_seed.json]
-    Imgs[assets/images/*.jpg]
-    JSON --> PS
-    PS --> Seed
-    PS --> Imgs
+    Imgs[assets/images]
+    JSON --> PS --> Export
+    Export --> Seed
+    Export --> Imgs
   end
 
-  subgraph flutter [HuntressCookbook Mobile]
-    Assets[Flutter assets bundle]
-    Bootstrap[FirstLaunchImporter]
-    DB[(SQLite recipes + user_state)]
+  subgraph mobile [HuntressCookbook Mobile]
+    Assets[Flutter assets]
+    Importer[SeedImporter]
+    DB[(SQLite)]
     Repo[CookbookRepository]
-    UI[Screens: Home Chapter Recipe Search Guides]
-    Assets --> Bootstrap
-    Bootstrap --> DB
-    DB --> Repo
-    Repo --> UI
+    UI[Home Chapter Recipe Search Guides]
+    Assets --> Importer --> DB --> Repo --> UI
   end
-
-  Seed --> Assets
-  Imgs --> Assets
 ```
 
-**Data flow:**
-
-1. **First launch:** import `assets/cookbook_seed.json` into SQLite (skip if DB already seeded).
-2. **Runtime:** all browse/search/CRUD reads and writes SQLite.
-3. **User state:** ratings, auth-unlocked flag, optional draft edits — same DB or `shared_preferences` for simple flags.
-4. **No network layer** — remove or stub Dio/`api_client.dart` from generated code.
-
-This gives true offline CRUD without an online DB. Sync back to the web JSON is a **later** problem (export script), not v1.
+1. **Build time:** `export-mobile-seed.ps1` emits JSON + copies images into Flutter `assets/`.
+2. **First launch:** import seed into SQLite (skip if already seeded).
+3. **Runtime:** all browse/search/CRUD via SQLite.
+4. **No network** — Dio stubbed/removed.
 
 ---
 
-## AppGen manifest (new project)
+## AppGen manifest
 
-Create **`AppGen/output/HuntressCookbook/appgen.json`** (new app, do not overwrite `Flutter_App`):
+**`AppGen/output/HuntressCookbook/appgen.json`:**
 
-| Setting | Value | Why |
-|---------|-------|-----|
-| `ApplicationName` | `HuntressCookbook` | Output: `HuntressCookbook Mobile` |
-| `Targets.Web.Enabled` | `false` | No API dependency |
-| `Targets.Mobile.Enabled` | `true` | Flutter client |
-| `Targets.Mobile.Offline.Enabled` | `true` | sqflite in `pubspec` (extend beyond generic cache) |
-| `Targets.Mobile.Theme.Preset` | `cookbook` | Starting point; then recolor to forest green |
-| `Targets.Mobile.ApiBaseUrl` | unused | Services replaced post-gen |
+| Setting | Value |
+|---------|-------|
+| `ApplicationName` | `HuntressCookbook` |
+| `Targets.Web.Enabled` | `false` |
+| `Targets.Mobile.Enabled` | `true` |
+| `Targets.Mobile.Offline.Enabled` | `true` |
+| `Targets.Mobile.Theme.Preset` | `cookbook` |
+| `Targets.Mobile.Capabilities.Enabled` | `share` |
+| Entity | `Recipe` (bootstrap CRUD; custom screens replace generated UI) |
 
-**Entities (minimal for generator CRUD scaffolding):**
-
-Primary entity **`Recipe`** with AppGen-friendly flat fields (arrays as JSON strings):
-
-- `Recipe_Id` (string, key) — use **slug** (`butternut-soup`), not auto-increment long
-- `Name`, `Description`, `CategoryId`, `Category`, `Status`, `Difficulty`
-- `PrepTime`, `CookTime`, `Servings` (int)
-- `IngredientsJson`, `InstructionsJson`, `TagsJson` (string)
-- `HuntressNotes`, `FoxNotes`, `Image` (filename)
-- `HuntressRating`, `FoxRating` (int, 0–5)
-
-Optional read-only config bundled as assets (not CRUD entities for v1):
-
-- `chapters.json` — from `HUNTRESS_COOKBOOK.chapters` + `chapterIntros`
-- `nav.json` — from `COOKBOOK_NAV` (move out of hardcoded JS eventually)
-- `guides.json` — introduction, dietary guide, pantry, future recipes
-
-Generate via AppGen CLI:
+Generate:
 
 ```powershell
-dotnet run --project src/AppGen.CLI -- mobile create --project output/HuntressCookbook [--force]
+cd AppGen
+dotnet run --project src/AppGen.CLI -- mobile create --project output/HuntressCookbook
 ```
 
----
-
-## Build pipeline addition (cookbook repo)
-
-Extend [`scripts/build-recipes.ps1`](../../scripts/build-recipes.ps1) (or add `scripts/export-mobile-seed.ps1`) to emit:
-
-1. **`cookbook_seed.json`** — full `HUNTRESS_COOKBOOK` object as JSON (strip plaintext `settings.auth.password` or replace with a mobile-only flag).
-2. **`search_index.json`** — same entries as `search-index.js` (optional; can also search SQLite).
-3. Copy step (manual or script) into `AppGen/output/HuntressCookbook Mobile/assets/`.
-
-Register in Flutter `pubspec.yaml`:
-
-```yaml
-assets:
-  - assets/cookbook_seed.json
-  - assets/chapters.json
-  - assets/images/
-```
-
-**Image bundle:** ~182 slots; run existing image download script before export. Consider lazy bundling or “images on first Wi‑Fi” only if APK size is a concern — for offline-only, bundle all mapped JPGs (~20–40 MB).
+Post-gen: custom SQLite repository uses **slug** as primary key (overrides generated long `Recipe_Id` routing).
 
 ---
 
-## Screen map (web → Flutter)
+## Recipe schema (SQLite)
 
-| Web | Flutter screen | Notes |
-|-----|----------------|-------|
-| [`index.html`](../../index.html) | `HomeScreen` | Logo, tagline, chapter list |
-| Chapter pages | `ChapterScreen` | Sections from `chapters.json`; recipe rows with status chip |
-| Recipe page | `RecipeDetailScreen` | **Custom** — hero image, meta row, ingredients, method, Huntress/Fox notes, stars |
-| (new) | `RecipeFormScreen` | **Custom** — dynamic ingredient/step lists, image picker |
-| Search modal | `SearchScreen` | Fuse.dart or SQLite `LIKE` on title + ingredients |
-| Introduction / guides | `GuideScreen` | Render markdown-like sections from bundled JSON |
-| Auth gate | `PinGateScreen` | Local PIN check; store unlock in secure storage |
-| Approved meals | `ApprovedMealsScreen` | Filter `status = approved` or rating ≥ threshold |
-| Toolbar print | Share / export | `share_plus` — share recipe text |
+| Column | Type | Notes |
+|--------|------|-------|
+| slug | TEXT PK | e.g. `butternut-soup` |
+| name, description, category_id, category, status, difficulty | TEXT | |
+| prep_time, cook_time, servings | INT | |
+| ingredients_json, instructions_json, tags_json | TEXT | JSON arrays |
+| huntress_notes, fox_notes, image | TEXT | |
+| huntress_rating, fox_rating | INT | 0–5 |
 
-**Navigation:** keep AppGen’s **GoRouter + drawer** pattern (`router.dart`, `app_shell.dart`). Replace demo entities in drawer with cookbook chapters + guides.
-
-**Recipe prev/next:** pass `chapterId` + `sectionTitle` in route extras (web uses `document.referrer` — unreliable on mobile).
+Bundled assets: `cookbook_seed.json`, `chapters.json`, `nav.json`, `guides.json`, `assets/images/`.
 
 ---
 
-## Custom code vs generated code
+## Screen map
 
-AppGen will generate generic **list / detail / form** with flat `_DetailRow` widgets. **Replace** for recipes:
-
-- `lib/features/recipe/screens/recipe_detail_screen.dart` — cookbook layout
-- `lib/features/recipe/screens/recipe_form_screen.dart` — list editors for ingredients/instructions
-- `lib/features/recipe/services/recipe_service.dart` — **SQLite**, not Dio
-- `lib/core/data/cookbook_database.dart` — schema + migrations
-- `lib/core/data/seed_importer.dart` — one-time import from `cookbook_seed.json`
-
-Keep generated shell: `main.dart`, router structure, `AppShell`, shared widgets (`AppLoadingState`, `AppEmptyState`), theme files.
-
-**Regeneration rule:** After first scaffold, treat `appgen.json` as bootstrap only; document which files are safe to regen vs hand-maintained.
-
----
-
-## Feature parity checklist
-
-| Feature | v1 | Implementation |
-|---------|-----|----------------|
-| Chapter browse | Yes | `chapters.json` + SQLite recipe lookup by slug |
-| Recipe detail | Yes | Custom detail screen |
-| Recipe CRUD | Yes | SQLite + custom form |
-| Search | Yes | Fuse or FTS |
-| Status badges | Yes | Map `status` → chip colors (match web CSS semantics) |
-| Star ratings | Yes | Persist to SQLite (`huntressRating`); update status rules from [recipe-status-and-ratings.md](./recipe-status-and-ratings.md) |
-| Guide pages | Yes | Bundled JSON renderers |
-| Password gate | Yes | Local PIN; do not ship web password in seed JSON |
-| Photo rows on chapters | v1.1 | Horizontal `ListView` of thumbnails |
-| Print PDF | No | Use share instead |
-| Web HTML parity | No | Not needed |
+| Web | Flutter | Phase |
+|-----|---------|-------|
+| [`index.html`](../../index.html) | `HomeScreen` | 1 |
+| Chapter pages | `ChapterScreen` | 1 |
+| Recipe page | `RecipeDetailScreen` + photo | 1 |
+| (new) | `RecipeFormScreen` | 2 |
+| Search modal | `SearchScreen` | 3 |
+| Guides | `GuideScreen` | 3 |
+| Auth gate | `PinGateScreen` | 3 |
+| Approved meals | `ChapterScreen` (filtered) | 3 |
 
 ---
 
-## Visual parity (look like the website)
+## Visual parity
 
-Update generated theme:
-
-| Token | Web (`cookbook.css`) | AppGen default |
-|-------|----------------------|----------------|
-| Sidebar | `#1a3d2e` | `#1B3A5C` → **change** |
-| Accent | `#c9a227` | `#C9A227` ✓ |
-| Background | `#f5f0e8` | `#F5F0E6` ✓ |
-| Body font | Cormorant Garamond | Inter → **switch** via `google_fonts` |
-| Script font | Dancing Script | Use for taglines/captions |
-
-Chapter UI: numbered sections, emoji section icons (from `chapters[].icon`), heart-bullet recipe lists, 3-up photo row optional in v1.1.
+| Token | Web | Target mobile |
+|-------|-----|---------------|
+| Sidebar | `#1a3d2e` | `#1a3d2e` |
+| Accent | `#c9a227` | `#c9a227` |
+| Background | `#f5f0e8` | `#f5f0e8` |
+| Body font | Cormorant Garamond | `google_fonts` |
+| Script font | Dancing Script | taglines |
 
 ---
 
 ## Implementation phases
 
-### Phase 1 — Scaffold and seed (browse-only foundation)
-
-- [ ] Create `HuntressCookbook` `appgen.json`; generate `HuntressCookbook Mobile`
-- [ ] Add `export-mobile-seed.ps1`; wire assets
-- [ ] Implement SQLite schema + first-launch importer
-- [ ] Home + Chapter + Recipe detail (read-only)
-- [ ] Forest-green theme + fonts
+### Phase 1 — Scaffold, theme, browse
+- [x] Update this plan doc
+- [ ] `HuntressCookbook` manifest + generate mobile app
+- [ ] `export-mobile-seed.ps1` + assets
+- [ ] SQLite + seed importer
+- [ ] Forest-green theme + drawer nav
+- [ ] Home → Chapter → Recipe detail with images
 
 ### Phase 2 — CRUD and ratings
-
-- [ ] Recipe create/edit/delete in SQLite
-- [ ] Star ratings + status badge sync (local rules)
-- [ ] FAB / “Add recipe” on chapter screens
-- [ ] Image: pick from gallery or keep filename reference
+- [ ] Recipe create/edit/delete
+- [ ] Star ratings + status badges
+- [ ] FAB on chapter screens
 
 ### Phase 3 — Search, auth, guides
+- [ ] Search screen
+- [ ] Introduction, dietary guide, pantry, future recipes
+- [ ] Local PIN gate
 
-- [ ] Search screen (Fuse or FTS)
-- [ ] PIN gate on cold start
-- [ ] Introduction, dietary guide, pantry, future recipes screens
-- [ ] Approved meals filtered view
-
-### Phase 4 — Polish (optional)
-
-- [ ] Photo rows on chapter screens
-- [ ] Export SQLite → JSON for merging back into web `data/*.json`
-- [ ] Android/iOS icons and splash using fox logo
+### Phase 4 — Polish
+- [ ] Share recipe (`share_plus`)
+- [ ] Missing image placeholders
+- [ ] App icon / splash from fox logo
+- [ ] Optional: export SQLite → web JSON
 
 ---
 
-## Risks and mitigations
+## Hand-maintained files (safe from AppGen regen)
 
-| Risk | Mitigation |
-|------|------------|
-| AppGen regen wipes custom screens | Freeze manifest; maintain custom recipe feature outside regen path |
-| Generic CRUD inadequate for recipes | Budget time for custom detail/form (expected) |
-| Two data sources (web JSON vs phone DB) diverge | v1: phone is independent; later: export/import script |
-| Large APK from images | Bundle subset first; or compress JPGs in export script |
-| `Recipe_Id` as string key | Configure in AppGen or override model post-gen (slug is required for image filenames) |
-| Missing images in repo | Run `download-images-from-map.ps1` before mobile export |
+- `lib/core/data/*` — SQLite, seed importer, repository
+- `lib/features/home/*`, `chapter/*`, `recipe/*`, `search/*`, `guides/*`, `auth/*`
+- `lib/app/app_theme_config.dart`, `app_drawer.dart`, `router.dart`
+- `assets/*`
 
 ---
 
 ## Out of scope (v1)
 
-- Online sync, user accounts, cloud backup
-- Editing chapter structure / nav via UI
-- WebView wrapper of existing HTML site
-- Regenerating 207 recipe HTML pages on mobile
+- Online sync, cloud backup, WebView of HTML site
+- Editing chapter structure via UI
 
 ---
 
-## Key files to create or modify
+## Key paths
 
-| File | Action |
-|------|--------|
-| `AppGen/output/HuntressCookbook/appgen.json` | **New** manifest |
-| `AppGen/output/HuntressCookbook Mobile/` | **Generated** Flutter app |
-| `huntress-cookbook/scripts/export-mobile-seed.ps1` | **New** — JSON + asset copy |
-| `huntress-cookbook/scripts/build-recipes.ps1` | **Edit** — call export or emit `cookbook_seed.json` |
-| `HuntressCookbook Mobile/lib/app/app_theme_config.dart` | **Edit** — forest green palette |
-| `HuntressCookbook Mobile/lib/core/data/*` | **New** — SQLite + seed |
-| `HuntressCookbook Mobile/lib/features/recipe/*` | **Replace** generated CRUD with cookbook UI |
+| File | Repo |
+|------|------|
+| `output/HuntressCookbook/appgen.json` | AppGen |
+| `output/HuntressCookbook Mobile/` | AppGen |
+| `output/FlutterMobileApp Mobile/` | AppGen (reference only) |
+| `scripts/export-mobile-seed.ps1` | huntress-cookbook |
