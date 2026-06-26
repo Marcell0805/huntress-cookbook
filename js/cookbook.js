@@ -191,8 +191,8 @@
 
     var apkBtn = isAndroidBrowser()
       ? ''
-      : '<a href="' + esc(apkDownloadHref()) + '" class="toolbar-btn toolbar-apk" title="Download Android app" download>' +
-          SVG_ANDROID + '<span class="sr-only">Download Android app</span>' +
+      : '<a href="' + esc(apkDownloadHref()) + '" class="toolbar-btn toolbar-apk" title="Download The Huntress Cookbook (Android)" download>' +
+          SVG_ANDROID + '<span class="sr-only">Download The Huntress Cookbook for Android</span>' +
         '</a>';
 
     mount.outerHTML =

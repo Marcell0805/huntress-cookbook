@@ -6,6 +6,12 @@ A personal cookbook for the Huntress — gluten-free, onion-free, and IBS-consci
 
 Open **`index.html`** in your browser to browse the cookbook.
 
+### Android app
+
+Download the offline mobile app from **[downloads/huntress-cookbook.apk](downloads/huntress-cookbook.apk)** or use the phone icon in the chapter/recipe toolbar.
+
+See **[downloads/README.md](downloads/README.md)** for install steps (Play Protect prompts are normal for sideloaded apps).
+
 ### What's included
 
 - **Recipe chapters** — breakfast, lunch, dinner, braai, soups, desserts, snacks, drinks

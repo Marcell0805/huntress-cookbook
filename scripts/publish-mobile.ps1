@@ -23,6 +23,16 @@ if (-not (Test-Path $ApkPath)) {
     throw "APK not found at $ApkPath. Run: flutter build apk --release"
 }
 
+# Warn if release APK may still be debug-signed (common when key.properties is missing).
+try {
+    $sig = & jarsigner -verify -verbose -certs $ApkPath 2>&1 | Out-String
+    if ($sig -match 'CN=Android Debug') {
+        Write-Warning "APK appears debug-signed. Configure android/key.properties and rebuild for release signing."
+    }
+} catch {
+    # jarsigner optional
+}
+
 $pubspecPath = Join-Path $MobileRoot "pubspec.yaml"
 if (-not (Test-Path $pubspecPath)) {
     throw "Missing pubspec.yaml at $MobileRoot"
