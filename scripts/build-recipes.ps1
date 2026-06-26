@@ -13,6 +13,69 @@ function Write-Utf8File([string]$path, [string]$content) {
     [System.IO.File]::WriteAllText($path, $content, $utf8)
 }
 
+function Get-RecipeSearchText($recipe) {
+    $parts = [System.Collections.Generic.List[string]]::new()
+    foreach ($p in @($recipe.name, $recipe.description, $recipe.category, $recipe.huntressNotes, $recipe.foxNotes)) {
+        if ($p) { $parts.Add([string]$p) }
+    }
+    if ($recipe.tags) {
+        foreach ($t in @($recipe.tags)) { if ($t) { $parts.Add([string]$t) } }
+    }
+    if ($recipe.ingredients) {
+        foreach ($i in @($recipe.ingredients)) { if ($i) { $parts.Add([string]$i) } }
+    }
+    return ($parts -join ' ')
+}
+
+function Get-GuideSearchText([string]$title, $doc) {
+    $parts = [System.Collections.Generic.List[string]]::new()
+    if ($title) { $parts.Add($title) }
+    if (-not $doc) { return ($parts -join ' ') }
+    if ($doc.description) { $parts.Add([string]$doc.description) }
+    if ($doc.subtitle) { $parts.Add([string]$doc.subtitle) }
+    if ($doc.introduction) {
+        $intro = $doc.introduction
+        foreach ($key in @('welcome', 'purpose')) {
+            if ($intro.$key) { $parts.Add([string]$intro.$key) }
+        }
+        if ($intro.philosophy) { foreach ($x in @($intro.philosophy)) { if ($x) { $parts.Add([string]$x) } } }
+    }
+    if ($doc.sections) {
+        foreach ($sec in @($doc.sections)) {
+            if ($sec.title) { $parts.Add([string]$sec.title) }
+            if ($sec.description) { $parts.Add([string]$sec.description) }
+            if ($sec.notes) { foreach ($n in @($sec.notes)) { if ($n) { $parts.Add([string]$n) } } }
+            if ($sec.items) { foreach ($it in @($sec.items)) { if ($it) { $parts.Add([string]$it) } } }
+        }
+    }
+    if ($doc.categories) {
+        foreach ($cat in @($doc.categories)) {
+            if ($cat.name) { $parts.Add([string]$cat.name) }
+            if ($cat.items) { foreach ($it in @($cat.items)) { if ($it.name) { $parts.Add([string]$it.name) } } }
+        }
+    }
+    if ($doc.groups) {
+        foreach ($grp in @($doc.groups)) {
+            $gname = if ($grp.group) { $grp.group } elseif ($grp.name) { $grp.name } else { $null }
+            if ($gname) { $parts.Add([string]$gname) }
+        }
+    }
+    if ($doc.names) { foreach ($n in @($doc.names)) { if ($n) { $parts.Add([string]$n) } } }
+    if ($doc.recipes) {
+        foreach ($r in @($doc.recipes)) { if ($r.name) { $parts.Add([string]$r.name) } }
+    }
+    return ($parts -join ' ')
+}
+
+function Ensure-SearchScripts([string]$content, [string]$prefix) {
+    if ($content -match 'search-index\.js') { return $content }
+    $block = "  <script src=`"${prefix}js/vendor/fuse.min.js`"></script>`n  <script src=`"${prefix}js/search-index.js`"></script>`n  <script src=`"${prefix}js/search.js`"></script>`n"
+    if ($content -match 'cookbook\.js') {
+        return [regex]::Replace($content, '(\s*<script src="[^"]*cookbook\.js"></script>)', ($block + '${1}'))
+    }
+    return $content
+}
+
 $slugOverrides = @{
     "Yogurt & Honey Bowl" = "yogurt-honey-breakfast-bowl"
     "Yogurt & Honey Breakfast Bowl" = "yogurt-honey-breakfast-bowl"
@@ -326,6 +389,57 @@ $js = "/* The Huntress Cookbook - recipe data */`nvar HUNTRESS_COOKBOOK = $json;
 Write-Utf8File "$root\js\recipes.js" $js
 Write-Host "Wrote js/recipes.js with $($allRecipes.Count) recipes"
 
+$searchEntries = [System.Collections.Generic.List[object]]::new()
+foreach ($slug in $allRecipes.Keys) {
+    $r = $allRecipes[$slug]
+    $searchEntries.Add([ordered]@{
+        id = "recipe-$slug"
+        title = $r.name
+        section = $r.category
+        url = "recipes/$slug.html"
+        text = Get-RecipeSearchText $r
+        tags = @(@($r.tags))
+        status = $r.status
+    })
+}
+
+$cookbookGuidePages = @(
+    @{ id = 'introduction'; title = 'Introduction'; file = 'introduction.html'; doc = $introduction }
+    @{ id = 'dietary-guide'; title = 'Huntress Dietary Guide'; file = 'dietary-guide.html'; doc = $dietaryGuide }
+    @{ id = 'pantry-essentials'; title = 'Pantry Essentials'; file = 'pantry-essentials.html'; doc = $pantryEssentials }
+    @{ id = 'future-recipes'; title = 'Future Recipes To Try'; file = 'future-recipes.html'; doc = $futureRecipes }
+)
+
+foreach ($cat in $categories) {
+    $searchEntries.Add([ordered]@{
+        id = "chapter-$($cat.id)"
+        title = $cat.name
+        section = 'Chapter'
+        url = "chapters/$($cat.id).html"
+        text = "$($cat.name) $($chapterIntros[$cat.id])"
+        tags = @()
+        status = ''
+    })
+}
+
+foreach ($g in $cookbookGuidePages) {
+    if (-not $g.doc) { continue }
+    $searchEntries.Add([ordered]@{
+        id = $g.id
+        title = $g.title
+        section = 'Guide'
+        url = "chapters/$($g.file)"
+        text = Get-GuideSearchText $g.title $g.doc
+        tags = @()
+        status = ''
+    })
+}
+
+$searchJson = ($searchEntries | ConvertTo-Json -Depth 10 -Compress)
+$searchIndexJs = "/* Generated search index - do not edit by hand */`nwindow.HUNTRESS_SEARCH_INDEX = $searchJson;`n"
+Write-Utf8File "$root\js\search-index.js" $searchIndexJs
+Write-Host "Wrote js/search-index.js ($($searchEntries.Count) entries)"
+
 $chapterLinks = @{
     breakfast = "breakfast.html"
     lunch = "lunch.html"
@@ -421,6 +535,9 @@ $recipeTemplate = @'
   </div>
 
   <script src="../js/recipes.js"></script>
+  <script src="../js/vendor/fuse.min.js"></script>
+  <script src="../js/search-index.js"></script>
+  <script src="../js/search.js"></script>
   <script src="../js/cookbook.js"></script>
 </body>
 </html>
@@ -469,8 +586,11 @@ Get-ChildItem "$root\recipes\*.html" | ForEach-Object {
         $changed = $true
     }
     if ($content -notmatch 'recipes\.js') {
-        $content = $content -replace '</body>', "  <script src=`"../js/recipes.js`"></script>`n  <script src=`"../js/cookbook.js`"></script>`n</body>"
+        $content = $content -replace '</body>', "  <script src=`"../js/recipes.js`"></script>`n  <script src=`"../js/vendor/fuse.min.js`"></script>`n  <script src=`"../js/search-index.js`"></script>`n  <script src=`"../js/search.js`"></script>`n  <script src=`"../js/cookbook.js`"></script>`n</body>"
         $changed = $true
+    } else {
+        $withSearch = Ensure-SearchScripts $content '../'
+        if ($withSearch -ne $content) { $content = $withSearch; $changed = $true }
     }
     if ($changed) {
         Write-Utf8File $_.FullName $content
@@ -502,7 +622,9 @@ Get-ChildItem "$root\chapters\*.html" | ForEach-Object {
     if (-not $activeNav) { return }
     $newContent = Convert-CookbookPageShell $content 'chapter' $activeNav
     if ($newContent -notmatch 'cookbook\.js') {
-        $newContent = $newContent -replace '</body>', "  <script src=`"../js/recipes.js`"></script>`n  <script src=`"../js/cookbook.js`"></script>`n</body>"
+        $newContent = $newContent -replace '</body>', "  <script src=`"../js/recipes.js`"></script>`n  <script src=`"../js/vendor/fuse.min.js`"></script>`n  <script src=`"../js/search-index.js`"></script>`n  <script src=`"../js/search.js`"></script>`n  <script src=`"../js/cookbook.js`"></script>`n</body>"
+    } else {
+        $newContent = Ensure-SearchScripts $newContent '../'
     }
     if ($newContent -ne $content) {
         Write-Utf8File $_.FullName $newContent
@@ -534,3 +656,16 @@ Get-ChildItem "$root\recipes\*.html" | ForEach-Object {
     }
 }
 Write-Host "Normalized recipe rating stars on $ratingFixed HTML pages"
+
+$searchScriptsAdded = 0
+$htmlFiles = @("$root\index.html") + (Get-ChildItem "$root\chapters\*.html").FullName + (Get-ChildItem "$root\recipes\*.html").FullName
+foreach ($file in $htmlFiles) {
+    $prefix = if ($file -eq "$root\index.html") { "" } else { "../" }
+    $content = [System.IO.File]::ReadAllText($file, $utf8)
+    $newContent = Ensure-SearchScripts $content $prefix
+    if ($newContent -ne $content) {
+        Write-Utf8File $file $newContent
+        $searchScriptsAdded++
+    }
+}
+Write-Host "Ensured search scripts on $searchScriptsAdded HTML pages"

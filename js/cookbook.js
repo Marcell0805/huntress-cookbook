@@ -134,6 +134,7 @@
   var SVG_BACK = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>';
   var SVG_HOME = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>';
   var SVG_PRINT = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>';
+  var SVG_SEARCH = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>';
 
   function getNavScope() {
     var scope = document.body.getAttribute('data-nav-scope');
@@ -184,6 +185,9 @@
             SVG_BACK + '<span class="sr-only">' + esc(target.title) + '</span>' +
           '</a>' +
           homeBtn +
+          '<button type="button" class="toolbar-btn toolbar-search" title="Search (Ctrl+K)">' +
+            SVG_SEARCH + '<span class="sr-only">Search</span>' +
+          '</button>' +
           '<button type="button" class="toolbar-btn toolbar-print" title="Print or save as PDF (Ctrl+P)">' +
             SVG_PRINT + '<span class="sr-only">Print</span>' +
           '</button>' +
@@ -192,6 +196,11 @@
 
     document.querySelectorAll('.toolbar-print').forEach(function (btn) {
       btn.addEventListener('click', function () { window.print(); });
+    });
+    document.querySelectorAll('.toolbar-search').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        if (window.HuntressCookbookSearch) window.HuntressCookbookSearch.open();
+      });
     });
   }
 

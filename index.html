@@ -8,12 +8,16 @@
   <style>html:not(.auth-ok) body > :not(#auth-gate) { display: none; }</style>
   <script src="js/auth.js"></script>
 </head>
-<body>
+<body data-nav-scope="landing">
 
   <div class="landing">
     <img class="landing-logo" src="assets/fox-huntress-logo.png" alt="Fox &amp; Huntress">
     <h1>THE HUNTRESS COOKBOOK</h1>
     <p class="subtitle">Made with care, for the Huntress ♥</p>
+
+    <div class="landing-search-wrap no-print">
+      <input type="search" id="landing-search" class="landing-search" placeholder="Search cookbook… (Ctrl+K)" readonly>
+    </div>
 
     <ol class="landing-nav" data-cookbook-landing-nav></ol>
 
@@ -26,6 +30,9 @@
   </div>
 
   <script src="js/recipes.js"></script>
+  <script src="js/vendor/fuse.min.js"></script>
+  <script src="js/search-index.js"></script>
+  <script src="js/search.js"></script>
   <script src="js/cookbook.js"></script>
 </body>
 </html>
