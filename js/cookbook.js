@@ -140,14 +140,33 @@
 
   var MOBILE_LAYOUT_QUERY = '(max-width: 900px)';
 
+  function getMobileAppConfig() {
+    var settings = window.HUNTRESS_COOKBOOK && HUNTRESS_COOKBOOK.settings;
+    var mobile = settings && settings.mobileApp;
+    if (!mobile || mobile.enabled === false) return null;
+    return mobile;
+  }
+
   function apkDownloadHref() {
+    var mobile = getMobileAppConfig();
+    if (mobile && mobile.fallbackDownloadUrl) {
+      return mobile.fallbackDownloadUrl;
+    }
     var scope = getNavScope();
     var prefix = scope === 'recipe' || scope === 'chapter' ? '../' : '';
     return prefix + 'downloads/huntress-cookbook.apk';
   }
 
-  function isAndroidBrowser() {
-    return /Android/i.test(navigator.userAgent);
+  function renderApkDownloadHtml(wrapperClass, linkClass) {
+    var mobile = getMobileAppConfig();
+    if (!mobile) return '';
+    var label = mobile.label || 'Download the app';
+    return '<div class="' + wrapperClass + ' no-print">' +
+      '<a href="' + esc(apkDownloadHref()) + '" class="' + linkClass + '" download>' +
+        SVG_ANDROID +
+        '<span>' + esc(label) + '</span>' +
+      '</a>' +
+    '</div>';
   }
 
   function closeMobileSidebar() {
@@ -250,12 +269,6 @@
       ? '<a href="../index.html" class="toolbar-btn" title="Cookbook home">' + SVG_HOME + '<span class="sr-only">Cookbook home</span></a>'
       : '';
 
-    var apkBtn = isAndroidBrowser()
-      ? ''
-      : '<a href="' + esc(apkDownloadHref()) + '" class="toolbar-btn toolbar-apk" title="Download The Huntress Cookbook (Android)" download>' +
-          SVG_ANDROID + '<span class="sr-only">Download The Huntress Cookbook for Android</span>' +
-        '</a>';
-
     mount.outerHTML =
       '<header class="cookbook-toolbar no-print" aria-label="Page tools">' +
         '<div class="toolbar-inner">' +
@@ -273,7 +286,6 @@
             '<button type="button" class="toolbar-btn toolbar-print" title="Print or save as PDF (Ctrl+P)">' +
               SVG_PRINT + '<span class="sr-only">Print</span>' +
             '</button>' +
-            apkBtn +
           '</div>' +
         '</div>' +
       '</header>';
@@ -318,6 +330,7 @@
         '<div class="sidebar-brand">THE HUNTRESS<br>COOKBOOK</div>' +
       '</div>' +
       navHtml +
+      renderApkDownloadHtml('sidebar-apk', 'sidebar-apk-link') +
       '<p class="sidebar-tagline">Made with care,<br>for the Huntress <span class="heart">\u2665</span></p>';
 
     preserved.forEach(function (el) { aside.appendChild(el); });
@@ -353,6 +366,15 @@
       }
     });
     el.innerHTML = html;
+
+    var landing = el.closest('.landing');
+    if (!landing) return;
+    landing.querySelectorAll('.landing-apk').forEach(function (node) { node.remove(); });
+    var apkHtml = renderApkDownloadHtml('landing-apk', 'landing-apk-link');
+    if (!apkHtml) return;
+    var wrap = document.createElement('div');
+    wrap.innerHTML = apkHtml;
+    landing.insertBefore(wrap.firstChild, el.nextSibling);
   }
 
   function sectionAnchorId(title) {

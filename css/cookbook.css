@@ -192,6 +192,34 @@ body {
   color: var(--warm-gold);
 }
 
+.sidebar-apk {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(201, 162, 39, 0.35);
+}
+
+.sidebar-apk-link {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--warm-gold);
+  text-decoration: none;
+  font-size: 0.84rem;
+  font-weight: 600;
+  line-height: 1.3;
+  padding: 0.35rem 0.25rem;
+}
+
+.sidebar-apk-link:hover {
+  color: #fff;
+}
+
+.sidebar-apk-link svg {
+  flex-shrink: 0;
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
 .sidebar-tagline {
   font-family: 'Dancing Script', cursive;
   font-size: 0.95rem;
@@ -1003,6 +1031,35 @@ a.recipe-nav-section:hover {
 .landing-nav .coming-soon {
   color: var(--muted-text);
   font-style: italic;
+}
+
+.landing-apk {
+  max-width: 400px;
+  margin: 1.25rem auto 0;
+  padding-top: 1rem;
+  border-top: 2px solid var(--gold-light);
+}
+
+.landing-apk-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  color: var(--forest-green);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.35rem 0;
+}
+
+.landing-apk-link:hover {
+  color: var(--soft-brown);
+}
+
+.landing-apk-link svg {
+  flex-shrink: 0;
+  width: 1.15rem;
+  height: 1.15rem;
 }
 
 .landing-tagline {
