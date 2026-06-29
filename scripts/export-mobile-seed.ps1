@@ -7,7 +7,7 @@ $ErrorActionPreference = "Stop"
 $utf8 = [System.Text.UTF8Encoding]::new($false)
 $cookbookRoot = Split-Path $PSScriptRoot -Parent
 if (-not $MobileRoot) {
-    $MobileRoot = Join-Path (Split-Path $cookbookRoot -Parent) "Marcell0805\AppGen\output\HuntressCookbook Mobile"
+    $MobileRoot = Join-Path (Split-Path $cookbookRoot -Parent) "Marcell0805\HuntressCookbook Mobile"
 }
 
 if (-not $SkipBuild) {

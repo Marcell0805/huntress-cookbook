@@ -1,6 +1,6 @@
 {
     "apkUrl":  "https://marcell0805.github.io/huntress-cookbook/downloads/huntress-cookbook.apk",
-    "build":  7,
-    "version":  "1.0.5",
-    "releaseNotes":  "Fix in-app update download UI and browser fallback"
+    "build":  8,
+    "version":  "1.0.6",
+    "releaseNotes":  "Describe what changed"
 }

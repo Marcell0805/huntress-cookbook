@@ -12,7 +12,7 @@ $cookbookRoot = Split-Path $PSScriptRoot -Parent
 $downloadsDir = Join-Path $cookbookRoot "downloads"
 
 if (-not $MobileRoot) {
-    $MobileRoot = Join-Path (Split-Path $cookbookRoot -Parent) "Marcell0805\AppGen\output\HuntressCookbook Mobile"
+    $MobileRoot = Join-Path (Split-Path $cookbookRoot -Parent) "Marcell0805\HuntressCookbook Mobile"
 }
 
 if (-not $ApkPath) {
