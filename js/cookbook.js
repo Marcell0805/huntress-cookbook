@@ -136,6 +136,9 @@
   var SVG_PRINT = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>';
   var SVG_SEARCH = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>';
   var SVG_ANDROID = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><path d="M12 18h.01"/></svg>';
+  var SVG_MENU = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>';
+
+  var MOBILE_LAYOUT_QUERY = '(max-width: 900px)';
 
   function apkDownloadHref() {
     var scope = getNavScope();
@@ -145,6 +148,58 @@
 
   function isAndroidBrowser() {
     return /Android/i.test(navigator.userAgent);
+  }
+
+  function closeMobileSidebar() {
+    document.body.classList.remove('sidebar-open');
+    document.querySelectorAll('.toolbar-menu').forEach(function (btn) {
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  }
+
+  function openMobileSidebar() {
+    document.body.classList.add('sidebar-open');
+    document.querySelectorAll('.toolbar-menu').forEach(function (btn) {
+      btn.setAttribute('aria-expanded', 'true');
+    });
+  }
+
+  function toggleMobileSidebar() {
+    if (document.body.classList.contains('sidebar-open')) {
+      closeMobileSidebar();
+    } else {
+      openMobileSidebar();
+    }
+  }
+
+  function setupMobileSidebar() {
+    var aside = document.querySelector('[data-cookbook-sidebar]');
+    if (!aside) return;
+
+    aside.id = 'cookbook-sidebar';
+
+    var page = document.querySelector('.page');
+    if (page && !page.querySelector('.sidebar-backdrop')) {
+      var backdrop = document.createElement('div');
+      backdrop.className = 'sidebar-backdrop no-print';
+      backdrop.setAttribute('aria-hidden', 'true');
+      backdrop.addEventListener('click', closeMobileSidebar);
+      page.insertBefore(backdrop, page.firstChild);
+    }
+
+    document.querySelectorAll('.toolbar-menu').forEach(function (btn) {
+      if (btn.getAttribute('data-mobile-nav-bound') === '1') return;
+      btn.setAttribute('data-mobile-nav-bound', '1');
+      btn.addEventListener('click', toggleMobileSidebar);
+    });
+
+    aside.querySelectorAll('a').forEach(function (link) {
+      if (link.getAttribute('data-mobile-nav-bound') === '1') return;
+      link.setAttribute('data-mobile-nav-bound', '1');
+      link.addEventListener('click', function () {
+        if (window.matchMedia(MOBILE_LAYOUT_QUERY).matches) closeMobileSidebar();
+      });
+    });
   }
 
   function getNavScope() {
@@ -185,6 +240,12 @@
     var mount = document.getElementById('cookbook-toolbar');
     if (!mount || !target) return;
 
+    var hasSidebar = !!document.querySelector('[data-cookbook-sidebar]');
+    var menuBtn = hasSidebar
+      ? '<button type="button" class="toolbar-btn toolbar-menu" title="Open menu" aria-expanded="false" aria-controls="cookbook-sidebar">' +
+          SVG_MENU + '<span class="sr-only">Open menu</span></button>'
+      : '';
+
     var homeBtn = target.showHome
       ? '<a href="../index.html" class="toolbar-btn" title="Cookbook home">' + SVG_HOME + '<span class="sr-only">Cookbook home</span></a>'
       : '';
@@ -198,17 +259,22 @@
     mount.outerHTML =
       '<header class="cookbook-toolbar no-print" aria-label="Page tools">' +
         '<div class="toolbar-inner">' +
-          '<a href="' + esc(target.href) + '" class="toolbar-btn toolbar-back" title="' + esc(target.title) + '">' +
-            SVG_BACK + '<span class="sr-only">' + esc(target.title) + '</span>' +
-          '</a>' +
-          homeBtn +
-          '<button type="button" class="toolbar-btn toolbar-search" title="Search (Ctrl+K)">' +
-            SVG_SEARCH + '<span class="sr-only">Search</span>' +
-          '</button>' +
-          '<button type="button" class="toolbar-btn toolbar-print" title="Print or save as PDF (Ctrl+P)">' +
-            SVG_PRINT + '<span class="sr-only">Print</span>' +
-          '</button>' +
-          apkBtn +
+          '<div class="toolbar-start">' +
+            menuBtn +
+            '<a href="' + esc(target.href) + '" class="toolbar-btn toolbar-back" title="' + esc(target.title) + '">' +
+              SVG_BACK + '<span class="sr-only">' + esc(target.title) + '</span>' +
+            '</a>' +
+          '</div>' +
+          '<div class="toolbar-end">' +
+            homeBtn +
+            '<button type="button" class="toolbar-btn toolbar-search" title="Search (Ctrl+K)">' +
+              SVG_SEARCH + '<span class="sr-only">Search</span>' +
+            '</button>' +
+            '<button type="button" class="toolbar-btn toolbar-print" title="Print or save as PDF (Ctrl+P)">' +
+              SVG_PRINT + '<span class="sr-only">Print</span>' +
+            '</button>' +
+            apkBtn +
+          '</div>' +
         '</div>' +
       '</header>';
 
@@ -270,6 +336,7 @@
   function renderCookbookShell() {
     renderSidebar();
     renderToolbar(resolveToolbarTarget());
+    setupMobileSidebar();
   }
 
   function renderLandingNav() {
@@ -692,6 +759,9 @@
 
   document.addEventListener('DOMContentLoaded', function () {
     renderCookbookShell();
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeMobileSidebar();
+    });
     applyCookbookSettings();
     renderLandingNav();
     initCookbookToolbar();

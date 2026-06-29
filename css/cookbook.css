@@ -76,6 +76,20 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.65rem;
+  min-width: 0;
+}
+
+.toolbar-start,
+.toolbar-end {
+  display: contents;
+}
+
+.toolbar-menu {
+  display: none;
+}
+
+.sidebar-backdrop {
+  display: none;
 }
 
 .toolbar-btn {
@@ -230,14 +244,19 @@ body {
   text-align: center;
   margin-bottom: 1rem;
   position: relative;
+  padding-inline: 0.75rem;
+  max-width: 100%;
 }
 
 .chapter-header h1 {
-  font-size: 2.8rem;
+  font-size: clamp(1.2rem, 5vw, 2.8rem);
   font-weight: 400;
-  letter-spacing: 0.35em;
+  letter-spacing: clamp(0.05em, 1.2vw, 0.35em);
   color: var(--forest-green);
-  text-indent: 0.35em;
+  line-height: 1.15;
+  max-width: 100%;
+  margin-inline: auto;
+  overflow-wrap: anywhere;
 }
 
 .chapter-divider {
@@ -1191,4 +1210,173 @@ html:not(.auth-ok) body > :not(#auth-gate) {
   color: var(--muted-text);
   background: var(--cream);
   border-top: 1px solid var(--gold-light);
+}
+
+/* ── Mobile layout (phones, tablets & narrow viewports) ── */
+
+@media (max-width: 900px) {
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .page {
+    flex-direction: column;
+    margin: 0;
+    max-width: none;
+    min-height: 100vh;
+    box-shadow: none;
+  }
+
+  .sidebar-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 299;
+    background: rgba(15, 42, 31, 0.55);
+  }
+
+  body.sidebar-open .sidebar-backdrop {
+    display: block;
+  }
+
+  body.sidebar-open {
+    overflow: hidden;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: min(280px, 85vw);
+    min-width: 0;
+    z-index: 300;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 1.5rem 1rem;
+  }
+
+  body.sidebar-open .sidebar {
+    transform: translateX(0);
+  }
+
+  .main {
+    padding: 1.25rem 1rem 1.5rem;
+    width: 100%;
+  }
+
+  .main img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .chapter-header h1 {
+    font-size: clamp(1.1rem, 4.8vw, 1.75rem);
+    letter-spacing: clamp(0.04em, 0.8vw, 0.1em);
+    line-height: 1.2;
+  }
+
+  .chapter-intro {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .category-content {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+  }
+
+  .category-desc {
+    padding-left: 0;
+  }
+
+  .chapter-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .chapter-quote {
+    text-align: left;
+  }
+
+  .recipe-body {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .recipe-notes {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-row {
+    flex-direction: column;
+  }
+
+  .recipe-page .main {
+    padding: 1.25rem 1rem;
+  }
+
+  .recipe-page .sidebar {
+    padding: 1.5rem 1rem;
+  }
+
+  .recipe-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .toolbar-inner {
+    justify-content: space-between;
+    max-width: none;
+    padding: 0.45rem 0.5rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .toolbar-inner::-webkit-scrollbar {
+    display: none;
+  }
+
+  .toolbar-start,
+  .toolbar-end {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    flex-shrink: 0;
+  }
+
+  .toolbar-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+  }
+
+  .toolbar-menu {
+    display: inline-flex;
+  }
+
+  .branch-illustration {
+    width: 60px;
+    opacity: 0.5;
+  }
+
+  .landing {
+    margin: 0;
+    padding: 2rem 1.25rem;
+    border-width: 2px;
+  }
+
+  .landing h1 {
+    font-size: 1.35rem;
+    letter-spacing: 0.1em;
+  }
+
+  .landing-logo {
+    width: 140px;
+  }
 }

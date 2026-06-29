@@ -25,7 +25,13 @@ var HUNTRESS_COOKBOOK = {
                                             "glutenSensitive":  true,
                                             "ibsConscious":  true,
                                             "onionFree":  true
-                                        }
+                                        },
+                     "mobileApp":  {
+                                       "enabled":  true,
+                                       "label":  "Download the app",
+                                       "updateCheckUrl":  "https://marcell0805.github.io/huntress-cookbook/downloads/mobile-version.json",
+                                       "fallbackDownloadUrl":  "https://marcell0805.github.io/huntress-cookbook/downloads/huntress-cookbook.apk"
+                                   }
                  },
     "introduction":  {
                          "title":  "The Fox \u0026 Huntress Cookbook",
