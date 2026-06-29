@@ -10,6 +10,8 @@ Open **`index.html`** in your browser to browse the cookbook.
 
 Download the offline mobile app from **[downloads/huntress-cookbook.apk](downloads/huntress-cookbook.apk)** or use the phone icon in the chapter/recipe toolbar.
 
+**Plans:** [Flutter mobile app](docs/plans/flutter-mobile-app.md) · [Content authoring pipeline](docs/plans/content-authoring-pipeline.md)
+
 See **[downloads/README.md](downloads/README.md)** for install steps (Play Protect prompts are normal for sideloaded apps).
 
 ### What's included
