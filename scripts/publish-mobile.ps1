@@ -57,6 +57,13 @@ $manifest = @{
     apkUrl = "$PagesBaseUrl/downloads/huntress-cookbook.apk"
     releaseNotes = $ReleaseNotes
 }
+
+$contentManifestPath = Join-Path $downloadsDir "mobile-content-manifest.json"
+if (Test-Path $contentManifestPath) {
+    $contentManifest = Get-Content $contentManifestPath -Raw | ConvertFrom-Json
+    $manifest.contentVersion = $contentManifest.contentVersion
+    $manifest.contentManifestUrl = "$PagesBaseUrl/downloads/mobile-content-manifest.json"
+}
 $manifestPath = Join-Path $downloadsDir "mobile-version.json"
 $json = $manifest | ConvertTo-Json -Depth 5 -Compress:$false
 [IO.File]::WriteAllText($manifestPath, $json, $utf8)

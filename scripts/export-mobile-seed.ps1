@@ -102,3 +102,50 @@ foreach ($prop in $data.recipes.PSObject.Properties) {
 }
 Write-Host "Wrote assets to $assetsDir"
 Write-Host "Copied $copied recipe images; $missing missing on disk"
+
+# --- OTA content manifest for incremental mobile updates ---
+$downloadsDir = Join-Path $cookbookRoot "downloads"
+$contentDir = Join-Path $downloadsDir "content"
+New-Item -ItemType Directory -Force -Path $contentDir | Out-Null
+New-Item -ItemType Directory -Force -Path (Join-Path $contentDir "images") | Out-Null
+
+function Get-FileSha256Hex([string]$path) {
+    $hash = Get-FileHash -Path $path -Algorithm SHA256
+    return $hash.Hash.ToLowerInvariant()
+}
+
+$manifestFiles = @()
+$seedPath = Join-Path $assetsDir "cookbook_seed.json"
+$seedDest = Join-Path $contentDir "cookbook_seed.json"
+Copy-Item $seedPath $seedDest -Force
+$manifestFiles += [ordered]@{
+    path = "cookbook_seed.json"
+    url = "$pagesBaseUrl/downloads/content/cookbook_seed.json"
+    sha256 = (Get-FileSha256Hex $seedDest)
+    size = (Get-Item $seedDest).Length
+}
+
+foreach ($prop in $data.recipes.PSObject.Properties) {
+    $recipe = $prop.Value
+    $image = $recipe.image
+    if (-not $image) { continue }
+    $src = Join-Path $srcImages $image
+    if (-not (Test-Path $src)) { continue }
+    $imgDest = Join-Path (Join-Path $contentDir "images") $image
+    Copy-Item $src $imgDest -Force
+    $manifestFiles += [ordered]@{
+        path = $image
+        url = "$pagesBaseUrl/downloads/content/images/$image"
+        sha256 = (Get-FileSha256Hex $imgDest)
+        size = (Get-Item $imgDest).Length
+    }
+}
+
+$contentVersion = (Get-FileSha256Hex $seedDest)
+$contentManifest = [ordered]@{
+    contentVersion = $contentVersion
+    files = $manifestFiles
+}
+$contentManifestPath = Join-Path $downloadsDir "mobile-content-manifest.json"
+Write-JsonFile $contentManifestPath $contentManifest
+Write-Host "Wrote $contentManifestPath (contentVersion $contentVersion, $($manifestFiles.Count) files)"
