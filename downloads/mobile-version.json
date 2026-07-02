@@ -1,8 +1,8 @@
 {
     "version":  "1.0.10",
     "apkUrl":  "https://marcell0805.github.io/huntress-cookbook/downloads/huntress-cookbook.apk",
-    "releaseNotes":  "Fix content update checksum (cache busting)",
-    "contentVersion":  "44c9b5142983589b83237c0c507334940e8f67c0bc619a6e9fda25ed122df999",
+    "releaseNotes":  "Guide fixes, back nav, photo share, GF Carrot Cake",
+    "contentVersion":  "a6a3ce41465222dcc84fb86b15c132003845dd3f0c52794c9b61f82025819ae7",
     "contentManifestUrl":  "https://marcell0805.github.io/huntress-cookbook/downloads/mobile-content-manifest.json",
-    "build":  12
+    "build":  13
 }

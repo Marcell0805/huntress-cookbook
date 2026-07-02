@@ -845,6 +845,52 @@
       "name": "Future Dessert Projects",
       "recipes": [
         {
+          "id": "gf-carrot-cake",
+          "name": "GF Carrot Cake",
+          "category": "Desserts",
+          "description": "A moist gluten-free carrot cake with warm spices and a smooth cream cheese frosting.",
+          "prepTime": "25 min",
+          "cookTime": "40 min",
+          "difficulty": "Medium",
+          "servings": "8",
+          "status": "Researching",
+          "ingredients": [
+            "250g gluten free flour",
+            "2 tsp baking powder",
+            "1 tsp cinnamon",
+            "1/2 tsp nutmeg",
+            "150g brown sugar",
+            "3 eggs",
+            "120ml vegetable oil",
+            "2 cups grated carrots",
+            "1 tsp vanilla extract"
+          ],
+          "instructions": [
+            "Preheat oven to 180°C.",
+            "Grease and line a 20cm cake tin.",
+            "Combine the flour, baking powder and spices in a bowl.",
+            "Whisk together the sugar, eggs, oil and vanilla.",
+            "Fold the dry ingredients into the wet ingredients.",
+            "Stir in the grated carrots until evenly combined.",
+            "Pour the batter into the prepared cake tin.",
+            "Bake for 35–40 minutes or until a skewer comes out clean.",
+            "Allow the cake to cool completely before frosting."
+          ],
+          "huntressNotes": [
+            "Gluten Free",
+            "Future Testing Required"
+          ],
+          "foxNotes": [
+            "Originally planned as part of the Future Dessert Projects."
+          ],
+          "tags": [
+            "Carrot Cake",
+            "Gluten Free",
+            "Dessert"
+          ],
+          "imagePrompt": "Rustic gluten free carrot cake with cream cheese frosting on a wooden cake stand"
+        },
+        {
           "id": "gf-vanilla-cake",
           "name": "GF Vanilla Cake",
           "category": "Desserts",

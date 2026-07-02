@@ -328,6 +328,50 @@ function Import-ChapterFile([string]$chapterId, [string]$fileName, [string]$catL
     }
 }
 
+function Import-FutureRecipeStubs([object]$futureRecipesDoc) {
+    if (-not $futureRecipesDoc -or -not $futureRecipesDoc.groups) { return }
+    $stubCount = 0
+    foreach ($group in @($futureRecipesDoc.groups)) {
+        foreach ($r in @($group.recipes)) {
+            $slug = if ($r.id) { $r.id } else { Get-Slug $r.name }
+            if (-not $slug) { continue }
+            if ($null -ne $script:allRecipes[$slug]) { continue }
+
+            $script:allRecipes[$slug] = [ordered]@{
+                id = $slug
+                slug = $slug
+                name = $r.name
+                categoryId = 'future-recipes'
+                category = 'Future Recipes'
+                status = Normalize-Status $r.status
+                description = if ($r.description) { $r.description } else { 'Recipe under development.' }
+                difficulty = if ($r.difficulty) { $r.difficulty } else { 'TBD' }
+                prepTime = Parse-Minutes $r.prepTime
+                cookTime = Parse-Minutes $r.cookTime
+                servings = Parse-Servings $r.servings
+                tags = if ($r.tags) { @($r.tags) } else { @('Future Recipe') }
+                ingredients = if ($r.ingredients -and @($r.ingredients).Count -gt 0) {
+                    @(Ensure-Array $r.ingredients '')
+                } else {
+                    @()
+                }
+                instructions = if ($r.instructions -and @($r.instructions).Count -gt 0) {
+                    @(Ensure-Array $r.instructions 'Recipe under development.')
+                } else {
+                    @('Recipe under development.')
+                }
+                huntressNotes = Join-Notes $r.huntressNotes 'Future Testing Required'
+                foxNotes = Join-Notes $r.foxNotes ''
+                image = Get-ImageFile $r $slug
+            }
+            $stubCount++
+        }
+    }
+    if ($stubCount -gt 0) {
+        Write-Host "Added $stubCount future recipe stub(s) from future-recipes.json"
+    }
+}
+
 function Load-DataJson([string]$fileName) {
     $path = Join-Path $root "data\$fileName"
     if (-not (Test-Path $path)) { return $null }
@@ -366,6 +410,8 @@ if ($dietaryGuide) { Write-Host "Loaded dietary guide from data/dietary-guide.js
 $futureRecipes = Load-DataJson "future-recipes.json"
 if (-not $futureRecipes) { $futureRecipes = @{ names = @() } }
 else { Write-Host "Loaded future recipes from data/future-recipes.json" }
+
+Import-FutureRecipeStubs $futureRecipes
 
 $settings = Load-DataJson "cookbook-settings.json"
 if ($settings) { Write-Host "Loaded cookbook settings from data/cookbook-settings.json" }
@@ -673,5 +719,10 @@ Write-Host "Ensured search scripts on $searchScriptsAdded HTML pages"
 $exportScript = Join-Path $PSScriptRoot "export-mobile-seed.ps1"
 if (Test-Path $exportScript) {
     Write-Host "Exporting mobile seed assets..."
-    & $exportScript
+    $siblingMobile = Join-Path (Split-Path $root -Parent) "HuntressCookbook-Mobile"
+    if (Test-Path $siblingMobile) {
+        & $exportScript -SkipBuild -MobileRoot $siblingMobile
+    } else {
+        & $exportScript -SkipBuild
+    }
 }

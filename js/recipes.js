@@ -553,32 +553,44 @@ var HUNTRESS_COOKBOOK = {
                                              "name":  "High Priority",
                                              "recipes":  [
                                                              {
+                                                                 "id":  "gf-pizza",
                                                                  "name":  "Gluten-Free Pizza",
                                                                  "status":  "Researching",
                                                                  "priority":  "High"
                                                              },
                                                              {
+                                                                 "id":  "gf-chicken-pie",
                                                                  "name":  "Gluten-Free Chicken Pie",
                                                                  "status":  "Researching",
                                                                  "priority":  "High"
                                                              },
                                                              {
+                                                                 "id":  "gf-brownies",
                                                                  "name":  "Gluten-Free Brownies",
                                                                  "status":  "Researching",
                                                                  "priority":  "High"
                                                              },
                                                              {
+                                                                 "id":  "gf-cheesecake",
                                                                  "name":  "Gluten-Free Cheesecake",
                                                                  "status":  "Researching",
                                                                  "priority":  "High"
                                                              },
                                                              {
+                                                                 "id":  "gf-lemon-meringue",
                                                                  "name":  "Gluten-Free Lemon Meringue",
                                                                  "status":  "Researching",
                                                                  "priority":  "High"
                                                              },
                                                              {
+                                                                 "id":  "gf-chocolate-cake",
                                                                  "name":  "Gluten-Free Chocolate Cake",
+                                                                 "status":  "Researching",
+                                                                 "priority":  "High"
+                                                             },
+                                                             {
+                                                                 "id":  "gf-carrot-cake",
+                                                                 "name":  "GF Carrot Cake",
                                                                  "status":  "Researching",
                                                                  "priority":  "High"
                                                              }
@@ -588,21 +600,25 @@ var HUNTRESS_COOKBOOK = {
                                              "name":  "Medium Priority",
                                              "recipes":  [
                                                              {
+                                                                 "id":  "gf-vetkoek",
                                                                  "name":  "Gluten-Free Vetkoek",
                                                                  "status":  "Researching",
                                                                  "priority":  "Medium"
                                                              },
                                                              {
+                                                                 "id":  "gf-doughnuts",
                                                                  "name":  "Gluten-Free Doughnuts",
                                                                  "status":  "Researching",
                                                                  "priority":  "Medium"
                                                              },
                                                              {
+                                                                 "id":  "gf-wraps",
                                                                  "name":  "Gluten-Free Wraps",
                                                                  "status":  "Researching",
                                                                  "priority":  "Medium"
                                                              },
                                                              {
+                                                                 "id":  "gf-burger-buns",
                                                                  "name":  "Gluten-Free Burger Buns",
                                                                  "status":  "Researching",
                                                                  "priority":  "Medium"
@@ -762,6 +778,7 @@ var HUNTRESS_COOKBOOK = {
                                                "chocolate-strawberry-board",
                                                "peaches-cream",
                                                "mini-cheesecake-board",
+                                               "gf-carrot-cake",
                                                "gf-vanilla-cake",
                                                "gf-red-velvet-cake",
                                                "gf-chocolate-cake",
@@ -1162,6 +1179,7 @@ var HUNTRESS_COOKBOOK = {
                                           "icon":  "clock",
                                           "desc":  "",
                                           "names":  [
+                                                        "GF Carrot Cake",
                                                         "GF Vanilla Cake",
                                                         "GF Red Velvet Cake",
                                                         "GF Chocolate Cake",
@@ -5055,6 +5073,49 @@ var HUNTRESS_COOKBOOK = {
                                                   "foxNotes":  "Feels like something from a boutique café.",
                                                   "image":  "mini-cheesecake-board.jpg"
                                               },
+                    "gf-carrot-cake":  {
+                                           "id":  "gf-carrot-cake",
+                                           "slug":  "gf-carrot-cake",
+                                           "name":  "GF Carrot Cake",
+                                           "categoryId":  "desserts",
+                                           "category":  "Desserts",
+                                           "status":  "untested",
+                                           "description":  "A moist gluten-free carrot cake with warm spices and a smooth cream cheese frosting.",
+                                           "difficulty":  "Medium",
+                                           "prepTime":  25,
+                                           "cookTime":  40,
+                                           "servings":  8,
+                                           "tags":  [
+                                                        "Carrot Cake",
+                                                        "Gluten Free",
+                                                        "Dessert"
+                                                    ],
+                                           "ingredients":  [
+                                                               "250g gluten free flour",
+                                                               "2 tsp baking powder",
+                                                               "1 tsp cinnamon",
+                                                               "1/2 tsp nutmeg",
+                                                               "150g brown sugar",
+                                                               "3 eggs",
+                                                               "120ml vegetable oil",
+                                                               "2 cups grated carrots",
+                                                               "1 tsp vanilla extract"
+                                                           ],
+                                           "instructions":  [
+                                                                "Preheat oven to 180°C.",
+                                                                "Grease and line a 20cm cake tin.",
+                                                                "Combine the flour, baking powder and spices in a bowl.",
+                                                                "Whisk together the sugar, eggs, oil and vanilla.",
+                                                                "Fold the dry ingredients into the wet ingredients.",
+                                                                "Stir in the grated carrots until evenly combined.",
+                                                                "Pour the batter into the prepared cake tin.",
+                                                                "Bake for 35–40 minutes or until a skewer comes out clean.",
+                                                                "Allow the cake to cool completely before frosting."
+                                                            ],
+                                           "huntressNotes":  "Gluten Free. Future Testing Required",
+                                           "foxNotes":  "Originally planned as part of the Future Dessert Projects.",
+                                           "image":  "gf-carrot-cake.jpg"
+                                       },
                     "gf-vanilla-cake":  {
                                             "id":  "gf-vanilla-cake",
                                             "slug":  "gf-vanilla-cake",
@@ -7543,6 +7604,174 @@ var HUNTRESS_COOKBOOK = {
                                                 "huntressNotes":  "GF. Onion-Free. IBS-conscious.",
                                                 "foxNotes":  "Add Fox Notes after the first cook.",
                                                 "image":  "huntress-gf-lasagna.jpg"
-                                            }
+                                            },
+                    "gf-pizza":  {
+                                     "id":  "gf-pizza",
+                                     "slug":  "gf-pizza",
+                                     "name":  "Gluten-Free Pizza",
+                                     "categoryId":  "future-recipes",
+                                     "category":  "Future Recipes",
+                                     "status":  "untested",
+                                     "description":  "Recipe under development.",
+                                     "difficulty":  "TBD",
+                                     "prepTime":  0,
+                                     "cookTime":  0,
+                                     "servings":  0,
+                                     "tags":  "Future Recipe",
+                                     "ingredients":  {
+
+                                                     },
+                                     "instructions":  "Recipe under development.",
+                                     "huntressNotes":  "Future Testing Required",
+                                     "foxNotes":  "",
+                                     "image":  "gf-pizza.jpg"
+                                 },
+                    "gf-chicken-pie":  {
+                                           "id":  "gf-chicken-pie",
+                                           "slug":  "gf-chicken-pie",
+                                           "name":  "Gluten-Free Chicken Pie",
+                                           "categoryId":  "future-recipes",
+                                           "category":  "Future Recipes",
+                                           "status":  "untested",
+                                           "description":  "Recipe under development.",
+                                           "difficulty":  "TBD",
+                                           "prepTime":  0,
+                                           "cookTime":  0,
+                                           "servings":  0,
+                                           "tags":  "Future Recipe",
+                                           "ingredients":  {
+
+                                                           },
+                                           "instructions":  "Recipe under development.",
+                                           "huntressNotes":  "Future Testing Required",
+                                           "foxNotes":  "",
+                                           "image":  "gf-chicken-pie.jpg"
+                                       },
+                    "gf-brownies":  {
+                                        "id":  "gf-brownies",
+                                        "slug":  "gf-brownies",
+                                        "name":  "Gluten-Free Brownies",
+                                        "categoryId":  "future-recipes",
+                                        "category":  "Future Recipes",
+                                        "status":  "untested",
+                                        "description":  "Recipe under development.",
+                                        "difficulty":  "TBD",
+                                        "prepTime":  0,
+                                        "cookTime":  0,
+                                        "servings":  0,
+                                        "tags":  "Future Recipe",
+                                        "ingredients":  {
+
+                                                        },
+                                        "instructions":  "Recipe under development.",
+                                        "huntressNotes":  "Future Testing Required",
+                                        "foxNotes":  "",
+                                        "image":  "gf-brownies.jpg"
+                                    },
+                    "gf-cheesecake":  {
+                                          "id":  "gf-cheesecake",
+                                          "slug":  "gf-cheesecake",
+                                          "name":  "Gluten-Free Cheesecake",
+                                          "categoryId":  "future-recipes",
+                                          "category":  "Future Recipes",
+                                          "status":  "untested",
+                                          "description":  "Recipe under development.",
+                                          "difficulty":  "TBD",
+                                          "prepTime":  0,
+                                          "cookTime":  0,
+                                          "servings":  0,
+                                          "tags":  "Future Recipe",
+                                          "ingredients":  {
+
+                                                          },
+                                          "instructions":  "Recipe under development.",
+                                          "huntressNotes":  "Future Testing Required",
+                                          "foxNotes":  "",
+                                          "image":  "gf-cheesecake.jpg"
+                                      },
+                    "gf-vetkoek":  {
+                                       "id":  "gf-vetkoek",
+                                       "slug":  "gf-vetkoek",
+                                       "name":  "Gluten-Free Vetkoek",
+                                       "categoryId":  "future-recipes",
+                                       "category":  "Future Recipes",
+                                       "status":  "untested",
+                                       "description":  "Recipe under development.",
+                                       "difficulty":  "TBD",
+                                       "prepTime":  0,
+                                       "cookTime":  0,
+                                       "servings":  0,
+                                       "tags":  "Future Recipe",
+                                       "ingredients":  {
+
+                                                       },
+                                       "instructions":  "Recipe under development.",
+                                       "huntressNotes":  "Future Testing Required",
+                                       "foxNotes":  "",
+                                       "image":  "gf-vetkoek.jpg"
+                                   },
+                    "gf-doughnuts":  {
+                                         "id":  "gf-doughnuts",
+                                         "slug":  "gf-doughnuts",
+                                         "name":  "Gluten-Free Doughnuts",
+                                         "categoryId":  "future-recipes",
+                                         "category":  "Future Recipes",
+                                         "status":  "untested",
+                                         "description":  "Recipe under development.",
+                                         "difficulty":  "TBD",
+                                         "prepTime":  0,
+                                         "cookTime":  0,
+                                         "servings":  0,
+                                         "tags":  "Future Recipe",
+                                         "ingredients":  {
+
+                                                         },
+                                         "instructions":  "Recipe under development.",
+                                         "huntressNotes":  "Future Testing Required",
+                                         "foxNotes":  "",
+                                         "image":  "gf-doughnuts.jpg"
+                                     },
+                    "gf-wraps":  {
+                                     "id":  "gf-wraps",
+                                     "slug":  "gf-wraps",
+                                     "name":  "Gluten-Free Wraps",
+                                     "categoryId":  "future-recipes",
+                                     "category":  "Future Recipes",
+                                     "status":  "untested",
+                                     "description":  "Recipe under development.",
+                                     "difficulty":  "TBD",
+                                     "prepTime":  0,
+                                     "cookTime":  0,
+                                     "servings":  0,
+                                     "tags":  "Future Recipe",
+                                     "ingredients":  {
+
+                                                     },
+                                     "instructions":  "Recipe under development.",
+                                     "huntressNotes":  "Future Testing Required",
+                                     "foxNotes":  "",
+                                     "image":  "gf-wraps.jpg"
+                                 },
+                    "gf-burger-buns":  {
+                                           "id":  "gf-burger-buns",
+                                           "slug":  "gf-burger-buns",
+                                           "name":  "Gluten-Free Burger Buns",
+                                           "categoryId":  "future-recipes",
+                                           "category":  "Future Recipes",
+                                           "status":  "untested",
+                                           "description":  "Recipe under development.",
+                                           "difficulty":  "TBD",
+                                           "prepTime":  0,
+                                           "cookTime":  0,
+                                           "servings":  0,
+                                           "tags":  "Future Recipe",
+                                           "ingredients":  {
+
+                                                           },
+                                           "instructions":  "Recipe under development.",
+                                           "huntressNotes":  "Future Testing Required",
+                                           "foxNotes":  "",
+                                           "image":  "gf-burger-buns.jpg"
+                                       }
                 }
 };
