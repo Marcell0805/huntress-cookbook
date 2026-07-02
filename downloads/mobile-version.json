@@ -1,8 +1,8 @@
 {
     "version":  "1.0.10",
     "apkUrl":  "https://marcell0805.github.io/huntress-cookbook/downloads/huntress-cookbook.apk",
-    "releaseNotes":  "Hot fix",
+    "releaseNotes":  "Fix content update checksum (cache busting)",
     "contentVersion":  "44c9b5142983589b83237c0c507334940e8f67c0bc619a6e9fda25ed122df999",
     "contentManifestUrl":  "https://marcell0805.github.io/huntress-cookbook/downloads/mobile-content-manifest.json",
-    "build":  11
+    "build":  12
 }

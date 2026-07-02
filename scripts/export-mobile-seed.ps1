@@ -118,10 +118,11 @@ $manifestFiles = @()
 $seedPath = Join-Path $assetsDir "cookbook_seed.json"
 $seedDest = Join-Path $contentDir "cookbook_seed.json"
 Copy-Item $seedPath $seedDest -Force
+$seedHash = (Get-FileSha256Hex $seedDest)
 $manifestFiles += [ordered]@{
     path = "cookbook_seed.json"
-    url = "$pagesBaseUrl/downloads/content/cookbook_seed.json"
-    sha256 = (Get-FileSha256Hex $seedDest)
+    url = "$pagesBaseUrl/downloads/content/cookbook_seed.json?v=$seedHash"
+    sha256 = $seedHash
     size = (Get-Item $seedDest).Length
 }
 
@@ -133,15 +134,16 @@ foreach ($prop in $data.recipes.PSObject.Properties) {
     if (-not (Test-Path $src)) { continue }
     $imgDest = Join-Path (Join-Path $contentDir "images") $image
     Copy-Item $src $imgDest -Force
+    $imgHash = (Get-FileSha256Hex $imgDest)
     $manifestFiles += [ordered]@{
         path = $image
-        url = "$pagesBaseUrl/downloads/content/images/$image"
-        sha256 = (Get-FileSha256Hex $imgDest)
+        url = "$pagesBaseUrl/downloads/content/images/$image?v=$imgHash"
+        sha256 = $imgHash
         size = (Get-Item $imgDest).Length
     }
 }
 
-$contentVersion = (Get-FileSha256Hex $seedDest)
+$contentVersion = $seedHash
 $contentManifest = [ordered]@{
     contentVersion = $contentVersion
     files = $manifestFiles
