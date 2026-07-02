@@ -2,5 +2,5 @@
     "apkUrl":  "https://marcell0805.github.io/huntress-cookbook/downloads/huntress-cookbook.apk",
     "build":  9,
     "version":  "1.0.7",
-    "releaseNotes":  "Fix update download when screen locks; resume + retry"
+    "releaseNotes":  "Added padding for the save button, cleaned up the UI, and added photo upload"
 }
