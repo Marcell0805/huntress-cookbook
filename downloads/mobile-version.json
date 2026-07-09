@@ -1,8 +1,8 @@
 {
-    "version":  "1.0.11",
+    "version":  "1.0.12",
     "apkUrl":  "https://marcell0805.github.io/huntress-cookbook/downloads/huntress-cookbook.apk",
-    "releaseNotes":  "Shopping list, favourites, future recipe ideas, live search, and recipe UX fixes",
+    "releaseNotes":  "You can now backup your data to Google and restore it anytime",
     "contentVersion":  "a6a3ce41465222dcc84fb86b15c132003845dd3f0c52794c9b61f82025819ae7",
     "contentManifestUrl":  "https://marcell0805.github.io/huntress-cookbook/downloads/mobile-content-manifest.json",
-    "build":  14
+    "build":  15
 }
