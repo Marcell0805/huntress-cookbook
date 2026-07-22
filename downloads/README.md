@@ -1,16 +1,16 @@
 # Installing The Huntress Cookbook (Android)
 
-Download the APK only from the official site:
+Preferred download (The Fox's Den):
 
-**https://marcell0805.github.io/huntress-cookbook/downloads/huntress-cookbook.apk**
+**https://marcell0805.github.io/the-foxs-den-doc/downloads/huntresscookbook-mobile.apk**
 
-You can also use the phone icon in the cookbook toolbar (chapter and recipe pages) on a desktop browser.
+The cookbook site still publishes a **bridge** `mobile-version.json` so older app builds that check this folder get steered to the Fox's Den APK. You can also use the phone icon in the cookbook toolbar on a desktop browser (points at Fox's Den after settings update).
 
 ## What to expect
 
 Android shows extra prompts for apps installed outside the Google Play Store. That is normal for a personal family cookbook app.
 
-1. Download `huntress-cookbook.apk`
+1. Download `huntresscookbook-mobile.apk` from The Fox's Den
 2. Open the file (Chrome, Files, or Google Drive)
 3. If asked, allow **Install unknown apps** for that app
 4. If **Play Protect** warns the app is uncommon, tap **Install anyway** or **More details** then proceed
@@ -18,16 +18,26 @@ Android shows extra prompts for apps installed outside the Google Play Store. Th
 
 ## Updating
 
-If you already have an older test build (`com.example.huntresscookbook`), **uninstall it first**, then install this release.
+If you already have an older test build (`com.example.huntresscookbook`), **uninstall it first**, then install this release — or accept the in-app update prompt.
 
-Future updates: the app checks for new versions on launch when online and offers a download link.
+- **New builds** check Fox's Den `…/downloads/huntresscookbook-mobile/mobile-version.json`
+- **Older builds** still hit this folder's `mobile-version.json`, which now advertises the Fox's Den APK (bridge)
 
 ## For maintainers
 
-After `flutter build apk --release`, run from `huntress-cookbook/scripts`:
+Preferred APK publish from The Fox's Den portal:
 
 ```powershell
+cd path\to\The_Fox_s_Den Doc\portal\scripts
+.\publish-app-mobile.ps1 -AppId huntresscookbook-mobile -ReleaseNotes "Describe changes"
+.\build-portal.ps1
+```
+
+Content export + bridge JSON from `huntress-cookbook/scripts`:
+
+```powershell
+.\export-mobile-seed.ps1
 .\publish-mobile.ps1 -ReleaseNotes "Describe changes"
 ```
 
-Then commit and push this `downloads/` folder to GitHub Pages.
+Commit and push cookbook `downloads/` and Fox's Den `portal/downloads/` for GitHub Pages.

@@ -1,8 +1,8 @@
 {
-    "version":  "1.0.12",
-    "apkUrl":  "https://marcell0805.github.io/huntress-cookbook/downloads/huntress-cookbook.apk",
-    "releaseNotes":  "You can now backup your data to Google and restore it anytime",
+    "version":  "1.0.13",
+    "build":  19,
+    "apkUrl":  "https://marcell0805.github.io/the-foxs-den-doc/downloads/huntresscookbook-mobile.apk",
+    "releaseNotes":  "Update host moved to The Fox's Den.\nInstall this build so future updates check the new site.\nFamily notes, Google Drive backup, and Account screen improvements.",
     "contentVersion":  "a6a3ce41465222dcc84fb86b15c132003845dd3f0c52794c9b61f82025819ae7",
-    "contentManifestUrl":  "https://marcell0805.github.io/huntress-cookbook/downloads/mobile-content-manifest.json",
-    "build":  15
+    "contentManifestUrl":  "https://marcell0805.github.io/huntress-cookbook/downloads/mobile-content-manifest.json"
 }

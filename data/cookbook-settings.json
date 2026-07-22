@@ -25,7 +25,7 @@
   "mobileApp": {
     "enabled": true,
     "label": "Download the app",
-    "updateCheckUrl": "https://marcell0805.github.io/huntress-cookbook/downloads/mobile-version.json",
-    "fallbackDownloadUrl": "https://marcell0805.github.io/huntress-cookbook/downloads/huntress-cookbook.apk"
+    "updateCheckUrl": "https://marcell0805.github.io/the-foxs-den-doc/downloads/huntresscookbook-mobile/mobile-version.json",
+    "fallbackDownloadUrl": "https://marcell0805.github.io/the-foxs-den-doc/downloads/huntresscookbook-mobile.apk"
   }
 }

@@ -2,15 +2,11 @@
 
 
 
-> **Status:** Shipped (v1) — polish / content pipeline ongoing  
-
-> **Last updated:** 2026-06-23  
-
+> **Status:** Shipped (v1 + backup/shopping/family MVP) — content pipeline ongoing  
+> **Last updated:** 2026-07-16  
 > **Mobile repo:** `HuntressCookbook-Mobile` (`source/repos/HuntressCookbook-Mobile`)  
-
 > **Reference app:** `AppGen/output/FlutterMobileApp Mobile` (AppGen demo patterns only)  
-
-> **Decisions:** Full on-device CRUD; offline only (no API/online DB).
+> **Decisions:** Full on-device CRUD; offline-first; optional Google Drive backup + family notes.
 
 
 
@@ -76,9 +72,8 @@ The web app’s HTML pages are **not** ported. Data comes from the same compiled
 
 | Export script | [`scripts/export-mobile-seed.ps1`](../../scripts/export-mobile-seed.ps1) | Build-time asset bundle |
 
-| Publish script | [`scripts/publish-mobile.ps1`](../../scripts/publish-mobile.ps1) | APK → `downloads/`, `mobile-version.json`, refresh `mobile_config.json` |
-
-| Web APK download | `downloads/huntress-cookbook.apk`, toolbar phone icon | Sideload + in-app update URL |
+| Publish script | [`scripts/publish-mobile.ps1`](../../scripts/publish-mobile.ps1) | Content + bridge JSON; copies APK to Fox's Den portal when found |
+| Web APK download | Fox's Den `huntresscookbook-mobile.apk` (bridge on cookbook `mobile-version.json`) | Sideload + in-app update URL |
 
 
 
@@ -152,7 +147,7 @@ flowchart TD
 
 3. **Runtime:** all browse/search/CRUD via SQLite.
 
-4. **Updates:** app checks `mobile-version.json` on launch (when online); download + install flow on Android.
+4. **Updates:** app checks Fox's Den `downloads/huntresscookbook-mobile/mobile-version.json` on launch (when online); download + install flow on Android. Older installs are bridged via cookbook `downloads/mobile-version.json`.
 
 5. **No API** — Dio removed.
 
@@ -308,18 +303,22 @@ Bundled assets: `cookbook_seed.json`, `chapters.json`, `nav.json`, `guides.json`
 ### Phase 4 — Polish — **Mostly done**
 
 - [x] Share recipe (`share_plus`)
-
 - [x] Missing image placeholders
-
 - [x] App icon / splash from fox logo
-
 - [x] In-app update check + APK download/install (Android)
-
 - [x] Web: APK in `downloads/`, toolbar download, `publish-mobile.ps1`
-
 - [ ] Optional: export SQLite → web JSON (round-trip)
-
 - [ ] YAML-per-recipe authoring (see content-authoring-pipeline.md)
+
+### Phase 5 — Local extras (shipped)
+
+- [x] Shopping list, favourites, future recipe ideas + source URL
+- [x] Google Drive backup/restore (JSON + photos) + auto backup on change
+- [x] Local zip export/import
+- [x] What's New dialog on build bump
+- [x] Family group MVP (1 MasterChef + up to 3 note-only members via shared Drive folder)
+
+See also: [`mobile-next-phase.md`](mobile-next-phase.md)
 
 
 
@@ -351,9 +350,11 @@ Bundled assets: `cookbook_seed.json`, `chapters.json`, `nav.json`, `guides.json`
 
 
 
-- Online sync, cloud backup, WebView of HTML site
+- WebView of HTML site
 
 - Editing chapter structure via UI
+
+- Real-time multi-user recipe editing (family notes only for members)
 
 
 

@@ -71,13 +71,27 @@ $guides = @{
 Write-JsonFile (Join-Path $assetsDir "guides.json") $guides
 
 $pagesBaseUrl = "https://marcell0805.github.io/huntress-cookbook"
+$foxsDenPagesBaseUrl = "https://marcell0805.github.io/the-foxs-den-doc"
+$updateCheckUrl = "$foxsDenPagesBaseUrl/downloads/huntresscookbook-mobile/mobile-version.json"
 
-Write-JsonFile (Join-Path $assetsDir "mobile_config.json") @{
+$mobileConfigPath = Join-Path $assetsDir "mobile_config.json"
+$config = @{
     pin = "0657"
     cookbookName = $data.settings.cookbookName
     tagline = $data.settings.tagline
-    updateCheckUrl = "$pagesBaseUrl/downloads/mobile-version.json"
+    updateCheckUrl = $updateCheckUrl
 }
+if (Test-Path $mobileConfigPath) {
+    $existing = Get-Content $mobileConfigPath -Raw | ConvertFrom-Json
+    foreach ($name in @('pin', 'cookbookName', 'tagline', 'huntressEmail', 'foxEmail', 'appName', 'channel')) {
+        if ($existing.PSObject.Properties.Name -contains $name -and $null -ne $existing.$name -and "$($existing.$name)" -ne '') {
+            $config[$name] = $existing.$name
+        }
+    }
+}
+$config.updateCheckUrl = $updateCheckUrl
+Write-JsonFile $mobileConfigPath $config
+Write-Host "Wrote $mobileConfigPath (updateCheckUrl → Fox's Den)"
 
 $srcImages = Join-Path $cookbookRoot "assets\images"
 $logoSrc = Join-Path $cookbookRoot "assets\fox-huntress-logo.png"
