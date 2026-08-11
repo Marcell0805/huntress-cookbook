@@ -1,8 +1,8 @@
 {
     "version":  "1.0.13",
-    "build":  19,
     "apkUrl":  "https://marcell0805.github.io/the-foxs-den-doc/downloads/huntresscookbook-mobile.apk",
-    "releaseNotes":  "Update host moved to The Fox's Den.\nInstall this build so future updates check the new site.\nFamily notes, Google Drive backup, and Account screen improvements.",
-    "contentVersion":  "a6a3ce41465222dcc84fb86b15c132003845dd3f0c52794c9b61f82025819ae7",
-    "contentManifestUrl":  "https://marcell0805.github.io/huntress-cookbook/downloads/mobile-content-manifest.json"
+    "releaseNotes":  "All family members can add recipes\nOnly the person who added a recipe can edit or delete it\nBundled cookbook recipes stay MasterChef / Huntress editable\nIn-app update check is more reliable on real phones\nSafer APK download with timeout and cleaner retry",
+    "contentVersion":  "b2a40f4cadf7a957f2fbd7470bbdcdbb182c35ea1cb9b3412accf36c1d0723e7",
+    "contentManifestUrl":  "https://marcell0805.github.io/huntress-cookbook/downloads/mobile-content-manifest.json",
+    "build":  17
 }

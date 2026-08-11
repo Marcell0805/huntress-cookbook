@@ -1,11 +1,11 @@
 {
-    "contentVersion":  "a6a3ce41465222dcc84fb86b15c132003845dd3f0c52794c9b61f82025819ae7",
+    "contentVersion":  "b2a40f4cadf7a957f2fbd7470bbdcdbb182c35ea1cb9b3412accf36c1d0723e7",
     "files":  [
                   {
                       "path":  "cookbook_seed.json",
-                      "url":  "https://marcell0805.github.io/huntress-cookbook/downloads/content/cookbook_seed.json?v=a6a3ce41465222dcc84fb86b15c132003845dd3f0c52794c9b61f82025819ae7",
-                      "sha256":  "a6a3ce41465222dcc84fb86b15c132003845dd3f0c52794c9b61f82025819ae7",
-                      "size":  609295
+                      "url":  "https://marcell0805.github.io/huntress-cookbook/downloads/content/cookbook_seed.json?v=b2a40f4cadf7a957f2fbd7470bbdcdbb182c35ea1cb9b3412accf36c1d0723e7",
+                      "sha256":  "b2a40f4cadf7a957f2fbd7470bbdcdbb182c35ea1cb9b3412accf36c1d0723e7",
+                      "size":  609323
                   },
                   {
                       "path":  "cheese-herb-omelette.jpg",

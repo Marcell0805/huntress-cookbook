@@ -77,6 +77,11 @@ $apkDest = Join-Path $downloadsDir "huntress-cookbook.apk"
 Copy-Item $ApkPath $apkDest -Force
 Write-Host "Copied APK to $apkDest (bridge copy; live download is Fox's Den)"
 
+if (-not $SkipExport) {
+    & (Join-Path $PSScriptRoot "export-mobile-seed.ps1") -MobileRoot $MobileRoot -SkipBuild
+    Write-Host "Refreshed Flutter mobile assets including Fox's Den updateCheckUrl"
+}
+
 $manifest = @{
     version = $versionName
     build = $buildNumber
@@ -94,11 +99,6 @@ $manifestPath = Join-Path $downloadsDir "mobile-version.json"
 $json = $manifest | ConvertTo-Json -Depth 5 -Compress:$false
 [IO.File]::WriteAllText($manifestPath, $json, $utf8)
 Write-Host "Wrote bridge $manifestPath (build $buildNumber → $foxApkUrl)"
-
-if (-not $SkipExport) {
-    & (Join-Path $PSScriptRoot "export-mobile-seed.ps1") -MobileRoot $MobileRoot -SkipBuild
-    Write-Host "Refreshed Flutter mobile assets including Fox's Den updateCheckUrl"
-}
 
 if (-not $SkipFoxsDenCopy) {
     if (-not $FoxsDenPortalRoot -or -not (Test-Path $FoxsDenPortalRoot)) {
