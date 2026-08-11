@@ -1,0 +1,5 @@
+# Keep OTA JSON checksums stable across Windows/macOS/Linux checkouts.
+downloads/content/*.json text eol=lf
+downloads/content/images/** binary
+downloads/mobile-content-manifest.json text eol=lf
+downloads/mobile-version.json text eol=lf

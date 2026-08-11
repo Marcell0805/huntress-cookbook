@@ -33,7 +33,10 @@ New-Item -ItemType Directory -Force -Path $imagesDir | Out-Null
 
 function Write-JsonFile([string]$path, $obj) {
     $json = $obj | ConvertTo-Json -Depth 20 -Compress:$false
-    [IO.File]::WriteAllText($path, $json, $utf8)
+    # Normalize to LF so SHA-256 matches GitHub Pages (LF) and Android downloads.
+    $json = $json -replace "`r`n", "`n" -replace "`r", "`n"
+    $bytes = $utf8.GetBytes($json)
+    [IO.File]::WriteAllBytes($path, $bytes)
 }
 
 Write-JsonFile (Join-Path $assetsDir "cookbook_seed.json") $data
@@ -124,6 +127,20 @@ New-Item -ItemType Directory -Force -Path $contentDir | Out-Null
 New-Item -ItemType Directory -Force -Path (Join-Path $contentDir "images") | Out-Null
 
 function Get-FileSha256Hex([string]$path) {
+    # Re-normalize text JSON to LF before hashing so working-tree CRLF checkouts
+    # cannot poison the OTA manifest checksums.
+    if ($path -like '*.json') {
+        $text = [IO.File]::ReadAllText($path)
+        $normalized = $text -replace "`r`n", "`n" -replace "`r", "`n"
+        $bytes = $utf8.GetBytes($normalized)
+        [IO.File]::WriteAllBytes($path, $bytes)
+        $sha = [System.Security.Cryptography.SHA256]::Create()
+        try {
+            return ([BitConverter]::ToString($sha.ComputeHash($bytes))).Replace('-', '').ToLowerInvariant()
+        } finally {
+            $sha.Dispose()
+        }
+    }
     $hash = Get-FileHash -Path $path -Algorithm SHA256
     return $hash.Hash.ToLowerInvariant()
 }
@@ -151,7 +168,8 @@ foreach ($prop in $data.recipes.PSObject.Properties) {
     $imgHash = (Get-FileSha256Hex $imgDest)
     $manifestFiles += [ordered]@{
         path = $image
-        url = "$pagesBaseUrl/downloads/content/images/$image?v=$imgHash"
+        # ${image} required — "$image?v=..." is parsed as variable image?v in Windows PowerShell.
+        url = "$pagesBaseUrl/downloads/content/images/${image}?v=$imgHash"
         sha256 = $imgHash
         size = (Get-Item $imgDest).Length
     }
