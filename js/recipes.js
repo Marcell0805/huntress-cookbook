@@ -12,6 +12,7 @@ var HUNTRESS_COOKBOOK = {
                      "tagline":  "Made with care, for the Huntress",
                      "homeQuote":  "Good food, good mood, best day.",
                      "auth":  {
+                                  "enabled":  false,
                                   "password":  "0657",
                                   "storageKey":  "huntress_cookbook_auth"
                               },

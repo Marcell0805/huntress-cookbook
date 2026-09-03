@@ -3,14 +3,21 @@
     return (window.HUNTRESS_COOKBOOK && window.HUNTRESS_COOKBOOK.settings) || {};
   }
 
+  function getAuth() {
+    return getSettings().auth || {};
+  }
+
+  function isAuthEnabled() {
+    // Opt-in: password gate only when explicitly enabled in cookbook settings.
+    return getAuth().enabled === true;
+  }
+
   function getStorageKey() {
-    var auth = getSettings().auth;
-    return (auth && auth.storageKey) || 'huntress_cookbook_auth';
+    return getAuth().storageKey || 'huntress_cookbook_auth';
   }
 
   function getPassword() {
-    var auth = getSettings().auth;
-    return (auth && auth.password) || '0657';
+    return getAuth().password || '0657';
   }
 
   function unlock() {
@@ -59,12 +66,16 @@
   }
 
   function init() {
-    if (sessionStorage.getItem(getStorageKey()) === '1') {
+    if (!isAuthEnabled() || sessionStorage.getItem(getStorageKey()) === '1') {
       document.documentElement.classList.add('auth-ok');
       return;
     }
+    document.documentElement.classList.remove('auth-ok');
     showGate();
   }
+
+  // Stay visible while settings load; only lock if the gate is required.
+  document.documentElement.classList.add('auth-ok');
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);

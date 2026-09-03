@@ -112,12 +112,11 @@ Your browser opens at **`http://127.0.0.1:5501`** (port 5500 is often used by Or
 
 ## Password Gate
 
-The cookbook has a simple password screen (`1234`) to keep casual visitors out. Once entered, the browser remembers for the session (until the tab is closed).
+Site password protection is **off** by default (`auth.enabled: false` in `data/cookbook-settings.json`).
 
-> This is not high-security — it stops random link-clickers, not someone determined to view the source.
+To turn it back on, set `"enabled": true` under `auth` in that file, rebuild with `scripts/build-recipes.ps1`, and keep `password` / `storageKey` as needed.
 
-To change the password, edit `PASSWORD` in `js/auth.js`.
-
+> This is not high-security — it only stops casual visitors when enabled.
 ## Fonts
 
 Loaded from Google Fonts (requires internet on first view):
