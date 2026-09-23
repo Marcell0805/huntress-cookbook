@@ -3,6 +3,25 @@
     return (window.HUNTRESS_COOKBOOK && window.HUNTRESS_COOKBOOK.settings) || {};
   }
 
+  function injectSiteIcon() {
+    if (document.querySelector('link[rel="icon"]')) return;
+    var script = document.querySelector('script[src*="auth.js"]');
+    var logoUrl = script
+      ? new URL('../assets/fox-huntress-logo.png', script.src).href
+      : 'assets/fox-huntress-logo.png';
+    var icon = document.createElement('link');
+    icon.rel = 'icon';
+    icon.type = 'image/png';
+    icon.href = logoUrl;
+    document.head.appendChild(icon);
+    var apple = document.createElement('link');
+    apple.rel = 'apple-touch-icon';
+    apple.href = logoUrl;
+    document.head.appendChild(apple);
+  }
+
+  injectSiteIcon();
+
   function getAuth() {
     return getSettings().auth || {};
   }

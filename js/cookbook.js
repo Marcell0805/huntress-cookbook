@@ -1,4 +1,15 @@
 (function () {
+  (function injectNightTheme() {
+    if (document.getElementById('theme-night')) return;
+    var existing = document.querySelector('link[href*="cookbook.css"]');
+    if (!existing) return;
+    var link = document.createElement('link');
+    link.id = 'theme-night';
+    link.rel = 'stylesheet';
+    link.href = existing.getAttribute('href').replace('cookbook.css', 'theme-night.css');
+    existing.after(link);
+  })();
+
   var ICONS = {
     egg: '\uD83E\uDD5A',
     bowl: '\uD83E\uDD63',
@@ -326,7 +337,7 @@
 
     aside.innerHTML =
       '<div class="sidebar-logo">' +
-        '<img src="../assets/fox-huntress-logo.png" alt="Fox &amp; Huntress">' +
+        '<img class="sidebar-mark" src="../assets/fox-huntress-logo.png" alt="Fox &amp; Huntress">' +
         '<div class="sidebar-brand">THE HUNTRESS<br>COOKBOOK</div>' +
       '</div>' +
       navHtml +
@@ -751,6 +762,9 @@
       if (s.theme.secondaryColor) document.documentElement.style.setProperty('--gold-light', s.theme.secondaryColor);
       if (s.theme.accentColor) document.documentElement.style.setProperty('--cream', s.theme.accentColor);
       if (s.theme.warmGold) document.documentElement.style.setProperty('--warm-gold', s.theme.warmGold);
+      if (s.theme.headingColor) document.documentElement.style.setProperty('--heading', s.theme.headingColor);
+      if (s.theme.textColor) document.documentElement.style.setProperty('--text', s.theme.textColor);
+      if (s.theme.pageBackground) document.documentElement.style.setProperty('--page-bg', s.theme.pageBackground);
     }
 
     var title = s.cookbookName || 'The Huntress Cookbook';
